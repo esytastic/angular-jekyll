@@ -1,0 +1,118 @@
+/* ====================================
+   Site colors
+   ==================================== */
+/*
+   Brand colors
+   ====================================
+   White / Light Gray = Fresh and Clean Charcoal / Gray / Dark Gray = Bold and Direct Rich Blue = Performance
+   Blue = Experience
+   Teal = Style
+   Dark Green = Value
+   Green = Eco / Environment
+   Hot Green = Community
+   Red = Warning
+*/
+/* ====================================
+ * Mixins and functions
+ * ==================================== */
+/* Media queries
+ * ==================================== */
+/* Usage: @include breakpoint(sm) {} */
+/* Mixins and functions
+ * ==================================== */
+/* Usage: @include linearGradient() {} */
+/* Usage: @include placeholder() {} */
+/* Usage: @include border-radius(5px) */
+/* Usage: @include opacity(0.8) */
+/* Usage: @include center-block */
+/* Usage: @include text-truncate  */
+/* Extends
+ * ==================================== */
+/* Variables
+ * ==================================== */
+/* Mixins and functions
+ * ==================================== */
+/* ====================================
+   General site styling
+   ==================================== */
+html {
+  font-size: 62.5%;
+  height: 100%;
+  /*overflow-x: hidden;*/
+}
+html.lt-ie9{
+    font-size: 120%;
+}
+
+
+
+body {
+  font-size: 18px;
+  font-size: 1.8rem;
+  font-family: "graphik-light", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  color: #323237;
+  background-color: #fff;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  position: relative;
+  height: 100%;
+}
+
+html[lang=zh-TW] body {
+	 font-family: 'xingothic-w3', 'Microsoft JhengHei','STHeiti';
+}
+
+
+body *.zh-tw {
+  font-family: "xingothic-w3";
+}
+
+  @media (min-width: 768px) and (max-width: 991px) {
+    body {
+      text-align: center; } }
+  @media (max-width: 767px) {
+    body {
+      text-align: center; } }
+
+#site-container {
+  position: relative;
+  z-index: 0;
+  background-color: #fff;
+}
+
+#site-content {
+  height: 100%;
+}
+
+.touchable{
+  -webkit-overflow-scrolling: touch;
+  overflow: scroll;
+  overflow-x: hidden;
+  -webkit-transform: translate3d(0,0,0);
+}
+
+@media (max-width: 767px) {
+  .container {
+    padding-left: 25px;
+    padding-right: 25px; } }
+
+
+/*
+http://www.justfont.com/cheats
+利用justfont所提供的三種狀態，就可以設定在未處理完成前不做顯示，等處理完畢後再顯示的功能。
+下面範例為設定 body 整個內容於處理完成前不顯示：
+*/
+.jf-loading body { /*載入中不顯示*/
+      opacity: 0;
+      visibility: hidden;
+}
+.jf-active body { /*如果處理成功，直接顯示*/
+      opacity: 1;
+      visibility: visible;
+}
+.jf-inactive body {/*如果處理失敗，直接顯示*/
+      opacity: 1;
+      visibility: visible;
+}

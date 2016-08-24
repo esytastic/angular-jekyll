@@ -1,0 +1,87 @@
+/* ====================================
+ * Mixins and functions
+ * ==================================== */
+/* Media queries
+ * ==================================== */
+/* Usage: @include breakpoint(sm) {} */
+/* Mixins and functions
+ * ==================================== */
+/* Usage: @include linearGradient() {} */
+/* Usage: @include placeholder() {} */
+/* Usage: @include border-radius(5px) */
+/* Usage: @include opacity(0.8) */
+/* Usage: @include center-block */
+/* Usage: @include text-truncate  */
+/* Extends
+ * ==================================== */
+/* ====================================
+   Site colors
+   ==================================== */
+/*
+   Brand colors
+   ====================================
+   White / Light Gray = Fresh and Clean Charcoal / Gray / Dark Gray = Bold and Direct Rich Blue = Performance
+   Blue = Experience
+   Teal = Style
+   Dark Green = Value
+   Green = Eco / Environment
+   Hot Green = Community
+   Red = Warning
+*/
+/*
+   Base colors
+   ==================================== */
+/*
+   Text colors
+   ==================================== */
+/*
+   Button colors
+   ==================================== */
+/*
+   Third party brand colors
+   ==================================== */
+/* ====================================
+ * Mixins and functions
+ * ==================================== */
+/* Media queries
+ * ==================================== */
+/* Usage: @include breakpoint(sm) {} */
+/* Mixins and functions
+ * ==================================== */
+/* Usage: @include linearGradient() {} */
+/* Usage: @include placeholder() {} */
+/* Usage: @include border-radius(5px) */
+/* Usage: @include opacity(0.8) */
+/* Usage: @include center-block */
+/* Usage: @include text-truncate  */
+/* Extends
+ * ==================================== */
+/* Variables
+ * ==================================== */
+/* ====================================
+   Social Share
+   ==================================== */
+#social-share {
+  margin: 24px 0; }
+  #social-share label {
+    float: left;
+    display: block; }
+  #social-share .list-inline {
+    overflow: hidden;
+    float: left;
+    display: block;
+    margin: 0;
+    margin-left: 12px; }
+    #social-share .list-inline li {
+      margin: 0; }
+      #social-share .list-inline li a {
+        display: block;
+        border: none; }
+      #social-share .list-inline li i {
+        font-size: 22px;
+        padding: 0;
+        display: block;
+        position: relative;
+        top: 1px; }
+        #social-share .list-inline li i:hover {
+          color: #00d7ff; }

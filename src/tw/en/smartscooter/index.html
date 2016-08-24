@@ -1,0 +1,951 @@
+---
+layout: en-tw/LayoutMaster
+action: faster
+style: |
+    <link rel="stylesheet" href="/css/smartscooter/faster.css">
+scripts: |
+    <script src="/js/smartscooter/faster.js"></script>
+meta: |
+    <meta name="keywords" content="gogoro , smartscooter , scooter , energy  , battery">
+    <meta name="description" content="Founded in 2011, Gogoro is putting energy into things that matter. With a mission to deliver consumer innovations that will improve how the world’s most populated cities distribute and utilize energy, the company is enabling the transformation of megacities into smart cities. Gogoro is working toward a better future by putting power in the hands of everyone – to move us all forward, faster.">
+    <meta name="application-name" content="Gogoro - Introducing the world's first and only Smartscooter™" />
+    <meta name="msapplication-TileColor" content="#61399D" />
+    <meta name="msapplication-TileImage" content="http://www.gogoro.com/favicon.ico" />
+    <meta property="og:title" content="Gogoro - Introducing the world's first and only Smartscooter™" />
+    <meta property="og:type" content='website' />
+    <meta property="og:url" content="http://www.gogoro.com/" />
+    <meta property="og:description" content="Founded in 2011, Gogoro is putting energy into things that matter. With a mission to deliver consumer innovations that will improve how the world’s most populated cities distribute and utilize energy, the company is enabling the transformation of megacities into smart cities. Gogoro is working toward a better future by putting power in the hands of everyone – to move us all forward, faster." />
+    <meta property="og:image" content="//images.gogoroapp.com/share/website_thumbnail_1024.jpg" />
+    <meta property="og:site_name" content="Gogoro - Introducing the world's first and only Smartscooter™" />
+---
+
+<div id="faster" ng-controller="FasterController">
+
+    <div class="module-faster-0-site-intro" ng-controller="moduleFaster0SiteIntroController" style="display:none;">
+        <div class="module-customize-intro-takeover hidden-md hidden-sm hidden-xs" ng-controller="moduleCustomizeIntroTakeoverController">
+            <div class="module-customize-intro1">
+                <img src="//images.gogoroapp.com/faq/letsgo.svg" class="Allyou-intro-go" style="margin-top:-375px;" />
+                <img src="//images.gogoroapp.com/allYou_0629.png" class="Allyou-intro-scooter" style="margin-top:-480px;" />
+
+                <i id="intro-open" class="icon-arrow-down"></i>
+            </div>
+
+            <div class="module-customize-intro2 ">
+                <img src="//images.gogoroapp.com/hero_banner_0615.png" class="Allyou-intro2-scooter" />
+                <div class="homePageIntro2Word" style="margin-top:-80px;">
+                    <h2>RIDING</h2>
+                    <h2>IS BELIEVING</h2>
+                    <h3 class="break">Be the first to ride with us.</h3><br>
+
+                </div>
+                <i id="intro-open" class="icon-arrow-down"></i>
+            </div>
+        </div>
+
+
+        <div class="intro-container" style="display: none;">
+            <div id="landingPage" class="container" style="display: none;">
+                <div class="vertical-center-flex">
+                    <div class="elements">
+                        <img src="//images.gogoroapp.com/go.svg" width="660" height="531" class="intro-go" />
+                        <div class="intro-gogoro-container">
+                            <!-- img data-src="//gogoro.imgix.net/site-intro-gogoro.png" width="500" height="425" class="intro-gogoro" -->
+                        </div>
+                        <h2>
+                            <span class="break">第一且唯一</span>
+                            <strong style="color:#323237">SMARTSCOOTER&trade;</strong>
+                            <span class="break">智慧雙輪</span>
+                        </h2>
+                        <div class="intro-open-wrap">
+
+                            <div class="loading-wrap">
+                                <div id="loading-cycle" class="sprite-loading"></div>
+                                <div class="sprite-loading-num">0</div>
+                            </div>
+
+
+                            <i id="intro-open" class="icon-arrow-down"></i>
+                            <div class="icon-arrow-txt">Scroll to Enter</div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <!--<div class="videoProgress progress">-->
+                <!--<div class="progress-bar grayProgress active" role="progressbar"></div>-->
+                <!--</div>-->
+            </div>
+
+            <!--<div id="videoHero" class="video_hero" >-->
+            <!--<div class="container">-->
+            <!--<div class="vertical-center-flex">-->
+            <!--<h2><span class="break">A RIDE<br/>LIKE<br/> NO OTHER</span></h2>-->
+            <!--<a href="javascript:void(0);" ng-click="playHeroVideo()" class="heroPlayBtn">-->
+            <!--<div class="vertical-center-flex">-->
+            <!--<div class="playBtnContainer">-->
+            <!--<div class="playBtnLayer">-->
+            <!--<div>PLAY<br/>VIDEO</div>-->
+            <!--<div><i class="icon-arrow-right" ></i></div>-->
+            <!--</div>-->
+            <!--</div>-->
+            <!--</div>-->
+            <!--</a>-->
+            <!--<div><i class="icon-arrow-down" ng-click="skipVideo();"></i></div>-->
+            <!--</div>-->
+            <!--</div>-->
+            <!--<div id="bgPlayer"></div>-->
+            <!--</div>-->
+
+        </div>
+    </div>
+
+    <div id="module-faster-1-page-intro" class="module-faster-1-page-intro module-page-intro" ng-controller="moduleFaster1PageIntroController">
+        <div class="container">
+            <div class="title-wrapper">
+                <script class="svg" type="gogoro-template">
+                    <svg class="title" xmlns="http://www.w3.org/2000/svg" version="1.1" width="1280px" height="800px" viewBox="0 0 1280 800">
+                        <defs>
+                            <linearGradient id="filler" y1="0%" y2="100%" x1="0%" x2="0%">
+                                <stop stop-color="#0069d2" offset="0%"></stop>
+                                <stop stop-color="#00b6f2" offset="100%"></stop>
+                            </linearGradient>
+                        </defs>
+                        <text text-anchor="middle" x="355" y="405" font-size="410" fill="url(#filler)"><tspan>0</tspan></text>
+                        <text text-anchor="middle" x="540" y="405" font-size="410" fill="url(#filler)"><tspan>0</tspan></text>
+                        <text text-anchor="middle" x="650" y="405" font-size="410" fill="url(#filler)"><tspan>.</tspan></text>
+                        <text text-anchor="middle" x="760" y="405" font-size="410" fill="url(#filler)"><tspan>0</tspan></text>
+                        <text text-anchor="middle" x="945" y="405" font-size="410" fill="url(#filler)"><tspan>0</tspan></text>
+                    </svg>
+                    <svg class="kmh" xmlns="http://www.w3.org/2000/svg" version="1.1" width="1280px" height="800px" viewBox="0 0 1280 800">
+                        <text x="1039px" y="197px" font-size="44" fill="#0069d2" class="sec"><tspan>Sec</tspan></text>
+                        <text x="1040px" y="226px" font-size="22" fill="#0069d2"><tspan>0-</tspan></text>
+                        <text x="1064px" y="226px" font-size="22" fill="#0069d2"><tspan>0</tspan></text>
+                        <text x="1077px" y="226px" font-size="22" fill="#0069d2"><tspan>0</tspan></text>
+                        <text x="1095px" y="225px" font-size="13" fill="#0069d2"><tspan>KM/H</tspan></text>
+                    </svg>
+                </script>
+            </div>
+            <div class="background-image background-image-standard" data-src="//gogoro.imgix.net/gogoro-side_0616.png"></div>
+            <div class="background-image background-image-fallback" data-src="//gogoro.imgix.net/bgd-module-faster-1-fallback_0616.jpg"></div>
+            <div class="body">
+                Faster is just the beginning. <span class="hidden-xs">We pushed performance engineering to all new levels, delivering unprecedented power, agility and control.</span>
+            </div>
+        </div>
+    </div>
+
+    {% include en-tw/PartialTabbar.html %}
+
+    <div class="module-faster-2-clean-video" ng-controller="moduleFaster2CleanVideoController">
+        <a href="#" class="btn btn-translucent launch-video-modal" data-video-src="//www.youtube.com/embed/2DG8h8fs8Jw?enablejsapi=1&autoplay=1&rel=0&vq=hd720" data-video-id="faster-clean-video">Watch Full Video</a>
+        <img src="//images.gogoroapp.com/module-faster-2-square.jpg" class="fallback">
+        <img src="//images.gogoroapp.com/module-faster-2-square-demo_20150330.jpg" class="standard">
+
+        <div class="video_hero">
+            <div class="container">
+                <div class="vertical-center-flex">
+                    <h2><span class="break">A RIDE<br />LIKE<br /> NO OTHER</span></h2>
+                    <a href="#" data-video-src="//www.youtube.com/embed/2DG8h8fs8Jw?enablejsapi=1&autoplay=1&rel=0&vq=hd720" data-video-id="faster-clean-video" class="heroPlayBtn launch-video-modal">
+                        <div class="vertical-center-flex">
+                            <div class="playBtnContainer">
+                                <div class="playBtnLayer">
+                                    <div>PLAY<br />VIDEO</div>
+                                    <div><i class="icon-arrow-right"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="module-faster-3-summary-info module-summary-info" ng-controller="moduleFaster3SummaryInfoController">
+        <div class="container max-height">
+            <div class="row">
+                <div class="col-md-4 col-sm-12 col-xs-12 slide">
+                    <div class="title">Quicker</div>
+                    <div class="body">
+                        <div class="big">4.2</div>
+                        <div class="small">Seconds<br />From<br />0-50<sup>KM/H</sup></div>
+                    </div>
+                    <div class="description">
+                        Always first off the line. <span class="break-sm break-xs">Instant torque delivers full power in a heartbeat.</span>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12 col-xs-12 slide">
+                    <div class="title">Faster</div>
+                    <div class="body">
+                        <div class="big">95</div>
+                        <div class="small">KM/H<br />Max<br />Speed</div>
+                    </div>
+                    <div class="description">
+                        So fast, you’ll never be left behind. <span class="break-sm break-xs">Fly through the city with effortless speed and control.</span>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12 col-xs-12 slide">
+                    <div class="title">Cleaner</div>
+                    <div class="body">
+                        <div class="big">0</div>
+                        <div class="small">No<br />Harmful<br />Emissions</div>
+                    </div>
+                    <div class="description">
+                        Pure performance, pollution-free. <span class="break-sm break-xs">Having fun has never been better for the planet.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="module-faster-4-performance-hero module-image-hero" ng-controller="moduleFaster4PerformanceHeroController">
+        <div class="container">
+            <div class="vertical-center-container">
+                <div class="row content-overlay vertical-center">
+                    <div class="col-md-12 text-center">
+                        <h3>The Power Of <span class="break">Innovation</span></h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div data-src="//images.gogoroapp.com/bgd-module-faster-4_0618.jpg" class="imgix-fluid imgix-fluid-bg background-image"></div>
+    </div>
+
+    <div class="module-faster-5-powertrain module-video-scroller" ng-controller="moduleFaster5PowertrainController">
+        <div class="module-faster-5-content">
+            <div class="module-video-scroller-content">
+                <div class="frame-pagination-wrapper"><div class="frame-pagination"></div></div>
+                <div class="video-viewport-wrapper">
+                    <div class="video-viewport">
+                        <video id="powertrainVideo" width="2560" height="1440" muted preload='auto' poster="//images.gogoroapp.com/faster_powertrain_video-poster-20150124.jpg"></video>
+                    </div>
+                </div>
+                <!-- frame 0 -->
+                <div class="content-wrapper frame-0 frame">
+                    <div class="text">
+                        <div class="title">The New Standard of Performance</div>
+                        <div class="rbody">
+                            <p>
+                                Fully integrated. Digitally optimized. Incredibly efficient. Meet the unbelievably powerful Gogoro® Drivetrain.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- frame 1 -->
+                <div class="content-wrapper frame-1 frame">
+                    <div class="text">
+                        <div class="title">Motor Controller</div>
+                        <div class="body">
+                            <p>
+                                Constant digital processing delivers energy with 98% efficiency. Intelligently balancing power output so you can ride faster in any road condition.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- frame 2 -->
+                <div class="content-wrapper frame-2 frame">
+                    <div class="text">
+                        <div class="title">Perfect Together</div>
+                        <div class="body">
+                            <p>
+                                Every component in our all-electric drivetrain is precision engineered to ensure the entire system works smarter, stays cooler and goes further on less energy.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- frame 3 -->
+                <div class="content-wrapper frame-3 frame">
+                    <div class="text">
+                        <div class="title">The G1 Motor</div>
+                        <div class="body">
+                            <p>
+                                Power packed. Ultra-compact. We redefined motor design with our unique rotor, integrated planetary gear, and mega-density coils wound with over 66 meters of ultra thick gauge oxygen-free copper wire. This is the art of electric.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- frame 4 -->
+                <div class="content-wrapper frame-4 frame">
+                    <div class="text">
+                        <div class="title">Carbon Belt</div>
+                        <div class="body">
+                            <p>
+                                It takes racing-grade carbon composite belts engineered by Gates to harness our motor’s torque. No other scooter on the market can deliver this kind of pure power on command.
+                            </p>
+                            <div class="partnership">
+                                <p>Carbon belt by</p>
+                                <img src="//gogoro.imgix.net/logo-gates.png" width="30" height="191" class="logo logo-gates">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- frame 5 -->
+                <div class="content-wrapper frame-5 frame">
+                    <div class="text">
+                        <div class="title">Integrated Cooling</div>
+                        <div class="body">
+                            <p>
+                                We blend revolutionary motor design, streamlined aerodynamics and a breakthrough passageway network to channel water through the entire system. Less heat equals more power.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="module-video-scroller-backgrounds-wrapper">
+                <div class="module-video-scroller-backgrounds">
+                    <div class="frame-pin frame"><div class="trigger"></div></div>
+                    <div class="frame-0 frame"></div>
+                    <div class="frame-1 frame"></div>
+                    <div class="frame-2 frame"></div>
+                    <div class="frame-3 frame"></div>
+                    <div class="frame-4 frame"></div>
+                    <div class="frame-5 frame"></div>
+                    <div class="frame-6 frame frame-padding frame"></div>
+                </div>
+            </div>
+        </div>
+        <div class="module-faster-5-fallback">
+            <!-- fallback slide 0 -->
+            <div class="slide">
+                <img src="//gogoro.imgix.net/bgd-module-faster-5-1.jpg" class="imgix-fluid background-image visible-xs visible-sm">
+                <div class="container">
+                    <div class="row vertical-center-flex">
+                        <div class="col-md-8 col-md-push-4 col-xs-12 image background-image-container">
+                            <img src="//gogoro.imgix.net/bgd-module-faster-5-1.jpg" class="imgix-fluid background-image hidden-xs hidden-sm">
+                        </div>
+                        <div class="col-md-3 col-md-offset-1 col-md-pull-8 col-sm-10 col-sm-offset-1 col-xs-12 col-xs-offset-0 text-center-xs text-center-sm content-block">
+                            <h2>The New Standard of Performance</h2>
+                            <p>Fully integrated. Digitally optimized. Incredibly efficient. Meet the unbelievably powerfulGogoro® Drivetrain.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- fallback slide 1 -->
+            <div class="slide">
+                <img src="//gogoro.imgix.net/bgd-module-faster-5-2.jpg" class="imgix-fluid background-image visible-xs visible-sm">
+                <div class="container">
+                    <div class="row vertical-center-flex">
+                        <div class="col-md-8 col-md-push-4 col-xs-12 image background-image-container">
+                            <img src="//gogoro.imgix.net/bgd-module-faster-5-2.jpg" class="imgix-fluid background-image hidden-xs hidden-sm">
+                        </div>
+                        <div class="col-md-3 col-md-offset-1 col-md-pull-8 col-sm-10 col-sm-offset-1 col-xs-12 col-xs-offset-0 text-center-xs text-center-sm content-block">
+                            <h3>Motor Controller</h3>
+                            <p>Constant digital processing delivers energy with 98% efficiency. Intelligently balancing power output so you can ride faster in any road condition.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- fallback slide 2 -->
+            <div class="slide">
+                <img src="//gogoro.imgix.net/bgd-module-faster-5-3.jpg" class="imgix-fluid background-image visible-xs visible-sm">
+                <div class="container">
+                    <div class="row vertical-center-flex">
+                        <div class="col-md-8 col-md-push-4 col-xs-12 background-image-container">
+                            <img src="//gogoro.imgix.net/bgd-module-faster-5-3.jpg" class="imgix-fluid imgix-fluid background-image hidden-xs hidden-sm">
+                        </div>
+                        <div class="col-md-3 col-md-offset-1 col-md-pull-8 col-sm-10 col-sm-offset-1 col-xs-12 col-xs-offset-0 text-center-xs text-center-sm content-block">
+                            <h3>Perfect Together</h3>
+                            <p>Every component in our all-electric drivetrain is precision engineered to ensure the entire system works smarter, stays cooler and goes further on less energy.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- fallback slide 3 -->
+            <div class="slide">
+                <img src="//gogoro.imgix.net/bgd-module-faster-5-4.jpg" class="imgix-fluid background-image visible-xs visible-sm">
+                <div class="container">
+                    <div class="row vertical-center-flex">
+                        <div class="col-md-8 col-md-push-4 col-xs-12 background-image-container">
+                            <img src="//gogoro.imgix.net/bgd-module-faster-5-4.jpg" class="imgix-fluid imgix-fluid background-image hidden-xs hidden-sm">
+                        </div>
+                        <div class="col-md-3 col-md-offset-1 col-md-pull-8 col-sm-10 col-sm-offset-1 col-xs-12 col-xs-offset-0 text-center-xs text-center-sm content-block">
+                            <h3>The G1 Motor</h3>
+                            <p> Power packed. Ultra-compact. We redefined motor design with our unique rotor, integrated planetary gear, and mega-density coils wound with over 66 meters of ultra thick gauge oxygen-free copper wire. This is the art of electric.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- fallback slide 4 -->
+            <div class="slide">
+                <img src="//gogoro.imgix.net/bgd-module-faster-5-5.jpg" class="imgix-fluid background-image visible-xs visible-sm">
+                <div class="container">
+                    <div class="row vertical-center-flex">
+                        <div class="col-md-8 col-md-push-4 col-xs-12 background-image-container hidden-xs hidden-sm">
+                            <img src="//gogoro.imgix.net/bgd-module-faster-5-5.jpg" class="background-image">
+                        </div>
+                        <div class="col-md-3 col-md-offset-1 col-md-pull-8 col-sm-10 col-sm-offset-1 col-xs-12 col-xs-offset-0 text-center-xs text-center-sm content-block">
+                            <h3>Carbon Belt</h3>
+                            <p>It takes racing-grade carbon composite belts engineered by Gates to harness our motor’s torque. No other scooter on the market can deliver this kind of pure power on command.</p>
+
+                            <div class="partnership hidden-xs">
+                                <p>Carbon belt by</p>
+                                <img src="//gogoro.imgix.net/logo-gates.png" width="30" height="191" class="logo logo-gates">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- fallback slide 5 -->
+            <div class="slide">
+                <img src="//gogoro.imgix.net/bgd-module-faster-5-6-2015-03-29.jpg" class="imgix-fluid background-image visible-xs visible-sm">
+                <div class="container">
+                    <div class="row vertical-center-flex">
+                        <div class="col-md-8 col-md-push-4 col-xs-12">
+                            <img src="//gogoro.imgix.net/bgd-module-faster-5-6-2015-03-29.jpg" class="imgix-fluid background-image hidden-xs hidden-sm">
+                        </div>
+                        <div class="col-md-3 col-md-offset-1 col-md-pull-8 col-sm-10 col-sm-offset-1 col-xs-12 col-xs-offset-0 text-center-xs text-center-sm content-block">
+                            <h3>Integrated Cooling</h3>
+                            <p>We blend revolutionary motor design, streamlined aerodynamics and a breakthrough passageway network to channel water through the entire system. Less heat equals more power.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="powertrain-blocker">
+
+    </div>
+    <div class="module-faster-7-comparison-infographic" ng-controller="moduleFaster7ComparisonInfographicController">
+        <div class="container no-guter">
+            <div class="row max-height">
+                <div class="no-guter col-lg-6 col-lg-offset-0 col-lg-push-5 col-md-8 col-md-offset-0 col-md-push-4 col-sm-12 col-xs-12 max-height text-center">
+                    <div class="vertical-center-container">
+                        <div class="vertical-center vertical-center-acceleration">
+
+                            <img class="background-image fallback firstlineimage" src="//images.gogoroapp.com/faster-7-infographic.fallback_20150415_en.png">
+                            <div class="image hidden-xs">
+                                <div class="charts acceleration">
+                                    <div class="infographic">
+                                        <div class="title">
+                                            0-50<sup>KM/H</sup> in 4.2 Seconds
+                                        </div>
+                                        <div class="bars">
+                                            <div class="us">
+                                                <div class="speed">
+                                                    <div class="bar">
+                                                        <div class="title">Gogoro</div>
+                                                    </div>
+                                                </div>
+                                                <div class="time">
+                                                    <span class="second">0</span>
+                                                    <span class="millis">.00</span>
+                                                    <span class="text">sec</span>
+                                                </div>
+                                            </div>
+                                            <div class="them">
+                                                <div class="speed">
+                                                    <div class="bar">
+                                                        <div class="title">125cc</div>
+                                                    </div>
+                                                    <div class="bar-remainder">
+                                                    </div>
+                                                </div>
+                                                <div class="time">
+                                                    <span class="second">0</span>
+                                                    <span class="millis">.00</span>
+                                                    <span class="text">sec</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="legend">
+                                            <span>30<sup>KM/H</sup></span>
+                                            <span>35<sup>KM/H</sup></span>
+                                            <span>40<sup>KM/H</sup></span>
+                                            <span>45<sup>KM/H</sup></span>
+                                            <span>50<sup>KM/H</sup></span>
+                                        </div>
+                                        <div class="punch-line" style="opacity: 0">
+                                            <div class="comparison-wrapper">
+                                                <div class="comparison">
+                                                    <span class="percent">16<sup>%</sup></span>
+                                                    <span class="text">Quicker</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!-- infographic-->
+                                </div><!-- charts -->
+
+                                <div class="charts torque" style="opacity:0">
+                                    <div class="infographic">
+
+                                        <svg id="svg-torque-chart" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="580px" height="290px" viewBox="7.385 275.945 580 290" enable-background="new 7.385 275.945 580 290" xml:space="preserve">
+                                        <image src="//images.gogoroapp.com/faster-7-torque.fallback-new.png" width="580" height="290" />
+                                        <g>
+                                        <rect x="7.384" opacity="0" y="275.945" fill="#2f2e34" width="580" height="290" />
+                                        <line fill="none" stroke="#41444B" stroke-width="0.9853" stroke-miterlimit="10" x1="89.13" y1="333.881" x2="89.13" y2="521.076" />
+                                        <line fill="none" stroke="#41444B" stroke-width="0.9853" stroke-miterlimit="10" x1="152.308" y1="333.881" x2="152.308" y2="521.076" />
+                                        <line fill="none" stroke="#41444B" stroke-width="0.9853" stroke-miterlimit="10" x1="215.487" y1="333.881" x2="215.487" y2="521.076" />
+                                        <line fill="none" stroke="#41444B" stroke-width="0.9853" stroke-miterlimit="10" x1="278.664" y1="333.881" x2="278.664" y2="521.076" />
+                                        <line fill="none" stroke="#41444B" stroke-width="0.9853" stroke-miterlimit="10" x1="341.843" y1="333.881" x2="341.843" y2="521.076" />
+                                        <line fill="none" stroke="#41444B" stroke-width="0.9853" stroke-miterlimit="10" x1="405.021" y1="333.881" x2="405.021" y2="521.076" />
+                                        <line fill="none" stroke="#41444B" stroke-width="0.9853" stroke-miterlimit="10" x1="468.199" y1="333.881" x2="468.199" y2="521.076" />
+                                        <line fill="none" stroke="#41444B" stroke-width="0.9853" stroke-miterlimit="10" x1="500.958" y1="333.881" x2="500.958" y2="521.076" />
+                                        <text transform="matrix(1 0 0 1 117.5696 313.9009)" fill="#B9BCBF" font-family="'Graphik-Light'" font-size="29.9512">Instant Max. Torque at 0</text>
+                                        <text transform="matrix(1 0 0 1 455 305)" fill="#B9BCBF" font-family="'Graphik-Light'" font-size="16.3702">RPM</text>
+                                        <text transform="matrix(1 0 0 1 84.7644 547.3721)" fill="#737D82" font-family="'Graphik-Light'" font-size="13.1037">0</text>
+                                        <text transform="matrix(1 0 0 1 135.7971 547.3721)" fill="#737D82" font-family="'Graphik-Light'" font-size="13.1037">2000</text>
+                                        <text transform="matrix(1 0 0 1 198.7874 547.3721)" fill="#737D82" font-family="'Graphik-Light'" font-size="13.1037">3000</text>
+                                        <text transform="matrix(1 0 0 1 261.7893 547.3721)" fill="#737D82" font-family="'Graphik-Light'" font-size="13.1037">4000</text>
+                                        <text transform="matrix(1 0 0 1 325.1995 547.3721)" fill="#737D82" font-family="'Graphik-Light'" font-size="13.1037">5000</text>
+                                        <text transform="matrix(1 0 0 1 388.1292 547.3721)" fill="#737D82" font-family="'Graphik-Light'" font-size="13.1037">6000</text>
+                                        <text transform="matrix(1 0 0 1 491.053 547.3721)" fill="#737D82" font-family="'Graphik-Light'" font-size="13.1037">7500 RPM</text>
+                                        <text transform="matrix(1 0 0 1 450.0735 547.3721)" fill="#737D82" font-family="'Graphik-Light'" font-size="13.1037">7000</text>
+                                        <g id="svg-normal-text" opacity="0">
+                                        <text transform="matrix(1 0 0 1 39.4167 521.085)" fill="#B9BCBF" font-family="'Graphik-Semibold'" font-size="14.9756">125cc</text>
+                                        <text transform="matrix(1 0 0 1 451.9846 459.5576)" font-family="'ArialMT'" font-size="11.2317"> </text>
+                                        <text transform="matrix(1 0 0 1 451.9846 459.5576)" fill="#737D82" font-family="'flama-condensed-bold'" font-size="37.439">8</text>
+                                        <text transform="matrix(1 0 0 1 465.425 459.5576)" font-family="'ArialMT'" font-size="11.2317"> </text>
+                                        <text transform="matrix(1 0 0 1 467.5217 459.5576)" fill="#737D82" font-family="'FlamaCondensed-Light'" font-size="11.2317"> </text>
+                                        <text transform="matrix(1 0 0 1 469.094 459.5576)" font-family="'ArialMT'" font-size="11.2317"> </text>
+                                        <text transform="matrix(1 0 0 1 469.1624 459.5576)" fill="#737D82" font-family="'flama-condensed-bold'" font-size="22.4634">Nm</text>
+                                        <text transform="matrix(1 0 0 1 491.8264 459.5576)" font-family="'ArialMT'" font-size="11.2317"> </text>
+                                        <g>
+                                        <line fill="none" stroke="#B9BCBF" stroke-width="1.2977" stroke-miterlimit="10" x1="421.682" y1="474.465" x2="448.45" y2="447.696" />
+                                        <circle fill="#B9BCBF" cx="421.682" cy="474.464" r="2.808" />
+            </g>
+        </g>
+                                        <g id="svg-redlines" opacity="0">
+                                        <g>
+                                        <g>
+                                        <defs>
+                                        <path id="SVGID_1_" d="M89.13,515.46h187.382c7.113,0,13.759-6.364,21.434-13.853c10.39-10.108,23.399-22.65,43.616-24.803
+						c31.543-3.37,53.538-5.71,91.445-5.148c-99.869-13.946-149.943-29.296-219.019-69.542l-1.123-0.655
+						c-32.385-18.907-40.153-23.399-92.755-23.399H89.036v137.4H89.13z" />
+                    </defs>
+                                        <clipPath id="SVGID_2_">
+                                        <use xlink:href="#SVGID_1_" overflow="visible" />
+                    </clipPath>
+                                        <g clip-path="url(#SVGID_2_)">
+                                        <line opacity="0.7" fill="none" stroke="#EE2A30" stroke-width="2.8346" stroke-miterlimit="10" enable-background="new    " x1="-60.158" y1="541.48" x2="179.545" y2="301.778" />
+
+                                        <line opacity="0.6731" fill="none" stroke="#EE2A30" stroke-width="2.8346" stroke-miterlimit="10" enable-background="new    " x1="-43.872" y1="541.48" x2="195.83" y2="301.778" />
+
+                                        <line opacity="0.6462" fill="none" stroke="#EE2A30" stroke-width="2.8346" stroke-miterlimit="10" enable-background="new    " x1="-27.587" y1="541.48" x2="212.116" y2="301.778" />
+
+                                        <line opacity="0.6192" fill="none" stroke="#EE2A30" stroke-width="2.8346" stroke-miterlimit="10" enable-background="new    " x1="-11.207" y1="541.48" x2="228.403" y2="301.778" />
+
+                                        <line opacity="0.5923" fill="none" stroke="#EE2A30" stroke-width="2.8346" stroke-miterlimit="10" enable-background="new    " x1="5.079" y1="541.48" x2="244.689" y2="301.778" />
+
+                                        <line opacity="0.5654" fill="none" stroke="#EE2A30" stroke-width="2.8346" stroke-miterlimit="10" enable-background="new    " x1="21.365" y1="541.48" x2="261.069" y2="301.778" />
+
+                                        <line opacity="0.5385" fill="none" stroke="#EE2A30" stroke-width="2.8346" stroke-miterlimit="10" enable-background="new    " x1="37.652" y1="541.48" x2="277.354" y2="301.778" />
+
+                                        <line opacity="0.5115" fill="none" stroke="#EE292F" stroke-width="2.8346" stroke-miterlimit="10" enable-background="new    " x1="53.937" y1="541.48" x2="293.64" y2="301.778" />
+
+                                        <line opacity="0.4846" fill="none" stroke="#EE292F" stroke-width="2.8346" stroke-miterlimit="10" enable-background="new    " x1="70.317" y1="541.48" x2="309.926" y2="301.778" />
+
+                                        <line opacity="0.4577" fill="none" stroke="#EE292F" stroke-width="2.8346" stroke-miterlimit="10" enable-background="new    " x1="86.603" y1="541.48" x2="326.212" y2="301.778" />
+
+                                        <line opacity="0.4308" fill="none" stroke="#EE292F" stroke-width="2.8346" stroke-miterlimit="10" enable-background="new    " x1="102.889" y1="541.48" x2="342.498" y2="301.778" />
+
+                                        <line opacity="0.4038" fill="none" stroke="#EE292F" stroke-width="2.8346" stroke-miterlimit="10" enable-background="new    " x1="119.175" y1="541.48" x2="358.877" y2="301.778" />
+
+                                        <line opacity="0.3769" fill="none" stroke="#EE292F" stroke-width="2.8346" stroke-miterlimit="10" enable-background="new    " x1="135.46" y1="541.48" x2="375.163" y2="301.778" />
+
+                                        <line opacity="0.35" fill="none" stroke="#EE292F" stroke-width="2.8346" stroke-miterlimit="10" enable-background="new    " x1="151.746" y1="541.48" x2="391.449" y2="301.778" />
+
+                                        <line opacity="0.3231" fill="none" stroke="#EE292F" stroke-width="2.8346" stroke-miterlimit="10" enable-background="new    " x1="168.126" y1="541.48" x2="407.736" y2="301.778" />
+
+                                        <line opacity="0.2962" fill="none" stroke="#EE292F" stroke-width="2.8346" stroke-miterlimit="10" enable-background="new    " x1="184.411" y1="541.48" x2="424.022" y2="301.778" />
+
+                                        <line opacity="0.2692" fill="none" stroke="#EE292F" stroke-width="2.8346" stroke-miterlimit="10" enable-background="new    " x1="200.698" y1="541.48" x2="440.401" y2="301.778" />
+
+                                        <line opacity="0.2423" fill="none" stroke="#EE292F" stroke-width="2.8346" stroke-miterlimit="10" enable-background="new    " x1="216.984" y1="541.48" x2="456.687" y2="301.778" />
+
+                                        <line opacity="0.2154" fill="none" stroke="#EE292F" stroke-width="2.8346" stroke-miterlimit="10" enable-background="new    " x1="233.27" y1="541.48" x2="472.973" y2="301.778" />
+
+                                        <line opacity="0.1885" fill="none" stroke="#EE292F" stroke-width="2.8346" stroke-miterlimit="10" enable-background="new    " x1="249.65" y1="541.48" x2="489.259" y2="301.778" />
+
+                                        <line opacity="0.1615" fill="none" stroke="#EE282E" stroke-width="2.8346" stroke-miterlimit="10" enable-background="new    " x1="265.935" y1="541.48" x2="505.545" y2="301.778" />
+
+                                        <line opacity="0.1346" fill="none" stroke="#EE282E" stroke-width="2.8346" stroke-miterlimit="10" enable-background="new    " x1="282.221" y1="541.48" x2="521.831" y2="301.778" />
+
+                                        <line opacity="0.1077" fill="none" stroke="#EE282E" stroke-width="2.8346" stroke-miterlimit="10" enable-background="new    " x1="298.507" y1="541.48" x2="538.21" y2="301.778" />
+
+                                        <line opacity="0.0808" fill="none" stroke="#EE282E" stroke-width="2.8346" stroke-miterlimit="10" enable-background="new    " x1="314.793" y1="541.48" x2="554.496" y2="301.778" />
+
+                                        <line opacity="0.0538" fill="none" stroke="#EE282E" stroke-width="2.8346" stroke-miterlimit="10" enable-background="new    " x1="331.079" y1="541.48" x2="570.782" y2="301.778" />
+
+                                        <line opacity="0.0269" fill="none" stroke="#EE282E" stroke-width="2.8346" stroke-miterlimit="10" enable-background="new    " x1="347.459" y1="541.48" x2="587.069" y2="301.778" />
+
+                                        <line fill="none" stroke="#EE282E" stroke-width="2.8346" stroke-miterlimit="10" stroke-opacity="0" x1="363.744" y1="541.48" x2="603.355" y2="301.778" />
+                    </g>
+                </g>
+            </g>
+        </g>
+                                        <linearGradient id="svg-normal-torque_1_" gradientUnits="userSpaceOnUse" x1="83.5759" y1="737.3301" x2="523.9241" y2="737.3301" gradientTransform="matrix(0.936 0 0 0.936 10.9054 -263.7307)">
+                                        <stop offset="0" style="stop-color:#00D7FF" />
+                                        <stop offset="1" style="stop-color:#00D7FF;stop-opacity:0" />
+        </linearGradient>
+                                        <path id="svg-normal-torque" fill="none" stroke="url(#svg-normal-torque_1_)" stroke-width="6" stroke-miterlimit="10" d="
+		M89.13,375.345h31.074c54.005,0,61.399,4.68,95.282,24.43c81.897,47.733,137.682,60.369,285.472,77.685" />
+
+                                        <g id="svg-gogoro-text" opacity="0">
+                                        <text transform="matrix(1 0 0 1 26.4177 378.8428)" fill="#FFFFFF" font-family="'Graphik-Semibold'" font-size="14.9756">Gogoro</text>
+                                        <text transform="matrix(1 0 0 1 119.1897 360.6807)" font-family="'ArialMT'" font-size="11.2317"> </text>
+                                        <text transform="matrix(1 0 0 1 119.1897 360.6807)" fill="#00D7FF" font-family="'flama-condensed-bold'" font-size="37.439">25</text>
+                                        <text transform="matrix(1 0 0 1 145.0217 360.6807)" font-family="'ArialMT'" font-size="11.2317"> </text>
+                                        <text transform="matrix(1 0 0 1 149.2522 360.6807)" fill="#00D7FF" font-family="'FlamaCondensed-Light'" font-size="11.2317"> </text>
+                                        <text transform="matrix(1 0 0 1 150.8245 360.6807)" font-family="'ArialMT'" font-size="11.2317"> </text>
+                                        <text transform="matrix(1 0 0 1 150.8918 360.6807)" fill="#00D7FF" font-family="'flama-condensed-bold'" font-size="22.4634">Nm</text>
+                                        <text transform="matrix(1 0 0 1 173.5569 360.6807)" font-family="'ArialMT'" font-size="11.2317"> </text>
+                                        <g>
+                                        <line fill="none" stroke="#FFFFFF" stroke-width="1.2977" stroke-miterlimit="10" x1="89.13" y1="375.345" x2="115.899" y2="348.483" />
+                                        <circle fill="#FFFFFF" cx="89.036" cy="375.346" r="2.808" />
+            </g>
+        </g>
+                                        <g>
+                                        <linearGradient id="svg-gogoro-torque_1_" gradientUnits="userSpaceOnUse" x1="83.5759" y1="812.0566" x2="523.7659" y2="812.0566" gradientTransform="matrix(0.936 0 0 0.936 10.9054 -263.7307)">
+                                        <stop offset="0.0041" style="stop-color:#8C8C8C;stop-opacity:0.8" />
+                                        <stop offset="1" style="stop-color:#8C8C8C;stop-opacity:0" />
+            </linearGradient>
+                                        <path id="svg-gogoro-torque" fill="none" stroke="url(#svg-gogoro-torque_1_)" stroke-width="6" stroke-miterlimit="10" d="
+			M89.13,518.269c0,0,179.894,0,187.382,0c18.72,0,30.98-35.006,65.331-38.656c46.611-4.961,72.257-7.675,159.115-2.152" />
+        </g>
+                                        <g class="svg-stronger-center-box" style="opacity: 0">
+                                        <rect x="7.384" y="275.945" opacity="0" fill="#2f2e34" enable-background="new" width="580" height="290" />
+                                        <path fill="#FFFFFF" d="M398.469,352.04v140.396h-202.17V352.04H398.469 M400.341,350.167H194.427v144.14h205.914V350.167
+			L400.341,350.167z" />
+                                        <text transform="matrix(1 0 0 1 240.6233 427.6318)" fill="#FFFFFF" font-family="'graphik-extra-light'" font-size="67.3902">212</text>
+                                        <text transform="matrix(1 0 0 1 335.1018 403.3154)" fill="#FFFFFF" font-family="'graphik-extra-light'" font-size="32.7404">.5%</text>
+                                        <text transform="matrix(1.0031 0 0 1 240.2542 468.0195)" fill="#FFFFFF" font-family="'graphik-extra-light'" font-size="29.4664">Stronger</text>
+        </g>
+    </g>
+</svg>
+                                    </div><!-- .infographic -->
+                                </div><!-- charts -->
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="acceleration-txt-wrap col-lg-4 col-lg-offset-1 col-lg-pull-6 col-md-4 col-md-offset-0 col-md-pull-8 col-sm-12 col-xs-12 max-height">
+                    <div class="vertical-center-container">
+                        <div class="vertical-center">
+
+                            <h2>First off the line</h2>
+                            <p>Instant access to 100% power torque on demand. Our digital throttle in sport mode takes riders from 0-50 km/h in 4.2 seconds. You’ll lead the pack, every time.</p>
+                            <div class="theme-toggle hidden-xs hidden-sm">
+                                <a href="javascript:void(0)" data-chart="acceleration">Acceleration</a>
+                                <a href="javascript:void(0)" data-chart="torque">Torque</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <img class="torque-fallback-image background-image fallback" src="//images.gogoroapp.com/faster-7-torque.fallback_20150415_en.png">
+                <!-- Torque -->
+                <div class="torque-txt-wrap col-lg-4 col-lg-offset-1 col-lg-pull-6 col-md-4 col-md-offset-0 col-md-pull-8 col-sm-12 col-xs-12 max-height">
+                    <div class="vertical-center-container">
+                        <div class="vertical-center">
+
+                            <h2>Born to Lead</h2>
+                            <p>Gogoro’s G1 motor serves up full torque from 0 RPM. So while gas guzzling scooters are still busy revving up their engines, you’re probably already gone.</p>
+                            <div class="theme-toggle hidden-xs hidden-sm">
+                                <a href="javascript:void(0)" data-chart="acceleration">Acceleration</a>
+                                <a href="javascript:void(0)" data-chart="torque">Torque</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!-- .module-faster-7-comparison-infographic -->
+
+    <div class="module-faster-8-control-hero module-image-hero" ng-controller="moduleFasterControlHeroController">
+        <div class="container">
+            <div class="vertical-center-container">
+                <div class="row content-overlay vertical-center">
+                    <div class="col-md-12 text-center">
+                        <h3>Total <span class="break">Control</span></h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div data-src="//gogoro.imgix.net/bgd-module-faster-8.jpg" class="imgix-fluid imgix-fluid-bg background-image"></div>
+    </div>
+
+    <div class="module-faster-9-chassis module-video-slider" ng-controller="moduleFaster9ChassisController">
+        <div class="module-video-slider-content">
+            <div class="frame-pagination"></div>
+            <div class="video-viewport-wrapper">
+                <div class="video-viewport">
+                    <video width="2560" height="600" muted preload='auto'></video>
+                </div>
+            </div>
+            <!-- frame 0 -->
+            <div class="content-wrapper frame-0 frame">
+                <div class="container">
+                    <div class="row vertical-center-flex">
+                        <div class="col-md-8 col-md-push-4 col-xs-12 fallback-image background-image-container">
+                            <img data-src="//gogoro.imgix.net/bgd-module-faster-9-1.jpg" class="faster-9-background-image">
+                        </div>
+                        <div class="col-lg-3 col-lg-offset-1 col-lg-pull-8 col-md-4 col-md-pull-8 col-md-offset-0 col-sm-10 col-sm-offset-1 col-xs-12 col-xs-offset-0 text-center-xs text-center-sm content-block">
+                            <h2>The Aeroframe<sup>™</sup> Revolution</h2>
+                            <p>Ultra lightweight. Incredibly Strong. More Agile. When no existing frame would do, we looked to the space age aluminum chassis designs revolutionizing racetracks and supercars the world-over. Then we built our own that’s 30% lighter and 2X stronger than any scooter before.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- frame 1 -->
+            <div class="content-wrapper frame-1 frame">
+                <div class="container">
+                    <div class="row vertical-center-flex">
+                        <div class="col-md-8 col-md-push-4 col-xs-12 fallback-image background-image-container">
+                            <img data-src="//gogoro.imgix.net/bgd-module-faster-9-2_20150329.jpg" class="faster-9-background-image">
+                        </div>
+                        <div class="col-lg-3 col-lg-offset-1 col-lg-pull-8 col-md-4 col-md-pull-8 col-md-offset-0 col-sm-10 col-sm-offset-1 col-xs-12 col-xs-offset-0 text-center-xs text-center-sm content-block">
+                            <h3>100% Aluminum</h3>
+                            <p>Every gram saved equals more power to the road. That added performance starts with a single stamped sheet of racing-grade aluminum alloy. We’re not only far lighter than traditional frame scooters; we’re recyclable, so our footprint is lighter too.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- frame 2 -->
+            <div class="content-wrapper frame-2 frame">
+                <div class="container">
+                    <div class="row vertical-center-flex">
+                        <div class="col-md-8 col-md-push-4 col-xs-12 fallback-image background-image-container">
+                            <img data-src="//gogoro.imgix.net/bgd-module-faster-9-3-new.jpg" class="faster-9-background-image">
+                        </div>
+                        <div class="col-lg-3 col-lg-offset-1 col-lg-pull-8 col-md-4 col-md-pull-8 col-md-offset-0 col-sm-10 col-sm-offset-1 col-xs-12 col-xs-offset-0 text-center-xs text-center-sm content-block">
+                            <h3>Stiffer</h3>
+                            <p>Our uncommonly agile ride owes its responsiveness to a remarkable Aeroframe&trade; chassis. Each component is precision bonded and heat tempered to deliver a seamless core that distributes force evenly across the frame, then right back onto the road where it belongs.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- frame 3 -->
+            <div class="content-wrapper frame-3 frame">
+                <div class="container">
+                    <div class="row vertical-center-flex">
+                        <div class="col-md-8 col-md-push-4 col-xs-12 fallback-image background-image-container">
+                            <img data-src="//gogoro.imgix.net/bgd-module-faster-9-4-new.jpg" class="faster-9-background-image">
+                        </div>
+                        <div class="col-lg-3 col-lg-offset-1 col-lg-pull-8 col-md-4 col-md-pull-8 col-md-offset-0 col-sm-10 col-sm-offset-1 col-xs-12 col-xs-offset-0 text-center-xs text-center-sm content-block">
+                            <h3>Stronger</h3>
+                            <p>City roads can be punishing so we built our chassis to take whatever comes. Engineered for incredible durability, we use fewer parts, each locking tightly into a unified whole. The result is our Aeroframe™ Aluminum Monocoque Chassis built with the same standards as the world’s most famous supercars.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- frame 4 -->
+            <div class="content-wrapper frame-4 frame">
+                <div class="container">
+                    <div class="row vertical-center-flex">
+                        <div class="col-md-8 col-md-push-4 col-xs-12 fallback-image background-image-container">
+                            <img data-src="//gogoro.imgix.net/bgd-module-faster-9-5.jpg" class="faster-9-background-image">
+                        </div>
+                        <div class="col-lg-3 col-lg-offset-1 col-lg-pull-8 col-md-4 col-md-pull-8 col-md-offset-0 col-sm-10 col-sm-offset-1 col-xs-12 col-xs-offset-0 text-center-xs text-center-sm content-block">
+                            <h3>Better</h3>
+                            <p>Every detail of our revolutionary Aeroframe™ chassis makes riding more exciting. We’ve streamlined, refined and reimagined every component to deliver what no other scooter can. You get more power, more control and a ride that’s simply more fun.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="module-faster-10-suspension" ng-controller="moduleFaster10SuspensionController">
+        <div class="timeline current-item-1">
+            <div class="timeline-control">
+                <div class="item item-one">
+                    <div class="item-one-image scooter"></div>
+                </div>
+                <div class="item item-two">
+                    <div class="item-one-image scooter"></div>
+                </div>
+                <div class="item item-three">
+                    <!--<div data-src="//gogoro.imgix.net/bgd-module-faster-10-scooter-xray.jpg" class="faster-10-standard scooter"></div>-->
+                    <!--<div data-src="//gogoro.imgix.net/bgd-module-faster-10-scooter-xray-top.png" class="faster-10-standard scooter-top"></div>-->
+                </div>
+                <div class="item item-four">
+                    <div class="item-one-image scooter"></div>
+                </div>
+                <div class="item item-five">
+                    <div class="item-one-image scooter"></div>
+                </div>
+                <div class="item item-six">
+
+                    <div class="item-six-video-wrap">
+                        <video class="standard" width="1080" height="828" autoplay loop poster="//gogoro.imgix.net/module-faster-10-scooter-xray.jpg">
+                            <!--<source src="//movies.gogoroapp.com/module-faster-10-scooter-xray.webm" type="video/webm">-->
+                            <!--<source src="//movies.gogoroapp.com/module-faster-10-scooter-xray.mp4" type="video/mp4">-->
+                            <!--Your browser does not support the video tag.-->
+                        </video>
+                    </div>
+                    <div class="item-six-image scooter fallback"></div>
+                    <!--<div data-src="//gogoro.imgix.net/bgd-module-faster-10-scooter-xray.jpg" class="faster-10-standard scooter"></div>-->
+                    <!--<div data-src="//gogoro.imgix.net/bgd-module-faster-10-scooter-xray-top.png" class="faster-10-standard scooter-top"></div>-->
+                </div>
+                <div class="content-wrapper content-1">
+                    <h2>Part Jet. <span class="break">Part Racecar.</span> <span class="break">Altogether New.</span></h2>
+                    <p>Inspired by the fastest vehicles on earth. Our high-performance suspension combines the best from jet landing gear with Formula 1 racing designs. The result is an unbelievably smooth, responsive ride that feels closer to flying than riding.</p>
+                </div>
+                <div class="content-wrapper content-2">
+                    <h2>Rear Suspension</h2>
+                    <p>Incredible control relies on constant contact with the road. Our four point race car inspired multi link suspension design maintains superior tire/road cohesion, delivering new levels of stability and control. All four points pivot in unison as you carve through traffic – never skipping a beat.</p>
+                </div>
+                <div class="content-wrapper content-3">
+                    <h2>Front Suspension</h2>
+                    <p>Inspired by aircraft landing gear, our advanced design is the innovative inverted single piston, single arm suspension in the scooter industry. You’ll feel new levels of response and control as you take on winding roads and fly through even the toughest rush hour.</p>
+                </div>
+                <div class="content-wrapper content-1 cloned content-4">
+                    <div class="text">
+                        <h2>Part Jet. <span class="break">Part Racecar.</span> <span class="break">Altogether New.</span></h2>
+                        <p>Inspired by the fastest designs on earth. Our high-performance suspension combines the best from jet landing gear with Formula 1 racing designs. The result is an unbelievably smooth, responsive ride that feels closer to flying than riding.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline-background"></div>
+            <ul class="timeline-indicator list-inline">
+                <li><i class="icon-bullet-active" data-index="0"></i></li>
+                <li><i class="icon-bullet-inactive" data-index="1"></i></li>
+                <li><i class="icon-bullet-inactive" data-index="2"></i></li>
+            </ul>
+        </div>
+
+        <div class="fallback">
+            <img data-src="//gogoro.imgix.net/bgd-module-faster-10-suspension-combined_0616.jpg" class="faster-10-fallback">
+            <div class="container container-one">
+                <div class="row row-one">
+                    <div class="col-xs-12 col-sm-10 col-sm-offset-1 copy">
+                        <h2>Part Jet. Part Racecar.</h2> <p>Altogether Inspired by the fastest vehicles on earth. Our high-performance suspension combines the best from jet landing gear with Formula 1 racing designs. The result is an unbelievably smooth, responsive ride that feels closer to flying than riding.</p>
+                    </div>
+                </div>
+            </div>
+
+            <img data-src="//gogoro.imgix.net/bgd-module-faster-10-suspension-rear-xray-new.jpg" class="faster-10-fallback">
+
+            <div class="container container-two">
+                <div class="row row-two">
+                    <div class="col-xs-12 col-sm-10 col-sm-offset-1 copy">
+                        <h2>Rear Suspension</h2>
+                        <p>Incredible control relies on constant contact with the road. Our four point race car inspired multi link suspension design maintains superior tire/road cohesion, delivering new levels of stability and control. All four points pivot in unison as you carve through traffic – never skipping a beat.</p>
+                    </div>
+                </div>
+            </div>
+
+            <img data-src="//gogoro.imgix.net/bgd-module-faster-10-suspension-front-xray-new.jpg" class="faster-10-fallback">
+
+            <div class="container container-three">
+                <div class="row row-three">
+                    <div class="col-xs-12 col-sm-10 col-sm-offset-1 copy">
+                        <h2>Front Suspension</h2>
+                        <p>Inspired by aircraft landing gear, our advanced design is the first inverted single piston, single arm suspension in the scooter industry. You’ll feel new levels of response and control as you take on winding roads and fly through even the toughest rush hour.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div><!-- module-faster-10-suspension -->
+
+    <div class="module-faster-11-compound-tire" ng-controller="moduleFaster11CompoundTireController">
+        <div class="background-image">
+            <img class="imgix-fluid active" data-src="//gogoro.imgix.net/bgd-module-faster-11-front-blue.jpg">
+            <img class="imgix-fluid" data-src="//gogoro.imgix.net/bgd-module-faster-11-front.jpg">
+        </div>
+        <div class="container">
+            <div class="row vertical-center-flex">
+                <div class="col-lg-3 col-lg-offset-1 col-md-4 col-md-offset-0 col-sm-10 col-sm-offset-1">
+                    <h2>Hybrid Racing Tires</h2>
+                    <p>Our tires are a dual compound design innovation. The harder rubber along the center reduces friction, increasing energy efficiency. Softer rubber with a custom Gogoro® designed tread on the sides provide better traction in turns. They grab. They Go. You fly.</p>
+                    <div class="partnership">
+                        <p>Performance Tires by</p>
+                        <img src="//images.gogoroapp.com/logo-maxxis-bw.png" width="30" height="16" class="logo logo-maxxis">
+                    </div>
+                </div>
+                <div class="col-md-2 col-md-offset-5 descriptions">
+                    <div class="center">
+                        <div class="line"></div>
+                        <p><strong>Center</strong></p>
+                        <p>Energy Efficient Silica Rubber. Go faster and farther.</p>
+                    </div>
+                    <div class="edge">
+                        <div class="line"></div>
+                        <p><strong>Edges</strong></p>
+                        <p>Softer Rubber with Gogoro Tread. Turn sharper and safer.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="module-faster-12-13-balance-lean-angle">
+        <div class="container-fliud">
+            <div class="row">
+                <div class="col-sm-6 col-xs-12 balanced">
+                    <div class="padding">
+                        <h2>Balanced</h2>
+                        <img src="//images.gogoroapp.com/module-faster-12-13-balanced.svg">
+                        <p>We designed everything around you. Sitting in perfectly balanced weight distribution, riders experience the most natural handling imaginable. Your Gogoro® becomes an extension of you.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-xs-12 agile">
+                    <div class="padding">
+                        <h2>Agile</h2>
+                        <img src="//images.gogoroapp.com/module-faster-12-13-agile.svg">
+                        <p>Lean into those turns. Our streamlined design has no tail pipes and external gearboxes to worry about. You can hit amazing 45&deg; angles for faster, funner turns.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="module-faster-14-aerodynamic-design" ng-controller="moduleFaster14AerodynamicDesignController">
+        <div class="background-image">
+            <img class="imgix-fluid" data-src="//gogoro.imgix.net/bgd-module-faster-14.jpg">
+        </div>
+        <div class="container">
+            <div class="row vertical-center-flex">
+                <div class="col-lg-3 col-md-4 col-md-offset-8 col-sm-10 col-sm-offset-1">
+                    <h2>Slipstream</h2>
+                    <p>Our aerodynamic body cuts through the wind effortlessly. Crafted with the latest aerospace analysis tools, we make sure it does. Take off with maximum efficiency.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="module-faster-15-waterproof" ng-controller="moduleFaster15WaterproofController">
+        <div class="video">
+            <video width="2560" height="600" muted preload='auto' loop autoplay>
+                <!--source src="//movies.gogoroapp.com/module-faster-15-waterproof.mp4" type="video/mp4">
+                <source src="//movies.gogoroapp.com/module-faster-15-waterproof.webm" type="video/webm"-->
+            </video>
+        </div>
+        <div class="fallback-image">
+            <img class="faster-15-fallback" data-src="//images.gogoroapp.com/Meet_Gogoro_Faster_stormproof.fallback.jpg">
+        </div>
+        <div class="container content-overlay">
+            <div class="row">
+                <div class="col-lg-3 col-lg-offset-1 col-md-4 col-md-offset-0 col-sm-10 col-sm-offset-1 col-xs-12 col-xs-offset-0">
+                    <h2>High and Dry</h2>
+                    <p>
+                        A little water shouldn’t slow you down. Our entire drivetrain is waterproofed to IPX7 standards – that just means it won’t back down to even the worst weather. Storms? Floods? Ride on; we’ll get you through.
+                        <span class="sample-note">This diagram is for reference only.</span>
+                    </p>
+                    <img src="//images.gogoroapp.com/icon-30-cm.png" class="water-level" width="100" height="100">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="module-faster-16-design-ethos" ng-controller="moduleFaster16DesignEthosController">
+        <div class="container">
+            <div class="background-image">
+                <img class="imgix-fluid" data-src="//gogoro.imgix.net/bgd-module-faster-16.jpg">
+            </div>
+
+            <div class="row">
+                <div class="col-lg-5 col-lg-offset-1 col-md-6 col-md-offset-0 col-sm-10 col-sm-offset-1">
+                    <strong>Our Design Ethos:</strong>
+                    <h2>Start From Scratch</h2>
+                </div>
+                <div class="col-lg-5 col-md-6 col-md-offset-0 col-sm-10 col-sm-offset-1">
+                    <p>Every part is a first of its kind. Piece by piece, we designed it all from scratch. We believe to reinvent an entire industry everything has to be reimagined.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><!-- #faster -->

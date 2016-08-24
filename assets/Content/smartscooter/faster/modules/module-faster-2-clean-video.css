@@ -1,0 +1,93 @@
+/* ====================================
+   Site colors
+   ==================================== */
+/*
+   Brand colors
+   ====================================
+   White / Light Gray = Fresh and Clean Charcoal / Gray / Dark Gray = Bold and Direct Rich Blue = Performance
+   Blue = Experience
+   Teal = Style
+   Dark Green = Value
+   Green = Eco / Environment
+   Hot Green = Community
+   Red = Warning
+*/
+/* ====================================
+ * Mixins and functions
+ * ==================================== */
+/* Media queries
+ * ==================================== */
+/* Usage: @include breakpoint(sm) {} */
+/* Mixins and functions
+ * ==================================== */
+/* Usage: @include linearGradient() {} */
+/* Usage: @include placeholder() {} */
+/* Usage: @include border-radius(5px) */
+/* Usage: @include opacity(0.8) */
+/* Usage: @include center-block */
+/* Usage: @include text-truncate  */
+/* Extends
+ * ==================================== */
+/* Variables
+ * ==================================== */
+/* Mixins and functions
+ * ==================================== */
+
+.module-faster-2-clean-video {
+    position: relative;
+    background: #000;
+    text-align: center;
+}
+.module-faster-2-clean-video {
+    /*background-image: url(//images.gogoroapp.com/module-faster-2.jpg);*/
+    /*background-repeat: no-repeat;*/
+    /*background-position: 50%;*/
+    /*background-size: cover;*/
+}
+.module-faster-2-clean-video .fallback {
+    display: none;
+}
+.module-faster-2-clean-video .btn-translucent {
+    display: none;
+    position: absolute;
+    width: 270px;
+    bottom:15%;
+    left: 50%;
+    margin-left: -135px;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .module-faster-2-clean-video {
+        background-image: none;
+        height: auto;
+    }
+    .module-faster-2-clean-video img.fallback {
+        display: block;
+    }
+    .module-faster-2-clean-video img.standard {
+        display: none;
+    }
+    .module-faster-2-clean-video .btn-translucent {
+        display: block;
+    }
+    .module-faster-2-clean-video .video_hero{
+        display: none;
+    }
+}
+@media (max-width: 767px) {
+    .module-faster-2-clean-video {
+        background-image: none;
+        height: auto;
+    }
+    .module-faster-2-clean-video img.fallback {
+        display: block;
+    }
+    .module-faster-2-clean-video img.standard {
+        display: none;
+    }
+    .module-faster-2-clean-video .btn-translucent {
+        display: block;
+    }
+    .module-faster-2-clean-video .video_hero{
+        display: none;
+    }
+}

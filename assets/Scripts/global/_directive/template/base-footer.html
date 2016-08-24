@@ -1,0 +1,49 @@
+﻿<footer id="main-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+
+                <a href="{{$root.gogoro.wwwGogoroUrl}}contact" class="btn margin-bottom-100">{{lang=='zh-tw'?'聯絡我們':'Contact Us'}}</a>
+
+                <social-icons icon-color="white"></social-icons>
+                
+                <div class="disclaimer">
+
+                    <!-- disclaimer 中文版本 -->
+                    <p ng-show="lang=='zh-tw'" >
+                        本網站所提供之圖片、數據及規格等資料僅供參考。Gogoro 保有隨時改變Smartscooter&trade;智慧雙輪和其他產品之設計以及規格的權利。Gogoro亦保留隨時對車款及產品出售與否及其內容記載變更之權利。
+                        任何於本網站所提及之效能數據、測試結果或騎乘距離等，均可能因其他因素（包括但不限於：個人騎乘行為或使用習慣、騎士人數及重量、道路狀況、道路速限、天候狀況、風速大小等因素）之影響而造成結果有所差異。
+                        相關測試情境，請參考<a href="{{$root.gogoro.wwwGogoroUrl}}smartscooter/specs">規格比較表</a>。
+                    </p>
+
+                    <!-- disclaimer 英文版本 -->
+                    <p ng-show="lang=='en-tw' || lang=='en'">
+                        Any photos, data and specifications provided on this Site are for reference only. Gogoro reserves the right to make changes at any time to the design and specifications of Gogoro Smartscooter&trade; EV and other products.  Gogoro also reserves the right from time to time to sell or not any specific model and products and make changes to the content set forth here for any model and products.
+                        Any efficiency data, test results or riding distance mentioned on this Site may vary due to many factors including, without limitation, rider’s riding behaviors or habits, number of rider, rider’s weight, road conditions, speed limit, weather and wind speed.
+                        With regard to test conditions, please refer to <a href="{{$root.gogoro.wwwGogoroUrl}}smartscooter/specs">comparison sheet</a>.
+                        
+                    </p>
+                </div>
+
+                <p>
+                    <img src="//images.gogoroapp.com/gogoro-r.png" alt="Gogoro&trade;" width="60" height="14" class="gogoro-logo">
+                </p>
+
+                <!-- Copyright 中文版本 -->
+                <p ng-show="lang=='zh-tw'" class="margin-0">
+                    <span>
+                        Copyright &copy; 2014-2016 Gogoro Inc.著作權所有，並保留一切權利。
+                        <br><a href="{{$root.gogoro.wwwGogoroUrl}}terms-of-use/">使用條款</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="{{$root.gogoro.wwwGogoroUrl}}privacy-policy/">隱私權政策</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="{{$root.gogoro.storeGogoroUrl}}legal">網路商店條款及合約</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="{{$root.gogoro.storeGogoroUrl}}support">購物須知</a>
+                    </span>
+                </p>
+
+                <!-- Copyright 英文版本 -->
+                <p ng-show="lang=='en-tw' || lang=='en'" class="margin-0" >
+                    Copyright &copy; 2014-2016 Gogoro Inc. All rights reserved.
+                    <br><a href="{{$root.gogoro.wwwGogoroUrl}}terms-of-use/">Terms of use</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="{{$root.gogoro.wwwGogoroUrl}}privacy-policy/">Privacy Policy</a>
+                </p>
+
+            </div>
+        </div>
+    </div>
+</footer>

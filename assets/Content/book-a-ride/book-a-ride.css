@@ -1,0 +1,36 @@
+﻿
+#book-a-ride {
+    margin-top:80px;
+    margin-bottom:100px;
+}
+
+
+
+
+/* iPad in portrait */
+@media only screen and (max-device-width : 1024px)  {
+    #book-a-ride {
+        margin-top:0px;
+    }
+}
+
+
+
+
+
+
+
+.book-a-ride_titlebanner h2 {
+  
+    color:#e1ff32;
+}
+
+.book-a-ride_titlebanner{
+  background-color:#323237;
+  padding-top:25px;
+  padding-bottom:10px;
+
+  margin-top:50px;
+  margin-bottom:50px;
+
+  }

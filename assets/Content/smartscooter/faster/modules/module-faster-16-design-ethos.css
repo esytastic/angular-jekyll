@@ -1,0 +1,70 @@
+/* ====================================
+   Site colors
+   ==================================== */
+/*
+   Brand colors
+   ====================================
+   White / Light Gray = Fresh and Clean Charcoal / Gray / Dark Gray = Bold and Direct Rich Blue = Performance
+   Blue = Experience
+   Teal = Style
+   Dark Green = Value
+   Green = Eco / Environment
+   Hot Green = Community
+   Red = Warning
+*/
+/* ====================================
+ * Mixins and functions
+ * ==================================== */
+/* Media queries
+ * ==================================== */
+/* Usage: @include breakpoint(sm) {} */
+/* Mixins and functions
+ * ==================================== */
+/* Usage: @include linearGradient() {} */
+/* Usage: @include placeholder() {} */
+/* Usage: @include border-radius(5px) */
+/* Usage: @include opacity(0.8) */
+/* Usage: @include center-block */
+/* Usage: @include text-truncate  */
+/* Extends
+ * ==================================== */
+/* Variables
+ * ==================================== */
+/* Mixins and functions
+ * ==================================== */
+.module-faster-16-design-ethos {
+  overflow: hidden;
+  color: #323237;
+  background-color: #e6e5e3; }
+  .module-faster-16-design-ethos .container {
+    padding-top: 48px;
+    padding-bottom: 96px; }
+    @media (min-width: 768px) and (max-width: 991px) {
+      .module-faster-16-design-ethos .container {
+        padding-top: 48px;
+        padding-bottom: 48px; } }
+    @media (max-width: 767px) {
+      .module-faster-16-design-ethos .container {
+        padding-top: 0;
+        padding-bottom: 48px; } }
+    .module-faster-16-design-ethos .container strong {
+      display: block;
+      margin-bottom: 6px; }
+    .module-faster-16-design-ethos .container h2 {
+      margin: 0; }
+      @media (min-width: 768px) and (max-width: 991px) {
+        .module-faster-16-design-ethos .container h2 {
+          margin-bottom: 24px; } }
+      @media (max-width: 767px) {
+        .module-faster-16-design-ethos .container h2 {
+          margin-bottom: 24px; } }
+    .module-faster-16-design-ethos .container p {
+      margin: 0; }
+  .module-faster-16-design-ethos .background-image {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 24px; }

@@ -1,0 +1,33 @@
+.module-charger-7-connected {
+	height: 900px;
+	position: relative;
+}
+.module-charger-7-connected .beams {
+
+}
+.module-charger-7-connected .base {
+	position: absolute;
+	height: 900px;
+	width: auto;
+	bottom: 0;
+	left: 50%;
+	margin-left: -405px;
+	z-index: -1;
+}
+.module-charger-7-connected .base-full {
+	opacity: 0;
+}
+.module-charger-7-connected h2 {
+	text-align: center;
+    margin-top: 120px;
+}
+@media (max-width: 767px) {
+	.module-charger-7-connected {
+		height: auto;
+	}
+	.module-charger-7-connected h2 {
+		text-align: center;
+		margin: 31px 0 16px;
+		font-weight: bold;
+	}
+}

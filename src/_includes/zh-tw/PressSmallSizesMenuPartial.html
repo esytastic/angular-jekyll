@@ -1,0 +1,14 @@
+<section class="navigation-topbar visible-sm visible-xs">
+    <div class="container">
+        <div id="page-navigation" class="row">
+            <ul class="nav nav-pills-gogoro">
+                <li {% if page.action == 'index' %} class="active" {% endif %}><a href="/tw/press/">新聞稿</a></li>
+                <li {% if page.action == 'global' %} class="active" {% endif %}><a href="/tw/press/globalnews/">國際媒體報導</a></li>
+                <li {% if page.action == 'news' %} class="active" {% endif %}><a href="/tw/press/news-coverage/">媒體報導</a></li>
+                <li {% if page.action == 'gallery' %} class="active" {% endif %}><a href="/tw/press/gallery/">圖片下載</a></li>
+                <li {% if page.action == 'videos' %} class="active" {% endif %}><a href="/tw/press/videos/">影片下載</a></li>
+                <li {% if page.action == 'media' %} class="active" {% endif %}><a href="/tw/press/media-kit/">媒體檔案</a></li>
+            </ul>
+        </div>
+    </div>
+</section>

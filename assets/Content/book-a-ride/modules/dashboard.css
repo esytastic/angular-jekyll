@@ -1,0 +1,107 @@
+﻿#book-a-ride {
+
+}
+
+#book-a-ride  .dashboard{
+    width:100%;
+    height:120px;
+
+
+}
+#book-a-ride  .dashboard .dashboard-wrap{
+    width:100%;
+    height:120px;
+    background-color:#323237;
+
+        /*-webkit-transition: all 1s linear;
+    -moz-transition: all 1s linear;
+    -ms-transition: all 1s linear;
+    -o-transition: all 1s linear;
+    transition: all 1s linear;*/
+}
+#book-a-ride  .dashboard .dashboard-wrap.green{
+    background-color:#c0df16;
+}
+
+#book-a-ride  .dashboard .dashboard-wrap.fixed{
+    position:fixed;
+    top:0px;
+    z-index: 901; /* .main-header is 900 */
+}
+
+#book-a-ride  .dashboard .container{
+    height:100%;
+    position:relative;
+}
+
+#book-a-ride  .dashboard .container .title-container,
+#book-a-ride  .dashboard .container .info-container,
+#book-a-ride  .dashboard .container .steps-container
+{
+    position:absolute;
+    top:0;
+    left:0;
+    height:100%;
+}
+#book-a-ride  .dashboard .container .title-container
+{
+    background-color:#323237;
+}
+#book-a-ride  .dashboard .container .title-container h2{
+    color:#e1ff32;
+}
+
+#book-a-ride  .dashboard .container .info-container{
+    background-color:transparent;
+     /*background-color:#c0df16;*//* green */
+}
+#book-a-ride  .dashboard .container .info-container h2{
+    color:#323237;
+}
+
+#book-a-ride  .dashboard .container .steps-container
+{
+    background-color:transparent;
+}
+#book-a-ride  .dashboard .container .steps-container ul
+{
+    list-style:none;
+    margin:0;
+    padding:0;
+    height:100%;
+}
+#book-a-ride  .dashboard .container .steps-container ul li
+{
+    float:left;
+    width:200px;
+    height:100%;
+    border-right:2px solid #000000;
+    padding-left:26px;
+    padding-top:46px;
+    padding-right:5px;
+}
+#book-a-ride  .dashboard .container .steps-container ul li cite
+{
+    display:block;
+    color:#b9bcbf;
+    font-size:12px;
+}
+#book-a-ride  .dashboard .container .steps-container ul li strong
+{
+    display:block;
+    color:#e1ff32;
+    line-height:20px;
+}
+#book-a-ride  .dashboard .container .steps-container ul li strong.first
+{
+    display:block;
+    color:#b9bcbf;
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+@media (max-width: 767px) {
+
+}

@@ -1,0 +1,211 @@
+---
+style: |
+    <link rel="stylesheet" href="/css/campus.css">
+scripts: |
+    <script type="text/javascript">
+        var apiUrl = "http://formspree.io/matt@roamandwander.com";
+    </script>
+    <script src="/js/campus.js"></script>
+layout: zh-tw/LayoutMaster
+---
+
+<div class="pg-contact" data-state="Career">
+    <section id="hero-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">
+                    <h1>Careers</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="main-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7 col-md-offset-3 col-xs-12">
+                    <div id="contact-form-container">
+                        <p class="font01">請填寫以下欄位，若有合適職缺，我們會儘快跟您連絡！</p>
+                        <form action="#" method="post" accept-charset="utf-8" id="contact-form">
+                            <div class="form-group">
+                                <label for="contact-name-first">姓名</label>
+                                <input type="text" name="names" value="" class="form-control" id="names" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="contact-name-first">英文姓名</label>
+                                <input type="text" name="english_names" value="" class="form-control" id="english_names" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="contact-name-first">性別</label>
+                                <input type="text" name="gender" value="" class="form-control" id="gender" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="contact-name-first">電話</label>
+                                <input type="text" name="phones" value="" class="form-control" id="phones" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="contact-email-address" class="margin-top-20">電子郵件信箱（私人為佳）</label>
+                                <input type="email" name="email" value="" placeholder="" class="form-control" id="email" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="contact-company" class="margin-top-20">學校</label>
+                                <input type="text" name="schools" value="" class="form-control" id="schools" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="contact-company" class="margin-top-20">系所</label>
+                                <input type="text" name="faculties" value="" class="form-control" id="faculties" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="margin-top-20">身份</label>
+                                <div class="radio">
+                                    <label class="radio-inline">
+                                        <input id="identities" name="identities" class="control-checkbox" value="1" type="radio" checked />&nbsp;學生
+                                    </label>
+                                    <label class="radio-inline">
+                                        <input id="identities" name="identities" class="control-checkbox" value="2" type="radio" />&nbsp;上班族
+                                    </label>
+                                    <label class="radio-inline">
+                                        <input id="identities" name="identities" class="control-checkbox" value="3" type="radio" />&nbsp;待業
+                                    </label>
+                                    <label class="radio-inline">
+                                        <input id="identities" name="identities" class="control-checkbox" value="4" type="radio" />&nbsp;其他
+                                    </label>
+                                    <label class="radio-inline">
+                                        <input type="text" name="identity_other" value="" class="form-control" id="identity_other">
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="contact-company" class="margin-top-20">我們想要更認識你（多選）</label>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-lg-11 col-md-10 col-sm-8 col-xs-10"><label for="question-01" class="margin-top-20">有我在的地方總是充滿活力與笑聲</label></div>
+                                    <div class="col-lg-1 col-md-2 col-sm-4 col-xs-2 control-checkbox-div"><input id="question-01" class="form-control control-checkbox" type="checkbox" /></div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-lg-11 col-md-10 col-sm-8 col-xs-10"><label for="question-02" class="margin-top-20">面對困難與挑戰時我總是能找到學習成長的契機</label></div>
+                                    <div class="col-lg-1 col-md-2 col-sm-4 col-xs-2 control-checkbox-div"><input id="question-02" class="form-control control-checkbox" type="checkbox" /></div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-lg-11 col-md-10 col-sm-8 col-xs-10"><label for="question-03" class="margin-top-20">我勇於挑戰權威</label></div>
+                                    <div class="col-lg-1 col-md-2 col-sm-4 col-xs-2 control-checkbox-div"><input id="question-03" class="form-control control-checkbox" type="checkbox" /></div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-lg-11 col-md-10 col-sm-8 col-xs-10"><label for="question-04" class="margin-top-20">我不喜歡一成不變的工作</label></div>
+                                    <div class="col-lg-1 col-md-2 col-sm-4 col-xs-2 control-checkbox-div"><input id="question-04" class="form-control control-checkbox" type="checkbox" /></div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-lg-11 col-md-10 col-sm-8 col-xs-10"><label for="question-05" class="margin-top-20">我很擅長協助並激勵他人</label></div>
+                                    <div class="col-lg-1 col-md-2 col-sm-4 col-xs-2 control-checkbox-div"><input id="question-05" class="form-control control-checkbox" type="checkbox" /></div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-lg-11 col-md-10 col-sm-8 col-xs-10"><label for="question-06" class="margin-top-20">我是一個非常自律的人</label></div>
+                                    <div class="col-lg-1 col-md-2 col-sm-4 col-xs-2 control-checkbox-div"><input id="question-06" class="form-control control-checkbox" type="checkbox" /></div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-lg-11 col-md-10 col-sm-8 col-xs-10"><label for="question-07" class="margin-top-20">我喜歡冒險以及嘗試未知或別人沒做過的事</label></div>
+                                    <div class="col-lg-1 col-md-2 col-sm-4 col-xs-2 control-checkbox-div"><input id="question-07" class="form-control control-checkbox" type="checkbox" /></div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-lg-11 col-md-10 col-sm-8 col-xs-10"><label for="question-08" class="margin-top-20">我總是能放下自我的堅持為大局著想</label></div>
+                                    <div class="col-lg-1 col-md-2 col-sm-4 col-xs-2 control-checkbox-div"><input id="question-08" class="form-control control-checkbox" type="checkbox" /></div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-lg-11 col-md-10 col-sm-8 col-xs-10"><label for="question-09" class="margin-top-20">對未來, 我已有一個非常憧憬的夢想</label></div>
+                                    <div class="col-lg-1 col-md-2 col-sm-4 col-xs-2 control-checkbox-div"><input id="question-09" class="form-control control-checkbox" type="checkbox" /></div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-lg-11 col-md-10 col-sm-8 col-xs-10"><label for="question-10" class="margin-top-20">我喜歡團隊合作勝於獨立作業</label></div>
+                                    <div class="col-lg-1 col-md-2 col-sm-4 col-xs-2 control-checkbox-div"><input id="question-10" class="form-control control-checkbox" type="checkbox" /></div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-lg-9 col-md-9 col-sm-8 col-xs-7"><label for="contact-company" class="margin-top-20">你是否願意收到來自Gogoro更多的產品資訊和活動訊息？</label></div>
+                                    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-5 control-checkbox-div">
+                                        <div class="control-radio-main">
+                                            <label class="control-radio-div" for="participate">&nbsp;&nbsp;N</label>
+                                            <div class="control-radio-div"><input id="participate" name="participate" class="control-checkbox" value="N" type="radio" /></div>
+                                            <label class="control-radio-div" for="participate">&nbsp;&nbsp;Y</label>
+                                            <div class="control-radio-div"><input id="participate" name="participate" class="control-checkbox" value="Y" type="radio" checked /></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="contact-recommendations" class="margin-top-20">其他建議 / 希望職缺</label>
+                                <textarea type="text" name="recommendations" value="" placeholder="" class="form-control" style="width:100%; height:100px;" id="recommendations"></textarea>
+                            </div>
+                            <hr>
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-lg-11 col-md-10 col-sm-8 col-xs-10 margin-top-10"><label for="declaration" class="checkbox">本人已確實閱讀並同意「<a href="/tw/career/2015campus-consent" target="_blank" class="checkbox">個人資料蒐集、處理及利用同意書</a>」之所有內容</label></div>
+                                    <div class="col-lg-1 col-md-2 col-sm-4 col-xs-2 control-checkbox-div">
+                                        <input id="declaration" name="declaration" class="form-control control-checkbox" type="checkbox" />
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <input type="submit" class="btn btn-outline margin-top font01" id="contact-form-submit" value="送出">
+                            </div>
+
+                        </form>
+
+                        <div class="modal fade" id="campus-form-sent" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                        <h3 class="font01">已成功送出</h3>
+                                        <p class="font01">謝謝！</p>
+                                        <a href="#" id="modal-close-btn" class="btn btn-outline btn-sm margin-top" data-dismiss="modal">Okay</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div><!--/.col-md-7 -->
+            </div><!--/.row -->
+        </div><!--/.container -->
+    </section><!--/.main-section -->
+</div>

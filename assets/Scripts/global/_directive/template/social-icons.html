@@ -1,0 +1,42 @@
+﻿<div id="footerSocialBar" ng-class="{'social-white':color=='white','social-black':color=='black'}">
+    <style>
+        #footerSocialBar.social-white{
+            margin-bottom: 20px;
+        }
+        #footerSocialBar.social-white ul{
+            text-align: center;
+        }
+
+        #footerSocialBar.social-black {
+            text-align: left;
+            margin-bottom: 0;
+        }
+        #footerSocialBar.social-black ul{
+            text-align: left;
+            margin-left: -10px;
+        }
+    </style>
+    <ul>
+        <li>
+            <a href="https://www.facebook.com/Gogoro/?fref=ts" target="_blank"><i class="gicon" ng-class="icons['facebook']"></i></a>
+        </li>
+        <li>
+            <a href="https://www.youtube.com/user/GogoroChannel" target="_blank"><i class="gicon" ng-class="icons['youtube']"></i></a>
+        </li>
+        <li>
+            <a href="https://www.linkedin.com/company/gogoro" target="_blank"><i class="gicon" ng-class="icons['linkedin']"></i></a>
+        </li>
+        <li>
+            <a href="https://twitter.com/gogoronews" target="_blank"><i class="gicon" ng-class="icons['twitter']"></i></a>
+        </li>
+        <li>
+            <a href="{{$root.gogoro.wwwGogoroUrl}}blog/"><i class="gicon" ng-class="icons['blog']"></i></a>
+        </li>
+        <li>
+            <a href="//www.gogoro.com/tw/tagboard/"><i class="gicon" ng-class="icons['hashtag']"></i></a>
+        </li>
+        <li>
+            <a href="https://instagram.com/gogoro_taiwan/"><i class="gicon" ng-class="icons['insta']"></i></a>
+        </li>
+    </ul>
+</div>

@@ -1,0 +1,260 @@
+﻿
+
+    /*Search nearby GoStations*/
+
+@media (min-width: 1120px) {
+    #basic-waypoint .GoStaion_AllYou{
+        position: absolute;
+        left: 50%;
+        margin-left: -115px; top: 50%;
+        margin-top: -55px;
+    }
+
+    #basic-waypoint .GoStaion_AllYou2{
+        position: absolute;
+        left: 50%;
+        margin-left: -154px;
+        opacity: 0; top: 50%;
+        margin-top: -30px;
+    }
+}
+
+
+@media (min-width: 992px) and (max-width: 1199px) {
+     #basic-waypoint .GoStaion_AllYou{
+        position: absolute;
+        left: 50%;
+        margin-left: -115px; top: 50%;
+        margin-top: -55px;
+    }
+
+    #basic-waypoint .GoStaion_AllYou2{
+        position: absolute;
+        left: 50%;
+        margin-left: -154px;
+        opacity: 0; top: 50%;
+        margin-top: -30px;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    #basic-waypoint .GoStaion_AllYou{
+        opacity: 1 !important;
+    }
+
+    #basic-waypoint .GoStaion_AllYou2{
+
+        opacity: 1 !important;
+
+    }
+}
+
+@media (max-width: 767px) {
+       #basic-waypoint .GoStaion_AllYou{
+
+            opacity: 1 !important;
+    }
+
+    #basic-waypoint .GoStaion_AllYou2{
+
+        opacity: 1 !important;
+
+    }
+
+
+}
+
+
+
+
+
+
+/*加入能源網路*/
+
+#latest-positions statement vertical-center-container {
+    border-bottom:0px solid #000;
+}
+
+
+
+
+
+.tabHide {
+    display:none;
+}
+
+
+
+
+
+
+
+/*ChoiceMap*/
+.StationTabMain {
+    position:relative;
+}
+
+
+    .choiceStaionBar {
+        width:100%;
+
+
+        text-align:center;
+        padding:35px 0px 35px 0px ;
+        border-bottom-width:0px;
+
+    }
+
+        .choiceStaionBar a {
+            border-bottom-width:0px;
+        }
+
+
+@media (min-width: 1120px) {
+    .StationTabMain {
+        height:800px;
+        background-color:#fff;
+    }
+
+    .StationTab1 {
+        height:800px;
+        width:100%;
+        background-image:url(//images.gogoroapp.com/faq/GoS_coverageP1.png);
+        background-position:center;
+    }
+
+      .StationTab2 {
+           height:800px;
+        width:100%;
+        background-image:url(//images.gogoroapp.com/faq/GoS_coverageP2.png);
+        background-position:center;
+    }
+
+        .StationTab3 {
+        height:800px;
+        width:100%;
+        background-image:url(//images.gogoroapp.com/faq/GoS_coverageP3.png);
+        background-position:center;
+    }
+
+
+
+
+    .choiceStaionBar {
+          background-color:rgba(255,255,255,0.85);
+     position:absolute;
+     bottom:0px;
+       }
+}
+
+
+@media (min-width: 992px) and (max-width: 1199px) {
+        .StationTabMain {
+        height:800px;
+        background-color:#ff6a00;
+    }
+
+      .StationTab1 {
+        height:800px;
+        width:100%;
+        background-image:url(//images.gogoroapp.com/faq/GoS_coverageP1.png);
+        background-position:center;
+    }
+
+      .StationTab2 {
+           height:800px;
+        width:100%;
+        background-image:url(//images.gogoroapp.com/faq/GoS_coverageP2.png);
+        background-position:center;
+    }
+
+        .StationTab3 {
+        height:800px;
+        width:100%;
+        background-image:url(//images.gogoroapp.com/faq/GoS_coverageP3.png);
+        background-position:center;
+    }
+
+
+      .choiceStaionBar {
+            background-color:rgba(255,255,255,0.85);
+     position:absolute;
+     bottom:0px;
+       }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+     .StationTabSmall {
+         height:auto;
+         width:100%;
+
+    position:relative;
+    }
+
+
+   .choiceStaionBar {
+    background-color:rgba(255,255,255,1);
+     position:relative;
+
+       }
+}
+
+@media (max-width: 767px) {
+         .StationTabSmall {
+
+    }
+
+      .choiceStaionBar {
+     background-color:rgba(255,255,255,1);
+     position:relative;
+
+       }
+
+
+}
+
+
+
+
+/*尋找最近的Gostation*/
+#career #nearbyGoStations {
+    background-color: #0069d2;
+    height:auto;
+    padding:50px 0px 50px 0px;
+}
+
+    #career #nearbyGoStations .container h2 {
+color:#fff;
+    }
+
+
+
+.goStaion__googleMap{
+    height:200px;
+}
+
+@media (min-width: 1120px) {
+
+}
+
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  #career #nearbyGoStations .container h2 {
+        font-size:3.3rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+        #career #nearbyGoStations .container h2 {
+        font-size:3rem;
+    }
+}
+
+@media (max-width: 767px) {
+        #career #nearbyGoStations .container h2 {
+
+    }
+
+
+}

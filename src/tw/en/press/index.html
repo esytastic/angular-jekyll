@@ -1,0 +1,43 @@
+---
+layout: en-tw/LayoutMaster
+style: |
+    <link rel="stylesheet" href="/css/press.css">
+scripts: |
+    <script src="/js/press.js"></script>
+action: index
+---
+
+<div class="pg-press" data-state="Press">
+    <section id="hero-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">
+                    <h1>Press</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {% include en-tw/PressSmallSizesMenuPartial.html %}
+
+    <section class="main-section" data-state="Press">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-md-offset-0 col-sm-10 col-sm-offset-1 hidden-sm hidden-xs press-sidebar">
+                    {% include en-tw/PressLargeSizesMenuPartial.html %}
+                </div>
+
+                <div class="col-md-7 col-md-offset-0 col-xs-12 press-main">
+                    {% for post in site.data['en-tw'].press %}
+                        <article>
+                            <p><strong>{{ post.date }}</strong></p>
+                            <h2>{{ post.title }}</h2>
+                            <p>{{ post.description }}</p>
+                            <p><a href="{{ post.url }}" class="btn btn-text-gray angle-right">Read More</a></p>
+                        </article>
+                    {% endfor %}
+                </div><!--/.col-md-7 -->
+            </div><!--/.row -->
+        </div><!--/.container -->
+    </section><!--/.main-section -->
+</div>

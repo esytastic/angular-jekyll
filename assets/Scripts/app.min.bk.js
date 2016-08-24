@@ -1,0 +1,1518 @@
+(function ($, global) {
+    'use strict';
+
+    global.gogoro = global.gogoro || {};
+    global.gogoro.partials = global.gogoro.partials || {};
+    global.gogoro.partials.Footer = Footer;
+
+    function Footer() {
+        // Collapse toggle
+        $('a[data-toggle=\'collapse\']').on('touchstart click', function (e) {
+            e.preventDefault();
+        });
+
+        // Open email sign up modal
+        $('.email-sign-up-trigger').on('touchstart click', function (e) {
+            e.preventDefault();
+            $('#email-sign-up').modal('toggle');
+        });
+
+        // Center email sign up modal
+        $('#email-sign-up').on('show.bs.modal', function () {
+            centerModal(this);
+
+            emailSignUpValidation();
+
+            $('#email-sign-up .close').on('touchstart click', function () {
+                $('#email-sign-up').modal('hide');
+            });
+
+            // Reset form
+            $('#email-sign-up-form').data('bootstrapValidator').resetForm();
+        });
+
+        $('.modal').on('hidden.bs.modal', function (e) {
+            $('#email-sign-up .close').unbind();
+        });
+
+        $(window).on('resize', function () {
+            $('.modal:visible').each(centerModal);
+        });
+    }
+
+    function emailSignUpValidation() {
+        $('#email-sign-up-submit').on('touchstart click', function (e) {
+            e.preventDefault();
+
+            var $this = $(this);
+            var $form = $this.parents('form');
+
+            $form.submit();
+        });
+
+        // Form validation
+        $('#email-sign-up-form').bootstrapValidator({
+            fields: {
+                email: {
+                    trigger: 'blur',
+                    validators: {
+                        notEmpty: {
+                            message: 'Your email is required and cannot be empty'
+                        },
+                        emailAddress: {
+                            message: 'Your email address is not a valid'
+                        }
+                    }
+                }
+            }
+        }).on('success.form.bv', function (e) {
+            // Prevent form submission
+            e.preventDefault();
+
+            // Get the form instance
+            var $form = $(e.target);
+
+            // Get the BootstrapValidator instance
+            var bv = $form.data('bootstrapValidator');
+
+            var $submitButton = $('#email-sign-up-submit');
+
+            $submitButton.val('Sending...');
+
+            // // Simulate sending
+            /*
+              setTimeout(function() {
+                $submitButton.val('Sent!');
+      
+                setTimeout(function() {
+                  $('#email-sign-up').modal('hide');
+                  $('input[type=email], textarea', $form).val('').blur();
+                  $submitButton.val('Send');
+                  $form.data('bootstrapValidator').resetForm();
+                }, 1000);
+      
+              }, 2000);
+              */
+
+            // Use Ajax to submit form data
+            saveEmailData($form, $submitButton);
+            /*
+            $.post($form.attr('action'), $form.serialize(), function(result) {
+                // ... Process the result ...
+            }, 'json');
+            */
+        });
+    }
+
+    function centerModal(elem) {
+        $(elem).css('display', 'block');
+        var $dialog = $(elem).find('.modal-dialog');
+        var offset = ($(window).height() - $dialog.height()) / 2;
+        // Center modal vertically in window
+        $dialog.css('margin-top', offset);
+    }
+
+}(window.jQuery, window));
+
+(function ($, global) {
+    'use strict';
+
+    global.gogoro = global.gogoro || {};
+    global.gogoro.partials = global.gogoro.partials || {};
+    global.gogoro.partials.Header = Header;
+
+    var gogoro = global.gogoro;
+
+    function Header() {
+        var self = this;
+
+        /* Gogoro SVg logo fall back
+         * ==================================== */
+        if (!global.Modernizr.svg) {
+            $('.gogoro-logo').attr('src', '/img/gogoro.png');
+        }
+
+        /* Display main navigation
+         * ==================================== */
+        $('.navbar-default-gogoro .navbar-toggle').on('touchstart click', function (e) {
+            e.preventDefault();
+            self.toggleNav();
+        });
+
+        $('.navbar-main').insertBefore('#site-container');
+
+        /* Scroll monitor for main navigation reveal
+         * ==================================== */
+        var position = $(window).scrollTop();
+
+        $(window).on('scroll', $.debounce(10, function () {
+            var scroll = $(window).scrollTop();
+            var scrollDistance = Math.abs(scroll - position);
+            var scrollThreshold = 10;
+            // console.log(scroll, position);
+
+            if (scroll < position && scrollDistance > scrollThreshold && !$('.navbar-default-gogoro.fixed').length && scroll > 200) {
+                // console.log('Reveal fixed nav');
+
+                // Clone default navigation
+                $('.navbar-default-gogoro').clone().addClass('fixed').appendTo('body');
+                // Animate in default navigation
+                $('.navbar-default-gogoro.fixed').velocity({ translateY: 80 }, { duration: 250, easing: 'easeOut' });
+
+                $('.navbar-default-gogoro.fixed .navbar-toggle').on('touchstart click', function (e) {
+                    e.preventDefault();
+                    self.toggleNav();
+                });
+            } else if (scroll > position && $('.navbar-default-gogoro.fixed').length) {
+                // console.log('Hide fixed nav');
+
+                if (!$('.navbar-default-gogoro').hasClass('fixed')) {
+                    return false;
+                }
+
+                // Animate out default navigation and remove
+                $('.navbar-default-gogoro.fixed').velocity({ translateY: -80 }, {
+                    duration: 150,
+                    easing: 'easeIn',
+                    complete: function () {
+                        $('.navbar-default-gogoro.fixed').remove();
+                    }
+                });
+            } else if (scroll <= 0) {
+                $('.navbar-default-gogoro.fixed').remove();
+            }
+            position = scroll;
+        }));
+
+        this.$body = $('body');
+        this.$siteContainer = $('#site-container');
+        this.$navBrand = $('.navbar-default-gogoro .navbar-brand');
+
+    }
+
+    Header.prototype.setPg = function (state) {
+        var $links = $('.navbar-primary a').removeClass('active');
+        $links.filter('[data-state="' + state + '"]').addClass('active');
+    };
+
+    Header.prototype.toggleNav = function () {
+        if (this.$body.hasClass('navigation-active')) {
+            this.closeNav();
+        } else {
+            this.openNav();
+        }
+    };
+
+    Header.prototype.openNav = function () {
+        // Prevent animation build up
+        if (this.$siteContainer.hasClass('velocity-animating')) { return false; }
+        var self = this;
+        var navWidth = function () {
+            if (gogoro.App.getBreakpoint() === 'xs') {
+                return 268;
+            } else {
+                return 360;
+            }
+        };
+
+        // Display navbar and set top position
+        $('.navbar-main').css({
+            display: 'block',
+            top: 0
+        });
+
+        // Stop gradient animations which prevent JS bug with Velocity
+        $('.gradient-one,.gradient-two').velocity('stop');
+
+        // Push site open
+        this.$siteContainer.velocity({
+            translateX: -navWidth()
+        }, {
+            duration: 320,
+            easing: 'easeOut'
+        });
+
+        if (gogoro.App.getBreakpoint() === 'md' || gogoro.App.getBreakpoint() === 'lg') {
+            // Keep nav brand in same position
+            $('.navbar-default-gogoro .navbar-brand').velocity({
+                translateX: navWidth()
+            }, {
+                duration: 320,
+                easing: 'easeOut'
+            });
+        }
+
+        // Rotate menu icon
+        $('.navbar-toggle').velocity({
+            rotateZ: '-90deg'
+        }, {
+            duration: 320,
+            easing: 'easeOut'
+        });
+
+        // Add motion to nav items
+        $('.navbar-primary').velocity({
+            translateX: 30
+        }, {
+            delay: 50,
+            duration: 320,
+            easing: 'easeOut'
+        });
+
+        // Push fixed nav
+        $('.navbar-default-gogoro.fixed').velocity({
+            translateX: -navWidth()
+        }, {
+            duration: 320,
+            easing: 'easeOut'
+        });
+
+        // Add navigation active
+        this.$body.addClass('navigation-active');
+
+        // Create clickable site overlay
+        $('<div>', {
+            id: 'site-overlay',
+            css: {
+                right: navWidth()
+            }
+        }).appendTo('body');
+
+        // Bind site overlay
+        $('#site-overlay').on('touchstart click', function () {
+            self.toggleNav();
+        });
+
+        // Animate in and bind close
+        $('.close-navbar-primary').velocity('fadeIn', {
+            delay: 400,
+            duration: 320,
+            easing: 'easeOut'
+        }).on('touchstart click', function (e) {
+            e.preventDefault();
+            self.toggleNav();
+        });
+    };
+
+    Header.prototype.closeNav = function () {
+        // Prevent animation build up
+        if (this.$siteContainer.hasClass('velocity-animating')) { return false; }
+        var self = this;
+        // Pull closed
+        this.$siteContainer.velocity({
+            translateX: 0
+        }, {
+            delay: 50,
+            duration: 320,
+            easing: 'easeOut',
+            complete: function () {
+                $('.navbar-main').css({
+                    display: 'none'
+                });
+                // Reset and remove inline styles
+                self.$siteContainer.attr('style', '');
+            }
+        });
+
+        // Rotate menu icon
+        $('.navbar-toggle').velocity({
+            rotateZ: '0deg'
+        }, {
+            duration: 320,
+            easing: 'easeOut'
+        });
+
+        // Pull fixed nav closed
+        $('.navbar-default-gogoro.fixed').velocity({
+            translateX: 0
+        }, {
+            delay: 50,
+            duration: 320,
+            easing: 'easeOut'
+        });
+
+        if (gogoro.App.getBreakpoint() === 'md' || gogoro.App.getBreakpoint() === 'lg') {
+            // Keep nav brand in same position
+            $('.navbar-default-gogoro .navbar-brand').velocity({
+                translateX: 0
+            }, {
+                delay: 50,
+                duration: 320,
+                easing: 'easeOut'
+            });
+        }
+
+        // Add motion to nav items
+        $('.navbar-primary').velocity({
+            translateX: -30
+        }, {
+            duration: 320,
+            easing: 'easeOut'
+        });
+
+        // Remove navigation active
+        this.$body.removeClass('navigation-active');
+
+        // Remove clickable overlay
+        $('#site-overlay').remove();
+
+        // Animate in and unbind close
+        $('.close-navbar-primary').velocity('fadeOut', {
+            delay: 320,
+            duration: 100,
+            easing: 'easeOut'
+        }).unbind();
+    };
+
+}(window.jQuery, window));
+
+var Application = (function ($, global) {
+    'use strict';
+
+    global.gogoro = global.gogoro || {};
+    global.gogoro.App = App;
+
+    function App() {
+        var self = this;
+        this.header = new global.gogoro.partials.Header();
+        this.footer = new global.gogoro.partials.Footer();
+
+        // Pjax
+        if ($.support.pjax) {
+            $(global.document).pjax('a[data-pjax]', '#site-content', {
+                fragment: '#site-content'
+            })
+            .on('pjax:clicked', function () {
+                self.header.closeNav();
+            })
+            .on('pjax:complete', function () { self.onNewPage(); });
+        }
+        this.onNewPage();
+
+        var responsiveImages = new global.gogoro.common.responsiveImages();
+    }
+
+    App.prototype.onNewPage = function () {
+        var state = $('#site-content div:first-child').first().data().state;
+        this.header.setPg(state);
+        var pg = new global.gogoro[state]();
+    };
+
+    App.mediaQueries = {
+        'xs': {
+            'min': 0,
+            'max': 767
+        },
+        'sm': {
+            'min': 768,
+            'max': 991
+        },
+        'md': {
+            'min': 992,
+            'max': 1199
+        },
+        'lg': {
+            'min': 1200
+        }
+    };
+
+    App.getBreakpoint = function () {
+        var browserWidth = $(window).outerWidth();
+        if (browserWidth >= App.mediaQueries.xs.min && browserWidth <= App.mediaQueries.xs.max) {
+            return 'xs';
+        } else if (browserWidth >= App.mediaQueries.sm.min && browserWidth <= App.mediaQueries.sm.max) {
+            return 'sm';
+        } else if (browserWidth >= App.mediaQueries.md.min && browserWidth <= App.mediaQueries.md.max) {
+            return 'md';
+        } else if (browserWidth >= App.mediaQueries.lg.min) {
+            return 'lg';
+        }
+    };
+
+    return {
+        init: function () {
+            global.gogoro.app = new global.gogoro.App();
+        }
+    };
+
+}(window.jQuery, window));
+
+$(Application.init);
+
+(function ($, global) {
+    'use strict';
+
+    global.gogoro = global.gogoro || {};
+    global.gogoro.Contact = Contact;
+
+    function Contact() {
+        global.gogoro.common.gradientHeader();
+
+        $('#contact-form-submit').on('touchstart click', function (e) {
+            e.preventDefault();
+
+            var $this = $(this);
+            var $form = $this.parents('form');
+
+            $form.submit();
+        });
+
+        // Form validation
+        $('#contact-form').bootstrapValidator({
+            fields: {
+                name: {
+                    trigger: 'blur',
+                    validators: {
+                        notEmpty: {
+                            message: 'Your name is required and cannot be empty'
+                        }
+                    }
+                },
+                email: {
+                    trigger: 'blur',
+                    validators: {
+                        notEmpty: {
+                            message: 'Your email is required and cannot be empty'
+                        },
+                        emailAddress: {
+                            message: 'Your email address is not a valid'
+                        }
+                    }
+                },
+                subject: {
+                    trigger: 'blur',
+                    validators: {
+                        notEmpty: {
+                            message: 'Subject is required and cannot be empty'
+                        }
+                    }
+                },
+                message: {
+                    trigger: 'blur',
+                    validators: {
+                        notEmpty: {
+                            message: 'Your message is required and cannot be empty'
+                        }
+                    }
+                }
+            }
+        }).on('success.form.bv', function (e) {
+            // Prevent form submission
+            e.preventDefault();
+
+            // Get the form instance
+            var $form = $(e.target);
+
+            // Get the BootstrapValidator instance
+            var bv = $form.data('bootstrapValidator');
+
+            var $submitButton = $('#contact-form-submit');
+
+            $submitButton.val('Sending...');
+            saveContactData($form, $submitButton);
+            // // Simulate sending
+            /*
+              setTimeout(function() {
+                $('#contact-form-sent').modal('show');
+                $submitButton.val('Send');
+                $('input, textarea', $form).not('input[type=submit]').val('');
+                $form.data('bootstrapValidator').resetForm();
+              }, 2000);
+              */
+            // Use Ajax to submit form data
+            /*
+              $.post($form.attr('action'), $form.serialize(), function(result) {
+                  // ... Process the result ...
+              }, 'json');
+            */
+        });
+    }
+}(window.jQuery, window));
+
+(function ($, global) {
+    'use strict';
+
+    global.gogoro = global.gogoro || {};
+    global.gogoro.Faq = Faq;
+
+    function Faq() {
+        global.gogoro.common.gradientHeader();
+
+        $('.email-sign-up-link').on('touchstart click', function (e) {
+            e.stopPropagation();
+            e.preventDefault();
+            $('#email-sign-up').modal('toggle');
+        });
+    }
+
+}(window.jQuery, window));
+
+(function ($, global) {
+    'use strict';
+
+    global.gogoro = global.gogoro || {};
+    global.gogoro.Home = Home;
+
+    var gogoro = global.gogoro;
+
+    function Home() {
+        var intro = new gogoro.common.IntroSequence();
+
+        // Parallax scroll on video image
+        if (!global.Modernizr.touch) {
+            $.stellar();
+        }
+
+        // init fade in up
+        gogoro.common.FadeInUp($('#pg-home'));
+
+        // init video
+        var videoModal = new gogoro.common.VideoModal();
+
+        /*
+          "Play Video" button animation
+        */
+        $('#gogoro-video .btn').on('mouseenter', function () {
+
+            var $this = $(this);
+
+            if (!$this.hasClass('hovered')) {
+                $this.doTimeout('hover', 100, function (elem) {
+                    $('span', elem).velocity('stop').velocity('transition.slideLeftBigOut', { duration: 200, easing: 'easeOut' });
+                    $('i', elem).velocity('stop').velocity('transition.slideRightBigIn', { duration: 200, easing: 'easeOut' });
+                    $this.addClass('hovered');
+                }, $this);
+            }
+        }).on('mouseleave', function () {
+            var $this = $(this);
+
+            $this.doTimeout('hover');
+
+            if ($this.hasClass('hovered')) {
+                $this.removeClass('hovered');
+                $('span', this).velocity('stop').velocity('transition.slideLeftBigIn', { duration: 200, easing: 'easeOut' });
+                $('i', this).velocity('stop').velocity('transition.slideRightBigOut', { duration: 200, easing: 'easeOut' });
+            }
+        });
+
+        initCarousel();
+    }
+
+
+    /**********************
+      Private Functions
+    ***********************/
+
+    function initCarousel() {
+        $('#our-team .slider').slick({
+            centerMode: true,
+            dots: false,
+            arrows: false,
+            accessibility: true,
+            infinite: true,
+            speed: 650,
+            centerPadding: '195px',
+            cssEase: 'ease',
+            slidesToShow: 1,
+            draggable: false,
+            onInit: function (element) {
+                var $this = element;
+                var $teamBio = $('#team-bio');
+                var teamBio = $('.slick-active .slide-content').html();
+
+                // Clear slider indicator
+                $('#slider-indicator').html('');
+
+                // Create and set slider indicator to current slide
+                $('<span>', {
+                    'class': 'slider-current',
+                    html: $this.currentSlide + 1
+                }).appendTo('#slider-indicator');
+
+                // Create divider
+                $('<span>', {
+                    html: '/'
+                }).appendTo('#slider-indicator');
+
+                // Create and set slider indicator total slides
+                $('<span>', {
+                    'class': 'slider-total',
+                    html: $this.slideCount
+                }).appendTo('#slider-indicator');
+
+                // Set team member bio to current
+                $('.row', $teamBio).html('').html(teamBio);
+
+                // Fade in team member bio
+                $teamBio.velocity('fadeIn', { duration: 250 });
+
+                // Set next/prev slides
+                $('.slick-active').next().addClass('slick-next-slide');
+                $('.slick-active').prev().addClass('slick-prev-slide');
+
+                // Bind next/prev
+                $('.slick-next-slide').on('touchstart click', function (e) {
+                    e.preventDefault();
+                    $('#our-team .slider').slickNext();
+                });
+
+                $('.slick-prev-slide').on('touchstart click', function (e) {
+                    e.preventDefault();
+                    $('#our-team .slider').slickPrev();
+                });
+
+                // Fade in active slide
+                $('.slick-active img').velocity('fadeIn', { delay: 100, duration: 200, ease: 'easeOut' });
+            },
+            onBeforeChange: function (element, slide) {
+                // console.log('onBeforeChange');
+
+                var $this = element;
+                var $teamBio = $('#team-bio');
+
+                $teamBio.velocity('stop');
+
+                // Fade out team member bio
+                $teamBio.velocity('fadeOut', {
+                    duration: 300,
+                    complete: function () {
+                        var teamBio = $('.slick-active .slide-content').html();
+
+                        // Set team member bio to current
+                        $('.row', $teamBio).html('').html(teamBio);
+
+                        // Fade in team member bio
+                        $teamBio.velocity('fadeIn', { delay: 100, duration: 350 });
+                    }
+                });
+
+                // Remove next/prev classes
+                $('.slick-next-slide').unbind().removeClass('slick-next-slide');
+                $('.slick-prev-slide').unbind().removeClass('slick-prev-slide');
+            },
+            onAfterChange: function (element) {
+                // console.log('onAfterChange');
+
+                var $this = element;
+                var $teamBio = $('#team-bio');
+                var teamBio = $('.slick-active .slide-content').html();
+
+                // Set slider indicator current slide
+                $('#slider-indicator .slider-current').html($this.currentSlide + 1);
+
+                // Set next/prev slides
+                $('.slick-active').next().addClass('slick-next-slide');
+                $('.slick-active').prev().addClass('slick-prev-slide');
+
+                // Bind next/prev
+                $('.slick-next-slide').on('touchstart click', function (e) {
+                    e.preventDefault();
+                    $('#our-team .slider').slickNext();
+                });
+
+                $('.slick-prev-slide').on('touchstart click', function (e) {
+                    e.preventDefault();
+                    $('#our-team .slider').slickPrev();
+                });
+            },
+            responsive: [
+            {
+                breakpoint: gogoro.App.mediaQueries.md.max,
+                settings: {
+                    centerPadding: '162px'
+                }
+            }, {
+                breakpoint: gogoro.App.mediaQueries.sm.max,
+                settings: {
+                    centerPadding: '125px'
+                }
+            }, {
+                breakpoint: gogoro.App.mediaQueries.xs.max,
+                settings: {
+                    centerPadding: '27px'
+                }
+            }]
+        });
+    }
+
+    $('.hint-scroll-down').on('touchstart click', function (e) {
+        e.preventDefault();
+        $('html, body').animate({ scrollTop: ($('#gogoro-video').offset().top - 200) }, 500);
+    });
+
+
+}(window.jQuery, window));
+
+(function ($, global) {
+    'use strict';
+
+    global.gogoro = global.gogoro || {};
+    global.gogoro.Press = Press;
+
+    function Press() {
+        global.gogoro.common.gradientHeader();
+
+        global.gogoro.common.socialShare();
+
+        // Match press sidebar to press article height
+        $('.press-sidebar').css({
+            height: $('.press-main').outerHeight()
+        });
+
+        // Press topbar collapse toggle
+        $('.navigation-topbar .target').on('touchstart click', function (e) {
+            e.preventDefault();
+            $('#page-navigation').collapse('toggle');
+        });
+
+        initNav();
+        monitorScrollForPaging();
+    }
+
+    /*******************************
+      PRIVATE FUNCTIONS
+    *******************************/
+
+    function initNav() {
+
+        $('#press-navigation .navigate-newer').on('mouseenter', $.debounce(100, function () {
+            $(this).velocity('stop').velocity({
+                right: -2
+            }, {
+                duration: 300,
+                easing: 'easeOutSine'
+            });
+        })).on('mouseleave', $.debounce(400, function () {
+            $(this).velocity('stop').velocity({
+                right: -204
+            }, {
+                duration: 300,
+                easing: 'easeInSine'
+            });
+        }));
+
+        $('#press-navigation .navigate-older').on('mouseenter', $.debounce(100, function () {
+            $(this).velocity('stop').velocity({
+                left: -2
+            }, {
+                duration: 300,
+                easing: 'easeOutSine'
+            });
+        })).on('mouseleave', $.debounce(400, function () {
+            $(this).velocity('stop').velocity({
+                left: -204
+            }, {
+                duration: 300,
+                easing: 'easeInSine'
+            });
+        }));
+    }
+
+    function monitorScrollForPaging() {
+
+        if ($('#hero-header').length) {
+            var headerWatcher = global.scrollMonitor.create($('#hero-header'));
+
+            headerWatcher.enterViewport(function () {
+                hidePressNavigation();
+            });
+
+            headerWatcher.exitViewport(function () {
+                showPressNavigation();
+            });
+        }
+
+        if ($('#main-footer').length) {
+            var footerWatcher = global.scrollMonitor.create($('#main-footer'));
+
+            footerWatcher.enterViewport(function () {
+                hidePressNavigation();
+            });
+
+            footerWatcher.exitViewport(function () {
+                showPressNavigation();
+            });
+        }
+
+    }
+
+    function showPressNavigation() {
+        $('#press-navigation .navigate-older').velocity({ left: -204 },
+        {
+            duration: 400,
+            easing: 'easeOut'
+        });
+
+        $('#press-navigation .navigate-newer').velocity({ right: -204 },
+        {
+            duration: 400,
+            easing: 'easeOut'
+        });
+    }
+
+    function hidePressNavigation() {
+        $('#press-navigation .navigate-older').velocity({ left: -252 },
+        {
+            duration: 200,
+            easing: 'easeIn'
+        });
+
+        $('#press-navigation .navigate-newer').velocity({ right: -252 },
+        {
+            duration: 200,
+            easing: 'easeIn'
+        });
+    }
+
+}(window.jQuery, window));
+
+(function ($, global) {
+    'use strict';
+
+    global.gogoro = global.gogoro || {};
+    global.gogoro.common = global.gogoro.common || {};
+    global.gogoro.common.FadeInUp = FadeInUp;
+
+    function FadeInUp($container) {
+
+        $container.find('.fade-in-up').velocity({
+            opacity: 1,
+            translateY: -5
+        }, {
+            delay: 200,
+            duration: 450,
+            ease: 'easeOut'
+        });
+
+    }
+
+}(window.jQuery, window));
+
+(function ($, global) {
+    'use strict';
+
+    global.gogoro = global.gogoro || {};
+    global.gogoro.common = global.gogoro.common || {};
+    global.gogoro.common.gradientHeader = GradientHeader;
+
+    function GradientHeader() {
+        if (global.gogoro.App.getBreakpoint() === 'xs' || global.gogoro.App.getBreakpoint() === 'sm') {
+            return false;
+        }
+        // Set parameters
+        var gradientParameters = [
+          {
+              'posX': -getRandomInt(200, 1000),
+              'posY': -getRandomInt(200, 1000),
+              'duration': getRandomInt(15 * 1000, 20 * 1000)
+          }, {
+              'posX': -getRandomInt(200, 1000),
+              'posY': -getRandomInt(200, 1000),
+              'duration': getRandomInt(15 * 1000, 20 * 1000)
+          }
+        ];
+
+        if (global.Modernizr.cssgradients) {
+            // Create gradient divs
+            $('<div>', {
+                'class': 'gradient gradient-one'
+            }).appendTo('#hero-header');
+
+            $('<div>', {
+                'class': 'gradient gradient-two'
+            }).appendTo('#hero-header');
+
+            // Set gradient position and animate
+            $('.gradient-one').css({
+                top: gradientParameters[0].posY,
+                right: gradientParameters[0].posX
+            }).velocity({
+                top: 0,
+                right: 0
+            }, {
+                duration: gradientParameters[0].duration,
+                loop: true,
+                easing: 'easeOutExpo'
+            });
+
+            $('.gradient-two').css({
+                bottom: gradientParameters[1].posY,
+                left: gradientParameters[1].posX
+            }).velocity({
+                bottom: 0,
+                left: 0
+            }, {
+                duration: gradientParameters[1].duration,
+                loop: true,
+                easing: 'easeOutExpo'
+            });
+        }
+    }
+
+    /********************
+      PRIVATE
+    *********************/
+
+    function getRandomInt(min, max) {
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+
+}(window.jQuery, window));
+
+(function ($, global) {
+    'use strict';
+
+    global.gogoro = global.gogoro || {};
+    global.gogoro.common = global.gogoro.common || {};
+    global.gogoro.common.IntroSequence = IntroSequence;
+
+    var gogoro = global.gogoro;
+    var videoSupported = false;
+
+    /* Full screen (cover) video */
+    var minW = 300; // minimum video width allowed
+    var vidWOrig;  // original video dimensions
+    var vidHOrig;
+
+    function IntroSequence() {
+        if ($('html.lt-ie9').length) {
+            this.error();
+            return false;
+        } else {
+            this.initialize();
+        }
+    }
+
+    /**********************
+      PRIVATE FUNCTIONS
+      *********************/
+
+    IntroSequence.prototype.error = function () {
+        $('body').removeClass('intro-active');
+        $('#intro-sequence').remove();
+    };
+
+    IntroSequence.prototype.complete = function () {
+        $(window).off('resize');
+        $('#intro-sequence').remove();
+        $('body').removeClass('intro-active');
+        $(global.document).unbind('touchmove');
+    };
+
+    IntroSequence.prototype.setSequenceType = function () {
+        var sequenceType;
+
+        var unsupportedDevice = /(iPad|iPhone|iPod|Android)/g.test(global.navigator.userAgent);
+
+        if (global.Modernizr.video && !unsupportedDevice) {
+            sequenceType = 'video';
+        } else {
+            sequenceType = 'image';
+        }
+
+        return sequenceType;
+    };
+
+    IntroSequence.prototype.initialize = function () {
+        if (global.document.cookie.indexOf('intro') !== -1 && getQueryString('intro') !== 'true') {
+            this.complete();
+            return;
+        }
+
+        var sequenceType = this.setSequenceType();
+        this.frameCount = 0;
+
+        if (sequenceType === 'video') {
+            // Setup video
+            $('#intro-sequence-background').html(
+                '<div class="video-viewport">' +
+                  '<div id="intro-sequence-mask" style="opacity:0.2; background-color:#000; position:absolute; top:0px; left:0px; display:none;"></div>' +
+                  '<video id="intro-sequence-video" width="1280" height="720" muted preload="auto">' +
+                    '<source src="/video/intro-sequence.mp4" type="video/mp4">' +
+                    '<source src="/video/intro-sequence.webm" type="video/webm">' +
+                  '</video>' +
+                '</div>'
+                );
+
+            // Prepare video
+            this.video = $('#intro-sequence-video');
+
+            vidWOrig = parseInt($('#intro-sequence-video').attr('width'));
+            vidHOrig = parseInt($('#intro-sequence-video').attr('height'));
+
+            $(window).resize(function () { resizeToCover(); });
+            $(window).trigger('resize');
+
+        } else {
+            // Setup images
+            $('<div>', {
+                'class': 'intro-sequence-image frame-one'
+            }).appendTo('#intro-sequence-background');
+
+            $('<div>', {
+                'class': 'intro-sequence-image frame-two'
+            }).appendTo('#intro-sequence-background');
+
+            $('<div>', {
+                'class': 'intro-sequence-image frame-three'
+            }).appendTo('#intro-sequence-background');
+        }
+
+        // Prepare page to run intro
+        $('body').addClass('intro-active');
+
+        //Add a cookie so this won't play again for a 1 hour
+        var now = new Date();
+        var time = now.getTime();
+        time += 3600 * 1000;
+        now.setTime(time);
+
+        // Cookie intro
+        global.document.cookie = 'intro=true; expires=' + now.toUTCString();
+
+        // Show intro container
+        $('#intro-sequence').css({ display: 'block' });
+
+        $(global.document).on('touchmove', function (e) {
+            e.preventDefault();
+        });
+
+        this.beginLoading();
+    };
+
+    IntroSequence.prototype.beginLoading = function () {
+
+        var self = this;
+
+        // Fade in welcome text
+        $('section.loading').velocity('fadeIn', {
+            duration: 900,
+            easing: 'easeOut',
+            complete: function () {
+                // Start loading animation
+                $('.layer-mask').velocity({ left: $('.layer-mask').outerWidth() }, {
+                    delay: 200, duration: 4900, easing: 'easeOutCubic',
+                    complete: function () {
+                        self.initializeBackground();
+                    }
+                });
+            }
+        });
+    };
+
+    IntroSequence.prototype.initializeBackground = function () {
+        var self = this;
+
+        var sequenceType = this.setSequenceType();
+
+        if (sequenceType === 'video') {
+
+            self.video = $('#intro-sequence-video');
+
+            // Check when video is loaded and ready to play
+            var checkReadyStateInterval = 0;
+
+            var checkReadyState = setInterval(function () {
+
+                if (self.video.get(0).readyState >= self.video.get(0).HAVE_FUTURE_DATA) {
+
+                    clearInterval(checkReadyState);
+
+                    $('#loading-text').velocity({ opacity: 0 }, {
+                        delay: 150,
+                        duration: 800,
+                        easing: 'easeOutQuad',
+                        complete: function () {
+                            $(this).remove();
+                            frameOne.initialize(self);
+                        }
+                    });
+                }
+
+                // Error out if video isn't loaded in 10 seconds
+                if (checkReadyStateInterval > 100) {
+                    self.error();
+                    clearInterval(checkReadyState);
+                }
+
+                checkReadyStateInterval++;
+            }, 100);
+
+        } else {
+            $('#loading-text').velocity({ opacity: 0 }, {
+                duration: 400,
+                easing: 'easeOut',
+                complete: function () {
+                    $(this).remove();
+                    $('.intro-sequence-image.frame-one').velocity('fadeIn', {
+                        duration: 800,
+                        easing: 'easeOut',
+                        complete: function () {
+
+                            frameOne.initialize(self);
+                            $('.intro-sequence-image').css({ 'display': 'block' });
+                        }
+                    });
+                }
+            });
+        }
+    };
+
+    var frameOne = {
+        initialize: function (self) {
+            var sequenceType = self.setSequenceType();
+
+            if (sequenceType === 'video') {
+
+                $('#intro-sequence-mask').css({ display: 'block' });
+                self.video = $('#intro-sequence-video');
+
+                self.video.css({ display: 'block' });
+
+                self.video.get(0).currentTime = 0;
+
+                resizeToCover();
+                self.video.get(0).play();
+
+                // Start video sequence
+                $('#frame-one').css({ display: 'block' });
+                frameOne.text(self);
+
+            } else {
+                // Start image sequence
+                $('#frame-one').css({ display: 'block' });
+
+                setTimeout(function () {
+                    frameOne.text(self);
+                }, 1000);
+            }
+        },
+        text: function (self) {
+            self.frameCount++;
+
+            $('#frame-one .frame-' + self.frameCount)
+                .velocity('transition.slideLeftIn', { delay: 120, duration: 550, easing: 'easeOut' })
+                .velocity({ opacity: 0, translateX: '12px' }, {
+                    delay: 110, duration: 450, easing: 'easeIn', complete:
+                      function () {
+                          if (self.frameCount === 5) {
+                              // Remove animated element
+                              $('#frame-one').remove();
+
+                              $('.intro-sequence-image.frame-one').velocity('fadeOut', {
+                                  duration: 800,
+                                  easing: 'easeOut',
+                                  complete: function () {
+                                      // Remove image frame one
+                                      $(this).remove();
+                                  }
+                              });
+
+                              frameTwo.initialize(self);
+                          } else {
+                              // Step through animation
+                              frameOne.text(self);
+
+                              // Remove animated element
+                              $(this).remove();
+                          }
+                      }
+                });
+        }
+    };
+
+    var frameTwo = {
+        initialize: function (self) {
+            $('#frame-two').css({
+                display: 'block'
+            });
+
+            var sequenceType = self.setSequenceType();
+
+            setTimeout(function () {
+                frameTwo.text(self);
+            }, 1000);
+        },
+        text: function (self) {
+            $('#frame-two h1 span').not('.faster').velocity('transition.slideLeftIn', { stagger: 600, duration: 500, easing: 'easeOut' });
+
+            $('#frame-two h1 span.faster').velocity('transition.slideLeftIn', { delay: 1800, stagger: 600, duration: 500, easing: 'easeOut' });
+
+            $('#frame-two').velocity('fadeOut',
+              {
+                  delay: 4550,
+                  duration: 400,
+                  easing: 'easeOut',
+                  complete: function () {
+                      $('#frame-two').remove();
+
+                      $('.intro-sequence-image.frame-two').velocity('fadeOut', {
+                          duration: 800,
+                          easing: 'easeOut',
+                          complete: function () {
+                              // Remove image frame two
+                              $(this).remove();
+                          }
+                      });
+
+                      frameThree.initialize(self);
+                  }
+              });
+        }
+    };
+
+    var frameThree = {
+        initialize: function (self) {
+            var sequenceType = self.setSequenceType();
+
+            if (sequenceType !== 'video') {
+                $('.intro-sequence-image.frame-three').css({
+                    display: 'block'
+                });
+            }
+
+            $('#frame-three').velocity('transition.slideLeftIn',
+            {
+                delay: 1000,
+                duration: 1200,
+                easing: 'easeOut',
+                complete: function () {
+                    frameThree.text(self);
+                }
+            });
+        },
+        text: function (self) {
+
+            // Show site content
+            $('.intro-active #site-content, .intro-active #main-header').css({
+                display: 'block'
+            });
+
+            $('#frame-three').velocity('fadeOut',
+              {
+                  delay: 1800,
+                  duration: 800,
+                  easing: 'easeOut',
+                  complete: function () {
+                      $('#intro-sequence').velocity({ translateY: '-100%' },
+                        {
+                            duration: 1000,
+                            easing: 'easeOut',
+                            complete: self.complete
+                        });
+                  }
+              });
+        }
+    };
+
+    function resizeToCover() {
+        // set the video viewport to the window size
+        $('.video-viewport').width($(window).width());
+        $('.video-viewport').height($(window).height());
+
+        // use largest scale factor of horizontal/vertical
+        var scaleH = $(window).width() / vidWOrig;
+        var scaleV = $(window).height() / vidHOrig;
+        var scale = scaleH > scaleV ? scaleH : scaleV;
+
+        // don't allow scaled width < minimum video width
+        if (scale * vidWOrig < minW) { scale = minW / vidWOrig; }
+
+        // now scale the video
+        $('.video-viewport video').width(scale * vidWOrig);
+        $('.video-viewport video').height(scale * vidHOrig);
+
+        $('.video-viewport div').width(scale * vidWOrig);
+        $('.video-viewport div').height(scale * vidHOrig);
+
+        // and center it by scrolling the video viewport
+        $('.video-viewport').scrollLeft(($('video').width() - $(window).width()) / 2);
+        $('.video-viewport').scrollTop(($('video').height() - $(window).height()) / 2);
+    }
+
+    function getQueryString(obj) {
+        var string = window.location.search.substring(1);
+        var strings = string.split('&');
+        for (var i = 0; i < strings.length; i++) {
+            var set = strings[i].split('=');
+            if (set[0] === obj) {
+                return set[1];
+            }
+        }
+    }
+
+}(window.jQuery, window));
+
+(function ($, global) {
+    'use strict';
+
+    global.gogoro = global.gogoro || {};
+    global.gogoro.common = global.gogoro.common || {};
+    global.gogoro.common.responsiveImages = responsiveImages;
+
+    function responsiveImages($container) {
+
+        $('img').each(function (i, img) {
+
+            var $img = $(img);
+
+            if ($img.attr('data-src-lg')) {
+                if (global.gogoro.App.getBreakpoint() === 'xs' || global.gogoro.App.getBreakpoint() === 'sm') {
+                    $img.attr('src', $img.attr('data-src-xs'));
+                } else {
+                    $img.attr('src', $img.attr('data-src-lg'));
+                }
+            }
+        });
+
+    }
+
+}(window.jQuery, window));
+
+(function ($, global) {
+    'use strict';
+
+    global.gogoro = global.gogoro || {};
+    global.gogoro.common = global.gogoro.common || {};
+    global.gogoro.common.socialShare = SocialShare;
+
+    function SocialShare() {
+        var $socialShare = $('#social-share');
+        var shareUrl = global.location.href;
+        var shareTitle = $('.press-main article h2:eq(0)').html();
+
+        /*
+          For production only
+        */
+        //return false;
+        /*
+          end for production only
+        */
+
+        $('a', $socialShare).each(function () {
+            var $this = $(this);
+            var socialShareNetwork = $(this).attr('id').replace('social-share-', '');
+
+            switch (socialShareNetwork) {
+                case 'twitter':
+                    $this.attr('href', 'http://twitter.com/share?text=' + shareTitle + '&url=' + shareUrl);
+                    break;
+                case 'facebook':
+                    $this.attr('href', 'https://www.facebook.com/sharer/sharer.php?u=' + shareUrl);
+                    break;
+                case 'google':
+                    $this.attr('href', 'https://plus.google.com/share?url=' + shareUrl);
+                    break;
+                case 'linkedin':
+                    $this.attr('href', 'https://www.linkedin.com/shareArticle?mini=true&url=' + shareUrl + '&title=' + shareTitle + '&summary=&source=');
+                    break;
+            }
+        });
+    }
+
+}(window.jQuery, window));
+
+(function ($, global) {
+    'use strict';
+
+    global.gogoro = global.gogoro || {};
+    global.gogoro.common = global.gogoro.common || {};
+    global.gogoro.common.VideoModal = VideoModal;
+
+    function VideoModal() {
+        var self = this;
+        $('.launch-video-modal').on('touchstart click', function (e) {
+            e.preventDefault();
+            self.launch(this);
+        });
+    }
+
+    VideoModal.prototype.launch = function (element) {
+        var self = this;
+        var videoSrc = $(element).attr('data-video-src');
+        var videoId = '#' + $(element).attr('data-video-id');
+        //var youTubeVideoId = 'ZXB9WJZUjmA';
+        var youTubeVideoId = '0gO1MWTLI1k';
+
+
+        $('<div>', {
+            'class': 'video-modal'
+        }).appendTo('body');
+
+        $('<a>', {
+            'href': '#',
+            'class': 'close-video-modal',
+            html: '<i class="icon-close"></i>'
+        }).appendTo('.video-modal');
+
+        $('<div>', {
+            'class': 'container'
+        }).appendTo('.video-modal');
+
+        $('<div>', {
+            'class': 'row vertical-center-container'
+        }).appendTo('.video-modal .container');
+
+        $('<div>', {
+            'class': 'col-sm-10 col-sm-offset-1 vertical-center video-container embed-responsive embed-responsive-16by9'
+        }).appendTo('.video-modal .row');
+
+        $('<iframe>', {
+            'id': 'vision-video',
+            'class': 'embed-responsive-item',
+            'src': '//www.youtube.com/embed/' + youTubeVideoId + '?enablejsapi=1&autoplay=1&rel=0&vq=hd720',
+            'allowfullscreen': '',
+            'frameborder': '0'
+        }).appendTo('.video-modal .video-container');
+
+        // Add video height/width attribute
+        $('#vision-video').attr('width', 972);
+        $('#vision-video').attr('height', 547);
+
+        // Prevent scroll
+        $('body').addClass('video-modal-active');
+
+        $.doTimeout('videoModal', 100, function () {
+            // Modal created, fade in
+            $('.video-modal').velocity('stop').velocity('fadeIn');
+
+            // Bind click event
+            $('.video-modal .close-video-modal, .video-modal').on('touchstart click', function (e) {
+                e.preventDefault();
+                self.close(videoSrc, videoId);
+            });
+        });
+
+        if ($('html.lt-ie9').length) {
+            setTimeout(function () {
+                var videoPosY = ($('.video-modal .video-container').outerHeight() - $(window).outerHeight()) / 2;
+                $('.video-modal .video-container').css({
+                    top: Math.abs(videoPosY)
+                });
+            }, 1000);
+
+            $(window).resize(function () {
+                var videoPosY = ($('.video-modal .video-container').outerHeight() - $(window).outerHeight()) / 2;
+                $('.video-modal .video-container').css({
+                    top: Math.abs(videoPosY)
+                });
+            });
+        }
+
+    };
+
+    VideoModal.prototype.close = function (src, id) {
+        var $target = $('.video-modal');
+
+        $(id)[0].contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');
+
+        $target.velocity('stop').velocity('fadeOut', {
+            complete: function () {
+                $target.remove();
+            }
+        });
+
+        $('body').removeClass('video-modal-active');
+    };
+
+}(window.jQuery, window));

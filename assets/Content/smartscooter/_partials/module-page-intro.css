@@ -1,0 +1,174 @@
+/* ====================================
+   Site colors
+   ==================================== */
+/*
+   Brand colors
+   ====================================
+   White / Light Gray = Fresh and Clean Charcoal / Gray / Dark Gray = Bold and Direct Rich Blue = Performance
+   Blue = Experience
+   Teal = Style
+   Dark Green = Value
+   Green = Eco / Environment
+   Hot Green = Community
+   Red = Warning
+*/
+/* ====================================
+ * Mixins and functions
+ * ==================================== */
+/* Media queries
+ * ==================================== */
+/* Usage: @include breakpoint(sm) {} */
+/* Mixins and functions
+ * ==================================== */
+/* Usage: @include linearGradient() {} */
+/* Usage: @include placeholder() {} */
+/* Usage: @include border-radius(5px) */
+/* Usage: @include opacity(0.8) */
+/* Usage: @include center-block */
+/* Usage: @include text-truncate  */
+/* Extends
+ * ==================================== */
+/* Variables
+ * ==================================== */
+/* Mixins and functions
+ * ==================================== */
+
+.module-page-intro {
+    position: relative;
+    background: #f8f8f8;
+    background-size: 100%;
+    width: 100%;
+    height: 800px;
+    position: relative;
+    overflow: hidden;
+}
+.module-page-intro:before {
+    content: "";
+    float: left;
+}
+.module-page-intro:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.module-page-intro .container {
+    position: relative;
+    height: 100%;
+}
+@media (max-width: 767px) {
+    .module-page-intro {
+        width: 100%;
+        height: 360px;
+        position: relative;
+        overflow: hidden;
+    }
+}
+.module-page-intro .container {
+    position: relative;
+}
+.module-page-intro .title-wrapper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 50;
+}
+.module-page-intro .title-wrapper svg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.module-page-intro .title-wrapper svg.title {
+    font-family: "flama-semicondensed-ultralight", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+/*html[lang=zh-TW] .module-page-intro .title-wrapper svg.title { 
+    font-family: 'xingothic-w3', '·L³n¥¿¶ÂÅé','STHeiti'; 
+}*/
+
+
+.module-page-intro .title-wrapper svg tspan {
+    opacity: 0;
+}
+@media (max-width: 767px) {
+    .module-page-intro .title-wrapper svg {
+        width: 384px;
+        height: 360px;
+        left: 50%;
+        margin-left: -192px;
+    }
+}
+@media (max-width: 767px) {
+    .module-page-intro .title-wrapper {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 50;
+        top: -40px;
+        left: 0;
+    }
+}
+.module-page-intro .background-image {
+    position: absolute;
+    width: 1280px;
+    height: 800px;
+    bottom: 0;
+    left: 50%;
+    margin-left: -640px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    z-index: 100;
+}
+.state-fallback .module-page-intro .background-image {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    margin-left: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 100;
+    background-position: 50%;
+}
+.module-page-intro .body {
+    position: absolute;
+    opacity: 0;
+    bottom: 74px;
+    margin: 0 25%;
+    width: 50%;
+    font-family: "graphik-light", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 24px;
+    color: #323237;
+    text-align: center;
+    z-index: 200;
+}
+html[lang=zh-TW] .module-page-intro .body { 
+    font-family: 'xingothic-w3', 'Microsoft JhengHei','STHeiti'; 
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .module-page-intro .body {
+        margin: 0 15%;
+        width: 70%;
+        bottom: 44px;
+        font-size: 16px;
+    }
+}
+@media (max-width: 767px) {
+    .module-page-intro .body {
+        bottom: 24px;
+        right: 0;
+        left: 0;
+        font-size: 16px;
+        padding: 0 15px;
+        margin: 0;
+        width: 100%;
+    }
+}
+.state-fallback .module-page-intro .body {
+    opacity: 1;
+}

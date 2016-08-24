@@ -1,0 +1,31 @@
+.module-charger-8-sharing {
+	height: 800px;
+	background-image: url(/img/gen/gocharger/map.jpg);
+	background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.module-charger-8-sharing .container {
+	height: 100%;
+	position: relative;
+}
+.module-charger-8-sharing .container .row {
+	position: absolute;
+	bottom: 0;
+}
+.module-charger-8-sharing .container .row p {
+	line-height: 1.2;
+	font-size: 1.7rem;
+}
+
+@media (max-width: 767px) {
+	.module-charger-8-sharing {
+		background: none;
+		height: auto;
+	}
+	.module-charger-8-sharing .container .row {
+		position: relative;
+		bottom: auto;
+		padding: 25px 0;
+	}
+}

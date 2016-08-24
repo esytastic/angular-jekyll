@@ -1,0 +1,354 @@
+/* ====================================
+   Site colors
+   ==================================== */
+/*
+   Brand colors
+   ====================================
+   White / Light Gray = Fresh and Clean Charcoal / Gray / Dark Gray = Bold and Direct Rich Blue = Performance
+   Blue = Experience
+   Teal = Style
+   Dark Green = Value
+   Green = Eco / Environment
+   Hot Green = Community
+   Red = Warning
+*/
+/* ====================================
+ * Mixins and functions
+ * ==================================== */
+/* Media queries
+ * ==================================== */
+/* Usage: @include breakpoint(sm) {} */
+/* Mixins and functions
+ * ==================================== */
+/* Usage: @include linearGradient() {} */
+/* Usage: @include placeholder() {} */
+/* Usage: @include border-radius(5px) */
+/* Usage: @include opacity(0.8) */
+/* Usage: @include center-block */
+/* Usage: @include text-truncate  */
+/* Extends
+ * ==================================== */
+/* ====================================
+   Buttons
+   ==================================== */
+.btn {
+    font-family: "graphik-black-italic", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 800;
+    font-style: italic;
+    background-color: #e1ff32;
+    color: #323237;
+    border: none;
+    padding: 22px 28px 20px;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 800;
+    font-style: italic;
+    text-align: center;
+    line-height: 1;
+    letter-spacing: 2px;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    text-decoration: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    text-transform: uppercase;
+    border-radius: 2em;
+    -webkit-transition: all 0.1s linear;
+    -moz-transition: all 0.1s linear;
+    -ms-transition: all 0.1s linear;
+    -o-transition: all 0.1s linear;
+    transition: all 0.1s linear;
+    /*background-clip: padding-box;*/
+}
+
+html[lang=zh-TW] .btn {
+    font-family: 'xingothic-w8', 'Microsoft JhengHei','STHeiti';
+    font-weight: 500;
+    font-style: normal;
+}
+
+html[lang=zh-TW] .btn .graphik-black-italic {
+    font-family: "graphik-black-italic", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 800;
+    font-style: italic;
+}
+
+.btn:hover, .btn:focus {
+    color: #323237;
+    background-color: #c0df16;
+    outline: 0 !important;
+    box-shadow: none;
+}
+
+/*
+   Outlined On light
+  */
+.btn.btn-outline,
+.btn.btn-outline--blue,
+.btn.btn-outline--white,
+.btn.btn-outline--whiteBG,
+.btn.btn-outline--teal,
+.btn.btn-outline--darkgreen,
+.btn.btn-outline--green{
+    padding: 18px 24px;
+    border: 2px solid #323237;
+    background-color: transparent;
+}
+
+.btn.btn-outline:hover {
+    background-color: #323237;
+    color: #ffffff;
+}
+
+
+.btn.btn-outline.btn-sm {
+    font-size: 14px;
+}
+
+.btn.btn-outline--blue {
+    border: 2px solid #00d7ff;
+    color: #00d7ff;
+}
+
+.btn.btn-outline--blue:hover {
+    background-color: #00d7ff;
+    color: #ffffff;
+}
+
+.btn.btn-outline--teal {
+    border: 2px solid #28e1a5;
+    color: #28e1a5;
+}
+
+.btn.btn-outline--teal:hover {
+    background-color: #28e1a5;
+    color: #ffffff;
+}
+
+.btn.btn-outline--darkgreen {
+    border: 2px solid #00b946;
+    color: #00b946;
+}
+
+.btn.btn-outline--darkgreen:hover {
+    background-color: #00b946;
+    color: #ffffff;
+}
+
+.btn.btn-outline--green {
+    border: 2px solid #c0df16;
+    color: #c0df16;
+}
+
+.btn.btn-outline--green:hover {
+    background-color: #c0df16;
+    color: #ffffff;
+}
+
+/* outline white */
+.btn.btn-outline--white {
+    border: 2px solid #ffffff;
+    color: #ffffff;
+}
+
+.btn.btn-outline--white:hover {
+    border: 2px solid #000000;
+    color: #000000;
+}
+
+/* outline white BG */
+.btn.btn-outline--whiteBG {
+    border: 2px solid #ffffff;
+    color: #ffffff;
+}
+
+.btn.btn-outline--whiteBG:hover {
+    border: 2px solid #fff;
+    color: #000000;
+    background-color:#fff;
+}
+
+/*
+   Solid Pill Button Standard on Light 
+  */
+/* charcoal */
+.btn.btn-solid-charcoal {
+    padding: 18px 24px;
+    border: 2px solid #323237;
+    background-color: #323237;
+    color: #FFF;
+}
+
+.btn.btn-solid-charcoal:hover {
+    border: 2px solid #323237;
+    background-color: #ffffff;
+    color: #323237;
+}
+
+/* Rich Blue */
+.btn.btn-solid-rich-blue {
+    padding: 18px 24px;
+    border: 2px solid #0069d2;
+    background-color: #0069d2;
+    color: #FFF;
+}
+
+.btn.btn-solid-rich-blue:hover {
+    border-color: #FFF;
+    border: 2px solid #00d7ff;
+    background-color: #00d7ff;
+    color: #FFF;
+}
+
+/* solid-light-gray */
+.btn.btn-solid-light-gray {
+    padding: 18px 24px;
+    border: 2px solid #f1f3f3;
+    background-color: #f1f3f3;
+    color: #000;
+}
+
+.btn.btn-solid-light-gray:hover {
+    border-color: #b9bcbf;
+    border: 2px solid #b9bcbf;
+    background-color: #b9bcbf;
+    color: #FFF;
+}
+
+.btn.btn-solid-light-gray img {
+    width: auto;
+    height: auto;
+    margin-right: 20px;
+}
+
+.btn.btn-solid-light-gray span {
+    letter-spacing: 0;
+}
+
+/*
+   
+  */
+.btn.btn-link-btn {
+    color: #BBBCC1;
+    background-color: transparent;
+    padding: 14px 20px;
+    text-transform: capitalize;
+}
+
+.btn.btn-link-btn:hover {
+    padding: 14px 20px;
+    background-color: #636268;
+}
+
+/*
+
+  */
+.btn.btn-text-light-gray {
+    color: #f1f3f3;
+    background-color: transparent;
+    padding: 0;
+}
+
+.btn.btn-text-light-gray:hover {
+    color: #323237;
+}
+
+/*
+     Text Button
+  */
+.btn.btn-text-gray {
+    color: #c1c1c3;
+    background-color: transparent;
+    padding: 0;
+    letter-spacing: 2px;
+}
+
+.btn.btn-text-gray:hover {
+    color: #323237;
+}
+
+.btn.btn-text-gray.angle-right:after {
+    content: " >";
+}
+
+/*
+     circle button
+  */
+.btn.btn-circle {
+    color: #fff;
+    padding: 70px 0;
+    border: 2px solid #fff;
+    background-color: transparent;
+    width: 180px;
+    height: 180px;
+    border-radius: 50em;
+    background-clip: padding-box;
+}
+
+.btn.btn-circle.btn-sm {
+    padding: 14px 20px;
+    font-size: 14px;
+}
+
+/*
+
+  */
+.btn.btn-translucent {
+    color: #323237;
+    background-color: #fff;
+    opacity: 0.3;
+    -webkit-transition: opacity 250ms ease;
+    transition: opacity 250ms ease;
+}
+
+.btn.btn-translucent:hover {
+    opacity: 0.6;
+}
+
+
+
+.btn-facebook-login {
+    text-transform: capitalize;
+}
+
+/*
+    input:file style 
+    usage:
+    <span class="btn btn-text-gray btn-file">
+        上傳圖示 <input type="file" name="avatar">
+    </span>
+*/
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+}
+
+
+@media (max-width: 991px) {
+    .btn {
+        padding: 12px 18px !important;
+        font-size: 14px;
+    }
+    .btn.btn-circle {
+        padding: 70px 0 !important;
+    }
+}

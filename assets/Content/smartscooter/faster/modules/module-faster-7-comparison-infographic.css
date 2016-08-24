@@ -1,0 +1,596 @@
+/* ====================================
+   Site colors
+   ==================================== */
+/*
+   Brand colors
+   ====================================
+   White / Light Gray = Fresh and Clean Charcoal / Gray / Dark Gray = Bold and Direct Rich Blue = Performance
+   Blue = Experience
+   Teal = Style
+   Dark Green = Value
+   Green = Eco / Environment
+   Hot Green = Community
+   Red = Warning
+*/
+/* ====================================
+ * Mixins and functions
+ * ==================================== */
+/* Media queries
+ * ==================================== */
+/* Usage: @include breakpoint(sm) {} */
+/* Mixins and functions
+ * ==================================== */
+/* Usage: @include linearGradient() {} */
+/* Usage: @include placeholder() {} */
+/* Usage: @include border-radius(5px) */
+/* Usage: @include opacity(0.8) */
+/* Usage: @include center-block */
+/* Usage: @include text-truncate  */
+/* Extends
+ * ==================================== */
+/* Variables
+ * ==================================== */
+/* Mixins and functions
+ * ==================================== */
+.module-faster-7-comparison-infographic {
+    position: relative;
+    /*background: #323237;*/
+    background: #2f2e34;
+    width: 100%;
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+}
+
+    .module-faster-7-comparison-infographic:before {
+        content: "";
+        float: left;
+    }
+
+    .module-faster-7-comparison-infographic:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    .module-faster-7-comparison-infographic .container {
+        position: relative;
+        height: 100%;
+    }
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .module-faster-7-comparison-infographic {
+        height: auto;
+        padding: 0;
+        text-align: left;
+        background: #2f2e34;
+    }
+}
+
+@media (max-width: 767px) {
+    .module-faster-7-comparison-infographic {
+        height: auto;
+        padding: 0 0 48px 0;
+        background: #2f2e34;
+    }
+}
+
+.state-fallback .module-faster-7-comparison-infographic {
+    background: #2f2e34;
+}
+
+.module-faster-7-comparison-infographic .fallback {
+    display: none;
+}
+
+.state-fallback .module-faster-7-comparison-infographic .fallback {
+    display: inline;
+    width: 100%;
+    height: auto;
+}
+
+.module-faster-7-comparison-infographic .image {
+    position: relative;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .module-faster-7-comparison-infographic .image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    .module-faster-7-comparison-infographic .image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: none;
+    }
+}
+
+.module-faster-7-comparison-infographic .image .infographic {
+    position: relative;
+    display: table;
+    width: 580px;
+    height: 290px;
+    margin: 0 auto;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .module-faster-7-comparison-infographic .image .infographic {
+        width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .module-faster-7-comparison-infographic .image .infographic {
+        width: 100%;
+    }
+}
+
+.state-fallback .module-faster-7-comparison-infographic .image .infographic {
+    display: none;
+}
+
+.module-faster-7-comparison-infographic .image .infographic .title {
+    position: relative;
+    height: 50px;
+    font-size: 32px;
+    color: #b9bcbf;
+    text-align: center;
+}
+
+    .module-faster-7-comparison-infographic .image .infographic .title sup {
+        position: relative;
+        vertical-align: top;
+        font-size: 16px;
+        line-height: 48px;
+    }
+
+.module-faster-7-comparison-infographic .image .infographic .bars {
+    position: absolute;
+    z-index: 10;
+    top: 80px;
+}
+
+.module-faster-7-comparison-infographic .image .infographic .us, .module-faster-7-comparison-infographic .image .infographic .them {
+    position: relative;
+    display: table-row;
+}
+
+    .module-faster-7-comparison-infographic .image .infographic .us .speed .bar {
+        /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+        background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwZDdmZiIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMGQ3ZmYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+        /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(0, 215, 255, 0)), color-stop(100%, #00d7ff));
+        /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(left, rgba(0, 215, 255, 0) 0%, #00d7ff 100%);
+        /* Chrome10+,Safari5.1+ */
+        /* Opera 11.10+ */
+        /* IE10+ */
+        background: linear-gradient(to right, rgba(0, 215, 255, 0) 0%, #00d7ff 100%);
+        /* W3C */
+        /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0000d7ff', endColorstr='#00d7ff',GradientType=1 );*/
+        /* IE6-8 */
+        width: 0;
+        max-width: 483px;
+    }
+
+    .module-faster-7-comparison-infographic .image .infographic .us .time {
+        color: #00d7ff;
+    }
+
+    .module-faster-7-comparison-infographic .image .infographic .them .speed .bar {
+        /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+        background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzZhNzI3NyIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM2YTcyNzciIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+        /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(106, 114, 119, 0)), color-stop(100%, #6a7277));
+        /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(left, rgba(106, 114, 119, 0) 0%, #6a7277 100%);
+        /* Chrome10+,Safari5.1+ */
+        /* Opera 11.10+ */
+        /* IE10+ */
+        background: linear-gradient(to right, rgba(106, 114, 119, 0) 0%, #6a7277 100%);
+        /* W3C */
+        /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#006a7277', endColorstr='#6a7277',GradientType=1 );*/
+        /* IE6-8 */
+        width: 0;
+        max-width: 383px;
+    }
+
+    .module-faster-7-comparison-infographic .image .infographic .them .time {
+        color: #737d82;
+    }
+
+    .module-faster-7-comparison-infographic .image .infographic .us .speed, .module-faster-7-comparison-infographic .image .infographic .them .speed {
+        position: relative;
+        display: table-cell;
+        width: 483px;
+        height: 59px;
+        padding-top: 10px;
+        font-size: 0;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+        .module-faster-7-comparison-infographic .image .infographic .us .speed .bar, .module-faster-7-comparison-infographic .image .infographic .them .speed .bar {
+            position: relative;
+            float: left;
+            height: 10px;
+            top: -10px;
+        }
+
+            .module-faster-7-comparison-infographic .image .infographic .us .speed .bar .title, .module-faster-7-comparison-infographic .image .infographic .them .speed .bar .title {
+                position: relative;
+                display: block;
+                top: -24px;
+                font-family: "graphik-semibold", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+                font-weight: 600;
+                font-style: normal;
+                font-size: 16px;
+                color: #b9bcbf;
+                text-align: right;
+                opacity: 0;
+            }
+
+        .module-faster-7-comparison-infographic .image .infographic .us .speed .bar-remainder, .module-faster-7-comparison-infographic .image .infographic .them .speed .bar-remainder {
+            position: relative;
+            display: none;
+            float: left;
+            height: 10px;
+            width: 100px;
+            top: -10px;
+            background-color: #ff1923;
+        }
+
+    .module-faster-7-comparison-infographic .image .infographic .us .time, .module-faster-7-comparison-infographic .image .infographic .them .time {
+        position: relative;
+        display: table-cell;
+        height: 84px;
+        padding-left: 17px;
+    }
+
+        .module-faster-7-comparison-infographic .image .infographic .us .time .second, .module-faster-7-comparison-infographic .image .infographic .them .time .second {
+            position: relative;
+            display: inline-block;
+            font-family: "flama-condensed-bold", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+            font-weight: 700;
+            font-style: normal;
+            font-size: 40px;
+            letter-spacing: -4px;
+        }
+
+        .module-faster-7-comparison-infographic .image .infographic .us .time .millis, .module-faster-7-comparison-infographic .image .infographic .them .time .millis {
+            position: relative;
+            display: inline-block;
+            top: -12px;
+            font-family: "flama-condensed-bold", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+            font-weight: 700;
+            font-style: normal;
+            font-size: 24px;
+        }
+
+        .module-faster-7-comparison-infographic .image .infographic .us .time .text, .module-faster-7-comparison-infographic .image .infographic .them .time .text {
+            position: relative;
+            display: block;
+            top: -30px;
+            left: 20px;
+            font-family: "graphik-semibold", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+            font-weight: 600;
+            font-style: normal;
+            font-size: 14px;
+        }
+
+.module-faster-7-comparison-infographic .image .infographic .legend {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    z-index: 0;
+}
+
+    .module-faster-7-comparison-infographic .image .infographic .legend span {
+        position: relative;
+        display: inline-block;
+        width: 105px;
+        padding-top: 265px;
+        background: url(//images.gogoroapp.com/vertical-grid-line-dark-gray.png) no-repeat 44px 50px;
+        font-family: "graphik-extra-light", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+        font-weight: 200;
+        font-style: normal;
+        font-size: 18px;
+        color: #737d82;
+        text-align: center;
+    }
+
+        .module-faster-7-comparison-infographic .image .infographic .legend span sup {
+            position: relative;
+            vertical-align: top;
+            font-size: 9px;
+            line-height: 27px;
+        }
+
+.module-faster-7-comparison-infographic .image .infographic .punch-line {
+    position: absolute;
+    display: table;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    /*background-color: rgba(50, 50, 55, 0.7);*/
+    opacity: 0;
+    z-index: 100;
+}
+
+    .module-faster-7-comparison-infographic .image .infographic .punch-line .comparison-wrapper {
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+        .module-faster-7-comparison-infographic .image .infographic .punch-line .comparison-wrapper .comparison {
+            width: 200px;
+            margin: 44px auto 32px;
+            border: 2px solid white;
+            padding: 10px 0;
+            font-family: "graphik-extra-light", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+            font-weight: 200;
+            font-style: normal;
+            color: #fff;
+        }
+
+            .module-faster-7-comparison-infographic .image .infographic .punch-line .comparison-wrapper .comparison .percent {
+                display: block;
+                text-align: center;
+                font-size: 72px;
+                line-height: 96px;
+            }
+
+                .module-faster-7-comparison-infographic .image .infographic .punch-line .comparison-wrapper .comparison .percent sup {
+                    position: relative;
+                    vertical-align: top;
+                    font-size: 36px;
+                    line-height: 108px;
+                }
+
+            .module-faster-7-comparison-infographic .image .infographic .punch-line .comparison-wrapper .comparison .text {
+                display: block;
+                margin-top: -20px;
+                margin-bottom: 10px;
+                text-align: center;
+                font-size: 32px;
+                line-height: 32px;
+            }
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .module-faster-7-comparison-infographic .background-image {
+        margin-top: 48px;
+    }
+}
+
+@media (max-width: 767px) {
+    .module-faster-7-comparison-infographic .background-image {
+        margin-bottom: 24px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .module-faster-7-comparison-infographic h2 {
+        text-align: center;
+    }
+
+    .module-faster-7-comparison-infographic p {
+        text-align: center;
+        max-width: 595px;
+        margin-bottom: 48;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 767px) {
+    .module-faster-7-comparison-infographic p {
+        /*text-align: center;*/
+        /*max-width: 595px;*/
+        /*margin-bottom: 48;*/
+        /*margin-left: auto;*/
+        /*margin-right: auto;*/
+    }
+}
+
+.theme-toggle a {
+    border: 0;
+    margin-right: 20px;
+    color: #fff;
+    opacity: 0.3;
+    font-family: "graphik-semibold", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+html[lang=zh-TW] .theme-toggle a { 
+	 font-family: 'xingothic-w8', 'Microsoft JhengHei','STHeiti';
+     font-weight: 500; 
+}
+
+
+/******************************
+ Helper
+*******************************/
+.border {
+    border: 1px solid #ff3228;
+}
+
+.border-green {
+    border: 1px solid green;
+}
+
+/******************************
+ module-faster-7-comparison-infographic
+*******************************/
+.module-faster-7-comparison-infographic .image .charts {
+    position: absolute;
+    left: 50px;
+    top: -150px;
+}
+
+    .module-faster-7-comparison-infographic .image .charts.torque {
+        /*top: -205px;*/
+        /*left: 30px;*/
+        top: -156px;
+    }
+
+.module-faster-7-comparison-infographic .fallback-torque-wrap {
+    position: relative;
+    /*background: url("/img/bgd-module-faster-7-torque_background.png") no-repeat;*/
+    background: url("//images.gogoroapp.com/bgd-module-faster-7-torque_full.png") no-repeat;
+    width: 636px;
+    height: 374px;
+}
+
+.module-faster-7-comparison-infographic .image .infographic .fallback-torque-wrap .legend {
+    top: 43px;
+    left: 50px;
+}
+
+    .module-faster-7-comparison-infographic .image .infographic .fallback-torque-wrap .legend span {
+        width: 85px;
+        color: #737d82;
+    }
+
+.module-faster-7-comparison-infographic .image .infographic .fallback-torque-wrap .title {
+    padding-top: 40px;
+}
+
+.chart-title, .chart-num {
+    position: absolute;
+}
+
+.chart-title {
+    font-family: "graphik-semibold", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 16px;
+    color: #b9bcbf;
+    top: 116px;
+    left: 98px;
+}
+
+    .chart-title.title--other {
+        top: 270px;
+    }
+
+.chart-num {
+    font-family: "flama-condensed-bold", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 40px;
+    color: #00d7ff;
+    top: 100px;
+    left: 30px;
+}
+
+    .chart-num span {
+        font-size: 20px;
+    }
+
+    .chart-num.num--other {
+        color: #737D82;
+        top: 255px;
+    }
+
+/******************************
+ module-faster-7-comparison-infographic
+ SVG
+*******************************/
+#svg-gogoro-torque, #svg-normal-torque, #svg-normal-red-torque {
+    stroke-dasharray: 600;
+    stroke-dashoffset: 600;
+}
+
+
+/* mediaquery */
+@media only screen and (min-width: 768px) and (max-width: 970px) {
+    .module-faster-7-comparison-infographic img.fallback {
+        margin-bottom: 0px;
+        margin-top: 0px;
+    }
+
+    .no-guter {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .acceleration-txt-wrap {
+        margin-top: -1px;
+       background-color:#3d3c42;
+    }
+    .torque-txt-wrap p{
+        padding-left: 15px;
+        padding-right:15px;
+    }
+  
+}
+
+@media (max-width: 767px) {
+    .module-faster-7-comparison-infographic {
+      padding: 0 0 0 0;
+    }
+    .module-faster-7-comparison-infographic img.fallback {
+        margin-bottom: 0px;
+        margin-top: 0px;
+    }
+
+    .state-fallback .module-faster-7-comparison-infographic .fallback {
+      width: 95%;
+    }
+
+    .no-guter {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .vertical-center-acceleration {
+        padding-top: 48px;
+        background-color: #3d3c42;
+    }
+
+    .torque-fallback-image {
+        padding-top: 48px;
+    }
+
+
+    .acceleration-txt-wrap {
+        margin-top: -1px;
+       background-color:#3d3c42;
+    }
+
+    .acceleration-txt-wrap h2,
+    .torque-txt-wrap h2
+    {
+        padding-top: 24px;
+    }
+
+    .acceleration-txt-wrap p
+    {
+        padding-left: 40px;
+        padding-right:40px;
+        padding-bottom:48px;
+    }
+
+    .torque-txt-wrap p
+    {
+        padding-left: 20px;
+        padding-right:20px;
+        padding-bottom:48px;
+    }
+
+
+
+}

@@ -1,0 +1,48 @@
+---
+style: |
+    <link rel="stylesheet" href="/css/press.css">
+scripts: |
+    <script src="/js/press.js"></script>
+layout: zh-tw/LayoutMaster
+---
+
+<div class="pg-press" data-state="Press">
+    <section id="hero-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">
+                    <h1>Press</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    {% include zh-tw/PressSmallSizesMenuPartial.html %}
+    <section class="main-section" data-state="Press">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-md-offset-0 col-sm-10 col-sm-offset-1 hidden-sm hidden-xs press-sidebar">
+                    {% include zh-tw/PressLargeSizesMenuPartial.html %}
+                </div>
+                <div class="col-md-7 col-md-offset-0 col-xs-12 press-main">
+                    <article>
+                        {{ content }}
+
+                        <h3>關於Smartscooter™ 智慧雙輪</h3>
+                        <p>於2015年國際消費電子展首度見世即榮獲國際肯定，Smartscooter™ 智慧雙輪是世界上第一部使用電池交換技術的高性能智慧型電動雙輪載具。擁有極速95km/h以及最高續航力100公里的性能表現，Smartscooter™ 智慧雙輪採用了超級跑車的製程、材料以及精細度，提供大眾市場兼具優異性能、便捷使用者介面的交通工具。Smartscooter™ 智慧雙輪於全車及電池共計搭載 80 組的感應器，加上雲端連結以及高度整合的行動裝置App，每次的騎乘都能讓 Smartscooter™ 智慧雙輪更聰明、更有效率。</p>
+
+                        {% include zh-tw/PartialAboutGogoro.html %}
+                    </article>
+                    <div id="social-share">
+                        <label>Share</label>
+                        <ul class="list-inline">
+                            <li><a href="#" target="_blank" id="social-share-twitter"><i class="fa fa-twitter-square"></i></a></li>
+                            <li><a href="#" target="_blank" id="social-share-facebook"><i class="fa fa-facebook-square"></i></a></li>
+                            <li><a href="#" target="_blank" id="social-share-google"><i class="fa fa-google-plus-square"></i></a></li>
+                            <li><a href="#" target="_blank" id="social-share-linkedin"><i class="fa fa-linkedin-square"></i></a></li>
+                        </ul>
+                    </div>
+                </div><!--/.col-md-7 -->
+            </div><!--/.row -->
+        </div><!--/.container -->
+    </section><!--/.main-section -->
+</div>

@@ -1,0 +1,18 @@
+title: Gogoroweb
+email: matt@roamandwander.com
+description: > # this means to ignore newlines until "baseurl:"
+  A static conversion of www.gogoro.com from an ASP.NET MVC app
+baseurl: ""
+url: "http://gogoro.com" # the base hostname & protocol for your site
+include:
+    - _directive
+    - _service
+    - _json
+    - _common
+encoding: utf-8
+source: src
+destination: public
+urls:
+    contactFormSubmit: http://formspree.io/caroline.su@gogoro.com
+    keepMeInformedSubmit: http://formspree.io/caroline.su@gogoro.com
+    stayTuned: http://formspree.io/caroline.su@gogoro.com

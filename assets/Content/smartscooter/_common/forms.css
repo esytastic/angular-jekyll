@@ -1,0 +1,158 @@
+/* ====================================
+   Site colors
+   ==================================== */
+/*
+   Brand colors
+   ====================================
+   White / Light Gray = Fresh and Clean Charcoal / Gray / Dark Gray = Bold and Direct Rich Blue = Performance
+   Blue = Experience
+   Teal = Style
+   Dark Green = Value
+   Green = Eco / Environment
+   Hot Green = Community
+   Red = Warning
+*/
+/* ====================================
+ * Mixins and functions
+ * ==================================== */
+/* Media queries
+ * ==================================== */
+/* Usage: @include breakpoint(sm) {} */
+/* Mixins and functions
+ * ==================================== */
+/* Usage: @include linearGradient() {} */
+/* Usage: @include placeholder() {} */
+/* Usage: @include border-radius(5px) */
+/* Usage: @include opacity(0.8) */
+/* Usage: @include center-block */
+/* Usage: @include text-truncate  */
+/* Extends
+ * ==================================== */
+/* ====================================
+   Forms
+   ==================================== */
+form label {
+    font-family: "graphik-semibold", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 14px;
+    letter-spacing: 0;
+}
+
+html[lang=zh-TW] form label { 
+	 font-family: 'xingothic-w8', 'Microsoft JhengHei','STHeiti';
+     font-weight: 500; 
+}
+
+label small {
+    color: #c1c1c3;
+    font-size: 12px;
+    font-size: 1.2rem;
+}
+
+/* center alignment with radio text  */
+input[type='radio'] {
+    vertical-align: middle; 
+    margin: 0px;
+    margin-bottom: 2px;
+}
+
+
+
+input[type=text],
+textarea {
+    -webkit-appearance: none;
+}
+
+.form-control {
+    border-radius: 0;
+    background-clip: padding-box;
+    border-color: #c1c1c3;
+    color: #323237;
+    box-shadow: none;
+    height: 40px;
+    border:2px solid #F1F3F3;
+}
+
+input.form-control {
+    padding-top:8px;
+}
+
+.form-control:focus {
+    /*border-color: #c1c1c3;*/
+
+    border:2px solid #323237;
+    box-shadow: none;
+}
+
+.form-control::-webkit-input-placeholder {
+    color: #c1c1c3;
+    font-size: 12px;
+    font-size: 1.2rem;
+}
+
+.form-control:-moz-placeholder {
+    /* Firefox 18- */
+    color: #c1c1c3;
+    font-size: 12px;
+    font-size: 1.2rem;
+}
+
+.form-control::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #c1c1c3;
+    font-size: 12px;
+    font-size: 1.2rem;
+}
+
+.form-control:-ms-input-placeholder {
+    color: #c1c1c3;
+    font-size: 12px;
+    font-size: 1.2rem;
+}
+
+.error-container .help-block{
+  color: #e34232;
+  font-size: 12px;
+  font-size: 1.2rem;
+}
+
+
+.has-error .form-control {
+  border-color: #e34232;
+}
+
+
+.ajax-error-message {
+    margin-top:10px;
+    margin-bottom:10px;
+    color:red;
+}
+
+@media (max-width: 767px) {
+    .form-group {
+       text-align: left;
+    }
+}
+
+
+ul.angular-form-properties {
+    font-family: "graphik-light" !important;
+}
+
+/* Angularjs class
+ * ==================================== */
+form .ng-invalid {
+    /*border: 2px solid #ff1923;*/
+}
+
+/* awesome-bootstrap checkbox
+ * ==================================== */
+@media (max-width: 1199px) {
+    .radio input[type="radio"], 
+    .radio-inline input[type="radio"], 
+    .checkbox input[type="checkbox"], 
+    .checkbox-inline input[type="checkbox"] {
+      margin-left: -30px;
+    }
+}

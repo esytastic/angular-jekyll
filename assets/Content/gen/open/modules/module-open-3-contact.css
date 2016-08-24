@@ -1,0 +1,98 @@
+.module-open-3-contact .select {
+	background: #CCEB4B;
+}
+.module-open-3-contact .select .row {
+	margin: 0;
+	overflow: hidden;
+}
+
+.module-open-3-contact .select .option:hover {
+	background: #CEFF00;
+}
+
+.module-open-3-contact .select .option {
+	padding: 60px 5%;
+	cursor: pointer;
+
+	margin-bottom: -1000px;
+	padding-bottom: 1000px;
+}
+
+@media (min-width: 992px) {
+	.module-open-3-contact .content-container {
+		height: 420px;
+	}
+}
+
+.module-open-3-contact .select .option img {
+	height: 170px;
+}
+.module-open-3-contact .select .option .check {
+	position: absolute;
+  top: 125px;
+  max-width: 401px;
+  text-align: center;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+.module-open-3-contact .select .option .check img {
+	width: 90%;
+	max-width: 460px;
+	height: auto;
+}
+.module-open-3-contact .select .option .title {
+	font-size: 3rem;
+	max-width: 500px;
+	text-align: center;
+	margin: 0 auto;
+}
+.module-open-3-contact .select .option .description {
+	font-size: 1.7rem;
+	text-align: center;
+	padding: 20px 0 30px;
+	max-width: 401px;
+	margin: 0 auto;
+}
+.module-open-3-contact .select .option button {
+	margin-bottom: 30px;
+}
+.module-open-3-contact .select .option-1 {
+	background: #D6F64F;
+	text-align: center;
+}
+
+.module-open-3-contact .select .option-2 {
+	background: #CCEB4B;
+	text-align: center;
+}
+
+.module-open-3-contact .form .col-md-5 {
+	margin: 0 auto;
+	margin: -175px auto 20px;
+	float: none;
+}
+.module-open-3-contact .form {
+	text-align: left;
+}
+.module-open-3-contact .form .disclaimer {
+	font-size: 14px;
+}
+.module-open-3-contact .form .btn {
+	margin: 50px auto;
+	display: block;
+}
+@media (max-width: 700px) {
+	.module-open-3-contact .form .col-md-5 {
+		margin: 0 auto;
+	}
+	.module-open-3-contact .form .map {
+		width: 100%;
+	}
+}
+.modal-dialog {
+	z-index: 9999;
+}
+.ggr-cbox input {
+	margin: 0 8px 8px 0;
+}

@@ -1,0 +1,112 @@
+---
+layout: en-tw/LayoutMaster
+style: |
+    <link rel="stylesheet" href="/css/contact.css">
+scripts: |
+    <script type="text/javascript">
+        var apiUrl = "http://formspree.io/matt@roamandwander.com";
+        var nameMessage = 'Your name is required and cannot be empty';
+        var emailMessage = 'Your email is required and cannot be empty';
+        var emailValidMessage = 'Your email address is not a valid';
+        var subjectMessage = 'Subject is required and cannot be empty';
+        var messageMessage = 'Your message is required and cannot be empty';
+    </script>
+    <script src="/js/contact.js"></script>
+---
+
+<div class="pg-contact" data-state="Contact">
+    <section id="hero-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">
+                    <h1>Contact</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="main-section">
+
+        <div class="container contact--info">
+            <div class="row">
+                <div class="section-container col-md-offset-3 col-md-7">
+                    <div class="info-section">
+                        <h2>Business Opportunities</h2>
+                        <p>If you are interested in business opportunities or partnerships, please contact us directly at <a href="mailto:contact@gogoro.com">contact@gogoro.com</a></p>
+                    </div>
+                    <div class="info-section">
+                        <h2>Press</h2>
+                        <p>For media inquires, please contact us at <a href="mailto:press@gogoro.com">press@gogoro.com</a>. You can also follow us on Twitter: <a href="https://twitter.com/gogoronews" target="_blank" >@GogoroNews</a></p>
+                    </div>
+                    <div class="info-section">
+                        <h2>Energy Network Partnership</h2>
+                        <p>If you are interested in participating in the Gogoro® Energy Network, please contact us directly at <a href="mailto:genpartnership@gogoro.com">genpartnership@gogoro.com</a>.</p>
+                    </div>
+                    <div class="info-section">
+                        <h2>Career</h2>
+                        <p>Visit our <a href="http://www.gogoro.com/tw/en/career">Career</a> page for the latest employment opportunities or contact us at <a href="mailto:job@gogoro.com">job@gogoro.com</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container hidden">
+            <div class="row">
+                <div class="col-md-7 col-md-offset-3 col-xs-12">
+                    <div id="contact-form-container">
+                        <p>We love to hear from you. Please complete the form below for media, career, or business partnership related topics.</p>
+                        <form action="#" method="post" accept-charset="utf-8" id="contact-form">
+                            <div class="form-group">
+                                <label for="contact-name-first">Name</label>
+                                <input type="text" name="name" value="" class="form-control" id="contact-name-first" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="contact-email-address" class="margin-top-20">Email Address</label>
+                                <input type="email" name="email" value="" placeholder="" class="form-control" id="contact-email-address" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="contact-company" class="margin-top-20">Company</label>
+                                <input type="text" name="company" value="" placeholder="Optional" class="form-control" id="contact-company">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="contact-subject" class="margin-top-20">Subject</label>
+                                <input type="text" name="subject" value="" placeholder="" class="form-control" id="contact-subject" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="contact-message" class="margin-top-20">Message</label>
+                                <textarea class="form-control" name="message" rows="5" id="contact-message" required></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <input type="submit" class="btn btn-outline margin-top" id="contact-form-submit" value="Send">
+                            </div>
+
+                        </form>
+
+                        <div class="modal fade" id="contact-form-sent" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                        <h3>Message sent!</h3>
+                                        <p>Thanks for contacting Gogoro. We'll be in touch.</p>
+                                        <a href="#" class="btn btn-outline btn-sm margin-top" data-dismiss="modal">Okay</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <hr>
+
+                    <p>Contact us directly: <a href="mailto:contact@gogoro.com">contact@gogoro.com</a></p>
+
+                </div><!--/.col-md-7 -->
+            </div><!--/.row -->
+        </div><!--/.container -->
+    </section><!--/.main-section -->
+</div>

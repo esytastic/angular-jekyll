@@ -1,0 +1,55 @@
+﻿
+/*
+<li><a href="#"> <i class="icon-facebook"></i></a></li>
+<li><a href="#"> <i class="icon-twitter"></i></a></li>
+<li><a href="#"> <i class="icon-instagram"></i></a></li>
+*/
+i.gicon {
+    display:block;
+    width:32px;
+    height:32px;
+    background-repeat:no-repeat;
+    background-position:center;
+
+    -webkit-transition: all 500ms ease-out 0.1s;
+    -moz-transition: all 500ms ease-out 0.1s;
+    -o-transition: all 500ms ease-out 0.1s;
+    transition: all 500ms ease-out 0.1s;
+}
+i.gicon.gicon--facebook:hover,
+i.gicon.gicon--twitter:hover,
+i.gicon.gicon--linkedin:hover,
+i.gicon.gicon--youtube:hover
+{
+    -webkit-transition: all 500ms ease-in 0.1s;
+    -moz-transition: all 500ms ease-in 0.1s;
+    -o-transition: all 500ms ease-in 0.1s;
+    transition: all 500ms ease-in 0.1s;  
+}
+i.gicon.gicon--facebook {
+    background-image:url('//images.gogoroapp.com/icons/facebook-off.png');
+}
+i.gicon.gicon--facebook:hover {
+    background-image:url('//images.gogoroapp.com/icons/facebook-on.png');
+}
+
+i.gicon.gicon--twitter {
+    background-image:url('//images.gogoroapp.com/icons/twitter-off.png');
+}
+i.gicon.gicon--twitter:hover {
+    background-image:url('//images.gogoroapp.com/icons/twitter-on.png');
+}
+
+i.gicon.gicon--linkedin {
+    background-image:url('//images.gogoroapp.com/icons/linkedin-off.png');
+}
+i.gicon.gicon--linkedin:hover {
+    background-image:url('//images.gogoroapp.com/icons/linkedin-on.png');
+}
+
+i.gicon.gicon--youtube {
+    background-image:url('//images.gogoroapp.com/icons/youtube-off.png');
+}
+i.gicon.gicon--youtube:hover {
+    background-image:url('//images.gogoroapp.com/icons/youtube-on.png');
+}

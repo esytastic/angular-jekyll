@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": ";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAMA,OAAQ;EACN,gBAAgB,ECWH,IAAI;EDVjB,oBAAe;IACb,OAAO,EAAE,QAAmB;IEM5B,gDAAiD;MFPnD,oBAAe;QAGX,OAAO,EAAE,MAAiB;IEA5B,yBAA0B;MFH5B,oBAAe;QAMX,OAAO,EAAE,MAAe;IAE1B,gDAA8B;MAC5B,aAAa,EAAE,KAAgB;MAC/B,cAAc,EAAE,IAAe;EAGnC,uBAAgB;IACd,cAAc,EAAC,IAAI;IEPnB,gDAAiD;MFMnD,uBAAgB;QAGZ,cAAc,EAAE,IAAe;IEbjC,yBAA0B;MFU5B,uBAAgB;QAMZ,cAAc,EAAE,IAAiB;IAEnC,0BAAG;MACD,MAAM,EAAE,CAAC;MACT,QAAQ,EAAE,QAAQ",
+"sources": ["../../../common/_foundation/sections.scss","file:///d:/WebDevelopment/Gogoro/Projects/Gogoro-Official-Site/_Cinco_Bitbucket/Gogoro-Corp/src/sass/_colors.scss","file:///d:/WebDevelopment/Gogoro/Projects/Gogoro-Official-Site/_Cinco_Bitbucket/Gogoro-Corp/src/sass/_mixins.scss"],
+"names": [],
+"file": "sections.css"
+}

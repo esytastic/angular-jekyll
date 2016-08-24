@@ -1,0 +1,97 @@
+/* ====================================
+   Site colors
+   ==================================== */
+/*
+   Brand colors
+   ====================================
+   White / Light Gray = Fresh and Clean Charcoal / Gray / Dark Gray = Bold and Direct Rich Blue = Performance
+   Blue = Experience
+   Teal = Style
+   Dark Green = Value
+   Green = Eco / Environment
+   Hot Green = Community
+   Red = Warning
+*/
+/* ====================================
+ * Mixins and functions
+ * ==================================== */
+/* Media queries
+ * ==================================== */
+/* Usage: @include breakpoint(sm) {} */
+/* Mixins and functions
+ * ==================================== */
+/* Usage: @include linearGradient() {} */
+/* Usage: @include placeholder() {} */
+/* Usage: @include border-radius(5px) */
+/* Usage: @include opacity(0.8) */
+/* Usage: @include center-block */
+/* Usage: @include text-truncate  */
+/* Extends
+ * ==================================== */
+/* Variables
+ * ==================================== */
+/* Mixins and functions
+ * ==================================== */
+body.main-header-fixed {
+  padding-top: 52px; }
+
+
+.module-open-1-intro .body {
+	margin: 0;
+    width: 100%;
+    color: #323237;
+}
+
+.module-open-1-intro h2 {
+    font-size: 6.4rem;
+}
+
+.module-open-1-intro {
+	background-image: url(/img/landing/Landing_Hero_Banner_0106.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: initial;
+}
+
+.module-open-1-intro p {
+	width: 100%;
+	max-width: 740px;
+	margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+	.module-open-1-intro {
+	    background-position: center -191px;
+	}
+	.module-open-1-intro .body {
+    	top: 85px;
+    }
+    .module-open-1-intro h2 {
+    	font-size: 5rem;
+    }
+}
+@media (max-width: 566px) {
+	.module-open-1-intro  {
+		background-image: url(/img/landing/Landing_Hero_Banner_Mobile_0106.jpg);
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: 100%;
+		min-height: 514px;
+	}
+    .module-open-1-intro .body {
+    	top: 50px;
+    }
+    .module-open-1-intro h2 {
+    	margin: 10px 0 13px 0;
+    }
+}
+
+.module-open-1-intro #join-open {
+    margin-top: 30px;
+    display: inline-block;
+    border-bottom: 0;
+}
+
+.module-open-1-intro #join-open img {
+    width: auto;
+}

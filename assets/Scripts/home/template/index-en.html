@@ -1,0 +1,114 @@
+﻿<div class="home-container">
+    <style>
+        /*#smartscooter-home .carousel-container .carousel {
+                background-position:center;
+                background-repeat:no-repeat;
+            }*/
+
+        @media (min-width: 1441px) {
+            #smartscooter-home .carousel-container .carousel:nth-child(1) {
+                background-image: url(//images.gogoroapp.com/home/meetgogoro_hero_03s_eng_l.jpg);
+            }
+
+            #smartscooter-home .carousel-container .carousel:nth-child(2) {
+                background-image: url(//images.gogoroapp.com/home/meetgogoro_hero_01s_l.jpg);
+            }
+
+            #smartscooter-home .carousel-container .carousel:nth-child(3) {
+                background-image: url(//images.gogoroapp.com/home/meetgogoro_hero_02s_l.jpg);
+            }
+
+            #smartscooter-home .carousel-container .carousel:nth-child(1),
+            #smartscooter-home .carousel-container .carousel:nth-child(2),
+            #smartscooter-home .carousel-container .carousel:nth-child(3) {
+                background-size: 2560px 1440px;
+            }
+        }
+
+        @media (min-width: 1200px) and (max-width: 1440px) {
+            #smartscooter-home .carousel-container .carousel:nth-child(1) {
+                background-image: url(//images.gogoroapp.com/home/meetgogoro_hero_03s_eng_m.jpg);
+            }
+
+            #smartscooter-home .carousel-container .carousel:nth-child(2) {
+                background-image: url(//images.gogoroapp.com/home/meetgogoro_hero_01s_m.jpg);
+            }
+
+            #smartscooter-home .carousel-container .carousel:nth-child(3) {
+                background-image: url(//images.gogoroapp.com/home/meetgogoro_hero_02s_m.jpg);
+            }
+
+            #smartscooter-home .carousel-container .carousel:nth-child(1),
+            #smartscooter-home .carousel-container .carousel:nth-child(2),
+            #smartscooter-home .carousel-container .carousel:nth-child(3) {
+                background-size: 1400px 790px;
+            }
+        }
+    </style>
+
+    <div class="carousel-container">
+        <div class="carousel" >
+            <div class="max-height" ng-click="bannerRedirect('faster')">
+                <img src="//images.gogoroapp.com/home/meetgogoro_hero_03_eng_fallback_land.jpg" class="allyou-intro-go-land hidden-xs hidden-sm hidden-lg" />
+                <img src="//images.gogoroapp.com/home/meetgogoro_hero_03_eng_fallback_port.jpg" class="hidden-md hidden-lg" />
+                <div class="extra-container">
+                    <button class="btn btn-outline btn-allyou" ng-click="bannerRedirect('faster')">learn more</button>
+                </div>
+            </div>
+        </div>
+        <div class="carousel">
+            <div class="max-height">
+                <img src="//images.gogoroapp.com/home/allYou_1018_fallback_land.jpg" class="allyou-intro-go-land hidden-xs hidden-sm hidden-lg" />
+                <img src="//images.gogoroapp.com/home/allYou_1018_fallback_port.jpg" class="hidden-md hidden-lg" />
+                <div class="extra-container">
+                    <button class="btn btn-outline btn-allyou" ng-click="bannerRedirect('store')">online store</button>
+                </div>
+            </div>
+        </div>
+        <div class="carousel">
+            <div class="max-height">
+                <img src="//images.gogoroapp.com/home/hero_banner_1012_fallback_land.jpg" class="img-test-ride-lang hidden-xs hidden-sm hidden-lg" />
+                <img src="//images.gogoroapp.com/home/hero_banner_1012_02_fallback_port.jpg" class="hidden-md hidden-lg" />
+
+                <div class="homePageIntro2Word">
+                    <div class="title-container">
+                        <h2>RIDING</h2>
+                        <h2>IS BELIEVING</h2>
+                    </div>
+                    <h3 class="hidden-md hidden-sm hidden-xs">Be the first to ride with us.</h3>
+                    <button class="btn btn-solid-rich-blue" ng-click="bannerRedirect('book')">Book a ride</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer id="home-footer">
+        <div class="container">
+            <div class="layout-table">
+                <div class="layout-row">
+                    <div class="layout-cell vmiddle">
+                        <div style="padding-top: 12px;">
+                            <a href="{{$root.gogoro.wwwGogoroUrl}}about">About Us</a>
+                            <a href="{{$root.gogoro.wwwGogoroUrl}}press">Press</a>
+                            <a href="{{$root.gogoro.wwwGogoroUrl}}career">Career</a>
+                            <a href="{{$root.gogoro.wwwGogoroUrl}}support">Support</a>
+                            <a href="http://events.gogoro.com/en/book-a-ride">Book a ride</a>
+                            <a target="_blank" href="http://forum.gogoro.com/sso">Forum</a>
+                        </div>
+                    </div>
+                    <div class="layout-cell vmiddle text-right">
+                        <span class="copyright">Copyright © 2014-2016 Gogoro Inc. All rights reserved. </span>
+                        <span class="general-links"><a href="{{$root.gogoro.wwwGogoroUrl}}terms-of-use">Terms of use</a>  <a href="{{$root.gogoro.wwwGogoroUrl}}privacy-policy">Privacy Policy</a></span>
+                        <span class="gogoro-select" gogoro-select>
+                            <select ng-model="selectedlanguage"
+                                    ng-change="languageRedirect()"
+                                    ng-options="l.name for l in languages">
+                                <option value="">語言</option>
+                            </select>
+                        </span>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>

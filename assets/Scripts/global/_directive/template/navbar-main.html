@@ -1,0 +1,31 @@
+﻿<div class="navbar-main" tabindex="-1">
+    <div class="navbar-container">
+        <div class="navbar-items">
+
+            <ul class="nav navbar-nav navbar-primary">
+                <li ng-repeat="link in primaryLinks">
+                    <a navbar-link-target ng-click="showSublinks($index,link.url)" href="{{link.url}}"><div class="inline" ng-bind="link.name"></div></a>
+                    <ul class="primary-sublinks" ng-show="link.sublinks.length > 0 && $index === activeIndex">
+                        <li ng-repeat="sublink in link.sublinks"><a href="{{sublink.url}}" ng-bind="sublink.name"></a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <ul ng-show="lang == 'en-tw' || lang == 'zh-tw'" class="nav navbar-nav navbar-secondary">
+
+                <li ng-show="lang == 'en-tw'"><a href="{{$root.gogoro.wwwGogoroUrl}}faq">FAQ</a></li>
+                <li ng-show="lang == 'zh-tw'"><a href="{{$root.gogoro.wwwGogoroUrl}}faq?hash=Faq_DownPayment">FAQ</a></li>
+
+
+                <li><a href="{{$root.gogoro.wwwGogoroUrl}}shops">{{lang=='zh-tw'?'門市據點':'Find Us'}}</a></li>
+                <li>
+                    <a ng-show="$root.loginUser.isUserLogin === false" href="{{$root.gogoro.myGogoroUrl}}account/login"><span class="margin-zero">{{lang=='zh-tw'?'登入':'Login'}}</span></a>
+                    <a ng-show="$root.loginUser.isUserLogin === true" href="{{$root.gogoro.myGogoroUrl}}account/logout"><span class="margin-zero">{{lang=='zh-tw'?'登出':'Logout'}}</span></a>
+                </li>
+            </ul>
+
+            <social-icons icon-color="black"></social-icons>
+
+        </div>
+    </div>
+</div>

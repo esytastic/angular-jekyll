@@ -1,0 +1,53 @@
+﻿#book-a-ride {
+    
+}
+
+#book-a-ride button{
+    margin-top:60px;
+}
+
+#book-a-ride .contact-wrap{
+    margin-top:100px;
+}
+
+#book-a-ride .contact-wrap .contact-form-wrap{
+   border-right:1px solid #F3F3F3;
+   padding-right:150px;
+}
+
+#book-a-ride .contact-wrap aside{
+    
+}
+
+@media (max-width: 991px) {
+    #book-a-ride .contact-wrap .contact-form-wrap .checkbox{
+        padding-top:48px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    #book-a-ride .contact-wrap .contact-form-wrap{
+       padding-left:0px;
+       padding-right:0px;
+    }
+}
+
+@media (max-width: 767px) {
+    #book-a-ride .contact-wrap .contact-form-wrap{
+        padding-left:0px;
+       padding-right:0px;
+    }
+
+    #book-a-ride button{
+        margin-top:30px;
+        margin-bottom:40px;
+    }
+
+    #book-a-ride .contact-wrap .contact-form-wrap .checkbox{
+        padding-top:24px;
+    }
+
+    .checkbox input[type="checkbox"] {
+        margin-left: 0;
+    }
+}

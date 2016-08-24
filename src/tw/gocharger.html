@@ -1,0 +1,171 @@
+---
+action: gocharger
+layout: zh-tw/LayoutMaster
+style: |
+    <link rel="stylesheet" href="/css/smartscooter/easier.css">
+    <link rel="stylesheet" href="/css/gen/gocharger.css">
+scripts: |
+    <script src="/js/smartscooter/easier.js"></script>
+    <script src="/js/gen/gocharger.js"></script>
+---
+
+<div id="gocharger" ng-controller="GoChargerController">
+
+	<div class="module-charger-1-intro module-page-intro" ng-controller="moduleCharger1IntroController">
+	    <div class="container">
+	        <div class="body">
+	        	<h2><span class="graphik-extra-light">GoCharger&trade;</span> 智慧電池座</h2>
+	            <p>快速、智慧、共享的充電模式</p>
+	        </div>
+	    </div>
+	</div>
+
+    {% include zh-tw/GENTabbar.html %}
+
+    <div class="module-charger-2-video" ng-controller="moduleCharger2VideoController">
+    	<a href="#" class="btn btn-translucent launch-video-modal" data-video-src="//www.youtube.com/embed/nKz_LyIL5cw?enablejsapi=1&autoplay=1&rel=0&vq=hd720" data-video-id="faster-clean-video"><span class="graphik-light">Watch Full Video</span></a>
+        <img src="/img/gen/gocharger/video-banner-bg_fallback.jpg" class="fallback">
+        <img src="/img/gen/gocharger/video-banner-bg.jpg" class="standard">
+
+        <div class="video_hero">
+            <div class="container">
+                <div class="vertical-center-flex">
+                    <h2><span class="break">充電<br />再出發</span></h2>
+                    <a href="#" data-video-src="//www.youtube.com/embed/nKz_LyIL5cw?enablejsapi=1&autoplay=1&rel=0&vq=hd720" data-video-id="faster-clean-video" class="heroPlayBtn launch-video-modal">
+                        <div class="vertical-center-flex">
+                            <div class="playBtnContainer">
+                                <div class="playBtnLayer">
+                                    <div>PLAY<br />VIDEO</div>
+                                    <div><i class="icon-arrow-right"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="GoStationTreeCol" class="module-charger-3-summary module-easier-3-summary-info module-summary-info" ng-controller="moduleEasier3SummaryInfoController">
+        <div class="container max-height">
+            <div class="row">
+                <div class="col-md-4 col-sm-12 col-xs-12 slide">
+                    <div class="title">快速充電</div>
+                    <div class="body ">
+                        <img src="/img/gen/gocharger/2.svg" alt="gogoro" />
+                        <div class="charge-speed">倍的速度</div>
+                    </div>
+                    <div class="description">
+                        提供智慧電池快充座與智慧電池標準座兩種選擇，快充座提供 2 倍的充電速度。
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12 col-xs-12 slide">
+                    <div class="title">輕鬆安裝</div>
+                    <div class="body">
+                        <img src="/img/gen/gocharger/wifi-icon.svg" alt="gogoro" />
+                    </div>
+                    <div class="description">
+                        只需要插座和無線網路，幾個簡單步驟，立刻擁有自己的能源供應站。
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12 col-xs-12 slide">
+                    <div class="title">雲端檢測</div>
+                    <div class="body">
+                        <img src="/img/gen/gocharger/phone-icon.svg" alt="gogoro" />
+                    </div>
+                    <div class="description">
+                        透過智慧手機與無線網路，用戶可精準掌握即時的充電進度。
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="module-charger-4-anywhere" ng-controller="moduleCharger4AnywhereController">
+        <div class="container">
+            <div class="content-wrap vertical-center-container">
+                <div class="vertical-center">
+                	<h2>智慧能量無所不在</h2>
+                </div>
+            </div>
+            <img src="/img/gen/gocharger/charger-icon.png" id="charger-icon">
+        </div>
+    </div>
+
+    <div class="module-charger-5-smart" ng-controller="moduleCharger5SmartController">
+        <img src="/img/gen/gocharger/mini-fallback.jpg" class="visible-xs">
+        <div class="container">
+            <div class="video hidden-xs" style="display: block;">
+                <video id="module-charger-5-smart-video" width="2560" height="600" muted="" preload="auto" poster="/img/gen/gocharger/mini-static.jpg">
+                    <source src="/img/gen/gocharger/mini-video.mp4" type="video/mp4">
+                    <source src="/img/gen/gocharger/mini-video.webm" type="video/webm">
+                </video>
+            </div>
+            <div class="left">
+            	<h2>智慧充電</h2>
+            	<p>全新的 <span class="graphik-light">GoCharger™</span> 智慧電池座，可以讓你在家裡或者其他開放空間，同時充飽兩顆電池。充電時，<span class="graphik-light">GoCharger™</span> 智慧電池座會自動連線上網，即時將充電的進度透過 <span class="graphik-light">Gogoro® App</span> 通知用戶。同時，<span class="graphik-light">Gogoro</span> 亦可遠端管理電量、充電速度及觀察電池的使用狀況。</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="module-charger-6-iphone">
+    	<img src="/img/gen/gocharger/app-fallback.jpg" class="visible-xs">
+        <div class="container">
+            <div class="row body">
+                <div class="col-md-6 hidden-xs">
+
+                </div>
+                <div class="col-md-6 col-xs-12 text-content">
+                    <h2>團隊遠端支援</h2>
+                    <p><span class="graphik-light">Gogoro</span> 將在遠端進行<span class="graphik-light">GoCharger™</span> 智慧電池座的控管，並在當電池充飽時，即時通知你。</p>
+                </div>
+            </div>
+    	</div>
+    </div>
+
+    <div class="module-charger-7-connected" ng-controller="moduleCharger7ConnectedController">
+    	<div class="container">
+    		<div class="visible-xs">
+    			<img src="/img/gen/gocharger/connected-wave-mobile.png" class="" />
+    			<h2>即時雲端連結</h2>
+    			<img src="/img/gen/gocharger/connected-mobile.png" class="" />
+    		</div>
+    		<div class="hidden-xs">
+	    		<img src="/img/gen/gocharger/connected-base.jpg" class="base" />
+	    		<img src="/img/gen/gocharger/connected-base-full.jpg" class="base base-full" />
+	    		<h2>即時雲端連結</h2>
+	    	</div>
+	    </div>
+    </div>
+
+    <div class="module-charger-8-sharing" ng-controller="moduleCharger8SharingController">
+    	<img src="/img/gen/gocharger/map-fallback.png" class="visible-xs">
+    	<div class="container">
+			<div class="row">
+                <div class="col-lg-5 col-lg-offset-1 col-md-6 col-md-offset-0 col-sm-10 col-sm-offset-1">
+                    <strong>我們的設計哲學：</strong>
+                    <h2>共享能源</h2>
+                </div>
+                <div class="col-lg-5 col-md-6 col-md-offset-0 col-sm-10 col-sm-offset-1">
+                	<p>像是充電器這樣的專屬設備，總是有許多閒置而未被使用的時間。透過雲端的連線與整體的規劃，我們期望讓 <span class="graphik-light">GoCharger™</span> 智慧電池座與他人分享，不僅可以避免資源的浪費，<span class="graphik-light">Gogoro®</span> 能源網路的建置也會更快、更完善。</p>
+                </div>
+            </div>
+    	</div>
+    </div>
+
+    <div class="module-charger-9-revolution">
+        <div class="container">
+            <div class="statement vertical-center-container" style="border-bottom: 0px solid #000;">
+                <div class="statement_container vertical-center">
+                    <div class="row">
+                    	<p></p><h2>加入我們，一起創造未來</h2><p></p>
+                    </div>
+                    <div class="row">
+                    	<a href="/tw/open" class="btn btn-solid-rich-blue">申請安裝</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div><!--#career-->

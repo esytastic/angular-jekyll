@@ -1,0 +1,322 @@
+/* Gogoro Font Icons
+* ==================================== */
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'gogoro-icons';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+
+.icon-nav_value:before {
+	content: "\e615";
+}
+.icon-value_app:before {
+	content: "\e616";
+}
+.icon-value_battery:before {
+	content: "\e617";
+}
+.icon-value_waiver:before {
+	content: "\e618";
+}
+
+.icon-scooter-waiver:before {
+	content: "\e614";
+}
+
+.icon-nav-accessories:before {
+	content: "\e60f";
+}
+
+.icon-nav-appextras:before {
+	content: "\e610";
+}
+
+.icon-nav-merchandise:before {
+	content: "\e611";
+}
+
+.icon-nav-overview:before {
+	content: "\e612";
+}
+
+.icon-nav-scooter:before {
+	content: "\e613";
+}
+
+.icon-bullet-inactive:before {
+	content: "\e609";
+}
+
+.icon-facebook:before {
+	content: "\e601";
+}
+
+.icon-instagram:before {
+	content: "\e602";
+}
+
+.icon-twitter:before {
+	content: "\e603";
+}
+
+.icon-close:before {
+	content: "\e604";
+}
+
+.icon-arrow-left:before {
+	content: "\e605";
+}
+
+.icon-arrow-down:before {
+	content: "\e606";
+}
+
+.icon-arrow-right:before {
+	content: "\e607";
+}
+
+.icon-arrow-up:before {
+	content: "\e608";
+}
+
+.icon-bullet-active:before {
+	content: "\e60a";
+}
+
+.icon-circle-sun:before {
+	content: "\e60b";
+}
+
+.icon-circle-moon:before {
+	content: "\e60c";
+}
+
+.icon-scooter-pen:before {
+	content: "\e60d";
+}
+
+.icon-scooter-sport:before {
+	content: "\e60e";
+}
+
+.icon-scooter-battery:before {
+	content: "\e600";
+}
+
+
+
+/* Gogoro Images Icons
+   Usage
+    <i class="gicon gicon--facebook" ></i>
+* ==================================== */
+i.gicon {
+    display:block;
+    width:32px;
+    height:32px;
+    background-repeat:no-repeat;
+    background-position:center;
+
+    -webkit-transition: all 500ms ease-out 0.1s;
+    -moz-transition: all 500ms ease-out 0.1s;
+    -o-transition: all 500ms ease-out 0.1s;
+    transition: all 500ms ease-out 0.1s;
+}
+i.gicon.gicon--facebook:hover,i.gicon.gicon--facebook2:hover,
+i.gicon.gicon--twitter:hover,i.gicon.gicon--twitter2:hover,
+i.gicon.gicon--linkedin:hover,i.gicon.gicon--linkedin2:hover,
+i.gicon.gicon--youtube:hover,i.gicon.gicon--youtube2:hover
+{
+    -webkit-transition: all 500ms ease-in 0.1s;
+    -moz-transition: all 500ms ease-in 0.1s;
+    -o-transition: all 500ms ease-in 0.1s;
+    transition: all 500ms ease-in 0.1s;
+}
+i.gicon.gicon--facebook {
+    background-image:url('//images.gogoroapp.com/icons/facebook-off.png');
+}
+i.gicon.gicon--facebook:hover {
+    background-image:url('//images.gogoroapp.com/icons/facebook-on.png');
+}
+
+i.gicon.gicon--twitter {
+    background-image:url('//images.gogoroapp.com/icons/twitter-off.png');
+}
+i.gicon.gicon--twitter:hover {
+    background-image:url('//images.gogoroapp.com/icons/twitter-on.png');
+}
+
+i.gicon.gicon--linkedin {
+    background-image:url('//images.gogoroapp.com/icons/linkedin-off.png');
+}
+i.gicon.gicon--linkedin:hover {
+    background-image:url('//images.gogoroapp.com/icons/linkedin-on.png');
+}
+
+i.gicon.gicon--youtube {
+    background-image:url('//images.gogoroapp.com/icons/youtube-off.png');
+}
+i.gicon.gicon--youtube:hover {
+    background-image:url('//images.gogoroapp.com/icons/youtube-on.png');
+}
+i.gicon.gicon--blog {
+    background-image:url('//images.gogoroapp.com/icons/blog-off.png');
+}
+i.gicon.gicon--blog:hover {
+    background-image:url('//images.gogoroapp.com/icons/blog-on.png');
+}
+
+/*insta*/
+i.gicon.gicon--insta {
+    background-image:url('//images.gogoroapp.com/icons/insta-off.png');
+}
+i.gicon.gicon--insta:hover {
+    background-image:url('//images.gogoroapp.com/icons/insta-on.png');
+}
+
+i.gicon.gicon--google {
+    background-image:url('//images.gogoroapp.com/icons/google-off.png');
+}
+i.gicon.gicon--google:hover {
+    background-image:url('//images.gogoroapp.com/icons/google-on.png');
+}
+
+/*hashTag*/
+i.gicon.gicon--hashtag {
+    background-image:url('//images.gogoroapp.com/icons/hashtag-off.png');
+}
+i.gicon.gicon--hashtag:hover {
+    background-image:url('//images.gogoroapp.com/icons/hashtag-on.png');
+}
+
+
+/* tick b9bcbf 323237 */
+.tick-active {
+    border:2px solid #323237 !important;
+}
+
+i.gicon.gicon--tick-white,
+i.gicon.gicon--tick-black,
+i.gicon.gicon--tick-blue
+{ 
+    position:absolute;
+    top:5px;
+    right:5px;
+}
+i.gicon.gicon--tick-white {
+    background:url(//images.gogoroapp.com/icons/store/tick_white.png) center no-repeat;
+}
+i.gicon.gicon--tick-black {
+    background:url(//images.gogoroapp.com/icons/store/tick_black.png) center no-repeat;
+}
+i.gicon.gicon--tick-blue {
+    background:url(//images.gogoroapp.com/icons/store/tick_blue.png) center no-repeat;
+}
+
+
+
+
+/*icon2*/
+i.gicon.gicon--facebook2 {
+    background-image:url('//images.gogoroapp.com/facebook-off.png');
+}
+i.gicon.gicon--facebook2:hover {
+    background-image:url('//images.gogoroapp.com/facebook-on.png');
+}
+
+i.gicon.gicon--twitter2 {
+    background-image:url('//images.gogoroapp.com/twitter-off.png');
+}
+i.gicon.gicon--twitter2:hover {
+    background-image:url('//images.gogoroapp.com/twitter-on.png');
+}
+
+i.gicon.gicon--linkedin2 {
+    background-image:url('//images.gogoroapp.com/linkedin-off.png');
+}
+i.gicon.gicon--linkedin2:hover {
+    background-image:url('//images.gogoroapp.com/linkedin-on.png');
+}
+
+i.gicon.gicon--youtube2 {
+    background-image:url('//images.gogoroapp.com/youtube-off.png');
+}
+i.gicon.gicon--youtube2:hover {
+    background-image:url('//images.gogoroapp.com/youtube-on.png');
+}
+i.gicon.gicon--blog2 {
+    background-image:url('//images.gogoroapp.com/blog-off.png');
+}
+i.gicon.gicon--blog2:hover {
+    background-image:url('//images.gogoroapp.com/blog-on.png');
+}
+
+/*insta*/
+i.gicon.gicon--insta2 {
+    background-image:url('//images.gogoroapp.com/insta-off.png');
+}
+i.gicon.gicon--insta2:hover {
+    background-image:url('//images.gogoroapp.com/insta-on.png');
+}
+
+i.gicon.gicon--google2 {
+    background-image:url('//images.gogoroapp.com/google-off.png');
+}
+i.gicon.gicon--google2:hover {
+    background-image:url('//images.gogoroapp.com/google-on.png');
+}
+
+/*hashTag*/
+i.gicon.gicon--hashtag2 {
+    background-image:url('//images.gogoroapp.com/hashtag-off.png');
+}
+i.gicon.gicon--hashtag2:hover {
+    background-image:url('//images.gogoroapp.com/hashtag-on.png');
+}
+
+/* tick b9bcbf 323237 */
+
+
+
+
+
+#footerSocialBar ul:hover, #footerSocialBar ul li:hover, #footerSocialBar ul li a:hover {
+    background-color:#323237;
+
+}
+
+
+#footerSocialBar ul{ 
+ 
+    display: table;
+    text-align: center;
+
+ margin:0 auto;
+ padding:0;
+
+}
+
+
+
+#footerSocialBar li{ 
+margin-left:10px;
+margin-right:10px;
+list-style:none;
+display:inline-block;
+text-align:center;
+}
+
+
+#footerSocialBar li a{ 
+ 
+ border-width:0px;
+
+}
+
+

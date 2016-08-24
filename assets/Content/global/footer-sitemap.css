@@ -1,0 +1,186 @@
+﻿#footer-sitemap {
+    position:relative;
+   font-family: "graphik-semibold", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+   font-size:16px;
+
+   height:100px;
+   background-color:#3d3c42;
+   text-align:center;
+}
+html[lang=zh-TW] #footer-sitemap  { 
+	 font-family: 'xingothic-w8', 'Microsoft JhengHei','STHeiti'; 
+}
+
+#footer-sitemap .container .row{
+   text-align:center;
+   margin-top:25px;
+}
+#footer-sitemap .container .row .links-wrap{
+    display:inline-block;
+    width:150px;
+    padding-top:15px;
+    float:none;
+}
+@media (max-width: 1199px) {
+    #footer-sitemap .container .row .links-wrap{
+        width:50%;
+    }
+    #footer-sitemap .container .row .links-wrap.links-wrap--dropdown{
+        width:100%;
+    }
+}
+
+#footer-sitemap .container .row .links-wrap.last{
+    padding-top:0;
+}
+#footer-sitemap .container .row .links-wrap a{
+   font-size:16px;
+   text-transform:initial;
+   text-decoration:none;
+   border-bottom:none;
+   color: #B8BCBF;
+
+   -webkit-transition-property: color;
+   transition-property: color;
+   -webkit-transition-duration: 0.3s;
+   transition-duration: 0.3s;
+   -webkit-transition-timing-function: ease-out;
+   transition-timing-function: ease-out;
+}
+#footer-sitemap .container .row .links-wrap a:hover{
+   color: #FFFFFF;
+}
+
+@media (max-width: 1199px) {
+    #footer-sitemap {
+       height:auto;
+    }
+    #footer-sitemap .container .row{
+       padding-bottom:25px;
+    }
+
+    #footer-sitemap .container .row .links-wrap{
+        /*width:100%;*/
+        float:left;
+        padding-top:0px;
+        height:50px;
+    }
+    #footer-sitemap .container .row .links-wrap a{
+ 
+    }
+    #footer-sitemap .container .row .links-wrap .wrapper-dropdown{
+        left:50%;
+        margin-left:-75px;
+    }
+}
+
+
+
+/* footer quick links
+* ==================================== */
+#footer-quick-links {
+
+}
+#footer-quick-links .container{
+    padding-left: 0;
+    padding-right: 0;
+}
+#footer-quick-links ul{
+    list-style:none;
+    padding:0;
+    margin:0;
+}
+#footer-quick-links ul li{
+    background-color:#F1F3F2;
+    margin-bottom: 0;
+    border-bottom:1px solid #E5E7E6;
+}
+#footer-quick-links a{
+    text-align:center;
+    font-family: 'Graphik-light','xingothic-w3','Microsoft JhengHei','STHeiti';
+    border:0;
+    display:block;
+    padding-top:15px;
+    padding-bottom:15px;
+    /*margin:20px auto;*/
+}    
+
+
+/*<div>
+
+    <div class="dropdown-field">
+        <div class="option-selected">
+            English <i class="icon-arrow-down"></i>
+        </div>
+        <ul class="options">
+            <li><a href="#">Chinese</a></li>
+            <li><a href="#">English</a></li>
+        </ul>
+    </div>
+
+</div>
+        
+.dropdown-field {
+    font-family: "graphik-semibold", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 16px;
+    font-size: 1.6rem;
+    position: relative;
+    width: 150px;
+    margin: 0;
+    padding: 8px 15px;
+    z-index: 100;
+    background: #646368;
+    border-radius: 30px;
+    cursor: pointer;
+    outline: none;
+    padding-left: 20px;
+    padding-bottom:11px;
+  
+    margin-top:50px;
+    margin-bottom:50px;
+}
+
+.dropdown-field.active {
+    border-radius: 20px;
+}
+
+.dropdown-field .option-selected{
+    position:relative;
+    font-size: 16px;
+    color: #B8BCBF;
+    padding-top:3px;
+}
+.dropdown-field .option-selected .icon-arrow-down{
+    position:absolute;
+    top:7px;
+    right:10px;
+}
+
+.dropdown-field ul.options{
+    position:absolute;
+    top:20px;
+    left:0;
+    list-style:none;
+    padding:0;
+    margin:0;
+    height:0;
+    overflow: hidden;
+}
+
+.dropdown-field.active ul.options{
+    height:100%;
+}
+
+.dropdown-field ul.options li{
+    padding:0;
+    margin:0;
+}
+
+.dropdown-field ul.options li a{
+    font-family: "graphik-semibold";
+    font-size: 16px;
+    color: #B8BCBF;
+    border-bottom:0;
+}*/

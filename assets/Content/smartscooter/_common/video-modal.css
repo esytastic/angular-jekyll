@@ -1,0 +1,61 @@
+/* ====================================
+   Site colors
+   ==================================== */
+/*
+   Brand colors
+   ====================================
+   White / Light Gray = Fresh and Clean Charcoal / Gray / Dark Gray = Bold and Direct Rich Blue = Performance
+   Blue = Experience
+   Teal = Style
+   Dark Green = Value
+   Green = Eco / Environment
+   Hot Green = Community
+   Red = Warning
+*/
+/* ====================================
+   Video modal
+   ==================================== */
+.video-modal {
+  display: none;
+  z-index: 20000;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #000000;
+  background-color: rgba(0, 0, 0, 0.95); }
+  .video-modal iframe {
+    border: 0; }
+  .video-modal .video-player {
+    background-color: #000;
+    height: 437px; }
+  .video-modal .video-container {
+    text-align: center; }
+  .video-modal .container {
+    height: 100%; }
+  .video-modal .vertical-center-container {
+    height: 100%; }
+  .video-modal .vertical-center {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+    .lt-ie9 .video-modal .vertical-center {
+      top: 120px; }
+
+.close-video-modal {
+  border-bottom: none;
+  position: absolute;
+  top: 21px;
+  right: 30px; }
+  .close-video-modal .icon-close {
+    color: #c1c1c3;
+    font-size: 32px; }
+
+body.video-modal-active {
+  overflow: hidden;
+  position: relative;
+  height: 100%; }

@@ -1,0 +1,7 @@
+﻿<div class='gogoro-modal' ng-show='show' ng-class="{'active':show==true}">
+    <div class='gogoro-modal-overlay' ng-click='hideModal()'></div>
+    <div class='gogoro-modal-dialog' ng-style='dialogStyle'>
+        <div class='gogoro-modal-close' ng-click='hideModal()'><span class='icon-close'></span></div>
+        <div class='gogoro-dialog-content' ng-transclude></div>
+    </div>
+</div>

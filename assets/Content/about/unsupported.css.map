@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": ";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAEA,YAAa;EACX,KAAK,ECeQ,IAAI;EDdjB,gBAAgB,ECuDL,OAAgB;EDtD3B,OAAO,EAAE,MAAmB;EAC5B,cAAE;IACA,MAAM,EAAE,CAAC;EAEX,cAAE;IACA,KAAK,ECQM,IAAI",
+"sources": ["../../../common/unsupported/unsupported.scss","file:///d:/WebDevelopment/Gogoro/Projects/Gogoro-Official-Site/_Cinco_Bitbucket/Gogoro-Corp/src/sass/_colors.scss"],
+"names": [],
+"file": "unsupported.css"
+}

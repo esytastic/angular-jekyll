@@ -1,0 +1,244 @@
+/* ====================================
+   Site colors
+   ==================================== */
+/*
+   Brand colors
+   ====================================
+   White / Light Gray = Fresh and Clean Charcoal / Gray / Dark Gray = Bold and Direct Rich Blue = Performance
+   Blue = Experience
+   Teal = Style
+   Dark Green = Value
+   Green = Eco / Environment
+   Hot Green = Community
+   Red = Warning
+*/
+/* ====================================
+ * Mixins and functions
+ * ==================================== */
+/* Media queries
+ * ==================================== */
+/* Usage: @include breakpoint(sm) {} */
+/* Mixins and functions
+ * ==================================== */
+/* Usage: @include linearGradient() {} */
+/* Usage: @include placeholder() {} */
+/* Usage: @include border-radius(5px) */
+/* Usage: @include opacity(0.8) */
+/* Usage: @include center-block */
+/* Usage: @include text-truncate  */
+/* Extends
+ * ==================================== */
+/* Variables
+ * ==================================== */
+/* Mixins and functions
+ * ==================================== */
+.module-faster-9-chassis {
+  width: 100%;
+  height: 600px;
+  position: relative;
+  overflow: hidden;
+  background-color: #e9e9e9; }
+  .module-faster-9-chassis:before {
+    content: "";
+    float: left; }
+  .module-faster-9-chassis:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .module-faster-9-chassis .container {
+    position: relative;
+    height: 100%; }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .module-faster-9-chassis {
+      height: auto; } }
+  @media (max-width: 767px) {
+    .module-faster-9-chassis {
+      height: auto; } }
+  .module-faster-9-chassis.standard .frame-pagination, .module-faster-9-chassis.standard .video-viewport-wrapper {
+    display: block; }
+  .module-faster-9-chassis.fallback {
+    height: auto;
+    padding-bottom: 48px; }
+    .module-faster-9-chassis.fallback .frame-pagination, .module-faster-9-chassis.fallback .video-viewport-wrapper {
+      display: none; }
+  .state-fallback .module-faster-9-chassis {
+    background-color: #f7f7f7; }
+    @media (min-width: 768px) and (max-width: 991px) {
+      .state-fallback .module-faster-9-chassis {
+        padding: 0 0 48px; } }
+    @media (max-width: 767px) {
+      .state-fallback .module-faster-9-chassis {
+        padding: 0 0 48px; } }
+  .module-faster-9-chassis .module-video-slider-content {
+    width: 100%;
+    height: 600px;
+    position: relative;
+    overflow: hidden; }
+    .module-faster-9-chassis .module-video-slider-content:before {
+      content: "";
+      float: left; }
+    .module-faster-9-chassis .module-video-slider-content:after {
+      content: "";
+      display: table;
+      clear: both; }
+    .module-faster-9-chassis .module-video-slider-content .container {
+      position: relative;
+      height: 100%; }
+    .state-fallback .module-faster-9-chassis .module-video-slider-content {
+      height: 600px; }
+      @media (min-width: 768px) and (max-width: 991px) {
+        .state-fallback .module-faster-9-chassis .module-video-slider-content {
+          height: auto; } }
+      @media (max-width: 767px) {
+        .state-fallback .module-faster-9-chassis .module-video-slider-content {
+          height: auto; } }
+    @media (min-width: 768px) and (max-width: 991px) {
+      .module-faster-9-chassis .module-video-slider-content {
+        height: auto; } }
+    @media (max-width: 767px) {
+      .module-faster-9-chassis .module-video-slider-content {
+        height: auto; } }
+    .module-faster-9-chassis .module-video-slider-content .fallback-image {
+      height: 100%; }
+      .module-faster-9-chassis .module-video-slider-content .fallback-image img {
+        /* must keep our .fallback-image div, just hide the img */
+        display: none; }
+    .module-faster-9-chassis .module-video-slider-content .content-wrapper {
+      position: absolute;
+      display: table;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      margin: auto; }
+      @media (max-width: 767px) {
+        .module-faster-9-chassis .module-video-slider-content .content-wrapper {
+          position: relative;
+          padding-top: 62.5%;
+          width: 90%; } }
+      .module-faster-9-chassis .module-video-slider-content .content-wrapper .text {
+        display: table-cell;
+        vertical-align: middle; }
+        .module-faster-9-chassis .module-video-slider-content .content-wrapper .text .title {
+          position: relative;
+          margin-bottom: 20px;
+          font-family: "graphik-extra-light", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+          font-weight: 200;
+          font-style: normal;
+          font-size: 44px;
+          line-height: 48px;
+          color: #323237; }
+          .module-faster-9-chassis .module-video-slider-content .content-wrapper .text .title span.small {
+            display: block;
+            font-family: "graphik-semibold", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+            font-weight: 600;
+            font-style: normal;
+            font-size: 18px; }
+          @media (max-width: 767px) {
+            .module-faster-9-chassis .module-video-slider-content .content-wrapper .text .title {
+              font-size: 32px;
+              font-size: 3.2rem; } }
+        .module-faster-9-chassis .module-video-slider-content .content-wrapper .text .body {
+          position: relative;
+          font-family: "graphik-light", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+          font-weight: 300;
+          font-style: normal;
+          font-size: 18px;
+          color: #323237; }
+          .module-faster-9-chassis .module-video-slider-content .content-wrapper .text .body sup {
+            position: relative;
+            vertical-align: top;
+            font-size: 9px;
+            line-height: 27px; }
+    @media (max-width: 767px) {
+      .module-faster-9-chassis .module-video-slider-content .content-wrapper {
+        position: static;
+        padding-top: 62.5%; } }
+    @media (max-width: 767px) {
+      .module-faster-9-chassis .module-video-slider-content .content-wrapper .text {
+        padding: 10% 0; } }
+    .module-faster-9-chassis .module-video-slider-content .content-wrapper .image {
+      display: table-cell;
+      vertical-align: middle;
+      width: 67%; }
+      @media (max-width: 767px) {
+        .module-faster-9-chassis .module-video-slider-content .content-wrapper .image {
+          display: none; } }
+    .module-faster-9-chassis .module-video-slider-content.slick-slider {
+      cursor: default; }
+      .module-faster-9-chassis .module-video-slider-content.slick-slider .fallback-image img {
+        display: block; }
+      .module-faster-9-chassis .module-video-slider-content.slick-slider .background-image {
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 0;
+        background-position: 50% 50%; }
+        @media (max-width: 767px) {
+          .module-faster-9-chassis .module-video-slider-content.slick-slider .background-image {
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            left: 0;
+            margin-left: 0; } }
+      .module-faster-9-chassis .module-video-slider-content.slick-slider .background-image {
+        display: none;
+        width: 100%;
+        height: auto;
+        background-size: cover;
+        z-index: -1; }
+        .state-fallback .module-faster-9-chassis .module-video-slider-content.slick-slider .background-image {
+          display: block; }
+        @media (min-width: 768px) and (max-width: 991px) {
+          .module-faster-9-chassis .module-video-slider-content.slick-slider .background-image {
+            position: static;
+            top: 0;
+            width: 100%;
+            height: auto;
+            margin-left: 0 !important;
+            margin-bottom: 48px; } }
+        @media (max-width: 767px) {
+          .module-faster-9-chassis .module-video-slider-content.slick-slider .background-image {
+            position: static;
+            top: 0;
+            width: 100%;
+            height: auto;
+            margin-left: 0 !important;
+            margin-bottom: 48px; } }
+      .module-faster-9-chassis .module-video-slider-content.slick-slider .content-wrapper {
+        position: relative;
+        margin: 0;
+        display: block;
+        width: 100%;
+        height: 600px;
+        opacity: 1;
+        padding: 24px 15px;
+        overflow: hidden; }
+        .state-fallback .module-faster-9-chassis .module-video-slider-content.slick-slider .content-wrapper {
+          height: 600px;
+          padding: 0 0 24px; }
+          @media (min-width: 768px) and (max-width: 991px) {
+            .state-fallback .module-faster-9-chassis .module-video-slider-content.slick-slider .content-wrapper {
+              height: auto;
+              padding-bottom: 48px; } }
+          @media (max-width: 767px) {
+            .state-fallback .module-faster-9-chassis .module-video-slider-content.slick-slider .content-wrapper {
+              height: auto;
+              padding-bottom: 48px; } }
+        @media (min-width: 768px) and (max-width: 991px) {
+          .module-faster-9-chassis .module-video-slider-content.slick-slider .content-wrapper {
+            height: auto; } }
+        @media (max-width: 767px) {
+          .module-faster-9-chassis .module-video-slider-content.slick-slider .content-wrapper {
+            height: auto; } }
+      .module-faster-9-chassis .module-video-slider-content.slick-slider .slick-dots {
+        margin: 0;
+        bottom: 0; }

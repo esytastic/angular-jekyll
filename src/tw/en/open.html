@@ -1,0 +1,230 @@
+---
+action: open
+layout: en-tw/LayoutMaster
+style: |
+    <link rel="stylesheet" href="/css/smartscooter/easier.css">
+    <link rel="stylesheet" href="/css/gen/open.css">
+scripts: |
+    <script src="/js/smartscooter/easier.js"></script>
+    <script src="/js/gen/open.js"></script>
+---
+
+<div id="gocharger" ng-controller="OpenController">
+
+	<div class="module-open-1-intro module-page-intro" ng-controller="moduleOpen1IntroController">
+	    <div class="container">
+	        <div class="body">
+	            <h2>Gogoro&reg; OPEN Initiative</h2>
+	           	<p>Host a GoCharger&trade; now.</p>
+				<a id="join-open" href="#" class=""><img src="/img/gen/open/arrow-down.png" /></a>
+	        </div>
+	    </div>
+	</div>
+
+    {% include en-tw/GENTabbar.html %}
+
+    <div class="module-open-2-connect">
+		<img class="hide mobile" src="/img/gen/open/connect-banner-mobile.jpg" />
+        <div class="container">
+            <div class="row body">
+                <div class="col-md-6  col-sm-6 col-xs-6 text-content">
+                	<h2>Connect Your <br>Local Communities.</h2>
+    	        	<p>Host a GoCharger™ battery charging hub and turn your cafe into a hotspot. So, there are benefits to sharing after all.</p>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-6 hidden-mobile">
+
+                </div>
+            </div>
+    	</div>
+    </div>
+
+    <div class="module-open-2b-owner">
+        <p>Gogoro Owner Proposed Energy Network Portal is a way for consumers and businesses to express their interest in Gogoro and nominate themselves, their businesses and/or local communities to be part of Gogoro expansion. Gogoro will use the enrollment data to select new markets and will then deploy to cities with the most interest.</p>
+    </div>
+
+    <div class="module-open-3-contact" ng-controller="moduleOpen3ContactController">
+    	<div class="select">
+            <div class="row">
+				<div class="option option-1 col-md-6 col-sm-12 col-xs-12" ng-click="select('business')">
+                    <div class="body ">
+                        <img src="/img/gen/open/open-icon-1.svg" alt="gogoro" />
+                    </div>
+                    <div class="title">
+                    	I'm a business and I’d like to host a GoCharger™
+                    </div>
+                    <div class="description">
+                        If you qualify, we will install a GoCharger™ at your site for free.
+                    </div>
+					
+					<button class="btn position btn-outline">ENROLL</button>
+                    <div class="check" ng-show="selected == 'business'">
+                    	<img src="/img/gen/open/check-on.png" />
+                    </div>
+                </div>
+				<div class="option option-2 col-md-6 col-sm-12 col-xs-12" ng-click="select('consumer')">
+                    <div class="body ">
+                        <img src="/img/gen/open/open-icon-2.svg" alt="gogoro" />
+                    </div>
+                    <div class="title">
+                    	I’m a consumer and I want a Smartscooter™ EV in my city.
+                    </div>
+                    <div class="description">
+                        Nominate your city to be the next Gogoro expansion city.
+                    </div>
+                    <button class="btn position btn-outline">NOMINATE</button>
+                    <div class="check" ng-show="selected == 'consumer'">
+                    	<img src="/img/gen/open/check-on.png" />
+                    </div>
+                </div>
+	        </div>
+	    </div>
+	    <a id="form-start"></a>
+		<div class="form business" ng-show="selected == 'business'">
+			<div class="container">
+				<img src="/img/gen/open/open-map.svg" class="map" />
+				<div class="row">
+					<div class="col-md-5 col-xs-12">
+						<h2>Tell us more about you</h2>
+						<form action="https://formspree.io/bxdydgzm" method="post" accept-charset="utf-8" class="open-form">
+
+							<div class="form-group">
+								<label for="business-name">My Business Name</label>
+								<input type="text" name="businessName" value="" class="form-control" id="business-name" required>
+							</div>
+							<div class="form-group">
+								<label for="business-type">Type of Business</label>
+								<select name="businessType" class="form-control" id="business-type" required>
+									<option value="Restaurant">Restaurant</option>
+									<option value="Coffee Shop">Coffee Shop</option>
+									<option value="Office">Office</option>
+									<option value="Hotel">Hotel</option>
+                                    <option value="Retail">Retail</option>
+                                    <option value="Shop">Shop</option>
+                                    <option value="Salon">Salon</option>
+                                    <option value="Public locations">Public locations</option>
+									<option value="Other">Other</option>
+								</select>
+							</div>
+							<div class="row">
+								<div class="col-xs-6 form-group">
+									<label for="country">Country</label>
+									<input type="text" name="country" value="" class="form-control" id="country" required>
+								</div>
+								<div class="col-xs-6 form-group">
+									<label for="city">City</label>
+									<input type="text" name="city" value="" class="form-control" id="city" required>
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="street-address">Street Address</label>
+								<input type="text" name="streetAddress" value="" class="form-control" id="street-address" required>
+							</div>
+                            <div class="row">
+								<div class="col-xs-12 form-group">
+									<label for="zip-code">ZIP Code</label>
+									<input type="text" name="zip-code" value="" class="form-control" id="zip-code" required>
+								</div>
+							</div>
+							<div class="row margin-top-20">
+								<div class="col-xs-6 form-group">
+									<label for="first-name">Name of Contact<br>First Name</label>
+									<input type="text" name="contactFirstName" value="" class="form-control" id="first-name" required>
+								</div>
+								<div class="col-xs-6 form-group">
+								<label for="lasst-name"><br>Last Name</label>
+									<input type="text" name="contactLastName" value="" class="form-control" id="lasst-name" required>
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="contact-email-address" class="">Email Address</label>
+								<input type="email" name="contactEmail" value="" placeholder="" class="form-control" id="contact-email-address" required>
+							</div>
+							<div class="form-group">
+								<label for="contact-phoneNumber" class="">Phone Number</label>
+								<input type="tel" name="contactPhoneNumber" value="" placeholder="" class="form-control" id="contact-phoneNumber">
+							</div>
+							<div class="form-group">
+								<label for="contact-message" class="">What else should we know about you?</label>
+								<textarea required class="form-control" name="message" rows="5" placeholder="We would love to have: 
+ - photo of your space
+ - opening hour" id="contact-message"></textarea>
+							</div>
+							<div class="form-group">
+								<input type="submit" class="btn btn-solid-rich-blue" id="open-form-submit" value="SUBMIT">
+							</div>
+						</form>
+						<div class="modal fade" id="contact-form-sent" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-body">
+										<h3>Message sent!</h3>
+										<p>Thanks for contacting Gogoro. We'll be in touch.</p>
+										<a href="#" class="btn btn-outline btn-sm margin-top" data-dismiss="modal">Okay</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="form consumer" ng-show="selected == 'consumer'">
+			<div class="container">
+				<img src="/img/gen/open/open-map.svg" class="map" />
+				<div class="row">
+					<div class="col-md-5 col-xs-12">
+						<h2>Tell us more about you</h2>
+						<form action="https://formspree.io/bxdydgzm" method="post" accept-charset="utf-8" class="open-form">
+							<div class="row margin-top-20">
+								<div class="col-xs-6 form-group">
+									<label for="first-name">First Name</label>
+									<input type="text" name="contactFirstName" value="" class="form-control" id="first-name" required>
+								</div>
+								<div class="col-xs-6 form-group">
+									<label for="lasst-name">Last Name</label>
+									<input type="text" name="contactLastName" value="" class="form-control" id="lasst-name" required>
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label for="contact-email-address" class="">Email Address</label>
+								<input type="email" name="contactEmail" value="" placeholder="" class="form-control" id="contact-email-address" required>
+							</div>
+                            <div class="row">
+								<div class="col-xs-6 form-group">
+									<label for="country">Country</label>
+									<input type="text" name="country" value="" class="form-control" id="country" required>
+								</div>
+								<div class="col-xs-6 form-group">
+									<label for="city">City</label>
+									<input type="text" name="city" value="" class="form-control" id="city" required>
+								</div>
+							</div>
+                            <div class="form-group">
+								<label for="contact-message" class="">What else should we know about you and your city?</label>
+								<textarea class="form-control" name="message" rows="5" id="contact-message"></textarea>
+							</div>
+                            <div class="ggr-cbox">
+                              <label for="read-terms"><input required type="checkbox" id="read-terms" name="read-terms">I have carefully read the <a href="/tw/en/terms-of-use">terms and conditions</a>, and I fully understand and accept that the information may be used for personal communication.</label>
+                            </div>
+							<div class="form-group">
+								<input type="submit" class="btn btn-solid-rich-blue" id="open-form-submit" value="SUBMIT">
+							</div>
+ 						</form>
+ 						<div class="modal fade" id="contact-form-sent" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-body">
+										<h3>Message sent!</h3>
+										<p>Thanks for contacting Gogoro. We'll be in touch.</p>
+										<a href="#" class="btn btn-outline btn-sm margin-top" data-dismiss="modal">Okay</a>
+									</div>
+								</div>
+							</div>
+						</div>
+ 					</div>
+ 				</div>
+ 			</div>
+ 		</div>
+    </div>
+</div>

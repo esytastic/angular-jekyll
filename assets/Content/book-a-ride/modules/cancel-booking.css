@@ -1,0 +1,13 @@
+﻿#book-a-ride .cancel-wrap{
+    margin-top:100px;
+}
+
+
+@media (max-width: 767px) {
+    #book-a-ride .cancel-wrap{
+        margin-top:50px;
+    }
+    #book-a-ride {
+      margin-bottom: 50px;
+    }
+}

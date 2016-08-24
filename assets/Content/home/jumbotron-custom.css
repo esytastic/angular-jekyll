@@ -1,0 +1,83 @@
+
+
+
+/*
+|--------------------------------------------------------------------------
+| evt-zero-percent
+|--------------------------------------------------------------------------
+*/
+#jumbotron .jumbotron-container .banner .container .toolbar.toolbar--right.evt-zero-percent{
+    width:250px;
+    height:330px;
+    margin-top:-165px;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    #jumbotron .jumbotron-container .banner .container .toolbar.toolbar--right.evt-zero-percent{
+      width:500px;
+      margin-right:-250px;
+      height:initial;
+
+    }
+}
+@media (max-width: 767px) {
+    #jumbotron .jumbotron-container .banner .container .toolbar.toolbar--right.evt-zero-percent{
+      width:320px;
+      margin-right:-160px;
+      height:initial;
+    }
+}
+
+
+/*
+|--------------------------------------------------------------------------
+| evt-three-plus-one
+|--------------------------------------------------------------------------
+*/
+#jumbotron .jumbotron-container .banner .container .toolbar.toolbar--left.evt-three-plus-one{
+    left:50px;
+    margin-top:-160px;
+}
+@media only screen and (min-width : 1024px) and (max-width : 1366px) {
+    #jumbotron .jumbotron-container .banner .container .toolbar.toolbar--left.evt-three-plus-one{
+        left:0;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+    #jumbotron .jumbotron-container .banner .container .toolbar.toolbar--left.evt-three-plus-one{
+        left:75px;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    #jumbotron .jumbotron-container .banner .container .toolbar.toolbar--left.evt-three-plus-one{
+        width:500px;
+        top:initial;
+        left:50%;
+        margin-left:-250px;
+        height:initial;
+    }
+}
+@media (max-width: 767px) {
+    #jumbotron .jumbotron-container .banner .container .toolbar.toolbar--left.evt-three-plus-one{
+        width:320px;
+        top:initial;
+        left:50%;
+        margin-left:-160px;
+        height:initial;
+    }
+}
+
+/*
+|--------------------------------------------------------------------------
+| runing-is-beliveing
+|--------------------------------------------------------------------------
+*/
+@media (min-width: 992px) and (max-width: 1199px) {
+    #jumbotron .jumbotron-container .banner .container .toolbar.toolbar--right.runing-is-beliveing{
+        text-align: center;
+        top: initial;
+        left: 50%;
+        margin-left: -200px;
+        margin-top: initial;
+        bottom:80px;
+    }
+}

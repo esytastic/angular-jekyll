@@ -1,0 +1,217 @@
+/* ====================================
+   Site colors
+   ==================================== */
+/*
+   Brand colors
+   ====================================
+   White / Light Gray = Fresh and Clean Charcoal / Gray / Dark Gray = Bold and Direct Rich Blue = Performance
+   Blue = Experience
+   Teal = Style
+   Dark Green = Value
+   Green = Eco / Environment
+   Hot Green = Community
+   Red = Warning
+*/
+/* ====================================
+ * Mixins and functions
+ * ==================================== */
+/* Media queries
+ * ==================================== */
+/* Usage: @include breakpoint(sm) {} */
+/* Mixins and functions
+ * ==================================== */
+/* Usage: @include linearGradient() {} */
+/* Usage: @include placeholder() {} */
+/* Usage: @include border-radius(5px) */
+/* Usage: @include opacity(0.8) */
+/* Usage: @include center-block */
+/* Usage: @include text-truncate  */
+/* Extends
+ * ==================================== */
+/* Variables
+ * ==================================== */
+/* Mixins and functions
+ * ==================================== */
+.module-easier-4-all-you-can-ride {
+  position: relative;
+  background: #fff;
+  overflow-y: hidden;
+  width: 100%;
+  height: 800px;
+  position: relative;
+  overflow: hidden; }
+  .module-easier-4-all-you-can-ride:before {
+    content: "";
+    float: left; }
+  .module-easier-4-all-you-can-ride:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .module-easier-4-all-you-can-ride .container {
+    position: relative;
+    height: 100%; }
+  .module-easier-4-all-you-can-ride .content-wrapper {
+    position: absolute;
+    display: table;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    margin: auto; }
+    @media (max-width: 767px) {
+      .module-easier-4-all-you-can-ride .content-wrapper {
+        position: relative;
+        padding-top: 62.5%;
+        width: 90%; } }
+    .module-easier-4-all-you-can-ride .content-wrapper .text {
+      display: table-cell;
+      vertical-align: middle; }
+      .module-easier-4-all-you-can-ride .content-wrapper .text .title {
+        position: relative;
+        margin-bottom: 20px;
+        font-family: "graphik-extra-light", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+        font-weight: 200;
+        font-style: normal;
+        font-size: 44px;
+        line-height: 48px;
+        color: #323237; }
+        .module-easier-4-all-you-can-ride .content-wrapper .text .title span.small {
+          display: block;
+          font-family: "graphik-semibold", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+          font-weight: 600;
+          font-style: normal;
+          font-size: 18px; }
+        @media (max-width: 767px) {
+          .module-easier-4-all-you-can-ride .content-wrapper .text .title {
+            font-size: 32px;
+            font-size: 3.2rem; } }
+      .module-easier-4-all-you-can-ride .content-wrapper .text .body {
+        position: relative;
+        font-family: "graphik-light", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        font-size: 18px;
+        color: #323237; }
+        .module-easier-4-all-you-can-ride .content-wrapper .text .body sup {
+          position: relative;
+          vertical-align: top;
+          font-size: 9px;
+          line-height: 27px; }
+  @media (max-width: 767px) {
+    .module-easier-4-all-you-can-ride .content-wrapper {
+      position: static;
+      padding-top: 62.5%; } }
+  @media (max-width: 767px) {
+    .module-easier-4-all-you-can-ride .content-wrapper .text {
+      padding: 10% 0; } }
+  .module-easier-4-all-you-can-ride .content-wrapper .image {
+    display: table-cell;
+    vertical-align: middle;
+    width: 67%; }
+    @media (max-width: 767px) {
+      .module-easier-4-all-you-can-ride .content-wrapper .image {
+        display: none; } }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .module-easier-4-all-you-can-ride {
+      height: auto;
+      margin-bottom: 48px; } }
+  @media (max-width: 767px) {
+    .module-easier-4-all-you-can-ride {
+      height: auto;
+      margin-bottom: 48px; } }
+  .module-easier-4-all-you-can-ride .desktop .background-battery {
+    z-index: 0; }
+  .module-easier-4-all-you-can-ride .desktop .background-go-station {
+    display: none;
+    z-index: 0; }
+  .module-easier-4-all-you-can-ride .desktop .background-battery,
+  .module-easier-4-all-you-can-ride .desktop .background-go-station {
+    position: absolute;
+    top: 0;
+    right: -55px;
+    width: 650px;
+    height: 800px;
+    background-size: contain;
+    background-repeat: no-repeat; }
+    .module-easier-4-all-you-can-ride .desktop .background-battery.active,
+    .module-easier-4-all-you-can-ride .desktop .background-go-station.active {
+      z-index: 1; }
+  .module-easier-4-all-you-can-ride .desktop .battery-go-station-toggle {
+    font-family: "graphik-semibold", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 18px;
+    font-size: 1.8rem; 
+  }
+  html[lang=zh-TW] .module-easier-4-all-you-can-ride .desktop .battery-go-station-toggle { 
+      font-family: 'xingothic-w8', 'Microsoft JhengHei','STHeiti'; 
+      font-weight: 500;
+  }
+
+    .module-easier-4-all-you-can-ride .desktop .battery-go-station-toggle a {
+      color: #323237;
+      margin-right: 10px;
+      border: none; }
+      .module-easier-4-all-you-can-ride .desktop .battery-go-station-toggle a.inactive {
+        color: #c1c1c3; }
+  .module-easier-4-all-you-can-ride .desktop .descriptions {
+    height: 265px;
+    margin-bottom: 14px; }
+  .module-easier-4-all-you-can-ride .desktop .description.go-station {
+    display: none; }
+  .module-easier-4-all-you-can-ride .desktop .powerloop {
+    margin-bottom: 68px;
+    background: url(//images.gogoroapp.com/icon-powerloop.png) no-repeat 0 0;
+    width: 200px;
+    height: 92px;
+    background-size: contain; }
+  .module-easier-4-all-you-can-ride .mobile img {
+    width: 66%;
+    margin: 0 auto 24px;
+    position: relative;
+    display: block; }
+  .module-easier-4-all-you-can-ride .control {
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 5%;
+    height: 100%;
+    z-index: 100;
+    text-align: center;
+    opacity: 0;
+    -webkit-transition: opacity 250ms ease;
+            transition: opacity 250ms ease;
+    font-size: 32px;
+    font-size: 3.2rem; }
+    @media (min-width: 768px) and (max-width: 991px) {
+      .module-easier-4-all-you-can-ride .control {
+        display: none; } }
+    @media (max-width: 767px) {
+      .module-easier-4-all-you-can-ride .control {
+        display: none; } }
+    .module-easier-4-all-you-can-ride .control i {
+      position: absolute;
+      top: 50%; }
+    .module-easier-4-all-you-can-ride .control.control-previous {
+      left: 0; }
+    .module-easier-4-all-you-can-ride .control.control-next {
+      right: 0; }
+  .module-easier-4-all-you-can-ride:hover .control {
+    opacity: 1; }
+
+  .module-easier-4-all-you-can-ride .battery-protect-word{
+      font-size: 12px;
+      color:#C1C1C3;
+      margin-top: 14px;
+      margin-bottom: 14px;
+  }
+
+.partnership p {
+    margin-top: 28px;
+}
+
+.module-easier-4-all-you-can-ride .description.battery p{
+    margin-bottom: 14px;
+}

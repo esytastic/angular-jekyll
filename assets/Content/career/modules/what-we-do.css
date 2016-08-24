@@ -1,0 +1,24 @@
+﻿#career .career__what-we-do{
+    position:relative;
+    height:400px;
+    background-color:#ffffff;
+}
+#career .career__what-we-do img{
+    height:initial;
+    width:auto;
+}
+#career .career__what-we-do .container{
+    height:100%;
+}
+#career .career__what-we-do .container .content-wrap{
+    text-align:center;
+    font-size:44px;
+    font-family:'graphik-extra-light';
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+@media (max-width: 767px) {
+
+}

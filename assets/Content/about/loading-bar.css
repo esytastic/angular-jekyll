@@ -1,0 +1,116 @@
+/* ====================================
+ * Mixins and functions
+ * ==================================== */
+/* Media queries
+ * ==================================== */
+/* Usage: @include breakpoint(sm) {} */
+/* Mixins and functions
+ * ==================================== */
+/* Usage: @include linearGradient() {} */
+/* Usage: @include placeholder() {} */
+/* Usage: @include border-radius(5px) */
+/* Usage: @include opacity(0.8) */
+/* Usage: @include center-block */
+/* Usage: @include text-truncate  */
+/* Extends
+ * ==================================== */
+/* ====================================
+   Site colors
+   ==================================== */
+/*
+   Brand colors
+   ====================================
+   White / Light Gray = Fresh and Clean Charcoal / Gray / Dark Gray = Bold and Direct Rich Blue = Performance
+   Blue = Experience
+   Teal = Style
+   Dark Green = Value
+   Green = Eco / Environment
+   Hot Green = Community
+   Red = Warning
+*/
+/*
+   Base colors
+   ==================================== */
+/*
+   Text colors
+   ==================================== */
+/*
+   Button colors
+   ==================================== */
+/*
+   Third party brand colors
+   ==================================== */
+/* ====================================
+ * Mixins and functions
+ * ==================================== */
+/* Media queries
+ * ==================================== */
+/* Usage: @include breakpoint(sm) {} */
+/* Mixins and functions
+ * ==================================== */
+/* Usage: @include linearGradient() {} */
+/* Usage: @include placeholder() {} */
+/* Usage: @include border-radius(5px) */
+/* Usage: @include opacity(0.8) */
+/* Usage: @include center-block */
+/* Usage: @include text-truncate  */
+/* Extends
+ * ==================================== */
+/* Variables
+ * ==================================== */
+/* ====================================
+ * Loading
+ * ==================================== */
+section.loading {
+  display: none;
+  background-color: transparent;
+  height: 100%;
+  position: relative;
+  z-index: 400; }
+  section.loading #loading-text {
+    position: relative;
+    width: 399px;
+    height: 55px;
+    margin: -22px auto 0;
+    top: 50%;
+    overflow: hidden; }
+    @media (max-width: 767px) {
+      section.loading #loading-text {
+        width: 288px; } }
+    section.loading #loading-text .layer-mask {
+      position: absolute;
+      left: -20px;
+      z-index: 1;
+      width: 0;
+      overflow: hidden;
+      -webkit-transform: skew(-45deg, 0);
+          -ms-transform: skew(-45deg, 0);
+              transform: skew(-45deg, 0);
+      width: 430px;
+      height: 50px;
+      background-color: rgba(255, 255, 255, 0.93); }
+      @media (max-width: 767px) {
+        section.loading #loading-text .layer-mask {
+          width: 308px; } }
+    section.loading #loading-text .layer-text {
+      position: absolute;
+      z-index: 0; }
+    section.loading #loading-text h1 {
+      padding: 5px 0;
+      margin: 0;
+      color: #323237;
+      font-size: 4.4rem;
+      font-family: "graphik-extra-light", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+      font-weight: 200;
+      font-style: normal;
+      text-transform: none;
+      text-align: center;
+      letter-spacing: 0;
+      white-space: nowrap; }
+      .lt-ie9 section.loading #loading-text h1 {
+        font-size: 44px; }
+      @media (max-width: 767px) {
+        section.loading #loading-text h1 {
+          font-size: 3.2rem; }
+          .lt-ie9 section.loading #loading-text h1 {
+            font-size: 32px; } }

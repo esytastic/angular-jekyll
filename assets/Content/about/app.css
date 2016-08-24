@@ -1,0 +1,93 @@
+/* ====================================
+ * Mixins and functions
+ * ==================================== */
+/* Media queries
+ * ==================================== */
+/* Usage: @include breakpoint(sm) {} */
+/* Mixins and functions
+ * ==================================== */
+/* Usage: @include linearGradient() {} */
+/* Usage: @include placeholder() {} */
+/* Usage: @include border-radius(5px) */
+/* Usage: @include opacity(0.8) */
+/* Usage: @include center-block */
+/* Usage: @include text-truncate  */
+/* Extends
+ * ==================================== */
+/* ====================================
+   Site colors
+   ==================================== */
+/*
+   Brand colors
+   ====================================
+   White / Light Gray = Fresh and Clean Charcoal / Gray / Dark Gray = Bold and Direct Rich Blue = Performance
+   Blue = Experience
+   Teal = Style
+   Dark Green = Value
+   Green = Eco / Environment
+   Hot Green = Community
+   Red = Warning
+*/
+/*
+   Base colors
+   ==================================== */
+/*
+   Text colors
+   ==================================== */
+/*
+   Button colors
+   ==================================== */
+/*
+   Third party brand colors
+   ==================================== */
+/* ====================================
+ * Mixins and functions
+ * ==================================== */
+/* Media queries
+ * ==================================== */
+/* Usage: @include breakpoint(sm) {} */
+/* Mixins and functions
+ * ==================================== */
+/* Usage: @include linearGradient() {} */
+/* Usage: @include placeholder() {} */
+/* Usage: @include border-radius(5px) */
+/* Usage: @include opacity(0.8) */
+/* Usage: @include center-block */
+/* Usage: @include text-truncate  */
+/* Extends
+ * ==================================== */
+/* Variables
+ * ==================================== */
+/* ====================================
+   General site styling
+   ==================================== */
+html {
+  font-size: 62.5%;
+  height: 100%; }
+
+body {
+  font-size: 1.8rem;
+  font-family: "graphik-light", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  text-rendering: optimizeLegibility;
+  color: #323237;
+  background-color: #fff;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  position: relative;
+  height: 100%; }
+  .lt-ie9 body {
+    font-size: 18px; }
+
+#site-container {
+  position: relative;
+  z-index: auto;
+  background-color: #fff; }
+
+#site-content {
+  background-color: #fff;
+}
+
+.intro-active #main-header {
+  display: none; }

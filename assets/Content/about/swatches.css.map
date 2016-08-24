@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": ";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAEA,aAAa;EAAE,gBAAgB,ECgBhB,IAAI;;ADfnB,kBAAkB;EAAE,gBAAgB,ECgBhB,OAAO;;ADf3B,YAAY;EAAE,gBAAgB,ECgBhB,OAAO;;ADfrB,iBAAiB;EAAE,gBAAgB,ECgBhB,OAAO;;ADf1B,sBAAsB;EAAE,gBAAgB,ECgBhB,OAAO;;ADf/B,gBAAgB;EAAE,gBAAgB,ECoDrB,OAAgB;;ADnD7B,YAAY;EAAE,gBAAgB,ECqDX,OAAY;;ADpD/B,iBAAiB;EAAE,gBAAgB,ECmDtB,OAAiB;;ADlD9B,iBAAiB;EAAE,gBAAgB,ECgBhB,OAAO;;ADf1B,gBAAgB;EAAE,gBAAgB,ECgBhB,OAAO;;ADfzB,iBAAiB;EAAE,gBAAgB,ECgBhB,OAAO;;ADf1B,aAAa;EAAE,gBAAgB,ECgBhB,OAAO;;ADftB,YAAY;EAAE,gBAAgB,ECgBhB,OAAO;;ADfrB,kBAAkB;EAAE,gBAAgB,ECgBhB,OAAO;;ADf3B,WAAW;EAAE,gBAAgB,ECgBhB,OAAO",
+"sources": ["../../../common/_foundation/swatches.scss","file:///d:/WebDevelopment/Gogoro/Projects/Gogoro-Official-Site/_Cinco_Bitbucket/Gogoro-Corp/src/sass/_colors.scss"],
+"names": [],
+"file": "swatches.css"
+}

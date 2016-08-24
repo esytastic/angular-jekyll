@@ -1,0 +1,150 @@
+/* ====================================
+ * Mixins and functions
+ * ==================================== */
+/* Media queries
+ * ==================================== */
+/* Usage: @include breakpoint(sm) {} */
+/* Mixins and functions
+ * ==================================== */
+/* Usage: @include linearGradient() {} */
+/* Usage: @include placeholder() {} */
+/* Usage: @include border-radius(5px) */
+/* Usage: @include opacity(0.8) */
+/* Usage: @include center-block */
+/* Usage: @include text-truncate  */
+/* Extends
+ * ==================================== */
+/* ====================================
+   Site colors
+   ==================================== */
+/*
+   Brand colors
+   ====================================
+   White / Light Gray = Fresh and Clean Charcoal / Gray / Dark Gray = Bold and Direct Rich Blue = Performance
+   Blue = Experience
+   Teal = Style
+   Dark Green = Value
+   Green = Eco / Environment
+   Hot Green = Community
+   Red = Warning
+*/
+/*
+   Base colors
+   ==================================== */
+/*
+   Text colors
+   ==================================== */
+/*
+   Button colors
+   ==================================== */
+/*
+   Third party brand colors
+   ==================================== */
+/* ====================================
+ * Mixins and functions
+ * ==================================== */
+/* Media queries
+ * ==================================== */
+/* Usage: @include breakpoint(sm) {} */
+/* Mixins and functions
+ * ==================================== */
+/* Usage: @include linearGradient() {} */
+/* Usage: @include placeholder() {} */
+/* Usage: @include border-radius(5px) */
+/* Usage: @include opacity(0.8) */
+/* Usage: @include center-block */
+/* Usage: @include text-truncate  */
+/* Extends
+ * ==================================== */
+/* Variables
+ * ==================================== */
+/* ====================================
+   Modals
+   ==================================== */
+@media (max-width: 767px) {
+    .modal-dialog {
+        margin: 0;
+    }
+}
+
+.modal-header {
+    padding: 0;
+    border: none;
+    position: relative;
+}
+
+    .modal-header .close {
+        padding: 10px 20px;
+    }
+
+.modal-header {
+    padding-bottom: 24px;
+}
+
+    .modal-header h2 {
+        line-height: 1.1;
+    }
+
+@media (max-width: 767px) {
+    .modal-header h2 {
+        padding-right: 40px;
+        font-size: 2.8rem;
+    }
+
+    .lt-ie9 .modal-header h2 {
+        font-size: 28px;
+    }
+}
+
+.modal-body {
+    padding: 0;
+}
+
+.modal-content {
+    padding: 96px 96px;
+    box-shadow: none;
+    border-radius: 0;
+    background-clip: padding-box;
+    border: none;
+}
+
+@media (max-width: 767px) {
+    .modal-content {
+        padding: 48px 24px;
+    }
+}
+
+.modal-content .close {
+    display: block;
+    position: absolute;
+    top: -91px;
+    right: -97px;
+    color: #c1c1c3;
+    opacity: 1;
+    font-size: 5rem;
+}
+
+.lt-ie9 .modal-content .close {
+    font-size: 50px;
+}
+
+@media (max-width: 767px) {
+    .modal-content .close {
+        top: -13px;
+        right: -24px;
+        font-size: 4rem;
+    }
+
+    .lt-ie9 .modal-content .close {
+        font-size: 40px;
+    }
+}
+
+.modal-backdrop {
+    background-color: #323237;
+    display:none;
+}
+
+    .modal-backdrop.in {
+        opacity: .5;
+    }

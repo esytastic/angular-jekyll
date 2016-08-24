@@ -1,0 +1,2025 @@
+﻿
+
+/*註解*/
+
+
+.faq_svgWord {
+    text-align:center;
+    width:100%;
+    position:absolute;
+    top:50%;
+    margin-top:50px;
+
+
+}
+
+
+@media (max-width: 767px) {
+    .faq_svgWord {
+            margin-top:0px;
+
+    }
+}
+
+
+
+
+    .faq_svgWord p {
+         font-size:2.1rem;
+    }
+
+
+/*video size*/
+#Faq_GoStaion vedio {
+width:500px;
+height:500px;
+}
+
+
+.pg-faq section.main-section {
+    padding:0px;
+}
+
+
+/*svg icon */
+
+
+.faq-main #Faq_Sport faq-Svg figure {
+        font-size:36pt;
+        font-family:Graphik-light;
+}
+
+
+
+@media (min-width: 1120px) {
+
+}
+
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+
+}
+
+
+@media (max-width: 767px) {
+    .faq-main .faq-Svg figure img{
+        width: 38%;
+        margin-top: 15%;
+        margin-bottom: 47%;
+    }
+}
+
+
+
+.faq-main .Faq_Sport figure{
+        background-color: #F1F3F3;
+        color:#323237;
+
+
+}
+
+.faq-main .Faq_white figure{
+        background-color: #fff;
+        color:#323237;
+
+
+}
+
+
+
+.faq-main .Faq_Cost figure{
+
+        color:#FFFFFF;
+
+           background: -webkit-linear-gradient(#112F3B, #24586E); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#112F3B, #24586E); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#112F3B, #24586E); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#112F3B, #24586E); /* Standard syntax */
+}
+
+.faq-main .Faq_BatteryDamage figure{
+            background-color: #323237;
+        color:#FFFFFF;
+        font-size:36pt;
+}
+
+
+.faq-main .Faq_SwapProgram figure{
+            background-color: #3c3c42;
+        color:#FFFFFF;
+        font-size:36pt;
+}
+
+
+
+ /*
+////////////
+//Team Page Popup
+////////////
+*/
+
+    section.modal {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+    }
+
+    section.modalWindow {
+        display: none;
+        position: fixed;
+        top: 0;
+        margin-left: auto;
+        margin-right: auto;
+
+        z-index: 1001 !important;
+        min-height: 200px;
+        background: #FFF;
+        cursor: default;
+        border: 0px solid #c2c2c2;
+    }
+
+    section.modal.overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        min-height: 100%;
+        background: rgba(236,240,241,0.9);
+        z-index: 997;
+        cursor: pointer;
+    }
+
+
+
+
+      section.modalWindow section.modalWrapper h4{
+          margin-bottom:0px;
+      }
+
+
+
+      section.modalWindow section.modalWrapper h5{
+          margin-bottom:10px;
+          margin-left:3px;
+      }
+
+      section.modalWindow section.modalWrapper h6{
+          font-family:graphik-semibold;
+          font-size:1.5rem;
+          color:#c1c1c3;
+          margin-top:40px;
+      }
+
+
+        /* 舊
+    .faq-main {
+        margin-bottom:40px;
+    }
+
+    .faq-mainContainer:hover {
+        background-color: blue;
+        color: #fff;
+    }
+
+    .faq-mainContainer {
+        border: 1px solid #e0e0e0;
+        margin-bottom:25px;
+    }
+
+    .faq-main section {
+        background-color:rgba(0,0,0,0);
+    }
+
+    .faq-main h4 {
+        font-size: 1.2rem;
+    }
+
+    .faq-main h5 {
+        font-size: 0.9rem;
+        margin: 0px 0px 6px 0px;
+    }
+
+    .faq-main section p {
+        font-size: 2.0rem;
+        margin: 0px 0px 6px 0px;
+    }
+
+
+
+
+    figure {
+
+       background: #fff;
+       overflow: hidden;
+    }
+
+    .faq-main .sectionContent {
+        padding: 20px 15px 6px 15px;
+    }
+
+    */
+
+
+        .faq-main {
+            overflow:hidden;
+            cursor: pointer;
+            padding:  0px;
+            margin-bottom: 0px;
+        }
+
+        .faq-mainContainer:hover {
+            background-color: blue;
+            color: #fff;
+        }
+
+        .faq-mainContainer {
+            border-width: 0px;
+            margin: 0px;
+            position: relative;
+        }
+
+        .faq-main section {
+            background-color: rgba(34, 224, 176,0.95);
+        }
+
+        #pg-faq .faq-main h4 {
+            font-size: 1.6rem;
+            font-family:graphik-semibold;
+        }
+
+        .faq-main h5 {
+            font-size: 0.9rem;
+            margin: 0px 0px 6px 0px;
+        }
+
+        .faq-main section p {
+            font-size: 3.5rem;
+            margin: 0px 0px 6px 0px;
+        }
+
+
+
+
+        figure {
+            background: #fff;
+            overflow: hidden;
+        }
+
+
+
+
+
+
+
+        .faq-main content {
+        }
+        /*hover BG*/
+        figure {
+            text-align: center;
+
+        }
+
+
+
+            figure img,  figure p {
+                opacity: 1;
+                -webkit-transition: .3s ease-in-out;
+                transition: .3s ease-in-out;
+
+            }
+
+        .faq-mainContainer:hover img {
+            opacity: 1;
+        }
+
+        /*hover zoom in*/
+        figure img {
+            -webkit-transform: scale(1.0);
+            transform: scale(1.0);
+            -webkit-transition: .5s ease-in-out;
+            transition: .5s ease-in-out;
+        }
+
+        .faq-mainContainer:hover img ,.faq-mainContainer:hover figure p {
+            -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+        }
+
+
+
+
+        /*Text hover*/
+        .faq-mainContainer {
+            position: relative;
+            padding: 0;
+            margin: 0;
+        }
+
+        /*暫時不要
+        .sectionContent {
+
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            vertical-align: middle;
+            opacity: 1;
+            -webkit-transition: opacity 0.5s;
+            -moz-transition: opacity 0.5s;
+            transition: opacity 0.5s;
+            vertical-align: middle;
+            line-height: 200px;
+            overflow:hidden;
+        }*/
+
+
+
+
+
+
+
+
+
+
+            .sectionContent p, .sectionContent h4 {
+                color: white;
+                line-height: 100%;
+            }
+
+
+/*Arrow*/
+.pg-faq .arrow-prev ,
+.pg-faq .arrow-next
+{
+    font-size:32px;
+   /*padding:10px 5px 10px 5px ;*/
+  line-height:85px;
+    color:#b9bcbf;
+    cursor: pointer;
+    background-color:rgba(255,255,255,0.8);
+    width:46px;
+     border:1px solid #b9bcbf;
+
+    text-align: center;
+
+}
+
+.pg-faq .arrow-prev {
+
+      border-width:1px 1px 1px 0px;
+    position:fixed;
+    top:50%;
+    left:0px;
+    margin-top:-40px;
+    height:85px;
+
+}
+
+
+.pg-faq .arrow-next {
+       border-width:1px 0px 1px 1px;
+      right: 16px;
+    float:right;
+    position:fixed;
+    top:50%;
+    margin-top:-40px;
+
+}
+
+
+
+
+@media (min-width: 1120px) {
+
+
+  .faq-mainContainer:hover .sectionContent{
+       top: 0px;
+         -webkit-transition: top 0.5s;
+          -moz-transition: top 0.5s;
+               transition: top 0.5s;
+    }
+
+  .faq-main .sectionContent .content{
+       margin:0px 18px 0px 18px;
+       padding: 0px;
+    }
+
+  .faq-main .sectionContent .content p{
+
+       margin-right:18px;
+
+    }
+
+
+
+          .faq-main .sectionContent {
+          padding: 70px 15px 6px 15px;
+            position: absolute;
+            top: 500px;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            opacity:0 ; /*調整漸層背景*/
+            -webkit-transition: opacity 0.5s;
+            -moz-transition: opacity 0.5s;
+            transition: opacity 0.5s;
+            line-height: 200px;
+            vertical-align: middle;
+        }
+           .sectionContent:hover {
+                opacity: 1;
+                top: 0;
+            }
+
+    /*調格式*/
+       .faq-mainContainer:hover .sectionContent {
+            opacity: 1;
+            top: 0px;
+             -webkit-transition: top 0.3s;
+            -moz-transition: top 0.3s;
+            transition: top 0.3s;
+
+        }
+
+.faq-main h4 {
+       font-size: 1.5rem;
+         bottom:-40px;
+
+    }
+
+.faq-main section p {
+       font-size: 3.0rem;
+       margin: 0px 0px 6px 0px;
+       line-height:150%;
+       bottom:-20px;
+
+    }
+
+.faq-mainContainer:hover .sectionContent h4{
+      position:absolute;
+      bottom:30px;
+      -webkit-transition: top 0.5s;
+          -moz-transition: top 0.5s;
+               transition: top 0.5s;
+      -webkit-transition: bottom 0.5s;
+          -moz-transition: bottom 0.5s;
+               transition: bottom 0.5s;
+
+    }
+
+
+
+.faq-mainContainer:hover .sectionContent p{
+      position:absolute;
+      top:50px;
+      -webkit-transition: top 0.5s;
+          -moz-transition: top 0.5s;
+               transition: top 0.5s;
+    }
+
+
+
+
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+
+
+
+  .faq-mainContainer:hover .sectionContent{
+       top: 0px;
+       -webkit-transition: top 0.5s;
+          -moz-transition: top 0.5s;
+               transition: top 0.5s;
+    }
+
+
+    .faq-main .sectionContent .content{
+       margin:0px 18px 0px 18px;
+    }
+
+
+
+            .faq-main .sectionContent {
+           padding: 70px 15px 6px 15px;
+            position: absolute;
+            top: 450px;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            opacity:0 ; /*調整漸層背景*/
+            -webkit-transition: opacity 0.5s;
+            -moz-transition: opacity 0.5s;
+            transition: opacity 0.5s;
+            line-height: 200px;
+            vertical-align: middle;
+        }
+
+           .sectionContent:hover {
+                opacity: 1;
+                top: 0;
+            }
+        /*調格式*/
+   .faq-mainContainer:hover .sectionContent {
+            opacity: 1;
+            top: 0px;
+             -webkit-transition: top 0.3s;
+            -moz-transition: top 0.3s;
+            transition: top 0.3s;
+
+        }
+
+.faq-main h4 {
+       font-size: 1.5rem;
+       line-height:200%;
+         bottom:-0px;
+    }
+
+.faq-main section p {
+       font-size: 3.0rem;
+       margin: 0px 0px 6px 0px;
+       line-height:200%;
+      top:10px;
+    }
+
+.faq-mainContainer:hover .sectionContent h4{
+      position:absolute;
+      bottom:30px;
+      -webkit-transition: top 0.5s;
+          -moz-transition: top 0.5s;
+               transition: top 0.5s;
+      -webkit-transition: bottom 0.5s;
+          -moz-transition: bottom 0.5s;
+               transition: bottom 0.5s;
+
+    }
+
+
+.faq-mainContainer:hover .sectionContent p{
+      position:absolute;
+      top:50px;
+      -webkit-transition: top 0.5s;
+          -moz-transition: top 0.5s;
+               transition: top 0.5s;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+
+
+  .faq-mainContainer:hover .sectionContent{
+       top: 0px;
+       -webkit-transition: top 0.5s;
+          -moz-transition: top 0.5s;
+               transition: top 0.5s;
+    }
+
+    .faq-main .sectionContent .content{
+       text-align:left;
+    }
+
+
+
+
+    .faq-main .sectionContent .content{
+       margin:0px 18px 0px 18px;
+    }
+
+            .faq-main .sectionContent {
+           padding: 70px 15px 6px 15px;
+            position: absolute;
+               top: 500px;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            opacity:0 ; /*調整漸層背景*/
+            -webkit-transition: opacity 0.5s;
+            -moz-transition: opacity 0.5s;
+            transition: opacity 0.5s;
+            line-height: 200px;
+            vertical-align: middle;
+        }
+
+           .sectionContent:hover {
+                opacity: 1;
+                top: 0;
+            }
+      /*調格式*/
+   .faq-mainContainer:hover .sectionContent {
+            opacity: 1;
+            top: 0px;
+             -webkit-transition: top 0.3s;
+            -moz-transition: top 0.3s;
+            transition: top 0.3s;
+
+        }
+
+.faq-main h4 {
+       font-size: 1.5rem;
+       bottom:-40px;
+    }
+
+.faq-main section p {
+       font-size: 3.0rem;
+       margin: 0px 0px 6px 0px;
+       line-height:150%;
+       bottom:-20px;
+    }
+
+.faq-mainContainer:hover .sectionContent h4{
+      position:absolute;
+      bottom:30px;
+      -webkit-transition: top 0.5s;
+          -moz-transition: top 0.5s;
+               transition: top 0.5s;
+      -webkit-transition: bottom 0.5s;
+          -moz-transition: bottom 0.5s;
+               transition: bottom 0.5s;
+
+    }
+
+
+.faq-mainContainer:hover .sectionContent p{
+      position:absolute;
+      top:50px;
+      -webkit-transition: top 0.5s;
+          -moz-transition: top 0.5s;
+               transition: top 0.5s;
+    }
+
+
+}
+
+@media (max-width: 767px) {
+    .faq-main .sectionContent {
+
+    }
+
+
+   .faq-main .sectionContent{
+       text-align:left;
+       bottom:0px;
+           padding: 20px 7px 20px 7px;
+    }
+
+    .faq-main .sectionContent .content{
+       margin:0px 0px 0px 0px;
+    }
+
+            .faq-mainContainer:hover img,.faq-mainContainer:hover figure p {
+            -webkit-transform: scale(1.0);
+            transform: scale(1.0);
+        }
+  /*調格式*/
+
+.faq-main h4 {
+       font-size: 1.1rem;
+       margin-bottom:0px;
+    }
+
+.faq-main section p {
+    margin-top:5px;
+       font-size: 2.2rem;
+       margin: 0px 0px 6px 0px;
+       line-height:150%;
+    }
+
+
+
+
+
+}
+
+
+
+
+
+/*screen*/
+.pg-faq .container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px; }
+  .container:before, .container:after {
+    content: " ";
+    display: table; }
+  .container:after {
+    clear: both; }
+  @media (min-width: 768px) {
+    .container {
+      width: 100%; } }
+  @media (min-width: 992px) {
+    .container {
+      width: 100%; } }
+  @media (min-width: 1200px) {
+    .container {
+      width: 100%; } }
+
+
+.Faq__interested-email {
+
+    position:relative;
+    height:570px;
+}
+
+
+
+ #pg-faq .Faq__interested-email .container .statement .statement_container {
+
+    text-align:center;
+
+    }
+
+
+.slider-nav a , .closeBtn{
+border-bottom-width:0px;
+color:#b9bcbf;
+/*color:#808080;*/
+}
+
+
+
+
+
+
+
+
+
+
+
+.HowFarMargin {
+    margin-top:32px;
+    margin-bottom:32px;
+}
+
+
+
+.thickFont {
+     font-family:'Graphik-semibold';
+
+}
+
+.thickFontZh {
+     font-family:'xingothic-w8';
+
+}
+
+.thickFontZh_blue {
+     font-family:'xingothic-w8';
+    color:#00d7ff;
+}
+
+.thickFontZh2{
+     font-family:'xingothic-w8';
+     color:#a4a4a4;
+}
+
+thickFontZh_grey{
+     font-family:'xingothic-w8';
+     background-color:#b9bcbf;
+}
+
+/*close btn*/
+
+    .closeBtn {
+        font-size: 2.8em;
+        right: 0px;
+        top: 40px;
+        position: absolute;
+        cursor: pointer;
+
+    }
+
+
+@media (min-width: 1120px) {
+    .closeBtn {
+        font-size: 1.5em;
+     left:50%;
+     margin-left:506px;
+         top: 40px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    .closeBtn {
+        font-size: 1.5em;
+        left:50%;
+          margin-left:436px;
+          top: 40px;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+      .closeBtn {
+        font-size: 1.5em;
+        right: 30px;
+      top: 40px;
+    }
+
+}
+
+@media (max-width: 767px) {
+    .closeBtn {
+        font-size: 1.5em;
+        right: 26px;
+        top: 40px;
+    }
+}
+
+
+
+
+
+
+
+@media (min-width: 1120px) {
+  .modalWindow .popupHidden {
+        display:none;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .modalWindow .popupHidden {
+        display:none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .modalWindow .popupHidden {
+        display:block;
+    }
+}
+
+@media (max-width: 767px) {
+  .modalWindow .popupHidden {
+        display:block;
+    }
+}
+
+
+
+
+.pg-faq #hero-header {
+background-image:-webkit-linear-gradient(top left, #07d9f0, #22e0b0);
+
+}
+
+
+#Faq_GogoroPlus .row {
+    margin-top:10px;
+}
+
+
+
+
+/*how far*/
+
+
+@media (min-width: 1120px) {
+     .modalWrapper .HowFarImage img{
+       width:210px;
+    }
+
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .modalWrapper .HowFarImage img{
+       width:210px;
+    }
+
+
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+     .modalWrapper .HowFarImage{
+       display:none;
+    }
+
+    /*.modalWrapper .HowFarImg-md img{
+        width:auto;
+        height:auto;
+    }*/
+}
+
+@media (max-width: 767px) {
+   .modalWrapper .HowFarImage{
+       display:none;
+    }
+
+}
+
+
+@media (min-width: 1120px) {
+    .modalWrapper .HowFarWord
+    {
+     position:relative;
+        left:50px;
+       width:500px;
+    }
+
+
+    .modalWrapper .SwapProgramWord{
+     position:relative;
+        left:40px;
+       width:550px;
+    }
+
+
+
+}
+
+
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .modalWrapper .HowFarWord4
+
+    {
+     position:relative;
+        left:100px;
+       width:500px;
+    }
+
+
+    .modalWrapper .SwapProgramWord{
+     position:relative;
+        left:40px;
+       width:550px;
+    }
+
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .modalWrapper .HowFarWord,
+    .modalWrapper .SwapProgramWord{
+      position:relative;
+         width:auto;
+    }
+}
+
+@media (max-width: 767px) {
+  .modalWrapper .HowFarWord,
+    .modalWrapper .SwapProgramWord{
+     width:auto;
+    }
+
+}
+
+
+
+@media (min-width: 1120px) {
+     .modalWrapper .HowFarWord li{
+    list-style-type:none;
+        height:94px;
+    }
+
+    .modalWrapper .SwapProgramWord li{
+    list-style-type:none;
+        height:110px;
+    }
+}
+
+
+@media (min-width: 992px) and (max-width: 1199px) {
+     .modalWrapper .HowFarWord li{
+    list-style-type:none;
+        height:94px;
+    }
+
+    .modalWrapper .SwapProgramWord li{
+    list-style-type:none;
+        height:110px;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .modalWrapper .HowFarWord li,
+    .modalWrapper .SwapProgramWord li{
+        list-style-type:none;
+        height:auto;
+    }
+}
+
+@media (max-width: 767px) {
+     .modalWrapper .HowFarWord li,
+    .modalWrapper .SwapProgramWord li{
+   list-style-type:none;
+   height:auto;
+    }
+
+}
+
+
+@media (min-width: 1120px) {
+   .modalWrapper .HowFarWord ul{
+    text-decoration:none;
+    margin-top: 50px;
+    padding-left:0px;
+
+    }
+
+
+    .modalWrapper .SwapProgramWord ul{
+           text-decoration:none;
+    margin-top: 200px;
+    padding-left:0px;
+
+    }
+
+}
+
+
+@media (min-width: 992px) and (max-width: 1199px) {
+   .modalWrapper .HowFarWord ul{
+    text-decoration:none;
+    margin-top: 50px;
+    padding-left:0px;
+
+    }
+
+
+    .modalWrapper .SwapProgramWord ul{
+           text-decoration:none;
+    margin-top: 200px;
+    padding-left:0px;
+
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .modalWrapper .HowFarWord ul
+  , .modalWrapper .SwapProgramWord ul{
+
+    margin-top: 34px;
+
+    }
+}
+
+@media (max-width: 767px) {
+   .modalWrapper .HowFarWord ul,
+    .modalWrapper .SwapProgramWord ul{
+
+    margin-top: 34px;
+
+    }
+
+}
+
+
+
+/*Mobile*/
+
+@media (max-width: 767px) {
+#pg-faq .slider-nav {
+    display:none;
+}
+
+    #pg-faq .closebtn {
+
+    }
+
+
+    #pg-faq #hero-header h1 {
+
+    }
+
+
+  #pg-faq  section.modalWindow .modalWrapper {
+        margin: 0px 0px 0px 0px;
+        padding: 50px 20px 50px 20px;
+        text-align: left;
+        line-height: 20px !important;
+        height: auto;
+    }
+
+  #pg-faq    section.modalWindow {
+        top:15px;
+    }
+
+}
+
+
+@media (max-width: 767px) {
+
+        .faq-main .sectionContent {
+
+            position: absolute;
+            height:auto;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            opacity:0.75 ; /*調整漸層背景*/
+
+
+            vertical-align: middle;
+        }
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/*pop up 浮動*/
+
+
+
+.bodyAddClass {
+    width:100%;
+}
+
+
+@media (min-width: 1120px) {
+      .bodyAddClass {
+        overflow:hidden;
+    }
+
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+      .bodyAddClass {
+        overflow:hidden;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+}
+
+@media (max-width: 767px) {
+}
+
+
+
+
+#pg-faq  .modalWindow {
+
+     -webkit-overflow-scrolling: touch;
+     overflow:scroll;
+     overflow-x:hidden;
+     width:100%;
+     margin:0px 0px 0px 0px ;
+     background:rgba(236,240,241,0.0);
+     padding:30px 15px 30px 15px;
+}
+
+
+
+
+
+
+section.modalWindow section.modalWrapper {
+       margin: auto;
+       padding: 60px 20px 60px 20px ;
+       text-align: left;
+       line-height: 20px !important;
+       border:0px solid #b9bcbf;
+       /*border:1px solid #808080;*/
+    }
+
+
+.modalWrapper {
+    margin: 0px;
+}
+
+
+
+/*popup寬度*/
+@media (min-width: 1120px) {
+     section.modalWindow section.modalWrapper {
+           width: 970px;
+    }
+
+}
+
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    section.modalWindow section.modalWrapper {
+           width: 970px;
+
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    section.modalWindow section.modalWrapper {
+
+
+
+    }
+}
+
+@media (max-width: 767px) {
+     section.modalWindow section.modalWrapper {
+
+
+
+    }
+
+}
+
+
+
+/*How far*/
+
+
+
+/*字形*/
+#pg-faq p,#pg-faq h3,#pg-faq h5{
+     font-family:'Graphik-light','xingothic-w3', 'Microsoft JhengHei','STHeiti';
+}
+#pg-faq h2 {
+     font-family:'Graphik-extra-light','xingothic-w3', 'Microsoft JhengHei','STHeiti';
+}
+
+
+
+
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+.HowFarMobileRow {
+    font-size:0px;
+}
+
+.HowFarMobileImage {
+        display: inline-block;
+    vertical-align: middle;
+    float: none;
+
+}
+
+.HowFarMobileWord {   display: inline-block;    vertical-align: middle;
+    float: none;
+    font-size: 1.6rem;
+
+}
+
+}
+
+@media (max-width: 767px) {
+.HowFarMobileRow {
+    font-size:0px;
+}
+
+.HowFarMobileImage {
+        display: inline-block;
+    vertical-align: middle;
+    float: none;
+
+}
+
+.HowFarMobileWord {
+       display: inline-block;    vertical-align: middle;
+    float: none;
+  font-size: 1.6rem;
+
+}
+
+
+}
+
+
+
+
+
+/*電池故障*/
+.BatteryDamageWord {
+    color:#a4a4a4;
+    font-size:1.4rem;
+}
+
+
+
+/*換一次電池多騎遠*/
+
+
+
+@media (min-width: 1120px) {
+     section.modalWindow section.modalWrapper #SwapProgramWordEN {
+        left:0px;
+    }
+
+}
+
+
+@media (min-width: 992px) and (max-width: 1199px) {
+         section.modalWindow section.modalWrapper .SwapProgramWordEN  {
+
+
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+         section.modalWindow section.modalWrapper .SwapProgramWordEN  {
+
+
+
+    }
+}
+
+@media (max-width: 767px) {
+     section.modalWindow section.modalWrapper .SwapProgramWordEN {
+
+
+
+    }
+
+}
+
+
+
+ .SwapProgramWordSmall p {
+    margin-bottom:75px;
+}
+
+
+  .SwapProgramWordSmall p {
+    margin-bottom:75px;
+}
+
+.t_grey{
+     color:#b9bcbf;
+    font-family:'graphik-light','xingothic-w3'
+
+}
+
+
+  /*換電馳服務資費專案*/
+#Faq_SwapPayment tr th{
+    font-family:'graphik-semibold','xingothic-w3';
+}
+
+
+#Faq_SwapPayment tr td ,
+#Faq_SwapPayment tr th {
+    text-align:center;
+    padding-top:20px;
+    padding-bottom:20px;
+}
+
+#Faq_SwapPayment .table > thead > tr > th {
+    border-width:0px;
+}
+
+
+#Faq_SwapPayment tr td{
+    font-family:'graphik-semibold','xingothic-w3';
+    font-size:2.3rem;
+}
+
+
+/*標題列*/
+#Faq_SwapPayment .table > thead > tr > th, .table > thead > tr > td, .table > tbody > tr > th, .table > tbody > tr > td, .table > tfoot > tr > th, .table > tfoot > tr > td {
+    vertical-align:middle;
+}
+
+
+
+#Faq_SwapPayment .tiny {
+
+    font-size:1.5rem;
+    font-family:'graphik-light','xingothic-w3';
+}
+
+#Faq_SwapPayment .blue {
+    color:#00d7ff;
+
+}
+
+
+/*月份大字*/
+#Faq_SwapPayment .jumboNum{
+    font-size:2.5rem;
+}
+
+@media (max-width: 767px) {
+   #Faq_SwapPayment .jumboNum{
+    font-size:1.8rem;
+}
+
+   #Faq_SwapPayment tr td{
+    font-size:1.8rem;
+}
+    #Faq_SwapPayment .blueTable {
+        font-size:1.6rem;
+    }
+
+    #Faq_SwapPayment .tealTable {
+          font-size:1.6rem;
+    }
+}
+
+
+
+#Faq_SwapPayment .table > thead > tr > td {
+      border-top:1px solid #b9bcbf;
+      background-color:#f3f3f3;
+}
+
+
+#Faq_SwapPayment .blueTable {
+     font-size:1.8rem;
+ color:#fff;
+ background-color:#00d7ff;
+ font-family:'graphik-semibold','xingothic-w8';
+}
+
+#Faq_SwapPayment .blueTableTd {
+
+}
+
+
+#Faq_SwapPayment .richblueTable {
+     background-color:#0069d2;
+        font-size:1.8rem;
+ color:#fff;
+  font-family:'graphik-semibold','xingothic-w8';
+}
+
+#Faq_SwapPayment .tealTable {
+     font-size:1.8rem;
+ color:#fff;
+ background-color:#28e1a5;
+
+}
+
+
+
+
+/**/
+.Faq_SwapPayment_icon img{
+    width:initial;
+    margin-right:15px;
+}
+
+
+
+
+
+/*早鳥*/
+
+
+
+.Bird_table {
+
+font-size:  2.5rem;
+text-align:center;
+}
+
+ #pg-faq .Bird_table  td ,
+ #pg-faq   .Bird_table  tr  {
+       border-top-width:0px;
+       border-top:solid 0px #00d7ff;
+        border-bottom:solid 1px #00d7ff;
+    }
+
+.Bird_table .Bird_right {
+    text-align:right;
+}
+
+
+.Bird_table .Bird_left {
+    text-align:left;
+}
+ .Bird_blue {
+    color:#00d7ff
+
+}
+ .Bird_richblue {
+        color:#0069d2;
+}
+
+
+  .Bird_green {
+        color:#c0df16;
+}
+
+
+.Bird_large{
+
+font-size:  5rem;
+font-family:'graphik-semibold';
+}
+
+
+
+.Bird_table_Second {
+    text-align:center;
+}
+
+
+  #pg-faq  .Bird_table_Second td {
+        border-top-width:0px;
+    }
+
+    .Bird_table_Second .Bird_table_Second_td2 {
+        text-align:left;
+    }
+
+
+    @media (min-width: 1120px) {
+         .Bird_table_Second img {
+            width:100px;
+        }
+}
+
+
+@media (min-width: 992px) and (max-width: 1199px) {
+      .Bird_table_Second img {
+            width:100px;
+        }
+}
+
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+     .Bird_table_Second img {
+            width:100px;
+        }
+}
+
+
+
+
+
+
+
+
+
+/*政府*/
+
+
+#Government tr th{
+    font-family:'graphik-semibold','xingothic-w3';
+}
+
+
+#Government tr td ,
+#Government tr th {
+    text-align:center;
+    padding-top:20px;
+    padding-bottom:20px;
+}
+
+#Government .table > thead > tr > th {
+    border-width:0px;
+}
+
+
+#Government tr td{
+    font-family:'graphik-semibold','xingothic-w3';
+    font-size:2.3rem;
+}
+
+
+/*標題列*/
+#Government .table > thead > tr > th, .table > thead > tr > td, .table > tbody > tr > th, .table > tbody > tr > td, .table > tfoot > tr > th, .table > tfoot > tr > td {
+    vertical-align:middle;
+}
+
+
+
+#Government .tiny {
+
+    font-size:1.5rem;
+    font-family:'graphik-light','xingothic-w3';
+}
+
+#Government .blue {
+    color:#00d7ff;
+
+}
+
+
+/*月份大字*/
+#Government .jumboNum{
+    font-size:2.5rem;
+}
+
+@media (max-width: 767px) {
+   #Government .jumboNum{
+    font-size:1.8rem;
+}
+
+   #Government tr td{
+    font-size:1.8rem;
+}
+    #Government .blueTable {
+        font-size:1.6rem;
+    }
+
+    #Government .tealTable {
+          font-size:1.6rem;
+    }
+}
+
+
+
+#Government .table > thead > tr > td {
+      border-top:1px solid #b9bcbf;
+      background-color:#f3f3f3;
+}
+
+
+#Government .blueTable {
+     font-size:1.8rem;
+ color:#323237;
+ background-color:#e1ff32;
+ font-family:'graphik-semibold','xingothic-w8';
+}
+
+
+
+
+#Government .richblueTable {
+     background-color:#0069d2;
+        font-size:1.8rem;
+ color:#fff;
+  font-family:'graphik-semibold','xingothic-w8';
+}
+
+#Government .tealTable {
+     font-size:1.8rem;
+ color:#323237;
+ background-color:#f1f3f3;
+
+}
+
+/*煞車系統*/
+
+#Faq_Criteria .modalWrapper {
+    padding-left:0px;
+    padding-right:0px;
+}
+#Faq_Criteria .row {
+    margin-left:0px;
+    margin-right:0px;
+}
+
+#Faq_Criteria .center{
+    text-align:center;
+
+}
+
+#Faq_Criteria .center h2{
+  font-family:'Graphik-light','xingothic-w3', 'Microsoft JhengHei','STHeiti';
+
+
+}
+
+#Faq_Criteria .margin-100{
+   margin-bottom:100px;
+
+}
+
+#Faq_Criteria  .red{
+    color:#ff1923;
+}
+/*安全帽*/
+
+@media (min-width: 1120px) {
+    #Riding_Safety h1 {
+        color:#323237;
+        font-size:12rem;
+        font-family:"flama-semicondensed-ultralight", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    }
+}
+
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    #Riding_Safety h1 {
+        color:#323237;
+         font-size:12rem;
+         font-family:"flama-semicondensed-ultralight", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    #Riding_Safety h1 {
+        color:#323237;
+         font-size:12rem;
+         font-family:"flama-semicondensed-ultralight", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    }
+}
+
+@media (max-width: 767px) {
+    #Riding_Safety h1 {
+        color:#323237;
+         font-size:8rem;
+         font-family:"flama-semicondensed-ultralight", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    }
+}
+
+
+
+
+#Riding_Safety .modalWrapper {
+    padding-left:0px;
+    padding-right:0px;
+}
+#Riding_Safety .row {
+    margin-left:0px;
+    margin-right:0px;
+}
+
+@media (min-width: 1120px) {
+   #Riding_Safety img {
+    width:initial;
+}
+    }
+
+
+@media (min-width: 992px) and (max-width: 1199px) {
+     #Riding_Safety img {
+        width:initial;
+    }
+    }
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+     #Riding_Safety .iconImg {
+     width:initial;
+
+    }
+}
+
+.iconFont {
+    font-size:2.5rem;
+    line-height:47px;
+}
+
+@media (max-width: 767px) {
+      #Riding_Safety .iconImg {
+     width:initial;
+
+    }
+}
+
+#Riding_Safety .row {
+    padding-top:25px;
+    padding-bottom:25px;
+}
+
+#Riding_Safety .center{
+    text-align:center;
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+      #Riding_Safety .mobile_center{
+        text-align:center;
+
+    }
+}
+
+@media (max-width: 767px) {
+        #Riding_Safety .mobile_center{
+        text-align:center;
+
+    }
+
+    #pg-faq  section#Riding_Safety .modalWrapper {
+        padding-left:0px;
+        padding-right:0px;
+
+        }
+
+        #pg-faq  section#Riding_Safety .row {
+        padding-left:20px;
+        padding-right:20px;
+
+        }
+}
+
+.p1{
+    font-size:30px;
+
+}
+
+.p2{
+    margin:30px;
+}
+
+.p3{
+   margin-top:10px;
+   margin-bottom:-105px;
+}
+
+.h1{
+margin-top:70px;
+margin-right:-72px;
+}
+
+.h2{
+margin-top:70px;
+
+}
+
+#Riding_Safety .bg_black {
+
+    background-color:#323237;
+    color:#fff;
+
+}
+
+
+#Riding_Safety .bg_white {
+    height: 240px;
+  display: -webkit-flex;
+  display:         flex;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    #Riding_Safety .bg_white {
+        height:100px;
+    }
+}
+
+
+
+@media (max-width: 767px) {
+    #Riding_Safety .bg_white {
+         height:100px;
+    }
+}
+
+
+@media (min-width: 1120px) {
+    #Riding_Safety .bg_white {
+        font-size:6.0rem;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+      #Riding_Safety .bg_white {
+        font-size:6.0rem;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+    #Riding_Safety .bg_white {
+        font-size:4.4rem;
+    }
+}
+
+@media (max-width: 767px) {
+    #Riding_Safety .bg_white {
+        font-size:3rem;
+    }
+}
+
+
+#Riding_Safety .bg_blue {
+    background-color:#0069d2;
+    color:#fff;
+    height:237px;
+    display: -webkit-flex;
+  display:         flex;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+}
+
+
+
+#Riding_Safety .bg_grey {
+    background-color:#b9bcbf;
+    color:#fff;
+    display: -webkit-flex;
+  display:         flex;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+}
+
+#Riding_Safety .bg_grey_1{
+    background-color:#b9bcbf;
+    height:237px;
+    color:#fff;
+    display: -webkit-flex;
+  display:         flex;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+}
+
+#Riding_Safety .bg_darkgrey {
+    background-color:#737d82;
+ color:#fff;
+ display: -webkit-flex;
+  display:         flex;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+
+}
+#Riding_Safety .bg_darkgrey_1 {
+    background-color:#737d82;
+    height:237px;
+ color:#fff;
+ display: -webkit-flex;
+  display:         flex;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+
+}
+
+#Riding_Safety .bg_lightkgrey1{
+    background-color:#f1f3f3;
+    height:340px;
+     margin-top:-100px;
+     display: -webkit-flex;
+  display:         flex;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+          overflow:hidden;
+}
+
+#Riding_Safety .bg_lightkgrey {
+    background-color:#f1f3f3;
+     display: -webkit-flex;
+  display:         flex;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+          overflow:hidden;
+}
+
+#Riding_Safety .bg_image{
+    color:#fff;
+    height:350px;
+    background-position:center;
+   background-repeat:no-repeat;
+    background-image:url('//images.gogoroapp.com/faq/Riding_Safety/windshield.png');
+
+display: -webkit-flex;
+  display:         flex;
+  -webkit-align-items: center;
+          align-items: center;
+
+}
+
+@media (max-width: 767px) {
+    #Riding_Safety .bg_image {
+            height:750px;
+        background-image:url('//images.gogoroapp.com/faq/Riding_Safety/windshield_mobile.png');
+
+display: -webkit-flex;
+  display:         flex;
+  -webkit-align-items: flex-end;
+          align-items: flex-end;
+    }
+}
+
+
+@media (min-width: 1120px) {
+    #Riding_Safety .bg_image {
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    #Riding_Safety .bg_image {
+    }
+}

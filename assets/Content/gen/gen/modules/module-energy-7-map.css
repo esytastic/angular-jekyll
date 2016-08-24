@@ -1,0 +1,8 @@
+.module-energy-7-map {
+	height: 600px;
+	width: 100%;
+}
+
+.module-energy-7-map.fallback {
+	height: 350px;
+}

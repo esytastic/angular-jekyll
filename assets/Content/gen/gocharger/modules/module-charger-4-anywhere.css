@@ -1,0 +1,10 @@
+.module-charger-4-anywhere {
+	height: 400px;
+}
+.module-charger-4-anywhere .container {
+	height: 100%;
+	text-align: center;
+}
+.module-charger-4-anywhere .container #charger-icon {
+	width: auto;
+}

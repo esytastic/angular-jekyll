@@ -1,0 +1,46 @@
+﻿<header id="main-header">
+    <div class="navbar navbar-default-gogoro" role="navigation">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-target=".navbar-main">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar icon-bar-one"></span>
+                <span class="icon-bar icon-bar-two"></span>
+                <span class="icon-bar icon-bar-three"></span>
+            </button>
+
+            <a class="navbar-brand" ng-href="{{$root.gogoro.wwwGogoroUrl}}">
+                <img src="//images.gogoroapp.com/gogoro.svg" class="svg gogoro-logo" alt="Gogoro" width="102" height="28" />
+            </a>
+
+            <ul class="main-links">
+                <li>
+                    <a href='{{$root.gogoro.wwwGogoroUrl}}smartscooter/faster'><span class="graphik-light">Smartscooter™</span></a>
+                    <tooltip-menu font-size="15" translatex="0" content-name="smartscooter"></tooltip-menu>
+                </li>
+                <li>
+                    <a href='{{$root.gogoro.wwwGogoroUrl}}gen'><span class="graphik-light">Gogoro® Energy Network</span></a>
+                    <tooltip-menu font-size="15" translatex="0" content-name="gen"></tooltip-menu>
+                </li>
+                <li><a href="//store.gogoro.com/tw/"><span class="xingothic-w3">Buy</span></a></li>
+            </ul>
+
+            <ul class="quick-links clearfix">
+                <li><a href="{{$root.gogoro.wwwGogoroUrl}}faq"><span class="graphik-light">FAQ</span></a></li>
+                <li><a href="{{$root.gogoro.wwwGogoroUrl}}shops">Find Us</a></li>
+                <li ng-show="$root.loginUser.isUserLogin === false">
+                    <a href="//my.gogoro.com/tw/account/login" referrer-url><span>Login</span></a>
+                </li>
+            </ul>
+
+        </div>
+
+        <div class="navbar-background"></div>
+    </div>
+    <!--/.navbar-default-gogoro -->
+    <!--<div class="nav-bar-stop white">
+        <button type="button" class="close-button" onclick="gogoro.App.removeTakeover();">
+            <span class="Rotate45deg"></span>
+            <span class="Rotate45degRev"></span>
+        </button>
+    </div>-->
+</header>

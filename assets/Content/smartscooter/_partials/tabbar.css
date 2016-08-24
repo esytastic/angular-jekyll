@@ -1,0 +1,504 @@
+/* ====================================
+Site colors
+==================================== */
+/*
+Brand colors
+====================================
+White / Light Gray = Fresh and Clean Charcoal / Gray / Dark Gray = Bold and Direct Rich Blue = Performance
+Blue = Experience
+Teal = Style
+Dark Green = Value
+Green = Eco / Environment
+Hot Green = Community
+Red = Warning
+*/
+/* ====================================
+* Mixins and functions
+* ==================================== */
+/* Media queries
+* ==================================== */
+/* Usage: @include breakpoint(sm) {} */
+/* Mixins and functions
+* ==================================== */
+/* Usage: @include linearGradient() {} */
+/* Usage: @include placeholder() {} */
+/* Usage: @include border-radius(5px) */
+/* Usage: @include opacity(0.8) */
+/* Usage: @include center-block */
+/* Usage: @include text-truncate  */
+/* Extends
+* ==================================== */
+/* Variables
+* ==================================== */
+/* Mixins and functions
+* ==================================== */
+.tabbar-container {
+    position: relative;
+    z-index: 840;
+    /*z-index: 1001;*/
+}
+
+@media (max-width: 767px) {
+    .tabbar-container {
+        height: 52px;
+        position: relative;
+    }
+}
+
+.tabbar-container.cloned {
+    display: none;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2000;
+    width: 100%;
+}
+
+.tabbar-container.cloned.faster {
+    background-color: #0069d2;
+}
+
+.tabbar-container.cloned.smarter {
+    background-color: #00c3e5;
+}
+
+.tabbar-container.cloned.easier {
+    background-color: #24b84c;
+}
+
+.tabbar-container.cloned.customize {
+    background-color: #c0df16;
+}
+
+.tabbar-container.cloned .tabbar-wrapper {
+    height: 100%;
+    display: table;
+}
+
+.tabbar-container.cloned .tabbar-wrapper .tabbar {
+    display: table-cell;
+    vertical-align: middle;
+    display: none;
+    position: relative;
+    border: none;
+    background-color: transparent;
+}
+
+.tabbar-container.cloned .tabbar-wrapper .tabbar a {
+    font-family: "graphik-extra-light", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 42px;
+    font-size: 4.2rem;
+    line-height: 1;
+    color: #fff;
+    background-color: transparent;
+    display: block;
+    text-align: center;
+    border: none;
+    margin: 5px 0;
+}
+html[lang=zh-TW] .tabbar-container.cloned .tabbar-wrapper .tabbar a {
+    font-family: 'xingothic-w3', 'Microsoft JhengHei','STHeiti';
+}
+
+
+.tabbar-container.cloned .tabbar-wrapper .tabbar a:hover, .tabbar-container.cloned .tabbar-wrapper .tabbar a:active, .tabbar-container.cloned .tabbar-wrapper .tabbar a.active {
+    background-color: transparent;
+}
+
+.tabbar-container.cloned .tabbar-wrapper .tabbar a span {
+    float: none;
+}
+
+.tabbar-container.cloned .tabbar-wrapper .tabbar a .icon-arrow-down {
+    display: none !important;
+}
+
+.tabbar-container.cloned .tabbar-wrapper .icon-close {
+    display: block;
+    cursor: pointer;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 22px 17px;
+}
+
+.tabbar-wrapper {
+    position: relative;
+    background-color: transparent;
+    -webkit-transition: height 150ms ease-out;
+    transition: height 150ms ease-out;
+    z-index: 800;
+}
+
+@media (max-width: 767px) {
+    .tabbar-wrapper {
+        height: 52px;
+    }
+}
+
+.tabbar-wrapper .tabbar {
+    background-color: #fff;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.05);
+    color: #323237;
+}
+
+@media (max-width: 767px) {
+    .tabbar-wrapper .tabbar {
+        margin: 0;
+        box-shadow: none;
+        height: 52px;
+        overflow: hidden;
+    }
+
+    .cloned .tabbar-wrapper .tabbar {
+        box-shadow: none;
+        border-top: 1px solid #f1f3f3;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .tabbar-wrapper .tabbar .container {
+        margin-right: auto;
+        margin-left: auto;
+        padding-left: 15px;
+        padding-right: 15px;
+        width: auto;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .tabbar-wrapper .tabbar .container {
+        margin-right: auto;
+        margin-left: auto;
+        padding-left: 15px;
+        padding-right: 15px;
+        width: auto;
+    }
+}
+
+@media (max-width: 767px) {
+    .tabbar-wrapper .tabbar .container {
+        position: relative;
+        height: 52px;
+        padding: 0;
+    }
+
+    .tabbar-wrapper .tabbar .container .row {
+        margin: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .tabbar-wrapper .tabbar .container .col-xs-12 {
+        position: absolute;
+    }
+}
+
+.tabbar-wrapper .tabbar .col-sm-3 {
+    border-right: 1px solid #f1f3f3;
+    border-left: 1px solid #f1f3f3;
+}
+
+@media (max-width: 767px) {
+    .tabbar-wrapper .tabbar .col-sm-3 {
+        border: none;
+    }
+}
+
+.tabbar-wrapper .tabbar a {
+    margin: 0 -1px;
+    display: block;
+    font-family: "graphik-light", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 18px;
+    font-size: 1.8rem;
+    text-align: center;
+    color: #323237;
+    padding: 39px 0 37px;
+    border-bottom: 0;
+    overflow: hidden;
+    -webkit-transition: all 200ms ease-out;
+    transition: all 200ms ease-out;
+    -webkit-transition-property: padding, background-color, color;
+    transition-property: padding, background-color, color;
+    white-space: nowrap;
+}
+html[lang=zh-TW] .tabbar-wrapper .tabbar a {
+    font-family: 'xingothic-w3', 'Microsoft JhengHei','STHeiti';
+}
+
+@media (max-width: 767px) {
+    .tabbar-wrapper .tabbar a {
+        display: none;
+        padding: 13px 15px 12px;
+        border: none;
+    }
+}
+
+@media (max-width: 767px) {
+    .tabbar-wrapper .tabbar a span {
+        float: left;
+    }
+}
+
+.tabbar-wrapper .tabbar a .icon {
+    display: none;
+    position: relative;
+    top: 5px;
+    right: 3px;
+    float: right;
+}
+
+.tabbar-wrapper .tabbar a:link, .tabbar-wrapper .tabbar a:active {
+    text-decoration: none;
+}
+
+.tabbar-wrapper .tabbar a:hover, .tabbar-wrapper .tabbar a.active {
+    display: block;
+    color: #fff;
+}
+
+.tabbar-wrapper .tabbar a:hover.faster, .tabbar-wrapper .tabbar a.active.faster {
+    background-color: #0069d2;
+    border-left-color: #0069d2;
+    border-right-color: #0069d2;
+}
+
+.tabbar-wrapper .tabbar a:hover.faster:hover, .tabbar-wrapper .tabbar a.active.faster:hover {
+    color: #fff;
+}
+
+@media (max-width: 767px) {
+    .tabbar-wrapper .tabbar a:hover.faster, .tabbar-wrapper .tabbar a.active.faster {
+        display: block;
+    }
+}
+
+.tabbar-wrapper .tabbar a:hover.smarter, .tabbar-wrapper .tabbar a.active.smarter {
+    background-color: #00c3e5;
+    border-left-color: #00c3e5;
+    border-right-color: #00c3e5;
+}
+
+.tabbar-wrapper .tabbar a:hover.smarter:hover, .tabbar-wrapper .tabbar a.active.smarter:hover {
+    color: #fff;
+}
+
+@media (max-width: 767px) {
+    .tabbar-wrapper .tabbar a:hover.smarter, .tabbar-wrapper .tabbar a.active.smarter {
+        display: block;
+    }
+}
+
+.tabbar-wrapper .tabbar a:hover.easier, .tabbar-wrapper .tabbar a.active.easier {
+    background-color: #24b84c;
+    border-left-color: #24b84c;
+    border-right-color: #24b84c;
+}
+
+.tabbar-wrapper .tabbar a:hover.easier:hover, .tabbar-wrapper .tabbar a.active.easier:hover {
+    color: #fff;
+}
+
+@media (max-width: 767px) {
+    .tabbar-wrapper .tabbar a:hover.easier, .tabbar-wrapper .tabbar a.active.easier {
+        display: block;
+    }
+}
+
+.tabbar-wrapper .tabbar a:hover.gostation, .tabbar-wrapper .tabbar a.active.gostation {
+    background-color: #6CDEA9;
+    border-left-color: #6CDEA9;
+    border-right-color: #6CDEA9;
+}
+
+.tabbar-wrapper .tabbar a:hover.gostation:hover, .tabbar-wrapper .tabbar a.active.gostation:hover {
+    color: #fff;
+}
+
+@media (max-width: 767px) {
+    .tabbar-wrapper .tabbar a:hover.gostation, .tabbar-wrapper .tabbar a.active.gostation {
+        display: block;
+    }
+}
+
+.tabbar-wrapper .tabbar a:hover.customize, .tabbar-wrapper .tabbar a.active.customize {
+    background-color: #c0df16;
+    border-left-color: #c0df16;
+    border-right-color: #c0df16;
+}
+
+.tabbar-wrapper .tabbar a:hover.customize:hover, .tabbar-wrapper .tabbar a.active.customize:hover {
+    color: #fff;
+}
+
+@media (max-width: 767px) {
+    .tabbar-wrapper .tabbar a:hover.customize, .tabbar-wrapper .tabbar a.active.customize {
+        display: block;
+    }
+}
+
+@media (max-width: 767px) {
+    .tabbar-wrapper .tabbar a:hover .icon, .tabbar-wrapper .tabbar a.active .icon {
+        display: block;
+    }
+}
+
+@media (max-width: 767px) {
+    .cloned .tabbar-wrapper .tabbar {
+        height: auto;
+    }
+}
+
+@media (max-width: 767px) {
+    .cloned .tabbar-wrapper .tabbar .col-xs-12 {
+        position: relative;
+    }
+}
+
+.cloned .tabbar-wrapper .tabbar a {
+    border-bottom: 1px solid #f1f3f3;
+}
+
+@media (max-width: 767px) {
+    .tabbar-wrapper .tabbar .row {
+        height: auto;
+    }
+}
+
+.tabbar-wrapper .tabbar .row div {
+    padding: 0;
+}
+
+.tabbar-wrapper.fixed {
+    /*height: 51px;*/
+}
+
+@media (max-width: 767px) {
+    .tabbar-wrapper.fixed {
+        height: 52px;
+        position: relative;
+    }
+}
+
+.tabbar-wrapper.fixed .tabbar {
+    margin: 0 0 75px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+@media (max-width: 767px) {
+    .tabbar-wrapper.fixed .tabbar {
+        margin: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .tabbar-wrapper.fixed .tabbar .row div a {
+        padding: 13px 15px 12px;
+    }
+}
+
+/* Gen pages */
+
+.tabbar-container.cloned.gen {
+    background-color: #0069d2;
+}
+
+.tabbar-wrapper .tabbar a:hover.gen, .tabbar-wrapper .tabbar a.active.gen {
+    background-color: #0069d2;
+    border-left-color: #0069d2;
+    border-right-color: #0069d2;
+}
+
+.tabbar-wrapper .tabbar a:hover.gen:hover, .tabbar-wrapper .tabbar a.active.gen:hover {
+    color: #fff;
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+
+    .tabbar-wrapper .tabbar a.gen {
+        padding: 25px 0 23px!important;
+    }
+
+}
+
+.tabbar-container.cloned.gostation {
+    background-color: #08c8ec;
+}
+
+@media (max-width: 767px) {
+
+    .tabbar-wrapper .tabbar a:hover.gostation, .tabbar-wrapper .tabbar a.active.gostation {
+        display: block;
+    }
+}
+
+.tabbar-wrapper .tabbar a:hover.gostation, .tabbar-wrapper .tabbar a.active.gostation {
+    background-color: #08c8ec;
+    border-left-color: #08c8ec;
+    border-right-color: #08c8ec;
+}
+
+.tabbar-wrapper .tabbar a:hover.gostation:hover, .tabbar-wrapper .tabbar a.active.gostation:hover {
+    color: #fff;
+}
+
+@media (max-width: 767px) {
+    .tabbar-wrapper .tabbar a:hover.gostation, .tabbar-wrapper .tabbar a.active.gostation {
+        display: block;
+    }
+}
+
+.tabbar-container.cloned.gocharger {
+    background-color: #28e1a5;
+}
+
+.tabbar-wrapper .tabbar a:hover.gocharger, .tabbar-wrapper .tabbar a.active.gocharger {
+    background-color: #28e1a5;
+    border-left-color: #28e1a5;
+    border-right-color: #28e1a5;
+}
+
+.tabbar-wrapper .tabbar a:hover.gocharger:hover, .tabbar-wrapper .tabbar a.active.gocharger:hover {
+    color: #fff;
+}
+
+@media (max-width: 767px) {
+    .tabbar-wrapper .tabbar a:hover.gocharger, .tabbar-wrapper .tabbar a.active.gocharger {
+        display: block;
+    }
+}
+
+.tabbar-container.cloned.open {
+    background-color: #BCDF46;
+}
+
+.tabbar-wrapper .tabbar a:hover.open, .tabbar-wrapper .tabbar a.active.open {
+    background-color: #BCDF46;
+    border-left-color: #BCDF46;
+    border-right-color: #BCDF46;
+}
+
+.tabbar-wrapper .tabbar a:hover.open:hover, .tabbar-wrapper .tabbar a.active.open:hover {
+    color: #fff;
+}
+
+@media (max-width: 767px) {
+    .tabbar-wrapper .tabbar a:hover.open, .tabbar-wrapper .tabbar a.active.open {
+        display: block;
+    }
+}
+
+.tabbar-container.cloned br.visible-sm-block {
+    display: block!important;
+}

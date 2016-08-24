@@ -1,0 +1,697 @@
+{
+    "js": {
+        "book-a-ride": [
+            "Scripts/book-a-ride/modules/services/load-schedule.js",
+            "Scripts/book-a-ride/book-a-ride.js",
+            "Scripts/book-a-ride/modules/request-ride.js",
+            "Scripts/book-a-ride/modules/book-contact-form.js",
+            "Scripts/book-a-ride/modules/cancel-booking.js"
+        ],
+        "send-data-script": [
+            "Scripts/SendDataScript.js"
+        ],
+        "app-min": [
+            "Scripts/app.min.js",
+            "Scripts/scooter-spec.js"
+        ],
+        "homepage/all": [
+            "Scripts/vendor/jquery/dist/jquery.js",
+            "Scripts/vendor/velocity/velocity.js",
+            "Scripts/vendor/fastclick/lib/fastclick.js",
+            "Scripts/vendor/isMobile/isMobile.js",
+            "Scripts/global/footer.js",
+            "Scripts/smartscooter/_common/drop-down.js",
+            "Scripts/global/application.init.js",
+            "Scripts/vendor/angular/angular.js",
+            "Scripts/vendor/angular-touch/angular-touch.js",
+            "Scripts/vendor/angular-bootstrap/ui-bootstrap-tpls.js",
+            "Scripts/vendor/angular-ui-router/release/angular-ui-router.js",
+            "Scripts/vendor/angular-local-storage/angular-local-storage.js",
+            "Scripts/vendor/angular-cookies/angular-cookies.js",
+            "Scripts/vendor/slick-carousel/slick/slick.min.js",
+            "Scripts/vendor/viewportSize/viewportSize.js",
+            "Scripts/vendor/angular-inview/angular-inview.js",
+            "Scripts/smartscooter/_partials/module-ga-content-tracking.js",
+            "Scripts/smartscooter/_partials/fallback-manager.js",
+            "Scripts/smartscooter/_partials/module-image-hero.js",
+            "Scripts/smartscooter/_partials/module-image-sequence.js",
+            "Scripts/smartscooter/_partials/module-page-intro.js",
+            "Scripts/smartscooter/_partials/module-summary-info.js",
+            "Scripts/smartscooter/_partials/module-video.js",
+            "Scripts/smartscooter/_partials/module-video-scroller.js",
+            "Scripts/smartscooter/_partials/module-video-slider.js",
+            "Scripts/smartscooter/_partials/tabbar.js",
+            "Scripts/smartscooter/app.js",
+            "Scripts/global/_service/gogoro-url.js",
+            "Scripts/global/_service/gogoro-user.js",
+            "Scripts/global/_directive/main-header.js",
+            "Scripts/global/_directive/navbar-main.js",
+            "Scripts/global/_directive/social-icons.js",
+            "Scripts/global/_directive/base-footer.js",
+            "Scripts/store/scooter/services/preloader-service.js",
+            "Scripts/global/_service/shopping-cart.js",
+            "Scripts/home/jumbotron.js"
+        ],
+        "home/index": [
+            "Scripts/home/index.js",
+            "Scripts/home/home-carousel.js"
+        ],
+        "about": [
+            "Scripts/_common/social-share.js",
+            "Scripts/about/vendor/jquery.ba-throttle-debounce.js",
+            "Scripts/about/vendor/scrollMonitor.js",
+            "Scripts/about/vendor/slick.js",
+            "Scripts/about/vendor/fade-in-up.js",
+            "Scripts/about/vendor/jquery.ba-dotimeout.js",
+            "Scripts/about/vendor/jquery.stellar.js",
+            "Scripts/_common/application-app.js",
+            "Scripts/_common/gradient-header.js",
+            "Scripts/_common/responsive-images.js",
+            "Scripts/about/intro-sequence.js",
+            "Scripts/about/video-modal.js",
+            "Scripts/about/about.js"
+        ],
+        "press": [
+            "Scripts/_common/application-app.js",
+            "Scripts/_common/gradient-header.js",
+            "Scripts/_common/responsive-images.js",
+            "Scripts/_common/social-share.js",
+            "Scripts/press/press.js"
+        ],
+        "blog": [
+            "Scripts/_common/application-app.js",
+            "Scripts/_common/gradient-header.js",
+            "Scripts/_common/responsive-images.js",
+            "Scripts/_common/social-share.js",
+            "Scripts/blog/blog.js"
+        ],
+        "specs": [
+            "Scripts/_common/application-app.js",
+            "Scripts/_common/gradient-header.js",
+            "Scripts/_common/responsive-images.js",
+            "Scripts/scooter-spec.js"
+        ],
+        "media-kit": [
+            "Scripts/_common/application-app.js",
+            "Scripts/_common/gradient-header.js",
+            "Scripts/_common/responsive-images.js",
+            "Scripts/media-kit/media-kit.js"
+        ],
+        "videos": [
+            "Scripts/_common/application-app.js",
+            "Scripts/_common/gradient-header.js",
+            "Scripts/_common/responsive-images.js",
+            "Scripts/videos/videos.js"
+        ],
+        "gallery": [
+            "Scripts/_common/application-app.js",
+            "Scripts/_common/gradient-header.js",
+            "Scripts/_common/responsive-images.js",
+            "Scripts/gallery/gallery.js"
+        ],
+        "faq": [
+            "Scripts/_common/application-app.js",
+            "Scripts/_common/gradient-header.js",
+            "Scripts/_common/responsive-images.js",
+            "Scripts/_common/social-share-faq.js",
+            "Scripts/faq/faq.js"
+        ],
+        "news-coverage": [
+            "Scripts/_common/application-app.js",
+            "Scripts/_common/gradient-header.js",
+            "Scripts/_common/responsive-images.js",
+            "Scripts/news-coverage/news-coverage.js"
+        ],
+        "terms-of-use": [
+            "Scripts/_common/application-app.js",
+            "Scripts/_common/gradient-header.js",
+            "Scripts/_common/responsive-images.js"
+        ],
+        "privacy-policy": [
+            "Scripts/_common/application-app.js",
+            "Scripts/_common/gradient-header.js",
+            "Scripts/_common/responsive-images.js"
+        ],
+        "contact": [
+            "Scripts/_common/application-app.js",
+            "Scripts/_common/gradient-header.js",
+            "Scripts/about/vendor/modal.js",
+            "Scripts/_common/responsive-images.js",
+            "Scripts/vendor/bootstrapvalidator/dist/js/bootstrapValidator.js",
+            "Scripts/contact/send-data-script.js",
+            "Scripts/contact/contact.js",
+            "Scripts/contact/stay-tuned.js"
+        ],
+        "keep-me-informed": [
+            "Scripts/_common/application-app.js",
+            "Scripts/_common/gradient-header.js",
+            "Scripts/_common/responsive-images.js",
+            "Scripts/vendor/bootstrapvalidator/dist/js/bootstrapValidator.js",
+            "Scripts/contact/send-data-script.js",
+            "Scripts/contact/keep-me-informed.js"
+        ],
+        "globals": [
+            "Scripts/vendor/jquery/dist/jquery.js",
+            "Scripts/vendor/gsap/src/uncompressed/TweenMax.js",
+            "Scripts/global/redirectAngularToAsp.js",
+            "Scripts/vendor/waypoints/noframework.waypoints.js",
+            "Scripts/vendor/velocity/velocity.js",
+            "Scripts/vendor/velocity/velocity.ui.js",
+            "Scripts/vendor/fastclick/lib/fastclick.js",
+            "Scripts/vendor/jquery-collision/jquery-collision.js",
+            "Scripts/vendor/isMobile/isMobile.js",
+            "Scripts/global/footer.js",
+            "Scripts/smartscooter/_common/drop-down.js",
+            "Scripts/global/application.init.js"
+        ],
+        "smartscooter/vendor": [
+            "Scripts/vendor/angular/angular.js",
+            "Scripts/vendor/angular-touch/angular-touch.js",
+            "Scripts/vendor/angular-bootstrap/ui-bootstrap-tpls.js",
+            "Scripts/vendor/angular-ui-router/release/angular-ui-router.js",
+            "Scripts/vendor/angular-ui-utils/ui-utils.js",
+            "Scripts/vendor/angular-local-storage/angular-local-storage.js",
+            "Scripts/vendor/angular-cookies/angular-cookies.js",
+            "Scripts/vendor/angular-inview/angular-inview.js",
+            "Scripts/vendor/slick-carousel/slick/slick.min.js",
+            "Scripts/vendor/jquery.preloadimages/jquery.preloadimages.js",
+            "Scripts/vendor/jquery-pjax/jquery.pjax.js",
+            "Scripts/vendor/bootstrap/dist/js/bootstrap.js",
+            "Scripts/vendor/jquery.easing/js/jquery.easing.js",
+            "Scripts/vendor/isMobile/isMobile.js",
+            "Scripts/vendor/blueimp-canvas-to-blob/js/canvas-to-blob.js",
+            "Scripts/vendor/imgix.js/dist/imgix.min.js",
+            "Scripts/vendor/jquery.inview/jquery.inview.js",
+            "Scripts/vendor/ScrollMagic/js/jquery.scrollmagic.js",
+            "Scripts/vendor/bootstrapvalidator/dist/js/bootstrapValidator.js",
+            "Scripts/vendor/viewportSize/viewportSize.js"
+        ],
+        "smartscooter/partials": [
+            "Scripts/smartscooter/_partials/module-ga-content-tracking.js",
+            "Scripts/smartscooter/_partials/fallback-manager.js",
+            "Scripts/smartscooter/_partials/module-image-hero.js",
+            "Scripts/smartscooter/_partials/module-image-sequence.js",
+            "Scripts/smartscooter/_partials/module-page-intro.js",
+            "Scripts/smartscooter/_partials/module-summary-info.js",
+            "Scripts/smartscooter/_partials/module-video.js",
+            "Scripts/smartscooter/_partials/module-video-scroller.js",
+            "Scripts/smartscooter/_partials/module-video-slider.js",
+            "Scripts/smartscooter/_partials/tabbar.js"
+        ],
+        "smartscooter": [
+            "Scripts/smartscooter/app.js",
+            "Scripts/global/_service/gogoro-url.js",
+            "Scripts/global/_service/gogoro-user.js",
+            "Scripts/global/_directive/main-header.js",
+            "Scripts/global/_directive/navbar-main.js",
+            "Scripts/global/_directive/social-icons.js",
+            "Scripts/global/_directive/base-footer.js",
+            "Scripts/store/scooter/services/preloader-service.js",
+            "Scripts/global/_service/shopping-cart.js",
+            "Scripts/smartscooter/respond.js"
+        ],
+        "smartscooter/common": [
+            "Scripts/smartscooter/_common/howler.core.min.js",
+            "Scripts/smartscooter/_common/processing.js",
+            "Scripts/smartscooter/_common/responsive-images.js",
+            "Scripts/smartscooter/_common/scrollto.js",
+            "Scripts/smartscooter/_common/video-modal.js"
+        ],
+        "gen/gen": [
+            "Scripts/gen/gen-script.js",
+            "Scripts/gen/gen/modules/module-energy-0-site-intro.js",
+            "Scripts/gen/gen/modules/module-energy-1-page-intro.js",
+            "Scripts/gen/gen/modules/module-energy-2-smart-city.js",
+            "Scripts/gen/gen/modules/module-energy-3-smarter-cleaner.js",
+            "Scripts/gen/gen/modules/module-energy-4-smart-energy.js",
+            "Scripts/gen/gen/modules/module-energy-5-mega-cities.js",
+            "Scripts/gen/gen/modules/module-energy-6-taipei.js",
+            "Scripts/gen/gen/modules/module-energy-7-map.js",
+            "Scripts/gen/gen/modules/module-energy-8-energy-demand.js",
+            "Scripts/gen/gen/modules/module-energy-9-co2-saving.js",
+            "Scripts/gen/gen/modules/module-energy-10-pilot-city.js",
+            "Scripts/Gostation/gen-map-initialize.js",
+            "Scripts/Gostation/vm-map.js"
+        ],
+        "gen/gocharger": [
+            "Scripts/gen/gocharger/gocharger.js",
+            "Scripts/gen/gocharger/modules/module-charger-1-intro.js",
+            "Scripts/gen/gocharger/modules/module-charger-2-video.js",
+            "Scripts/gen/gocharger/modules/module-charger-4-anywhere.js",
+            "Scripts/gen/gocharger/modules/module-charger-5-smart.js",
+            "Scripts/gen/gocharger/modules/module-charger-7-connected.js",
+            "Scripts/gen/gocharger/modules/module-charger-8-sharing.js"
+        ],
+        "gen/open": [
+            "Scripts/gen/open/open.js",
+            "Scripts/gen/open/modules/module-open-1-intro.js",
+            "Scripts/gen/open/modules/module-open-3-contact.js"
+        ],
+        "smartscooter/bethenextcity": [
+            "Scripts/smartscooter/bethenextcity/main.js",
+            "Scripts/smartscooter/bethenextcity/modules/module-bethenext-1-intro.js",
+            "Scripts/smartscooter/bethenextcity/modules/module-bethenext-2-contact.js"
+        ],
+        "smartscooter/faster": [
+            "Scripts/smartscooter/faster/faster.js",
+            "Scripts/smartscooter/faster/modules/module-faster-0-site-intro.js",
+            "Scripts/smartscooter/faster/modules/module-faster-1-page-intro.js",
+            "Scripts/smartscooter/faster/modules/module-faster-2-clean-video.js",
+            "Scripts/smartscooter/faster/modules/module-faster-3-summary-info.js",
+            "Scripts/smartscooter/faster/modules/module-faster-4-performance-hero.js",
+            "Scripts/smartscooter/faster/modules/module-faster-5-powertrain.js",
+            "Scripts/smartscooter/faster/modules/module-faster-7-comparison-infographic.js",
+            "Scripts/smartscooter/faster/modules/module-faster-8-control-hero.js",
+            "Scripts/smartscooter/faster/modules/module-faster-9-chassis.js",
+            "Scripts/smartscooter/faster/modules/module-faster-10-suspension.js",
+            "Scripts/smartscooter/faster/modules/module-faster-11a-center-lock.js",
+            "Scripts/smartscooter/faster/modules/module-faster-11-compound-tire.js",
+            "Scripts/smartscooter/faster/modules/module-faster-12-13-balance-lean-angle.js",
+            "Scripts/smartscooter/faster/modules/module-faster-14-aerodynamic-design.js",
+            "Scripts/smartscooter/faster/modules/module-faster-15-waterproof.js",
+            "Scripts/smartscooter/faster/modules/module-faster-16-design-ethos.js",
+            "Scripts/smartscooter/customize/modules/module-customize-intro-takeover.js"
+        ],
+        "smartscooter/smarter": [
+            "Scripts/smartscooter/smarter/smarter.js",
+            "Scripts/smartscooter/smarter/modules/module-smarter-1-page-intro.js",
+            "Scripts/smartscooter/smarter/modules/module-smarter-2-clean-video.js",
+            "Scripts/smartscooter/smarter/modules/module-smarter-3-summary-info.js",
+            "Scripts/smartscooter/smarter/modules/module-smarter-4-ride-smart.js",
+            "Scripts/smartscooter/smarter/modules/module-smarter-5-gogoro-app.js",
+            "Scripts/smartscooter/smarter/modules/module-smarter-6-smart-battery.js",
+            "Scripts/smartscooter/smarter/modules/module-smarter-7-vm.js",
+            "Scripts/smartscooter/smarter/modules/module-smarter-8-smart-vision.js",
+            "Scripts/smartscooter/smarter/modules/module-smarter-9-12-iq-system.js",
+            "Scripts/smartscooter/smarter/modules/module-smarter-13-design-ethos.js",
+            "Scripts/smartscooter/smarter/modules/module-smarter-auto-blinker-off.js"
+        ],
+        "smartscooter/easier": [
+            "Scripts/smartscooter/easier/easier.js",
+            "Scripts/smartscooter/easier/modules/module-easier-1-page-intro.js",
+            "Scripts/smartscooter/easier/modules/module-easier-2-clean-video.js",
+            "Scripts/smartscooter/easier/modules/module-easier-3-summary-info.js",
+            "Scripts/smartscooter/easier/modules/module-easier-4-all-you-can-ride.js",
+            "Scripts/smartscooter/easier/modules/module-easier-5-swap-and-go.js",
+            "Scripts/smartscooter/easier/modules/module-easier-6-map.js",
+            "Scripts/smartscooter/easier/modules/module-easier-7-service-hero.js",
+            "Scripts/smartscooter/easier/modules/module-easier-8-quick-fix.js",
+            "Scripts/smartscooter/easier/modules/module-easier-9-center-lock.js",
+            "Scripts/smartscooter/easier/modules/module-easier-9-warranty-overview.js",
+            "Scripts/smartscooter/easier/modules/module-easier-10-12-network-sos-service-staff.js",
+            "Scripts/smartscooter/easier/modules/module-easier-13-design-ethos.js"
+        ],
+        "smartscooter/all-you": [
+            "Scripts/smartscooter/customize/customize.js",
+            "Scripts/smartscooter/customize/modules/module-customize-1-page-intro.js",
+            "Scripts/smartscooter/customize/modules/module-customize-2-clean-video.js",
+            "Scripts/smartscooter/customize/modules/module-customize-3-summary-info.js",
+            "Scripts/smartscooter/customize/modules/module-customize-4-dashboard.js",
+            "Scripts/smartscooter/customize/modules/module-customize-5-lighting-themes.js",
+            "Scripts/smartscooter/customize/modules/module-customize-6-sounds-themes.js",
+            "Scripts/smartscooter/customize/modules/module-customize-9-design-ethos.js",
+            "Scripts/smartscooter/customize/modules/module-customize-10-plus.js"
+        ],
+        "career": [
+            "Scripts/vendor/skrollr/skrollr.js",
+            "Scripts/vendor/touch-swipe/jquery.touchSwipe.js",
+            "Scripts/career/career.js",
+            "Scripts/career/modules/career__page-intro.js",
+            "Scripts/career/modules/career__4cycles.js",
+            "Scripts/career/modules/career__light-and-bright.js"
+        ],
+        "book-a-ride": [
+            "Scripts/book-a-ride/modules/services/load-schedule.js",
+            "Scripts/book-a-ride/book-a-ride.js",
+            "Scripts/book-a-ride/modules/request-ride.js",
+            "Scripts/book-a-ride/modules/book-contact-form.js",
+            "Scripts/book-a-ride/modules/cancel-booking.js"
+        ],
+        "shops": [
+            "Scripts/_common/application-app.js",
+            "Scripts/_common/gradient-header.js",
+            "Scripts/_common/responsive-images.js",
+            "Scripts/_common/social-share.js",
+            "Scripts/shops/shops.js"
+        ],
+        "gen": [
+            "Scripts/_common/gradient-header.js",
+            "Scripts/_common/responsive-images.js",
+            "Scripts/_common/social-share.js",
+            "Scripts/vendor/imgix.js/dist/imgix.min.js",
+            "Scripts/gen/gen.js"
+        ],
+        "beta-program": [
+            "Scripts/_common/gradient-header.js",
+            "Scripts/_common/responsive-images.js",
+            "Scripts/_common/social-share.js",
+            "Scripts/vendor/imgix.js/dist/imgix.min.js",
+            "Scripts/beta-program/beta-program.js"
+        ],
+        "pilot-program": [
+            "Scripts/_common/application-app.js",
+            "Scripts/_common/gradient-header.js",
+            "Scripts/_common/responsive-images.js",
+            "Scripts/_common/social-share.js",
+            "Scripts/Gostation/Gostation.js"
+        ],
+        "Gostation": [
+            "Scripts/_common/application-app.js",
+            "Scripts/_common/gradient-header.js",
+            "Scripts/_common/responsive-images.js",
+            "Scripts/Gostation/Gostation.js",
+            "Scripts/Gostation/gostation-map-initialize.js",
+            "Scripts/Gostation/vm-map.js"
+        ],
+        "support": [
+            "Scripts/support/support.js",
+            "Scripts/_common/application-app.js",
+            "Scripts/_common/gradient-header.js",
+            "Scripts/about/vendor/modal.js",
+            "Scripts/_common/responsive-images.js",
+            "Scripts/vendor/bootstrapvalidator/dist/js/bootstrapValidator.js",
+            "Scripts/contact/send-data-script.js"
+        ],
+        "gogorolite": [
+            "Scripts/gogorolite/gogorolite.js",
+            "Scripts/vendor/skrollr/skrollr.js",
+            "Scripts/vendor/touch-swipe/jquery.touchSwipe.js",
+            "Scripts/career/career.js",
+            "Scripts/career/modules/career__page-intro.js",
+            "Scripts/career/modules/career__4cycles.js",
+            "Scripts/career/modules/career__light-and-bright.js"
+        ],
+        "campus": [
+            "Scripts/_common/application-app.js",
+            "Scripts/_common/gradient-header.js",
+            "Scripts/_common/responsive-images.js",
+            "Scripts/about/vendor/modal.js",
+            "Scripts/vendor/bootstrapvalidator/dist/js/bootstrapValidator.js",
+            "Scripts/contact/send-data-script.js",
+            "Scripts/career/campus.js"
+        ]
+    },
+    "css": {
+        "app-min": [
+            "Content/app.min.css",
+            "Content/scooter-spce.css",
+            "Content/navbar.css",
+            "Content/icons.css",
+            "Content/site.css"
+        ],
+        "home/index": [
+            "Content/home/index.css",
+            "Content/home/jumbotron.css",
+            "Content/home/jumbotron-custom.css"
+        ],
+        "about": [
+            "Content/about/sections.css",
+            "Content/about/swatches.css",
+            "Content/about/app.css",
+            "Content/about/carousel.css",
+            "Content/_common/gradient-header.css",
+            "Content/about/intro-sequence.css",
+            "Content/about/loading-bar.css",
+            "Content/about/modals.css",
+            "Content/about/unsupported.css",
+            "Content/_common/helper.css",
+            "Content/about/media.css",
+            "Content/about/video-modal.css",
+            "Content/about/about.css"
+        ],
+        "press": [
+            "Content/_common/gradient-header.css",
+            "Content/_common/helper.css",
+            "Content/_common/social-share.css",
+            "Content/press/press.css"
+        ],
+        "blog": [
+            "Content/_common/gradient-header.css",
+            "Content/_common/helper.css"
+        ],
+        "specs": [
+            "Content/_common/gradient-header.css",
+            "Content/_common/helper.css",
+            "Content/scooter-spec.css"
+        ],
+        "media-kit": [
+            "Content/_common/gradient-header.css",
+            "Content/_common/helper.css",
+            "Content/media-kit/media-kit.css"
+        ],
+        "videos": [
+            "Content/_common/gradient-header.css",
+            "Content/_common/helper.css",
+            "Content/videos/videos.css"
+        ],
+        "gallery": [
+            "Content/_common/gradient-header.css",
+            "Content/_common/helper.css",
+            "Content/gallery/gallery.css"
+        ],
+        "news-coverage": [
+            "Content/_common/gradient-header.css",
+            "Content/_common/helper.css",
+            "Content/news-coverage/news-coverage.css"
+        ],
+        "terms-of-use": [
+            "Content/_common/gradient-header.css",
+            "Content/_common/helper.css"
+        ],
+        "privacy-policy": [
+            "Content/_common/gradient-header.css",
+            "Content/_common/helper.css"
+        ],
+        "contact": [
+            "Content/_common/gradient-header.css",
+            "Content/about/modals.css",
+            "Content/_common/helper.css",
+            "Scripts/vendor/bootstrapvalidator/dist/css/bootstrapValidator.css",
+            "Content/contact/contact.css"
+        ],
+        "keep-me-informed": [
+            "Content/_common/gradient-header.css",
+            "Content/_common/helper.css",
+            "Scripts/vendor/bootstrapvalidator/dist/css/bootstrapValidator.css",
+            "Content/contact/contact.css"
+        ],
+        "globals": [
+            "Scripts/vendor/bootstrap-checkbox/awesome-bootstrap-checkbox.css",
+            "Content/global/loading.css",
+            "Content/global/footer-sitemap.css",
+            "Content/global/gogoro-msgbox.css",
+            "Content/global/gogoro-form.css"
+        ],
+        "faq": [
+            "Content/_common/gradient-header.css",
+            "Content/_common/helper.css",
+            "Content/_common/social-share.css",
+            "Content/faq/faq.css"
+        ],
+        "smartscooter/vendor": [
+            "Content/smartscooter/_vendor/vendor.css"
+        ],
+        "smartscooter": [
+            "Content/smartscooter/app.css"
+        ],
+        "smartscooter/common": [
+            "Content/smartscooter/_common/buttons.css",
+            "Content/smartscooter/_common/carousel.css",
+            "Content/smartscooter/_common/font-awesome.css",
+            "Content/smartscooter/_common/fonts.css",
+            "Content/smartscooter/_common/forms.css",
+            "Content/smartscooter/_common/helpers.css",
+            "Content/smartscooter/_common/icons.css",
+            "Content/smartscooter/_common/media.css",
+            "Content/smartscooter/_common/partnership.css",
+            "Content/smartscooter/_common/sections.css",
+            "Content/smartscooter/_common/side-nav.css",
+            "Content/smartscooter/_common/swatches.css",
+            "Content/smartscooter/_common/typography.css",
+            "Content/smartscooter/_common/unsupported.css",
+            "Content/smartscooter/_common/video-modal.css",
+            "Content/smartscooter/_common/drop-down-btn.css"
+        ],
+        "smartscooter/partials": [
+            "Content/smartscooter/_partials/fallback-manager.css",
+            "Content/smartscooter/_partials/footer.css",
+            "Content/smartscooter/_partials/header.css",
+            "Content/smartscooter/_partials/module-image-hero.css",
+            "Content/smartscooter/_partials/module-image-sequence.css",
+            "Content/smartscooter/_partials/module-page-intro.css",
+            "Content/smartscooter/_partials/module-summary-info.css",
+            "Content/smartscooter/_partials/module-video.css",
+            "Content/smartscooter/_partials/module-video-scroller.css",
+            "Content/smartscooter/_partials/module-video-slider.css",
+            "Content/smartscooter/_partials/tabbar.css",
+            "Content/smartscooter/_partials/ie-upgrade.css"
+        ],
+        "gen/gen": [
+            "Content/smartscooter/faster/faster.css",
+            "Content/gen/gen/modules/module-energy-0-site-intro.css",
+            "Content/gen/gen/modules/module-energy-1-page-intro.css",
+            "Content/gen/gen/modules/module-energy-2-smart-city.css",
+            "Content/gen/gen/modules/module-energy-3-smarter-cleaner.css",
+            "Content/gen/gen/modules/module-energy-4-smart-energy.css",
+            "Content/gen/gen/modules/module-energy-5-mega-cities.css",
+            "Content/gen/gen/modules/module-energy-6-taipei.css",
+            "Content/gen/gen/modules/module-energy-7-map.css",
+            "Content/gen/gen/modules/module-energy-8-energy-demand.css",
+            "Content/gen/gen/modules/module-energy-9-co2-saving.css",
+            "Content/gen/gen/modules/module-energy-10-pilot-city.css"
+        ],
+        "gen/gocharger": [
+        	"Content/smartscooter/faster/faster.css",
+        	"Content/gen/gocharger/modules/module-charger-1-intro.css",
+        	"Content/gen/gocharger/modules/module-charger-2-video.css",
+        	"Content/gen/gocharger/modules/module-charger-3-summary.css",
+        	"Content/gen/gocharger/modules/module-charger-4-anywhere.css",
+        	"Content/gen/gocharger/modules/module-charger-5-smart.css",
+            "Content/gen/gocharger/modules/module-charger-6-iphone.css",
+            "Content/gen/gocharger/modules/module-charger-7-connected.css",
+            "Content/gen/gocharger/modules/module-charger-8-sharing.css",
+            "Content/gen/gocharger/modules/module-charger-9-revolution.css"
+        ],
+        "gen/open": [
+        	"Content/smartscooter/faster/faster.css",
+        	"Content/gen/open/modules/module-open-1-intro.css",
+        	"Content/gen/open/modules/module-open-2-connect.css",
+            "Content/gen/open/modules/module-open-2b-owner.css",
+        	"Content/gen/open/modules/module-open-3-contact.css"
+        ],
+        "smartscooter/bethenextcity": [
+            "Content/smartscooter/bethenextcity/main.css"
+        ],
+        "smartscooter/faster": [
+            "Content/smartscooter/faster/faster.css",
+            "Content/smartscooter/faster/modules/module-faster-0-site-intro.css",
+            "Content/smartscooter/faster/modules/module-faster-1-page-intro.css",
+            "Content/smartscooter/faster/modules/module-faster-2-clean-video.css",
+            "Content/smartscooter/faster/modules/module-faster-3-summary-info.css",
+            "Content/smartscooter/faster/modules/module-faster-4-performance-hero.css",
+            "Content/smartscooter/faster/modules/module-faster-5-powertrain.css",
+            "Content/smartscooter/faster/modules/module-faster-7-comparison-infographic.css",
+            "Content/smartscooter/faster/modules/module-faster-8-control-hero.css",
+            "Content/smartscooter/faster/modules/module-faster-9-chassis.css",
+            "Content/smartscooter/faster/modules/module-faster-10-suspension.css",
+            "Content/smartscooter/faster/modules/module-faster-11a-center-lock.css",
+            "Content/smartscooter/faster/modules/module-faster-11-compound-tire.css",
+            "Content/smartscooter/faster/modules/module-faster-12-13-balance-lean-angle.css",
+            "Content/smartscooter/faster/modules/module-faster-14-aerodynamic-design.css",
+            "Content/smartscooter/faster/modules/module-faster-15-waterproof.css",
+            "Content/smartscooter/faster/modules/module-faster-16-design-ethos.css"
+        ],
+        "smartscooter/smarter": [
+            "Content/smartscooter/smarter/smarter.css",
+            "Content/smartscooter/smarter/modules/module-smarter-1-page-intro.css",
+            "Content/smartscooter/smarter/modules/module-smarter-2-clean-video.css",
+            "Content/smartscooter/smarter/modules/module-smarter-3-summary-info.css",
+            "Content/smartscooter/smarter/modules/module-smarter-4-ride-smart.css",
+            "Content/smartscooter/smarter/modules/module-smarter-5-gogoro-app.css",
+            "Content/smartscooter/smarter/modules/module-smarter-6-smart-battery.css",
+            "Content/smartscooter/smarter/modules/module-smarter-7-vm.css",
+            "Content/smartscooter/smarter/modules/module-smarter-8-smart-vision.css",
+            "Content/smartscooter/smarter/modules/module-smarter-9-12-iq-system.css",
+            "Content/smartscooter/smarter/modules/module-smarter-13-design-ethos.css",
+            "Content/smartscooter/smarter/modules/module-smarter-auto-blinker-off.css"
+        ],
+        "smartscooter/easier": [
+            "Content/smartscooter/easier/easier.css",
+            "Content/smartscooter/easier/modules/module-easier-1-page-intro.css",
+            "Content/smartscooter/easier/modules/module-easier-2-clean-video.css",
+            "Content/smartscooter/easier/modules/module-easier-3-summary-info.css",
+            "Content/smartscooter/easier/modules/module-easier-4-all-you-can-ride.css",
+            "Content/smartscooter/easier/modules/module-easier-5-swap-and-go.css",
+            "Content/smartscooter/easier/modules/module-easier-6-map.css",
+            "Content/smartscooter/easier/modules/module-easier-7-service-hero.css",
+            "Content/smartscooter/easier/modules/module-easier-8-quick-fix.css",
+            "Content/smartscooter/easier/modules/module-easier-9-center-lock.css",
+            "Content/smartscooter/easier/modules/module-easier-9-radical-simplicity.css",
+            "Content/smartscooter/easier/modules/module-easier-9-warranty-overview.css",
+            "Content/smartscooter/easier/modules/module-easier-10-12-network-sos-service-staff.css",
+            "Content/smartscooter/easier/modules/module-easier-13-design-ethos.css"
+        ],
+        "smartscooter/all-you": [
+            "Content/smartscooter/customize/customize.css",
+            "Content/smartscooter/customize/modules/module-customize-1-page-intro.css",
+            "Content/smartscooter/customize/modules/module-customize-2-clean-video.css",
+            "Content/smartscooter/customize/modules/module-customize-3-summary-info.css",
+            "Content/smartscooter/customize/modules/module-customize-4-dashboard.css",
+            "Content/smartscooter/customize/modules/module-customize-5-lighting-themes.css",
+            "Content/smartscooter/customize/modules/module-customize-6-sounds-themes.css",
+            "Content/smartscooter/customize/modules/module-customize-9-design-ethos.css",
+            "Content/smartscooter/customize/modules/module-customize-10-plus.css"
+        ],
+        "career": [
+            "Content/career/career.cs",
+            "Content/career/modules/page-intro.css",
+            "Content/career/modules/what-we-do.css",
+            "Content/career/modules/light-and-bright.css",
+            "Content/career/modules/benefits.css",
+            "Content/career/modules/4cycles.css",
+            "Content/career/modules/latest-positions.css",
+            "Content/career/modules/interested-email.css"
+        ],
+        "book-a-ride": [
+            "Content/book-a-ride/book-a-ride.css",
+            "Content/book-a-ride/modules/dashboard.css",
+            "Content/book-a-ride/modules/google-map.css",
+            "Content/book-a-ride/modules/calendar.css",
+            "Content/book-a-ride/modules/contact-form.css",
+            "Content/book-a-ride/modules/cancel-booking.css"
+        ],
+        "shops": [
+            "Content/_common/gradient-header.css",
+            "Content/_common/helper.css",
+            "Content/shops/shops.css"
+        ],
+        "gen": [
+            "Content/_common/gradient-header.css",
+            "Content/_common/helper.css",
+            "Content/gen/gen.css"
+        ],
+        "beta-program": [
+            "Content/_common/gradient-header.css",
+            "Content/_common/helper.css",
+            "Content/beta-program/beta-program.css"
+        ],
+        "pilot-program": [
+            "Content/_common/gradient-header.css",
+            "Content/_common/helper.css",
+            "Content/pilot-program/pilot-program.css"
+        ],
+        "livestream": [
+            "Content/campaign/livestream.css"
+        ],
+        "support": [
+            "Content/_common/gradient-header.css",
+            "Content/support/support.css",
+            "Content/about/modals.css",
+            "Content/_common/helper.css",
+            "Scripts/vendor/bootstrapvalidator/dist/css/bootstrapValidator.css"
+        ],
+        "Gostation": [
+            "Content/Gostation/Gostation.css",
+            "Content/_common/helper.css",
+            "Content/gen/gostation/modules/module-gostation-1-intro.css",
+            "Content/gen/gostation/modules/module-gostation-5-unlimited.css"
+        ],
+        "gogorolite": [
+            "Content/gogorolite/gogorolite.css"
+        ],
+        "campus": [
+            "Content/_common/gradient-header.css",
+            "Content/about/modals.css",
+            "Content/_common/helper.css",
+            "Content/career/campus.css"
+        ],
+        "book-a-ride": [
+            "Content/book-a-ride/book-a-ride.css",
+            "Content/book-a-ride/modules/dashboard.css",
+            "Content/book-a-ride/modules/google-map.css",
+            "Content/book-a-ride/modules/calendar.css",
+            "Content/book-a-ride/modules/contact-form.css",
+            "Content/book-a-ride/modules/cancel-booking.css"
+        ]
+    }
+}

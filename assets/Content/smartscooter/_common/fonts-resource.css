@@ -1,0 +1,170 @@
+/* ====================================
+ Global fonts
+ ==================================== */
+
+/* ====================================
+The Default is English 
+Example of changing fonts for different langage    
+html[lang=ja-JP] body { font-family: "Apple TP","Helvetica Neue","Helvetica","Hiragino Kaku Gothic Pro","Arial","Verdana","sans-serif" }
+html[lang=zh-CN] body { font-family: "PingHei","Helvetica Neue","Helvetica","Arial","Verdana","sans-serif" }
+html[lang=zh-TW] body { font-family: "MHei","Helvetica Neue","Helvetica","Arial","Verdana","sans-serif" }
+html[lang=zh-HK] body { font-family: "MHei","Helvetica Neue","Helvetica","Arial","Verdana","sans-serif" }
+html[lang=th-TH] body { font-family: "Sukhumvit Set","Helvetica Neue","Helvetica","Arial","Verdana","sans-serif" }
+html[lang=ko-KR] body { font-family: "Yoon Gothic","Helvetica Neue","Helvetica","Dotum","Arial","Verdana","sans-serif" }
+    added by Mark 2015/03/15
+
+    //global.gogoroapp.com/
+ ==================================== */
+/*
+    第二組給 Resources資料夾用的
+*/
+@font-face {
+    font-family: 'graphik-extra-light';
+    src: url("/Resources/fonts/graphik/Graphik-Extralight-Web.eot");
+    src: url("/Resources/fonts/graphik/Graphik-Extralight-Web.eot?#iefix") format("embedded-opentype"), url("/Resources/fonts/graphik/Graphik-Extralight-Web.woff") format("woff"), url("/Resources/fonts/graphik/Graphik-Extralight-Web.ttf") format("truetype"), url("/Resources/fonts/graphik/Graphik-Extralight-Web.svg#graphik-extra-light") format("svg");
+    font-weight: 200;
+    font-style: normal;
+    font-stretch: normal;
+}
+
+@font-face {
+    font-family: 'graphik-light';
+    src: url("/Resources/fonts/graphik/Graphik-Light-Web.eot");
+    src: url("/Resources/fonts/graphik/Graphik-Light-Web.eot?#iefix") format("embedded-opentype"), url("/Resources/fonts/graphik/Graphik-Light-Web.woff") format("woff"), url("/Resources/fonts/graphik/Graphik-Light-Web.ttf") format("truetype"), url("/Resources/fonts/graphik/Graphik-Light-Web.svg#graphik-light") format("svg");
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+}
+
+@font-face {
+    font-family: 'graphik-semibold';
+    src: url("/Resources/fonts/graphik/Graphik-Semibold-Web.eot");
+    src: url("/Resources/fonts/graphik/Graphik-Semibold-Web.eot?#iefix") format("embedded-opentype"), url("/Resources/fonts/graphik/Graphik-Semibold-Web.woff") format("woff"), url("/Resources/fonts/graphik/Graphik-Semibold-Web.ttf") format("truetype"), url("/Resources/fonts/graphik/Graphik-Semibold-Web.svg#graphik-semibold") format("svg");
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+}
+
+@font-face {
+    font-family: 'graphik-black-italic';
+    src: url("/Resources/fonts/graphik/Graphik-BlackItalic-Web.eot");
+    src: url("/Resources/fonts/graphik/Graphik-BlackItalic-Web.eot?#iefix") format("embedded-opentype"), url("/Resources/fonts/graphik/Graphik-BlackItalic-Web.woff") format("woff"), url("/Resources/fonts/graphik/Graphik-BlackItalic-Web.ttf") format("truetype"), url("/Resources/fonts/graphik/Graphik-BlackItalic-Web.svg#graphik-black-italic") format("svg");
+    font-weight: 800;
+    font-style: italic;
+    font-stretch: normal;
+}
+/* Flama
+* ==================================== */
+@font-face {
+    font-family: 'flama-condensed-bold';
+    src: url("/Resources/fonts/flama/FlamaCondensed-Bold.eot");
+    src: url("/Resources/fonts/flama/FlamaCondensed-Bold.eot?#iefix") format("embedded-opentype"), url("/Resources/fonts/flama/FlamaCondensed-Bold.woff") format("woff"), url("/Resources/fonts/flama/FlamaCondensed-Bold.ttf") format("truetype"), url("/Resources/fonts/flama/FlamaCondensed-Bold.svg#flama-condensed-bold") format("svg");
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: normal;
+}
+
+@font-face {
+    font-family: 'flama-condensed-semibold';
+    src: url("/Resources/fonts/flama/FlamaCondensed-Semibold.eot");
+    src: url("/Resources/fonts/flama/FlamaCondensed-Semibold.eot?#iefix") format("embedded-opentype"), url("/Resources/fonts/flama/FlamaCondensed-Semibold.woff") format("woff"), url("/Resources/fonts/flama/FlamaCondensed-Semibold.ttf") format("truetype"), url("/Resources/fonts/flama/FlamaCondensed-Semibold.svg#FlamaCondensed-Semibold") format("svg");
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: normal;
+}
+
+@font-face {
+    font-family: 'flama-semicondensed-ultralight';
+    src: url("/Resources/fonts/flama/FlamaSemicondensed-Ultralight.eot");
+    src: url("/Resources/fonts/flama/FlamaSemicondensed-Ultralight.eot?#iefix") format("embedded-opentype"), url("/Resources/fonts/flama/FlamaSemicondensed-Ultralight.woff") format("woff"), url("/Resources/fonts/flama/FlamaSemicondensed-Ultralight.ttf") format("truetype"), url("/Resources/fonts/flama/FlamaSemicondensed-Ultralight.svg#flama-semicondensed-ultralight") format("svg");
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: normal;
+}
+/* Gogoro Icons
+* ==================================== */
+@font-face {
+    font-family: 'gogoro-icons';
+    src: url("/Resources/fonts/gogoro-icons/gogoro-icons.eot?-dyx3c2");
+    src: url("/Resources/fonts/gogoro-icons/gogoro-icons.eot?#iefix-dyx3c2") format("embedded-opentype"), url("/Resources/fonts/gogoro-icons/gogoro-icons.woff?-dyx3c2") format("woff"), url("/Resources/fonts/gogoro-icons/gogoro-icons.ttf?-dyx3c2") format("truetype"), url("/Resources/fonts/gogoro-icons/gogoro-icons.svg?-dyx3c2#gogoro-icons") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* ====================================
+ 中文字形
+ //www.justfont.com/member/
+
+如果預設的字體失效的話，在微軟機器上將使用"微軟正黑體語法"，在Mac機器上將使用"黑體"
+1. Microsfot
+   - 微軟正黑體語法:Microsoft JhengHei
+2. Mac
+   - 黑體:STHeiti
+
+Usage:
+font-family: 'xingothic-w3', '微軟正黑體','STHeiti';
+ ==================================== */
+
+/* 
+信黑體繁體W3 
+It is the replacement of English with: 
+1. graphik-extra-light
+2. graphik-light
+3. graphik-black-italic
+
+Usage: 
+ - html[lang=zh-TW] body { font-family: 'xingothic-w3', 'Microsoft JhengHei','STHeiti'; }
+or 
+ - <h1 class="xingothic-w3" ></h1>
+*/
+@font-face {
+    font-family: 'xingothic-w3';
+    font-weight: 200;
+    font-style: normal;
+    font-stretch: normal;
+}
+
+/* 
+信黑體繁體W8 
+It is the replacement of English with 
+1. graphik-semibold
+2. flama-condensed-bold
+
+Usage: 
+ - html[lang=zh-TW] body { font-family: 'xingothic-w8', 'Microsoft JhengHei','STHeiti'; }
+or 
+ - <h1 class="xingothic-w8" ></h1>
+
+*/
+@font-face {
+    font-family: 'xingothic-w8';
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+}
+
+/*
+思源黑體-Extralight
+1. flama-semicondensed-ultralight
+
+Usage: 
+ - html[lang=zh-TW] body { font-family: 'sourcehansans-extralight', 'Microsoft JhengHei','STHeiti'; }
+or 
+ - <h1 class="sourcehansans-extralight" ></h1>
+*/
+@font-face {
+    /*font-family: 'flama-semicondensed-ultralight';*/
+    font-family: 'sourcehansans-extralight';
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: normal;
+}
+
+/*思源黑體-heavy*/
+@font-face {
+    font-family: 'sourcehansans-heavy';
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: normal;
+}

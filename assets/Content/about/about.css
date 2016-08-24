@@ -1,0 +1,404 @@
+﻿/* ====================================
+ * Mixins and functions
+ * ==================================== */
+/* Media queries
+ * ==================================== */
+/* Usage: @include breakpoint(sm) {} */
+/* Mixins and functions
+ * ==================================== */
+/* Usage: @include linearGradient() {} */
+/* Usage: @include placeholder() {} */
+/* Usage: @include border-radius(5px) */
+/* Usage: @include opacity(0.8) */
+/* Usage: @include center-block */
+/* Usage: @include text-truncate  */
+/* Extends
+ * ==================================== */
+/* ====================================
+   Site colors
+   ==================================== */
+/*
+   Brand colors
+   ====================================
+   White / Light Gray = Fresh and Clean Charcoal / Gray / Dark Gray = Bold and Direct Rich Blue = Performance
+   Blue = Experience
+   Teal = Style
+   Dark Green = Value
+   Green = Eco / Environment
+   Hot Green = Community
+   Red = Warning
+*/
+/*
+   Base colors
+   ==================================== */
+/*
+   Text colors
+   ==================================== */
+/*
+   Button colors
+   ==================================== */
+/*
+   Third party brand colors
+   ==================================== */
+/* ====================================
+ * Mixins and functions
+ * ==================================== */
+/* Media queries
+ * ==================================== */
+/* Usage: @include breakpoint(sm) {} */
+/* Mixins and functions
+ * ==================================== */
+/* Usage: @include linearGradient() {} */
+/* Usage: @include placeholder() {} */
+/* Usage: @include border-radius(5px) */
+/* Usage: @include opacity(0.8) */
+/* Usage: @include center-block */
+/* Usage: @include text-truncate  */
+/* Extends
+ * ==================================== */
+/* Variables
+ * ==================================== */
+/* ====================================
+ * Homepage
+ * ==================================== */
+
+#pg-home #our-story {
+    display: block;
+    margin: 0;
+    padding: 144px 0;
+}
+
+
+html[lang=zh-TW] #pg-home p{
+    font-family: 'graphik-light','xingothic-w3', 'Microsoft JhengHei','STHeiti';
+}
+
+html[lang=zh-TW] h3 {
+    font-family: 'graphik-semibold', 'xingothic-w8', 'Microsoft JhengHei','STHeiti';
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+@media (max-width: 767px) {
+    #pg-home #our-story {
+        padding: 48px 0;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    #pg-home #our-story {
+        padding: 120px 0;
+    }
+}
+
+#pg-home #gogoro-video {
+    width: 100%;
+    height: 400px;
+    background-image: url(//images.gogoroapp.com/vision-video-still-lg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    position: relative;
+    display: block;
+}
+
+    #pg-home #gogoro-video h2 {
+        position: absolute;
+        top: 171px;
+        left: 50%;
+        margin-left: -311px;
+    }
+
+.lt-ie9 #pg-home #gogoro-video h2 {
+    top: 141px;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    #pg-home #gogoro-video h2 {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    #pg-home #gogoro-video h2 {
+        display: none;
+    }
+}
+
+#pg-home #gogoro-video .btn {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 110px;
+    margin-left: -90px;
+}
+
+.lt-ie9 #pg-home #gogoro-video .btn {
+    border: none;
+}
+
+#pg-home #gogoro-video .btn span {
+    position: relative;
+    display: block;
+}
+
+#pg-home #gogoro-video .btn .icon-arrow-right {
+    display: none;
+    font-size: 85px;
+    position: absolute;
+    top: 45px;
+    left: 60px;
+}
+
+#pg-home #gogoro-team {
+    display: block;
+}
+
+    #pg-home #gogoro-team h3 {
+        font-size: 18px;
+        margin-bottom: 11px;
+    }
+
+#pg-home #our-leadership {
+    display: block;
+}
+
+    #pg-home #our-leadership h3 {
+        font-size: 18px;
+        margin-bottom: 11px;
+    }
+
+    #pg-home #our-leadership small {
+        display: block;
+        margin-bottom: 24px;
+    }
+
+    #pg-home #our-leadership .leader-description {
+        margin-bottom: 100px;
+    }
+
+@media (max-width: 767px) {
+    #pg-home #our-leadership .leader-description {
+        margin-bottom: 24px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    #pg-home #our-leadership .leader-description {
+        margin-bottom: 48px;
+    }
+}
+
+#pg-home #our-leadership .leader-bio p:first-of-type {
+    margin-top: -4px;
+}
+
+#pg-home #our-investors {
+    /*margin-bottom: -96px;*/
+    display: block;
+}
+
+    #pg-home #our-investors h3 {
+        font-size: 18px;
+        margin-bottom: 11px;
+    }
+
+    #pg-home #our-investors small {
+        display: block;
+        margin-bottom: 24px;
+    }
+
+    #pg-home #our-investors .leader-description {
+        margin-bottom: 100px;
+    }
+
+@media (max-width: 767px) {
+    #pg-home #our-investors .leader-description {
+        margin-bottom: 24px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    #pg-home #our-investors .leader-description {
+        margin-bottom: 48px;
+    }
+}
+
+#pg-home #our-investors .leader-bio{
+    display: initial;
+}
+
+#pg-home #our-investors .leader-bio p:first-of-type {
+    margin-top: -4px;
+}
+
+#pg-home #our-team {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 0;
+    padding-bottom: 96px;
+    display: block;
+}
+
+    #pg-home #our-team h3 {
+        font-size: 18px;
+        margin-bottom: 6px;
+        line-height: 1.5;
+    }
+
+        #pg-home #our-team h3 small {
+            margin-top: 9px;
+            color: #c1c1c3;
+        }
+
+    #pg-home #our-team small {
+        display: block;
+        margin-bottom: 24px;
+    }
+
+    #pg-home #our-team .slick-list {
+        overflow: visible !important;
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+
+    #pg-home #our-team .slick-next, #pg-home #our-team .slick-prev {
+        position: absolute;
+        top: 126px;
+        left: -10px;
+        display: block;
+        height: auto;
+        width: auto;
+        line-height: 0;
+        font-size: 0;
+        cursor: pointer;
+        background: transparent;
+        color: transparent;
+        padding: 0;
+        margin: 0;
+        border: none;
+        outline: none;
+    }
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    #pg-home #our-team .slick-next, #pg-home #our-team .slick-prev {
+        left: -15px;
+        top: 98px;
+    }
+}
+
+#pg-home #our-team .slick-next:before, #pg-home #our-team .slick-next:before, #pg-home #our-team .slick-prev:before, #pg-home #our-team .slick-prev:before {
+    font-size: 55px;
+}
+
+#pg-home #our-team .slick-next {
+    left: auto;
+    right: -10px;
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    #pg-home #our-team .slick-next {
+        right: -15px;
+    }
+}
+
+#pg-home #our-team .slick-slide {
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+}
+
+@media (max-width: 767px) {
+    #pg-home #our-team .slick-slide {
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+}
+
+#pg-home #our-team .slick-slide .slide-overlay {
+    -webkit-transition: opacity 250ms ease;
+    transition: opacity 250ms ease;
+    opacity: 0;
+}
+
+#pg-home #our-team .slick-slide.slick-next-slide .slide-image, #pg-home #our-team .slick-slide.slick-prev-slide .slide-image {
+    position: relative;
+}
+
+    #pg-home #our-team .slick-slide.slick-next-slide .slide-image:hover .slide-overlay, #pg-home #our-team .slick-slide.slick-prev-slide .slide-image:hover .slide-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        opacity: 0.5;
+    }
+
+#pg-home #our-team .slick-slide .slide-content {
+    display: none;
+}
+
+    #pg-home #our-team .slick-slide .slide-content.indent-xs {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+#pg-home #our-team .slick-dots {
+    bottom: -12px;
+}
+
+#pg-home #slider-indicator {
+    color: #c1c1c3;
+    width: 100%;
+    text-align: center;
+    display: block;
+    position: relative;
+    margin-top: -27px;
+    margin-bottom: 20px;
+}
+
+#pg-home #team-bio-container {
+    min-height: 370px;
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    #pg-home #team-bio-container {
+        min-height: 423px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    #pg-home #team-bio-container {
+        min-height: 532px;
+    }
+}
+
+#pg-home #team-bio-container #team-bio {
+    display: none;
+}
+
+.btn.hint-scroll-down {
+    display: block;
+    width: 50px;
+    margin: 0 auto;
+    position: relative;
+    bottom: -72px;
+    font-size: 3.8rem;
+}
+
+.lt-ie9 .btn.hint-scroll-down {
+    font-size: 38px;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .btn.hint-scroll-down {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    .btn.hint-scroll-down {
+        display: none;
+    }
+}

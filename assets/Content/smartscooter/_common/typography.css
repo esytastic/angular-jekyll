@@ -1,0 +1,390 @@
+/* ====================================
+   Site colors
+   ==================================== */
+/*
+   Brand colors
+   ====================================
+   White / Light Gray = Fresh and Clean Charcoal / Gray / Dark Gray = Bold and Direct Rich Blue = Performance
+   Blue = Experience
+   Teal = Style
+   Dark Green = Value
+   Green = Eco / Environment
+   Hot Green = Community
+   Red = Warning
+*/
+/* ====================================
+ * Mixins and functions
+ * ==================================== */
+/* Media queries
+ * ==================================== */
+/* Usage: @include breakpoint(sm) {} */
+/* Mixins and functions
+ * ==================================== */
+/* Usage: @include linearGradient() {} */
+/* Usage: @include placeholder() {} */
+/* Usage: @include border-radius(5px) */
+/* Usage: @include opacity(0.8) */
+/* Usage: @include center-block */
+/* Usage: @include text-truncate  */
+/* Extends
+ * ==================================== */
+/* Variables
+ * ==================================== */
+/* Mixins and functions
+ * ==================================== */
+/* ====================================
+ * Site typography.
+ * ==================================== */
+/* Headings
+ * ==================================== */
+h1, h2, h3, h4, h5, h6 {
+    font-family: "graphik-extra-light", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    line-height: 1;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+html[lang=zh-TW] h1,
+html[lang=zh-TW] h2,
+html[lang=zh-TW] h3,
+html[lang=zh-TW] h4,
+html[lang=zh-TW] h5,
+html[lang=zh-TW] h6 {
+    font-family: 'flama-condensed-bold', 'xingothic-w3', 'Microsoft JhengHei','STHeiti';
+}
+
+/*h1.zh-tw, h2.zh-tw, h3.zh-tw, h4.zh-tw, h5.zh-tw, h6.zh-tw {
+  font-family: "xingothic-w3";
+  color:#FFFFFF;
+}*/
+
+h1:first-of-type, h2:first-of-type, h3:first-of-type, h4:first-of-type, h5:first-of-type, h6:first-of-type {
+    margin-top: 0;
+}
+
+h1, .h1 {
+    font-size: 65px;
+    font-size: 6.5rem;
+    letter-spacing: -8px;
+    line-height: .8;
+    text-transform: uppercase;
+}
+
+@media (max-width: 767px) {
+    h1, .h1 {
+        font-size: 52px;
+        font-size: 5.2rem;
+    }
+}
+
+h2, .h2 {
+    font-size: 44px;
+    font-size: 4.4rem;
+    line-height: 1.2;
+}
+
+html[lang=zh-TW] h2, html[lang=zh-TW] .h2 {
+    line-height: 1.3;
+    letter-spacing:1.5px;
+}
+
+@media (max-width: 767px) {
+    h2, .h2 {
+        font-size: 28px;
+        font-size: 2.8rem;
+        line-height: 1.15;
+        margin-top: 24px;
+        margin-bottom: 24px;
+    }
+}
+
+h3, .h3 {
+    font-family: "graphik-semibold", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 18px;
+    font-size: 1.8rem;
+    line-height: 1.2;
+}
+
+html[lang=zh-TW] h3,
+html[lang=zh-TW] .h3 {
+    font-family: 'xingothic-w8', 'Microsoft JhengHei','STHeiti';
+    font-weight: 500;
+    letter-spacing:0.5px;
+}
+
+html[lang=zh-TW] h3.graphik-semibold,
+html[lang=zh-TW] .h3.graphik-semibold {
+    font-family: "graphik-semibold", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 600;
+}
+
+
+/*h3.zh-tw, .h3.zh-tw {
+  font-family: "xingothic-w8";
+}*/
+
+h4, .h4 {
+    font-size: 26px;
+    font-size: 2.6rem;
+}
+
+h5, .h5 {
+    font-size: 16px;
+    font-size: 1.6rem;
+}
+
+h6, .h6 {
+    font-size: 16px;
+    font-size: 1.6rem;
+}
+
+
+html[lang=zh-TW] .flama h1,
+html[lang=zh-TW] .flama h2,
+html[lang=zh-TW] .flama h3
+{
+    font-family: "flama-condensed-bold", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 0.80;
+    text-transform: uppercase;
+}
+html[lang=zh-TW] .flama h1 {
+    font-size: 144px;
+}
+html[lang=zh-TW] .flama h2 {
+    font-size: 100px;
+}
+html[lang=zh-TW] .flama h3 {
+    font-size: 52px;
+}
+
+/* flama-condensed-bold
+ * ==================================== */
+.flama-bold {
+    font-family: "flama-condensed-bold";
+    font-weight: 700;
+    font-style: normal;
+    line-height: 0.80;
+    text-transform: uppercase;
+}
+html[lang=zh-TW] .flama-bold  {
+     font-family: 'xingothic-w8', 'Microsoft JhengHei','STHeiti';
+     font-weight: 500;
+     line-height: 1;
+}
+
+
+/* Paragraphs, links and combined
+ * ==================================== */
+p.lead {
+    font-family: "graphik-extra-light", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 28px;
+    font-size: 2.8rem;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+@media (max-width: 767px) {
+    p.lead {
+        font-size: 20px;
+        font-size: 2rem;
+    }
+}
+
+ul li, ol li {
+    margin-bottom: 6px;
+}
+
+dl dd {
+    margin-bottom: 6px;
+}
+
+a {
+    color: #323237;
+    border-bottom: 1px solid #00d7ff;
+    padding-bottom: 1px;
+}
+
+    a:hover {
+        color: #00d7ff;
+        text-decoration: none;
+    }
+
+    a:focus {
+        text-decoration: none;
+        outline: none;
+    }
+
+h1 a, h2 a, h3 a, h4 a, h5 a {
+    display: block;
+    color: #323237;
+    border: none;
+}
+
+p, ul, ol, dl, pre, table, blockquote {
+    font-size: 18px;
+    font-size: 1.8rem;
+    font-family: "graphik-light", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 1.5;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+/*p {
+  line-height: 1.7;
+  letter-spacing:0.5px;
+}*/
+
+html[lang=zh-TW] p {
+  line-height: 1.7;
+  letter-spacing:0.5px;
+}
+
+html[lang=zh-TW] p,
+html[lang=zh-TW] ul,
+html[lang=zh-TW] dl,
+html[lang=zh-TW] pre,
+html[lang=zh-TW] table,
+html[lang=zh-TW] blockquote,
+html[lang=zh-TW] ol {
+    font-family: 'xingothic-w3', 'Microsoft JhengHei','STHeiti';
+}
+
+
+/*p.zh-tw, ul.zh-tw, ol.zh-tw, dl.zh-tw, pre.zh-tw, table.zh-tw, blockquote.zh-tw {
+  font-family: "xingothic-w3";
+}*/
+@media (max-width: 767px) {
+    p, ul, ol, dl, pre, table, blockquote {
+        font-size: 16px;
+        font-size: 1.6rem;
+        line-height: 1.38;
+        margin-top: 12px;
+        margin-bottom: 12px;
+    }
+}
+
+blockquote {
+    font-family: "graphik-black-italic", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 800;
+    font-style: italic;
+    text-align: left;
+    border: none;
+    margin-top: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+html[lang=zh-TW] blockquote {
+    font-family: 'xingothic-w3', 'Microsoft JhengHei','STHeiti';
+}
+
+
+/* Separate elements
+ * ==================================== */
+strong, b {
+    font-family: "graphik-semibold", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+strong.graphik-semibold, b.graphik-semibold {
+    font-family: "graphik-semibold" !important;
+}
+
+html[lang=zh-TW] strong,
+html[lang=zh-TW] b {
+    font-family: 'xingothic-w8', 'Microsoft JhengHei','STHeiti';
+    font-weight: 500;
+}
+
+
+
+small {
+    font-size: 12px;
+    font-size: 1.2rem;
+}
+
+
+hr {
+    margin-top: 48px;
+    margin-bottom: 48px;
+    border-top: 2px solid #f1f3f3;
+}
+
+button:focus {
+    outline: none !important;
+}
+
+/* SUP
+ * ==================================== */
+sup {
+    top: -0.7em;
+    font-size: 45%;
+}
+/* 菁英<sup class="plus">＋</sup>方案 */
+sup.plus{
+    top: -0.5em;
+    font-size: 70%;
+}
+sup.copy{
+    top: 0;
+    font-size: 20px;
+}
+
+
+/* 英文在中文的中間
+ * ==================================== */
+.graphik-extra-light,
+.graphik-light,
+.graphik-semibold,
+.graphik-black-italic,
+.flama-condensed-bold,
+.flama-semicondensed-ultralight
+{
+    display: inline-block;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+.graphik-extra-light.margin-zero,
+.graphik-light.margin-zero,
+.graphik-semibold.margin-zero,
+.graphik-black-italic.margin-zero,
+.flama-condensed-bold.margin-zero,
+.flama-semicondensed-ultralight.margin-zero
+{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.graphik-extra-light {font-family: "graphik-extra-light";}
+.graphik-light {font-family: "graphik-light";}
+.graphik-light.graphik-light--600 {
+    font-weight:600;
+}
+.graphik-semibold {font-family: "graphik-semibold";}
+.graphik-black-italic {font-family: "graphik-black-italic";}
+.flama-condensed-bold {
+    font-family: "flama-condensed-bold" !important;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 0.80;
+    text-transform: uppercase;
+}
+.flama-semicondensed-ultralight {font-family: "flama-semicondensed-ultralight";}
+
+/* 中文 - 如果用Class
+ * ==================================== */
+.xingothic-w8 {
+    font-weight:500;
+}

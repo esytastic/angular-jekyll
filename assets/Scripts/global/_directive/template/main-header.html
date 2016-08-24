@@ -1,0 +1,118 @@
+﻿<header id="main-header">
+    <div class="navbar navbar-default-gogoro" role="navigation">
+        <div class="navbar-header">
+            <!-- shooping cart icon for mobile -->
+            <a href="#" ng-show="$root.loginUser.showShoppingCart == true && subdomain === 'store'" class="mobile btn-shopping-cart hidden-lg hidden-md hidden-sm" ng-click="openShoppingCart()">
+                <div class="layout-table">
+                    <div class="layout-row">
+                        <div class="layout-cell">
+                            <div class="layout-table cycle ">
+                                <div class="layout-row">
+                                    <div class="layout-cell text-center">
+                                        <span ng-show="$root.loginUser.shoppingCartProductAmount > '0'" class="graphik-semibold margin-zero">{{$root.loginUser.shoppingCartProductAmount}}</span>
+                                        <span ng-show="$root.loginUser.shoppingCartScooterAmount > '0' && $root.loginUser.shoppingCartProductAmount == '0'"
+                                              class="graphik-semibold margin-zero">
+                                            <span style="font-size:16px" class="star block margin-top-5 flama-condensed-bold">GO</span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="layout-cell cell-space"></div>
+                        <div class="layout-cell">
+                            購物車
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <button type="button" class="navbar-toggle" data-target=".navbar-main">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar icon-bar-one"></span>
+                <span class="icon-bar icon-bar-two"></span>
+                <span class="icon-bar icon-bar-three"></span>
+            </button>
+            <a class="navbar-brand" href="{{$root.gogoro.wwwGogoroUrl}}">
+                <img src="//images.gogoroapp.com/gogoro.svg" class="svg gogoro-logo" alt="Gogoro" width="102" height="28" />
+            </a>
+            <ul class="main-links">
+                <li>
+                    <a href='{{$root.gogoro.wwwGogoroUrl}}smartscooter/faster'>
+                        <span class="graphik-light">Smartscooter™</span>
+                        <tooltip-menu font-size="15" translatex="0" content-name="smartscooter" ></tooltip-menu>
+                    </a>
+                </li>
+                <li>
+                    <a href='{{$root.gogoro.wwwGogoroUrl}}gen'><span class="graphik-light">Gogoro® Energy Network</span></a>
+                    <tooltip-menu font-size="15" translatex="0" content-name="gen"></tooltip-menu>
+                </li>
+                <li><a href="{{$root.gogoro.storeGogoroUrl}}"><span class="xingothic-w3">網路商店</span></a></li>
+            </ul>
+            <ul class="quick-links clearfix">
+
+                <li class="just-text">
+                    <a href="{{$root.gogoro.wwwGogoroUrl}}faq?hash=Faq_DownPayment"><span class="graphik-light">FAQ</span></a>
+                </li>
+
+                <!--<li class="just-text">
+                    <a href="{{$root.gogoro.wwwGogoroUrl}}shops">門市據點</a>
+                </li>-->
+
+                <li class="just-text" ng-show="$root.loginUser.isUserLogin === false">
+                    <a href="{{$root.gogoro.myGogoroUrl}}account/login" referrer-url><span>登入</span></a>
+                </li>
+
+                <li ng-show="$root.loginUser.showShoppingCart == true && subdomain === 'store'">
+                    <div class="shoppingcartnum">
+                        <a href="#" class="btn-shopping-cart" ng-click="openShoppingCart()" >
+                            <div class="layout-table">
+                                <div class="layout-row">
+                                    <div class="layout-cell">
+                                        <div class="layout-table cycle ">
+                                            <div class="layout-row">
+                                                <div class="layout-cell text-center">
+                                                    <span ng-show="$root.loginUser.shoppingCartProductAmount > '0'" class="graphik-semibold margin-zero">{{$root.loginUser.shoppingCartProductAmount}}</span>
+                                                    <span ng-show="$root.loginUser.shoppingCartScooterAmount > '0' && $root.loginUser.shoppingCartProductAmount == '0'"
+                                                          class="graphik-semibold margin-zero">
+                                                        <span style="font-size:16px" class="star block margin-top-5 flama-condensed-bold">GO</span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="layout-cell cell-space"></div>
+                                    <div class="layout-cell">
+                                        購物車
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+
+                <li class="login-container" ng-show="$root.loginUser.isUserLogin === true">
+                    <div class="layout-table max-height">
+                        <div class="layout-row">
+                            <div class="layout-cell cell-image">
+                                <div class="NavUserPic" ng-style="{'background-image': 'url({{$root.loginUser.picture}})' }"></div>
+                            </div>
+                            <div class="layout-cell cell-space"></div>
+                            <div class="layout-cell cell-name ">
+                                <a href="#"><span class="grarophik-light">{{$root.loginUser.name}}</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <tooltip-menu font-size="13" translatex="-30%" content-name="edit"></tooltip-menu>
+                </li>
+
+            </ul>
+        </div>
+        <div class="navbar-background"></div>
+    </div>
+    <!--/.navbar-default-gogoro -->
+    <!--<div class="nav-bar-stop white">
+        <button type="button" class="close-button" onclick="gogoro.App.removeTakeover();">
+            <span class="Rotate45deg"></span>
+            <span class="Rotate45degRev"></span>
+        </button>
+    </div>-->
+</header>

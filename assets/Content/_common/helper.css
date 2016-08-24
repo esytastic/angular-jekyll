@@ -1,0 +1,417 @@
+﻿/* ====================================
+ * Mixins and functions
+ * ==================================== */
+/* Media queries
+ * ==================================== */
+/* Usage: @include breakpoint(sm) {} */
+/* Mixins and functions
+ * ==================================== */
+/* Usage: @include linearGradient() {} */
+/* Usage: @include placeholder() {} */
+/* Usage: @include border-radius(5px) */
+/* Usage: @include opacity(0.8) */
+/* Usage: @include center-block */
+/* Usage: @include text-truncate  */
+/* Extends
+ * ==================================== */
+/* ====================================
+   Site colors
+   ==================================== */
+/*
+   Brand colors
+   ====================================
+   White / Light Gray = Fresh and Clean Charcoal / Gray / Dark Gray = Bold and Direct Rich Blue = Performance
+   Blue = Experience
+   Teal = Style
+   Dark Green = Value
+   Green = Eco / Environment
+   Hot Green = Community
+   Red = Warning
+*/
+/*
+   Base colors
+   ==================================== */
+/*
+   Text colors
+   ==================================== */
+/*
+   Button colors
+   ==================================== */
+/*
+   Third party brand colors
+   ==================================== */
+/* ====================================
+ * Mixins and functions
+ * ==================================== */
+/* Media queries
+ * ==================================== */
+/* Usage: @include breakpoint(sm) {} */
+/* Mixins and functions
+ * ==================================== */
+/* Usage: @include linearGradient() {} */
+/* Usage: @include placeholder() {} */
+/* Usage: @include border-radius(5px) */
+/* Usage: @include opacity(0.8) */
+/* Usage: @include center-block */
+/* Usage: @include text-truncate  */
+/* Extends
+ * ==================================== */
+/* Variables
+ * ==================================== */
+/* ====================================
+ * Global Classes.
+ * ==================================== */
+/* Padding
+ * ==================================== */
+.padding {
+    padding: 48px;
+}
+
+.padding-vertical {
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+
+.padding-vertical-10 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.padding-vertical-100 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.padding-top-100 {
+    padding-top: 100px;
+}
+
+.padding-bottom-100 {
+    padding-bottom: 100px;
+}
+
+.padding-horizontal {
+    padding-right: 48px;
+    padding-bottom: 48px;
+}
+
+.padding-horizontal-10 {
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+.padding-top {
+    padding-top: 48px;
+}
+
+.padding-top-half {
+    padding-top: 12px;
+}
+
+.padding-top-10 {
+    padding-top: 10px;
+}
+
+.padding-top-20 {
+    padding-top: 20px;
+}
+
+.padding-right {
+    padding-right: 48px;
+}
+
+.padding-bottom {
+    padding-bottom: 48px;
+}
+
+@media (max-width: 767px) {
+    .padding-bottom {
+        padding-bottom: 24px;
+    }
+}
+
+.padding-bottom-half {
+    padding-bottom: 12px;
+}
+
+.padding-left {
+    padding-left: 48px;
+}
+
+.padding-0 {
+    padding: 0;
+}
+
+/* margin
+ * ==================================== */
+.margin {
+    margin: 48px;
+}
+
+.margin-vertical {
+    margin-top: 48px;
+    margin-bottom: 48px;
+}
+
+.margin-vertical-10 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.margin-vertical-100 {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.margin-top-100 {
+    margin-top: 100px;
+}
+
+.margin-bottom-100 {
+    margin-bottom: 100px;
+}
+
+.margin-horizontal {
+    margin-right: 48px;
+    margin-bottom: 48px;
+}
+
+.margin-horizontal-10 {
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.margin-top {
+    margin-top: 48px;
+}
+
+.margin-top-0 {
+    margin-top: 0;
+}
+
+.margin-top-10 {
+    margin-top: 10px;
+}
+
+.margin-top-20 {
+    margin-top: 20px;
+}
+
+.margin-top-half {
+    margin-top: 12px;
+}
+
+.margin-right {
+    margin-right: 48px;
+}
+
+.margin-bottom {
+    margin-bottom: 48px;
+}
+
+.margin-bottom-half {
+    margin-bottom: 12px;
+}
+
+.margin-left {
+    margin-left: 48px;
+}
+
+.margin-left-15 {
+    margin-left: 15px;
+}
+
+.margin-0 {
+    margin: 0;
+}
+
+/* List
+ * ==================================== */
+.list-inline li {
+    display: inline-block;
+}
+
+/* Floats
+ * ==================================== */
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+/* Text Align
+ * ==================================== */
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+/* Text Align
+ * ==================================== */
+.border {
+    border: 2px solid #f1f3f3;
+}
+
+.border-top {
+    border-top: 2px solid #f1f3f3;
+}
+
+.border-right {
+    border-right: 2px solid #f1f3f3;
+}
+
+.border-bottom {
+    border-bottom: 2px solid #f1f3f3;
+}
+
+.border-left {
+    border-left: 2px solid #f1f3f3;
+}
+
+/* Text Colors
+ * ==================================== */
+.text-white {
+    color: #fff;
+}
+
+.text-light-gray {
+    color: #f1f3f3;
+}
+
+.text-gray {
+    color: #b9bcbf;
+}
+
+.text-dark-gray {
+    color: #737d82;
+}
+
+.text-charcoal {
+    color: #323237;
+}
+
+.text-blue {
+    color: #00d7ff;
+}
+
+.text-rich-blue {
+    color: #0069d2;
+}
+
+.text-dark-blue {
+    color: #24586e;
+}
+
+.text-midnight {
+    color: #112f3b;
+}
+
+.text-hot-green {
+    color: #e1ff32;
+}
+
+.text-green {
+    color: #c0df16;
+}
+
+.text-teal {
+    color: #28e1a5;
+}
+
+.text-dark-green {
+    color: #00b946;
+}
+
+.text-red {
+    color: #ff1923;
+}
+
+/* Background Colors
+* ==================================== */
+.background-color-light-gray {
+    background-color: #fbfbfb;
+}
+
+/* Utilities
+ * ==================================== */
+.break {
+    display: block;
+}
+
+@media (max-width: 767px) {
+    .break {
+        display: inline;
+    }
+}
+
+.block {
+    display: block;
+}
+
+.inline {
+    display: inline;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.vertical-center-container {
+    height: 100%;
+}
+
+.vertical-center {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.showgrid [class*="col-"] {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #eee;
+    background-color: rgba(86, 61, 124, 0.15);
+    border: 1px solid #ddd;
+    border: 1px solid rgba(86, 61, 124, 0.2);
+}
+
+@media (max-width: 767px) {
+    .col-xs-no-guter {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .indent-xs {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+}
+
+.row.col-xs-no-guter [class*="col-"] {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/*[class*="col-"] {
+    p:first-of-type {
+    margin-top: 0;
+   }
+}*/
+.fade-in-up {
+    position: relative;
+    top: 5px;
+    opacity: 0;
+}

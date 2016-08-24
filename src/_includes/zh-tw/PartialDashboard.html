@@ -1,0 +1,40 @@
+<div class="dashboard collision">
+    <div class="dashboard-wrap collision-reposition" data-position-top="120">
+        <div class="container">
+            <section class="title-container vertical-center-container">
+                <h2 class="vertical-center">預約試騎</h2>
+            </section>
+
+            <section class="info-container vertical-center-container" style="opacity:0">
+                <h2 class="vertical-center">好了，接下來請選擇日期與時間：</h2>
+            </section>
+
+            <section class="steps-container" style="opacity:0">
+                <ul>
+                    <li>
+                        <cite><span class="graphik-light">Gogoro</span>試騎預約資訊</cite>
+                        <strong class="first">時間地點</strong>
+                    </li>
+                    <li>
+                        <cite>地點</cite>
+                        <strong id="step-location" ng-bind="dataSaved.name"></strong>
+                    </li>
+                    <li>
+                        <cite ng-show="dataSaved.date">日期</cite>
+                        <strong id="step-month" ng-bind="dataSaved.date"></strong>
+                    </li>
+                    <li>
+                        <cite ng-show="dataSaved.weekday">星期</cite>
+                        <strong id="step-day" ng-bind="dataSaved.weekday"></strong>
+                    </li>
+                    <li>
+                        <cite ng-show="dataSaved.time">時間</cite>
+                        <strong ng-show="dataSaved.type==1" id="step-time" ng-bind="dataSaved.time"></strong>
+                        <strong ng-show="dataSaved.type==2" id="step-time" ng-bind="dataSaved.subject"></strong>
+                    </li>
+                </ul>
+            </section>
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,188 @@
+.module-customize-10-plus{
+	background:#F1F3F2;
+	height: 700px;
+  overflow: hidden;
+  position: relative;
+  color: #323237;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.plate-color-control{
+	height:640px;
+}
+.original-btn{
+	background-image: url(//gogoro.imgix.net/Gogoro_off.png);
+	width:272px;
+	height:66px;
+	display:block;
+	margin-bottom:10px;
+}
+.original-btn.actived{
+	background-image: url(//gogoro.imgix.net/Gogoro_on.png);
+}
+.plus-btn{
+	background-image: url(//gogoro.imgix.net/GogoroPlus_off.png);
+	width:459px;
+	height:67px;
+	display:block;
+	margin-bottom:10px;
+}
+.plus-btn.actived{
+	background-image: url(//gogoro.imgix.net/GogoroPlus_0616_on.png);
+}
+.scooter-showroom{
+	height:689px;
+
+}
+.colorful-sccoter{
+	width: 689px;
+  height: 640px;
+  background-image: url(//gogoro.imgix.net/AAA_white.jpg);
+  background-position: center center;
+  display: block;
+  background-size: cover;
+  margin: auto;
+}
+.color-options li{
+	list-style:none;
+	width:27px;
+	height:26px;
+	background-repeat:no-repeat;
+	float:left;
+	margin:5px;
+	display:inline-block;
+}
+.color-options .white{
+	background-image: url(//gogoro.imgix.net/ColorBtn_white_off.png);
+}
+.color-options .white.actived{
+	background-image: url(//gogoro.imgix.net/ColorBtn_white_on.png);
+}
+.color-options .grey{
+	background-image: url(//gogoro.imgix.net/ColorBtn_grey_off.png);
+}
+.color-options .grey.actived{
+	background-image: url(//gogoro.imgix.net/ColorBtn_grey_on.png);
+}
+.color-options .silver{
+	background-image: url(//gogoro.imgix.net/ColorBtn_silver_off.png);
+}
+.color-options .silver.actived{
+	background-image: url(//gogoro.imgix.net/ColorBtn_silver_on.png);
+}
+.color-options .blue{
+	background-image: url(//gogoro.imgix.net/ColorBtn_blue_off.png);
+}
+.color-options .blue.actived{
+	background-image: url(//gogoro.imgix.net/ColorBtn_blue_on.png);
+}
+.color-options .yellow{
+	background-image: url(//gogoro.imgix.net/ColorBtn_yellow_off.png);
+}
+.color-options .yellow.actived{
+	background-image: url(//gogoro.imgix.net/ColorBtn_yellow_on.png);
+}
+.color-options .orange{
+	background-image: url(//gogoro.imgix.net/ColorBtn_orange_off.png);
+}
+.color-options .orange.actived{
+	background-image: url(//gogoro.imgix.net/ColorBtn_orange_on.png);
+}
+
+.overlap-option{
+	position: relative;
+  z-index: 10;
+}
+
+.colorful-sccoter.original.white{
+	background-image: url(//gogoro.imgix.net/AAA_white.jpg);
+	opacity:1;
+	transition:all 0.5s linear;
+}
+.colorful-sccoter.original.grey{
+	background-image: url(//gogoro.imgix.net/AAA_grey.jpg);
+	opacity:1;
+	transition:all 0.5s linear;
+}
+
+.colorful-sccoter.plus.yellow{
+	background-image: url(//gogoro.imgix.net/AB2_yellow.jpg);
+	opacity:1;
+	transition:all 0.5s linear;
+}
+.colorful-sccoter.plus.blue{
+	background-image: url(//gogoro.imgix.net/AB2_blue.jpg);
+	opacity:1;
+	transition:all 0.5s linear;
+}
+
+.colorful-sccoter.plus.orange{
+	background-image: url(//gogoro.imgix.net/AB2_orange.jpg);
+	opacity:1;
+	transition:all 0.5s linear;
+}
+
+.colorful-sccoter.plus.white{
+	background-image: url(//gogoro.imgix.net/AB2_white.jpg);
+	opacity:1;
+	transition:all 0.5s linear;
+}
+.colorful-sccoter.plus.grey{
+	background-image: url(//gogoro.imgix.net/AB2_grey.jpg);
+	opacity:1;
+	transition:all 0.5s linear;
+}
+.colorful-sccoter.plus.silver{
+	background-image: url(//gogoro.imgix.net/AB2_silver.jpg);
+	opacity:1;
+	transition:all 0.5s linear;
+}
+
+.original-slider, .plus-slider{
+	margin-top:20px;
+	margin-bottom:50px;
+}
+@media (max-width: 991px) {
+	.module-customize-10-plus{
+		height:auto;
+	}
+}
+
+
+
+/*Slider½Õ¾ã*/
+.module-customize-10-plus .fallback .container {
+    padding-top:50px;
+    padding-bottom:50px;
+    background-color:#fff;
+}
+
+
+
+
+.module-customize-10-plus .colorPotionsWord1 {
+    margin:50px 0px 50px 0px ;
+}
+
+
+
+
+@media (max-width: 767px) {
+  .allyougogoroplusimg {
+      height:30px;
+      width:auto;
+
+}
+}
+
+
+
+.module-customize-10-plus p {
+    font-family:'graphik-light','xingothic-w3', 'Microsoft JhengHei','STHeiti';
+}
+
+
+.original-btn, .plus-btn, .color-options li {
+    cursor:pointer;
+}

@@ -1,0 +1,129 @@
+﻿.gen-header {
+    position: relative;
+    height: 800px;
+    width: 100%;
+    background: url(//images.gogoroapp.com/gen/bgd-gen-banner00.jpg) center no-repeat;
+    background-size: 2560px 800px;
+}
+
+    .gen-header .content-wrap {
+        width: 900px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -215px;
+        margin-left: -450px;
+        text-align: center;
+        padding-top: 10px;
+    }
+
+        .gen-header .content-wrap .gen-img {
+            width: 536px;
+            height: 248px;
+        }
+
+@media (max-width: 767px) {
+    .gen-header {
+        height: 400px;
+    }
+
+        .gen-header .content-wrap {
+            margin-top: -150px;
+        }
+
+            .gen-header .content-wrap .gen-img {
+                width: 268px;
+                height: 124px;
+            }
+
+            .gen-header .content-wrap h2 {
+                font-size: 24px;
+            }
+}
+
+.gen-main-text {
+    margin-top: 50px;
+}
+
+@media (max-width: 991px) {
+    .gen-main-text {
+        margin-top: 0px;
+    }
+}
+
+    .gen-main-text p, h3, li {
+        text-align: left;
+    }
+
+h2.en-tw {
+    line-height: 35px;
+    font-size: 30px;
+    color: #000000;
+    margin-top: 70px;
+}
+
+.content-wrap h2 {
+    line-height: 50px;
+    font-size: 44px;
+    margin-top: 70px;
+}
+
+html[lang=zh-TW] .content-wrap h2 {
+    font-family: "xingothic-w3";
+}
+
+
+
+.gen-email {
+    width: 100%;
+    height: 570px;
+    background-color: #f1f3f3;
+    text-align: center;
+    margin-top: -30px;
+}
+
+    .gen-email h2 {
+        font-size: 4.4rem;
+        color: #000000;
+        margin-top: 160px;
+    }
+
+html[lang=zh-TW] .gen-email h2 {
+    font-family: "xingothic-w3";
+}
+
+.gen-email .gen-email-main {
+    margin-top: 30px;
+}
+
+section.main-section {
+    padding: 0;
+}
+
+ul.ul01 li {
+    text-align: left;
+}
+
+
+
+.gen-full-main {
+    margin-top:50px;
+    width: 100%;
+}
+
+.gen-container {
+    margin-top: 45px;
+    margin-bottom:45px;
+}
+
+.gen-image {
+    width: 100%;
+    /*margin-top: 45px;*/
+}
+
+@media (max-width: 1000px) {
+    .gen-image {
+        width: 100%;
+        margin-top: 0px;
+    }
+}

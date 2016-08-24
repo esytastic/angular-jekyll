@@ -1,0 +1,81 @@
+---
+action: iwant
+layout: en-tw/LayoutMaster
+style: |
+    <link rel="stylesheet" href="/css/smartscooter/bethenextcity.css">
+scripts: |
+    <script src="/js/smartscooter/bethenextcity.js"></script>
+---
+
+<div id="i-want" ng-controller="OpenController">
+	<div class="module-bethenext-1-intro module-page-intro" ng-controller="moduleBethenext1IntroController">
+	    <div class="container">
+	        <div class="body">
+	        	<img src="/img/scooter/bethenext/landing-mark-0109.png" />
+	            <h2>I want a smart scooter</h2>
+	           	<p>Make your city the next Gogoro smart city.</p>
+                <a id="open-form" href="#" class="btn btn-outline--white">Let's Go</a>
+	        </div>
+	    </div>
+	</div>
+
+	<div class="overlay">
+		<div class="module-bethenext-2-contact">
+			<img src="/img/gen/open/open-map.svg" class="map" />
+			<h2>Energize my city</h2>
+			<form action="https://forms.hubspot.com/uploads/form/v2/704818/1884b8e7-9fda-4269-981f-3b1fdcb9dc77" method="post" accept-charset="utf-8" class="open-form" enctype="application/x-www-form-urlencoded">
+				<div class="row">
+					<div class="col-xs-6">
+						<div class="form-group">
+							<label for="business-name">First Name</label>
+							<input type="text" name="firstname" value="" class="form-control" id="firstname" required>
+						</div>
+					</div>
+					<div class="col-xs-6">
+						<div class="form-group">
+							<label for="business-name">Last Name</label>
+							<input type="text" name="lastname" value="" class="form-control" id="lastname" required>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12">
+						<div class="form-group">
+							<label for="business-name">Email Address</label>
+							<input type="text" name="email" value="" class="form-control" id="email" required>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-6">
+						<div class="form-group">
+							<label for="business-name">Country / Region</label>
+							<input type="text" name="country_testing" value="" class="form-control pillar" id="country_testing" required>
+						</div>
+					</div>
+					<div class="col-xs-6">
+						<div class="form-group">
+							<label for="business-name">City</label>
+							<input type="text" name="city" value="" class="form-control pillar" id="city" required>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12">
+						<label for="interested-in"><input required type="checkbox" id="interested-in" name="interested_in_host_a_gocharger">I'm a business owner and I'd like to host a GoCharger.</label>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12">
+						<div class="form-group">
+							<label for="read-terms"><input required type="checkbox" id="read-terms" name="terms_and_conditions_agreement_testing">I have carefully read the <a href="/terms-of-use">terms and conditions</a></label>
+						</div>
+					</div>
+				</div>
+				<div class="form-group text-center">
+					<input type="submit" class="btn btn-solid-rich-blue" id="open-form-submit" value="SUBMIT">
+				</div>
+			</form>
+		</div>
+	</div>
+</div>

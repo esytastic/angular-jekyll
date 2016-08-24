@@ -1,0 +1,8 @@
+﻿
+
+
+@media (max-width: 767px) {
+    #career .career__page-intro{
+        min-width:320px;
+    }
+}

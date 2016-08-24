@@ -1,0 +1,21 @@
+.module-charger-3-summary {
+	background: #28e1a5;
+}
+.module-charger-3-summary .body img {
+	height: 100px !important;
+	margin: 20px 0;
+}
+.module-charger-3-summary .body .charge-speed {
+	color: #2C67CB;
+	position: absolute;
+	bottom: 16px;
+	text-align: left;
+	left: 50%;
+	margin-left: 63px;
+	line-height: 1.2;
+	font-weight: bold;
+	font-family: "graphik-black", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+.module-charger-3-summary .col-md-4 {
+	border-color: #7FE4BA;
+}

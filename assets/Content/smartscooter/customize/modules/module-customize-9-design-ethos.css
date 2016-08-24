@@ -1,0 +1,126 @@
+/* ====================================
+   Site colors
+   ==================================== */
+/*
+   Brand colors
+   ====================================
+   White / Light Gray = Fresh and Clean Charcoal / Gray / Dark Gray = Bold and Direct Rich Blue = Performance
+   Blue = Experience
+   Teal = Style
+   Dark Green = Value
+   Green = Eco / Environment
+   Hot Green = Community
+   Red = Warning
+*/
+/* ====================================
+ * Mixins and functions
+ * ==================================== */
+/* Media queries
+ * ==================================== */
+/* Usage: @include breakpoint(sm) {} */
+/* Mixins and functions
+ * ==================================== */
+/* Usage: @include linearGradient() {} */
+/* Usage: @include placeholder() {} */
+/* Usage: @include border-radius(5px) */
+/* Usage: @include opacity(0.8) */
+/* Usage: @include center-block */
+/* Usage: @include text-truncate  */
+/* Extends
+ * ==================================== */
+/* Variables
+ * ==================================== */
+/* Mixins and functions
+ * ==================================== */
+.module-customize-9-design-ethos {
+  height: 800px;
+  overflow: hidden;
+  position: relative;
+  color: #323237;
+  background-color: #ffffff;
+  padding-top: 48px;
+  padding-bottom: 96px; }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .module-customize-9-design-ethos {
+      padding-top: 0;
+      padding-bottom: 48px;
+      height: auto; } }
+  @media (max-width: 767px) {
+    .module-customize-9-design-ethos {
+      padding-top: 0;
+      padding-bottom: 48px;
+      height: auto; } }
+  .module-customize-9-design-ethos .container strong {
+    display: block;
+    margin-bottom: 6px; }
+  .module-customize-9-design-ethos .container h2 {
+    margin: 0; }
+    @media (min-width: 768px) and (max-width: 991px) {
+      .module-customize-9-design-ethos .container h2 {
+        margin-bottom: 12px; } }
+    @media (max-width: 767px) {
+      .module-customize-9-design-ethos .container h2 {
+        margin-bottom: 12px; } }
+  .module-customize-9-design-ethos .container p {
+    margin: 0; }
+  .module-customize-9-design-ethos .video {
+    width: 2560px;
+    height: 800px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -1280px;
+    z-index: 0; }
+    @media (min-width: 768px) and (max-width: 991px) {
+      .module-customize-9-design-ethos .video {
+        display: none; } }
+
+@media (max-width: 767px) {
+      .module-customize-9-design-ethos .video {
+        display: none;
+      }
+}
+.module-customize-9-design-ethos .background-image {
+    display: none;
+    position: absolute;
+    top: -50px;
+    left: -64px;
+    margin-left: 0px;
+    display: block;
+    width: 70%;
+    height: auto;
+    /*z-index: 2;*/
+    margin-bottom: 24px;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .module-customize-9-design-ethos .background-image {
+    display: block;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    margin-left: 0px;
+  }
+  .module-customize-9-design-ethos .background-image .design-ethos-images{
+      /*position: absolute;*/
+      /*top:0;*/
+      /*left: 0;*/
+  }
+}
+@media (max-width: 767px) {
+  .module-customize-9-design-ethos .background-image {
+    display: block;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+  }
+  .module-customize-9-design-ethos .background-image .design-ethos-images{
+      /*position: absolute;*/
+      /*top:0;*/
+      /*left: 0;*/
+  }
+}

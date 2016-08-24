@@ -1,0 +1,111 @@
+﻿    #main-header {
+            position: static;
+        }
+
+
+        #latest-positions iframe body {
+            height: 900px;
+            margin-top: 0px;
+        }
+
+        #latest-positions iframe html {
+            margin-top: 0px;
+            height: 600px;
+        }
+
+        #latest-positions iframe #header {
+            margin-top: 0px;
+        }
+
+
+        #latest-positions iframe .error-page {
+            margin-top: 300px;
+        }
+
+
+        #latest-positions {
+            height: 1200px;
+        }
+
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            padding-top: 30px;
+            height: 0;
+            overflow: hidden;
+        }
+
+            .video-container iframe,
+            .video-container object,
+            .video-container embed {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+
+
+ 
+
+        .programImgTempt {
+            height: 700px;
+            background-color: #fff;
+            background-image: url(//images.gogoroapp.com/campaign/Live_Feed_01.png);
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+
+        .programImgTemptMobile {
+            height: 500px;
+            background-color: #fff;
+            background-image: url(//images.gogoroapp.com/campaign/Live_Feed_01.png);
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+
+
+
+
+        
+@media (min-width: 1120px) {
+        .video-wrapper {
+            margin-top: 25px;
+               margin-bottom: 50px;
+            max-width: 970px;   
+            position:relative;
+            left:50%;
+            margin-left:-485px;
+        }
+}
+
+
+@media (min-width: 992px) and (max-width: 1199px) {
+            .video-wrapper {
+           margin-top: 25px;
+               margin-bottom: 50px;
+            max-width: 970px; 
+                position:relative;
+            left:50%;
+            margin-left:-485px;  
+        }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+            .video-wrapper {
+            margin-top: 8px;
+            max-width: 100%;   
+        }
+}
+
+@media (max-width: 767px) {
+             .video-wrapper {
+            margin-top: 8px;
+            max-width: 100%;   
+        }
+}
+

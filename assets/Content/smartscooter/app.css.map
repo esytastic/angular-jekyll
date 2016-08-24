@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": ";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAKA,IAAK;EACH,SAAS,EAAE,KAAK;EAChB,MAAM,EAAE,IAAI;EAEZ,UAAU,EAAE,MAAM;;AAGpB,IAAK;ECuBH,SAAS,EAAE,IAAqB;EAChC,SAAS,EAAE,MAAuB;EAUlC,WAAW,EAAE,+HAA+H;EAC5I,WAAW,EAAG,GAAG;EACjB,UAAU,EAAI,MAAM;EDhCpB,KAAK,EEKW,OAAO;EFJvB,gBAAgB,EEDH,IAAI;EFEjB,WAAW,EAAE,GAAG;EAChB,sBAAsB,EAAE,WAAW;EACnC,QAAQ,EAAE,QAAQ;EAClB,MAAM,EAAE,IAAI;ECNV,gDAAiD;IDHrD,IAAK;MAWD,UAAU,EAAE,MAAM;ECZlB,yBAA0B;IDC9B,IAAK;MAcD,UAAU,EAAE,MAAM;;AAItB,eAAgB;EACd,QAAQ,EAAE,QAAQ;EAClB,OAAO,EAAE,CAAC;EACV,MAAM,EAAE,IAAI;EACZ,gBAAgB,EElBH,IAAI;;ADLf,yBAA0B;ED0B9B,UAAW;IAEP,YAAY,EAAE,IAAI;IAClB,aAAa,EAAE,IAAI",
+"sources": ["../../app/app.scss","file:///D:/WebDevelopment/Gogoro/Projects/Gogoro-Official-Site/_Cinco_Bitbucket/Gogoro-Official-Site/src/sass/_mixins.scss","file:///D:/WebDevelopment/Gogoro/Projects/Gogoro-Official-Site/_Cinco_Bitbucket/Gogoro-Official-Site/src/sass/_colors.scss"],
+"names": [],
+"file": "app.css"
+}

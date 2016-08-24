@@ -1,0 +1,204 @@
+/* ====================================
+   Site colors
+   ==================================== */
+/*
+   Brand colors
+   ====================================
+   White / Light Gray = Fresh and Clean Charcoal / Gray / Dark Gray = Bold and Direct Rich Blue = Performance
+   Blue = Experience
+   Teal = Style
+   Dark Green = Value
+   Green = Eco / Environment
+   Hot Green = Community
+   Red = Warning
+*/
+/* ====================================
+ * Mixins and functions
+ * ==================================== */
+/* Media queries
+ * ==================================== */
+/* Usage: @include breakpoint(sm) {} */
+/* Mixins and functions
+ * ==================================== */
+/* Usage: @include linearGradient() {} */
+/* Usage: @include placeholder() {} */
+/* Usage: @include border-radius(5px) */
+/* Usage: @include opacity(0.8) */
+/* Usage: @include center-block */
+/* Usage: @include text-truncate  */
+/* Extends
+ * ==================================== */
+/* Variables
+ * ==================================== */
+/* Mixins and functions
+ * ==================================== */
+.module-smarter-7-vm {
+  position: relative;
+  width: 100%;
+  height: 800px;
+  position: relative;
+  overflow: hidden; }
+  .module-smarter-7-vm:before {
+    content: "";
+    float: left; }
+  .module-smarter-7-vm:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .module-smarter-7-vm .container {
+    position: relative;
+    height: 100%; }
+  .module-smarter-7-vm .content-wrapper {
+    position: absolute;
+    display: table;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    margin: auto; }
+    @media (max-width: 767px) {
+      .module-smarter-7-vm .content-wrapper {
+        position: relative;
+        padding-top: 62.5%;
+        width: 90%; } }
+    .module-smarter-7-vm .content-wrapper .text {
+      display: table-cell;
+      vertical-align: middle; }
+      .module-smarter-7-vm .content-wrapper .text .title {
+        position: relative;
+        margin-bottom: 20px;
+        font-family: "graphik-extra-light", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+        font-weight: 200;
+        font-style: normal;
+        font-size: 44px;
+        line-height: 48px;
+        color: #323237; }
+        .module-smarter-7-vm .content-wrapper .text .title span.small {
+          display: block;
+          font-family: "graphik-semibold", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+          font-weight: 600;
+          font-style: normal;
+          font-size: 18px; }
+        @media (max-width: 767px) {
+          .module-smarter-7-vm .content-wrapper .text .title {
+            font-size: 32px;
+            font-size: 3.2rem; } }
+      .module-smarter-7-vm .content-wrapper .text .body {
+        position: relative;
+        font-family: "graphik-light", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        font-size: 18px;
+        color: #323237; }
+        .module-smarter-7-vm .content-wrapper .text .body sup {
+          position: relative;
+          vertical-align: top;
+          font-size: 9px;
+          line-height: 27px; }
+  @media (max-width: 767px) {
+    .module-smarter-7-vm .content-wrapper {
+      position: static;
+      padding-top: 62.5%; } }
+  @media (max-width: 767px) {
+    .module-smarter-7-vm .content-wrapper .text {
+      padding: 10% 0; } }
+  .module-smarter-7-vm .content-wrapper .image {
+    display: table-cell;
+    vertical-align: middle;
+    width: 67%; }
+    @media (max-width: 767px) {
+      .module-smarter-7-vm .content-wrapper .image {
+        display: none; } }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .module-smarter-7-vm {
+      padding: 48px 0;
+      height: auto; } }
+  @media (max-width: 767px) {
+    .module-smarter-7-vm {
+      padding: 48px 0;
+      height: auto; } }
+  .module-smarter-7-vm .vending-machine-container {
+    height: 100%; }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .module-smarter-7-vm .container {
+      padding-top: 524px; } }
+  @media (max-width: 767px) {
+    .module-smarter-7-vm .container {
+      padding-top: 328px; } }
+  .module-smarter-7-vm .vending-machine {
+    width: 544px;
+    height: 722px;
+    position: absolute;
+    bottom: 0;
+    left: 19px;
+    z-index: 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50% 100%; }
+    @media (min-width: 768px) and (max-width: 991px) {
+      .module-smarter-7-vm .vending-machine {
+        width: 100%;
+        height: 500px;
+        left: 0;
+        top: 0;
+        bottom: auto;
+        border-bottom: 1px solid #c1c1c3; } }
+    @media (max-width: 767px) {
+      .module-smarter-7-vm .vending-machine {
+        width: 100%;
+        height: 280px;
+        left: 0;
+        top: 0;
+        bottom: auto;
+        border-bottom: 1px solid #c1c1c3; } }
+  .module-smarter-7-vm .vending-machine-frame {
+    width: 472px;
+    height: 298px;
+    position: absolute;
+    top: 101px;
+    left: 37px;
+    z-index: 2;
+    background-repeat: no-repeat;
+    background-size: contain; }
+    @media (min-width: 768px) and (max-width: 991px) {
+      .module-smarter-7-vm .vending-machine-frame {
+        display: none; } }
+    @media (max-width: 767px) {
+      .module-smarter-7-vm .vending-machine-frame {
+        display: none; } }
+  .module-smarter-7-vm .video-wrapper {
+    display: block;
+    position: absolute;
+    left: 48px;
+    top: 111px;
+    z-index: 1;
+    width: 448px;
+    height: 278px; }
+    @media (min-width: 768px) and (max-width: 991px) {
+      .module-smarter-7-vm .video-wrapper {
+        width: 233px;
+        height: 146px;
+        left: 50%;
+        top: 54px;
+        margin-left: -117px; } }
+    @media (max-width: 767px) {
+      .module-smarter-7-vm .video-wrapper {
+        width: 233px;
+        height: 146px;
+        left: 50%;
+        top: 54px;
+        margin-left: -117px; } }
+    .module-smarter-7-vm .video-wrapper .video-viewport {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      overflow: hidden; }
+      .module-smarter-7-vm .video-wrapper .video-viewport video {
+        position: relative;
+        left: 50%; }
+  .state-fallback .module-smarter-7-vm .video-wrapper {
+    display: none; }

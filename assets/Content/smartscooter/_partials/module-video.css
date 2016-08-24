@@ -1,0 +1,132 @@
+/* ====================================
+   Site colors
+   ==================================== */
+/*
+   Brand colors
+   ====================================
+   White / Light Gray = Fresh and Clean Charcoal / Gray / Dark Gray = Bold and Direct Rich Blue = Performance
+   Blue = Experience
+   Teal = Style
+   Dark Green = Value
+   Green = Eco / Environment
+   Hot Green = Community
+   Red = Warning
+*/
+/* ====================================
+ * Mixins and functions
+ * ==================================== */
+/* Media queries
+ * ==================================== */
+/* Usage: @include breakpoint(sm) {} */
+/* Mixins and functions
+ * ==================================== */
+/* Usage: @include linearGradient() {} */
+/* Usage: @include placeholder() {} */
+/* Usage: @include border-radius(5px) */
+/* Usage: @include opacity(0.8) */
+/* Usage: @include center-block */
+/* Usage: @include text-truncate  */
+/* Extends
+ * ==================================== */
+/* Variables
+ * ==================================== */
+/* Mixins and functions
+ * ==================================== */
+
+.module-video {
+    position: relative;
+    height: 600px;
+    width: 100%;
+    overflow: hidden;
+}
+.module-video .video-viewport {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+}
+.module-video .video {
+    width: 2560px;
+    height: 600px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -1280px;
+    z-index: 0;
+}
+.module-video .video video {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.module-video .launch-video-modal {
+    position: absolute;
+    bottom: 75px;
+    left: 50%;
+    margin-left: -134px;
+    z-index: 100;
+}
+.module-video .btn.btn-translucent {
+    opacity: 0;
+    display: none;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .module-video .btn.btn-translucent {
+        display: block;
+        opacity: 0.6;
+    }
+}
+@media (max-width: 767px) {
+    .module-video .btn.btn-translucent {
+        display: block;
+        opacity: 0.6;
+    }
+}
+.mobile .module-video .btn.btn-translucent {
+    display: block;
+    opacity: 0.6;
+}
+.module-video:hover .btn.btn-translucent {
+    opacity: 0.3;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .module-video:hover .btn.btn-translucent {
+        opacity: 0.6;
+    }
+}
+@media (max-width: 767px) {
+    .module-video:hover .btn.btn-translucent {
+        opacity: 0.6;
+    }
+}
+.mobile .module-video:hover .btn.btn-translucent {
+    opacity: 0.6;
+}
+.module-video:hover .btn.btn-translucent:hover {
+    opacity: 0.6;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .module-video:hover .btn.btn-translucent:hover {
+        opacity: 0.6;
+    }
+}
+@media (max-width: 767px) {
+    .module-video:hover .btn.btn-translucent:hover {
+        opacity: 0.6;
+    }
+}
+.mobile .module-video:hover .btn.btn-translucent:hover {
+    opacity: 0.6;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .module-video {
+        background-size: cover !important;
+    }
+}
+@media (max-width: 767px) {
+    .module-video {
+        background-size: cover !important;
+    }
+}

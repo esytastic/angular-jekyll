@@ -1,0 +1,129 @@
+---
+meta: |
+    <meta name="keywords" content="gogoro,smartscooter,機車,電動機車,智慧雙輪,電池,睿能,睿能創意">
+    <meta name="description" content="我們是 Gogoro，透過網路和科技的力量，打造 Smartscooter™ 智慧雙輪以及 GoStation® 電池交換站，改變能源使用的經驗，將全球大型都會逐步轉型為智慧城市。">
+    <meta name="application-name" content="聯絡我們-Gogoro 第一且唯一 Smartscooter™ 智慧雙輪" />
+    <meta name="msapplication-TileColor" content="#61399D" />
+    <meta name="msapplication-TileImage" content="http://www.gogoro.com/favicon.ico" />
+    <meta property="og:title" content="聯絡我們-Gogoro 第一且唯一 Smartscooter™ 智慧雙輪" />
+    <meta property="og:type" content='website' />
+    <meta property="og:url" content="http://www.gogoro.com/tw/contact" />
+    <meta property="og:description" content="我們是 Gogoro，透過網路和科技的力量，打造 Smartscooter™ 智慧雙輪以及 GoStation® 電池交換站，改變能源使用的經驗，將全球大型都會逐步轉型為智慧城市。" />
+    <meta property="og:image" content="http://images.gogoroapp.com/share/website_thumbnail_1024.jpg" />
+    <meta property="og:site_name" content="Gogoro" />
+style: |
+    <link rel="stylesheet" href="/css/contact.css">
+scripts: |
+    <script type="text/javascript">
+        var apiUrl = "http://formspree.io/matt@roamandwander.com";
+        var nameMessage = '姓名為必填欄位';
+        var emailMessage = '電子郵件信箱為必填欄位';
+        var emailValidMessage = '請輸入有效的電子郵件信箱';
+        var subjectMessage = '主旨為必填欄位';
+        var messageMessage = '內容為必填欄位';
+    </script>
+    <script src="/js/contact.js"></script>
+layout: zh-tw/LayoutMaster
+---
+
+<div class="pg-contact" data-state="Contact">
+    <section id="hero-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">
+                    <h1>Contact</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="main-section">
+
+        <div class="container contact--info">
+            <div class="row">
+                <div class="section-container col-md-offset-3 col-md-7">
+                    <div class="info-section">
+                        <h2>商業合作</h2>
+                        <p>若欲洽詢市場開發、行銷活動、廣告合作、參關訪問等，歡迎來信 <a href="mailto:contact@gogoro.com">contact@gogoro.com</a></p>
+                    </div>
+                    <div class="info-section">
+                        <h2>媒體關係</h2>
+                        <p>若欲與 Gogoro 媒體聯絡人聯繫，歡迎來信 <a href="mailto:press@gogoro.com">press@gogoro.com</a></p>
+                    </div>
+                    <div class="info-section">
+                        <h2>能源網路</h2>
+                        <p>若想成為 Gogoro 能源網路的夥伴，評估您的場地是否適合架設 GoStation 換電站，歡迎來信 <a href="mailto:genpartnership@gogoro.com">genpartnership@gogoro.com</a> 瞭解更進一步的資訊</p>
+                    </div>
+                    <div class="info-section">
+                        <h2>工作機會</h2>
+                        <p>若您想成為 Gogoro 改變世界的一員，請至<a href="http://www.gogoro.com/tw/career/">人才招募專區</a>瀏覽最新職缺或者來信 <a href="mailto:job@gogoro.com">job@gogoro.com</a></p>
+                    </div>
+                    <div class="info-section">
+                        <h2>0800 客服中心</h2>
+                        <p>欲與專人聯繫，歡迎來電 Gogoro 客服中心：0800-365-996</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container hidden">
+            <div class="row">
+                <div class="col-md-7 col-md-offset-3 col-xs-12">
+                    <div id="contact-form-container">
+                        <p>歡迎您的留言，若有任何關於媒體報導、工作職缺或業務合作的詢問，請填寫以下表格。</p>
+                        <form action="#" method="post" accept-charset="utf-8" id="contact-form">
+                            <div class="form-group">
+                                <label for="contact-name-first">姓名</label>
+                                <input type="text" name="name" value="" class="form-control" id="contact-name-first" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="contact-email-address" class="margin-top-20">電子郵件信箱</label>
+                                <input type="email" name="email" value="" placeholder="" class="form-control" id="contact-email-address" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="contact-company" class="margin-top-20">公司</label>
+                                <input type="text" name="company" value="" placeholder="Optional" class="form-control" id="contact-company">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="contact-subject" class="margin-top-20">主旨</label>
+                                <input type="text" name="subject" value="" placeholder="" class="form-control" id="contact-subject" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="contact-message" class="margin-top-20">內容</label>
+                                <textarea class="form-control" name="message" rows="5" id="contact-message" required></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <input type="submit" class="btn btn-outline margin-top" id="contact-form-submit" value="送出">
+                            </div>
+
+                        </form>
+
+                        <div class="modal fade" id="contact-form-sent" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                        <h3>訊息已送出！</h3>
+                                        <p>感謝您的來信，我們將儘速回覆。</p>
+                                        <a href="#" id="modal-close-btn" class="btn btn-outline btn-sm margin-top" data-dismiss="modal">Okay</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <hr>
+
+                    <p>與我們連絡: <span class="graphik-light"><a href="mailto:contact@gogoro.com">contact@gogoro.com</a></span></p>
+
+                </div><!--/.col-md-7 -->
+            </div><!--/.row -->
+        </div><!--/.container -->
+    </section><!--/.main-section -->
+</div>

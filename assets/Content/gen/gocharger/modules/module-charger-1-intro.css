@@ -1,0 +1,78 @@
+/* ====================================
+   Site colors
+   ==================================== */
+/*
+   Brand colors
+   ====================================
+   White / Light Gray = Fresh and Clean Charcoal / Gray / Dark Gray = Bold and Direct Rich Blue = Performance
+   Blue = Experience
+   Teal = Style
+   Dark Green = Value
+   Green = Eco / Environment
+   Hot Green = Community
+   Red = Warning
+*/
+/* ====================================
+ * Mixins and functions
+ * ==================================== */
+/* Media queries
+ * ==================================== */
+/* Usage: @include breakpoint(sm) {} */
+/* Mixins and functions
+ * ==================================== */
+/* Usage: @include linearGradient() {} */
+/* Usage: @include placeholder() {} */
+/* Usage: @include border-radius(5px) */
+/* Usage: @include opacity(0.8) */
+/* Usage: @include center-block */
+/* Usage: @include text-truncate  */
+/* Extends
+ * ==================================== */
+/* Variables
+ * ==================================== */
+/* Mixins and functions
+ * ==================================== */
+body.main-header-fixed {
+  padding-top: 52px; }
+
+
+.module-charger-1-intro .body {
+	margin: 0 18%;
+    width: 64%;
+    color: #fff;
+}
+
+.module-charger-1-intro h2 {
+    font-size: 6.4rem;
+}
+
+.module-charger-1-intro {
+	background-image: url(/img/gen/gocharger/banner-bg.jpg);
+	background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.module-charger-1-intro img.center {
+	width: 419px;
+	margin: 20px;
+}
+
+.module-charger-1-intro p {
+    width: 75%;
+    margin: 0 auto;
+}
+
+@media (max-width: 760px) {
+	.module-charger-1-intro .body {
+		top: 50px;
+		margin: 0;
+		width: 100%;
+	}
+	.module-charger-1-intro p {
+		width: 100%;
+	}
+	.module-charger-1-intro h2 {
+		font-size: 5rem;
+	}
+}

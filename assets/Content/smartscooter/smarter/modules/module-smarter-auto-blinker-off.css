@@ -1,0 +1,96 @@
+/* ====================================
+   Site colors
+   ==================================== */
+/*
+   Brand colors
+   ====================================
+   White / Light Gray = Fresh and Clean Charcoal / Gray / Dark Gray = Bold and Direct Rich Blue = Performance
+   Blue = Experience
+   Teal = Style
+   Dark Green = Value
+   Green = Eco / Environment
+   Hot Green = Community
+   Red = Warning
+*/
+/* ====================================
+ * Mixins and functions
+ * ==================================== */
+/* Media queries
+ * ==================================== */
+/* Usage: @include breakpoint(sm) {} */
+/* Mixins and functions
+ * ==================================== */
+/* Usage: @include linearGradient() {} */
+/* Usage: @include placeholder() {} */
+/* Usage: @include border-radius(5px) */
+/* Usage: @include opacity(0.8) */
+/* Usage: @include center-block */
+/* Usage: @include text-truncate  */
+/* Extends
+ * ==================================== */
+/* Variables
+ * ==================================== */
+/* Mixins and functions
+ * ==================================== */
+.module-smarter-auto-blinker-off {
+  background: #000;
+}
+.state-fallback .module-smarter-auto-blinker-off {
+    background-image: url(//images.gogoroapp.com/module-smarter-auto-blinker-off.jpg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+.module-smarter-auto-blinker-off .fallback {
+   display: none;
+}
+.module-smarter-auto-blinker-off .video-txt-wrap {
+    height: 300px;
+    width:395px;
+    position: absolute;
+    left: 60%;
+    bottom: -40px;
+    z-index: 1;
+    color: #FFFFFF;
+}
+.video-txt-wrap-fallback{
+    display: none;
+    background-color: #323237;
+    color: #FFFFFF;
+    padding: 20px;
+    padding-bottom: 48px;
+}
+.video-txt-wrap-fallback h2{
+}
+.video-txt-wrap-fallback p{
+  margin-bottom: 0;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .module-smarter-auto-blinker-off {
+      background-image: none;
+      height: auto; 
+    }
+    .module-smarter-auto-blinker-off .fallback {
+      display: block;
+    }
+    .module-smarter-auto-blinker-off .video-txt-wrap {
+        display: none;
+    }
+    .video-txt-wrap-fallback{
+        display: block;
+    }
+}
+@media (max-width: 767px) {
+    .module-smarter-auto-blinker-off {
+      background-image: none;
+      height: auto;
+    }
+    .module-smarter-auto-blinker-off .fallback {
+      display: block;
+    }
+    .module-smarter-auto-blinker-off .video-txt-wrap {
+        display: none;
+    }
+    .video-txt-wrap-fallback{
+        display: block;
+    }
+}

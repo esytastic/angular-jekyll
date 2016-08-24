@@ -1,0 +1,20 @@
+.partnership {
+  margin-top: 0px; }
+  .partnership p {
+    margin-bottom: 0;
+    font-size: 14px; }
+  .partnership .logo {
+    width: 30px;
+    height: 16px; }
+    .partnership .logo.logo-gates {
+      width: 191px;
+      height: 30px; }
+    .partnership .logo.logo-maxxis {
+      width: 100px; }
+    .partnership .logo.logo-panasonic {
+      width: 105px; }
+    .partnership .logo.logo-phillips {
+      width: 88px; }
+    .partnership .logo.logo-texas-instruments {
+      width: 169px;
+      height: 20px; }

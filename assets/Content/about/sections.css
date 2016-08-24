@@ -1,0 +1,87 @@
+/* ====================================
+ * Mixins and functions
+ * ==================================== */
+/* Media queries
+ * ==================================== */
+/* Usage: @include breakpoint(sm) {} */
+/* Mixins and functions
+ * ==================================== */
+/* Usage: @include linearGradient() {} */
+/* Usage: @include placeholder() {} */
+/* Usage: @include border-radius(5px) */
+/* Usage: @include opacity(0.8) */
+/* Usage: @include center-block */
+/* Usage: @include text-truncate  */
+/* Extends
+ * ==================================== */
+/* ====================================
+   Site colors
+   ==================================== */
+/*
+   Brand colors
+   ====================================
+   White / Light Gray = Fresh and Clean Charcoal / Gray / Dark Gray = Bold and Direct Rich Blue = Performance
+   Blue = Experience
+   Teal = Style
+   Dark Green = Value
+   Green = Eco / Environment
+   Hot Green = Community
+   Red = Warning
+*/
+/*
+   Base colors
+   ==================================== */
+/*
+   Text colors
+   ==================================== */
+/*
+   Button colors
+   ==================================== */
+/*
+   Third party brand colors
+   ==================================== */
+/* ====================================
+ * Mixins and functions
+ * ==================================== */
+/* Media queries
+ * ==================================== */
+/* Usage: @include breakpoint(sm) {} */
+/* Mixins and functions
+ * ==================================== */
+/* Usage: @include linearGradient() {} */
+/* Usage: @include placeholder() {} */
+/* Usage: @include border-radius(5px) */
+/* Usage: @include opacity(0.8) */
+/* Usage: @include center-block */
+/* Usage: @include text-truncate  */
+/* Extends
+ * ==================================== */
+/* Variables
+ * ==================================== */
+/* ====================================
+   Media Elements
+   ==================================== */
+section {
+  background-color: #fff; }
+  section.main-section {
+    padding: 96px 0 0; }
+    @media (min-width: 768px) and (max-width: 991px) {
+      section.main-section {
+        padding: 48px 0; } }
+    @media (max-width: 767px) {
+      section.main-section {
+        padding: 24px 0; } }
+    section.main-section.background-color-light-gray {
+      margin-bottom: -96px;
+      padding-bottom: 96px; }
+  section .section-header {
+    padding-bottom: 92px; }
+    @media (min-width: 768px) and (max-width: 991px) {
+      section .section-header {
+        padding-bottom: 72px; } }
+    @media (max-width: 767px) {
+      section .section-header {
+        padding-bottom: 36px; } }
+    section .section-header h2 {
+      margin: 0;
+      position: relative; }

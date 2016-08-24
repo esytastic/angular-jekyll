@@ -1,0 +1,98 @@
+/* ====================================
+   Site colors
+   ==================================== */
+/*
+   Brand colors
+   ====================================
+   White / Light Gray = Fresh and Clean Charcoal / Gray / Dark Gray = Bold and Direct Rich Blue = Performance
+   Blue = Experience
+   Teal = Style
+   Dark Green = Value
+   Green = Eco / Environment
+   Hot Green = Community
+   Red = Warning
+*/
+/* ====================================
+ * Mixins and functions
+ * ==================================== */
+/* Media queries
+ * ==================================== */
+/* Usage: @include breakpoint(sm) {} */
+/* Mixins and functions
+ * ==================================== */
+/* Usage: @include linearGradient() {} */
+/* Usage: @include placeholder() {} */
+/* Usage: @include border-radius(5px) */
+/* Usage: @include opacity(0.8) */
+/* Usage: @include center-block */
+/* Usage: @include text-truncate  */
+/* Extends
+ * ==================================== */
+/* Variables
+ * ==================================== */
+/* Mixins and functions
+ * ==================================== */
+.module-faster-12-13-balance-lean-angle {
+  overflow: hidden;
+  position: relative;
+  background: #043646;
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSI1MCUiIHN0b3AtY29sb3I9IiMwNDM2NDYiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSI1MSUiIHN0b3AtY29sb3I9IiMwMjJjMzkiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, #043646), color-stop(51%, #022c39));
+  background: -webkit-linear-gradient(left, #043646 50%, #022c39 51%);
+  background: linear-gradient(to right, #043646 50%, #022c39 51%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#043646', endColorstr='#022c39',GradientType=1 );
+  color: #fff;
+  text-align: center; }
+  .module-faster-12-13-balance-lean-angle .container {
+    height: 100%; }
+    .module-faster-12-13-balance-lean-angle .container .row {
+      height: 100%; }
+  .module-faster-12-13-balance-lean-angle img {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 0 20px;
+    margin: 33px auto 80px; }
+    @media (min-width: 768px) and (max-width: 991px) {
+      .module-faster-12-13-balance-lean-angle img {
+        margin: 24px auto 24px; } }
+    @media (max-width: 767px) {
+      .module-faster-12-13-balance-lean-angle img {
+        margin: 24px auto 24px; } }
+  .module-faster-12-13-balance-lean-angle h2 {
+    margin-bottom: 60px; }
+    @media (min-width: 768px) and (max-width: 991px) {
+      .module-faster-12-13-balance-lean-angle h2 {
+        margin-bottom: 48px; } }
+    @media (max-width: 767px) {
+      .module-faster-12-13-balance-lean-angle h2 {
+        margin-bottom: 24px; } }
+  .module-faster-12-13-balance-lean-angle p {
+    margin-bottom: 0; }
+  .module-faster-12-13-balance-lean-angle .balanced {
+    height: 100%;
+    background-color: #043646; }
+  .module-faster-12-13-balance-lean-angle .agile {
+    height: 100%;
+    background-color: #022c39; }
+  .module-faster-12-13-balance-lean-angle .padding {
+    width: 555px;
+    height:837px;
+    padding: 93px 40px 100px;
+    margin: 0 auto; }
+    @media (min-width: 992px) and (max-width: 1199px) {
+      .module-faster-12-13-balance-lean-angle .padding {
+        width: 100%;
+        padding: 48px 15px; } }
+    @media (min-width: 768px) and (max-width: 991px) {
+      .module-faster-12-13-balance-lean-angle .padding {
+        width: 100%;
+        height: auto;
+        padding: 48px 15px;
+      }
+    }
+    @media (max-width: 767px) {
+      .module-faster-12-13-balance-lean-angle .padding {
+        width: 100%;
+        height:auto;
+        padding: 48px 20px; } }

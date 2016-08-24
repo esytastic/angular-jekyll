@@ -1,0 +1,190 @@
+@charset "UTF-8";
+/* ====================================
+   Site colors
+   ==================================== */
+/*
+   Brand colors
+   ====================================
+   White / Light Gray = Fresh and Clean Charcoal / Gray / Dark Gray = Bold and Direct Rich Blue = Performance
+   Blue = Experience
+   Teal = Style
+   Dark Green = Value
+   Green = Eco / Environment
+   Hot Green = Community
+   Red = Warning
+*/
+/* ====================================
+ * Mixins and functions
+ * ==================================== */
+/* Media queries
+ * ==================================== */
+/* Usage: @include breakpoint(sm) {} */
+/* Mixins and functions
+ * ==================================== */
+/* Usage: @include linearGradient() {} */
+/* Usage: @include placeholder() {} */
+/* Usage: @include border-radius(5px) */
+/* Usage: @include opacity(0.8) */
+/* Usage: @include center-block */
+/* Usage: @include text-truncate  */
+/* Extends
+ * ==================================== */
+/* Variables
+ * ==================================== */
+/* Mixins and functions
+ * ==================================== */
+/* stolen from our carousel */
+/*0.3;*/
+.module-customize-6-sounds-themes {
+  position: relative;
+  color: #fff;
+  width: 100%;
+  height: 600px;
+  position: relative;
+  overflow: hidden;
+  text-align: left;
+  font-family: "graphik-light", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 18px;
+  background: #323237; }
+  .module-customize-6-sounds-themes.standard .sound-theme, .module-customize-6-sounds-themes.standard .theme-toggle, .module-customize-6-sounds-themes.standard .choose {
+    display: block; }
+  .module-customize-6-sounds-themes.standard .fallback-image {
+    display: none; }
+  .module-customize-6-sounds-themes.fallback {
+    padding: 48px 0; }
+    .module-customize-6-sounds-themes.fallback .sound-theme, .module-customize-6-sounds-themes.fallback .theme-toggle, .module-customize-6-sounds-themes.fallback .choose {
+      display: none; }
+    .module-customize-6-sounds-themes.fallback .fallback-image {
+      display: block; }
+  .module-customize-6-sounds-themes:before {
+    content: "";
+    float: left; }
+  .module-customize-6-sounds-themes:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .module-customize-6-sounds-themes .container {
+    position: relative;
+    height: 100%; }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .module-customize-6-sounds-themes {
+      height: auto;
+      padding: 24px 0;
+      text-align: center; }
+      .module-customize-6-sounds-themes .fallback-image {
+        display: block; } }
+  @media (max-width: 767px) {
+    .module-customize-6-sounds-themes {
+      height: auto;
+      text-align: center;
+      padding: 24px 0; }
+      .module-customize-6-sounds-themes .fallback-image {
+        display: block; } }
+  .module-customize-6-sounds-themes .row .col-sm-4 {
+    position: relative;
+    color: #fff; }
+  .module-customize-6-sounds-themes .choose {
+    margin-top: 50px; }
+    @media (min-width: 768px) and (max-width: 991px) {
+      .module-customize-6-sounds-themes .choose {
+        display: none; } }
+    @media (max-width: 767px) {
+      .module-customize-6-sounds-themes .choose {
+        display: none; } }
+  .module-customize-6-sounds-themes .theme-toggle {
+    margin-top: 10px; }
+    @media (min-width: 768px) and (max-width: 991px) {
+      .module-customize-6-sounds-themes .theme-toggle {
+        display: none; } }
+    @media (max-width: 767px) {
+      .module-customize-6-sounds-themes .theme-toggle {
+        display: none; } }
+    .module-customize-6-sounds-themes .theme-toggle a {
+      border: 0;
+      margin-right: 20px;
+      color: #fff;
+      opacity: 0.3;
+      font-family: "graphik-semibold", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+      font-weight: 600;
+      font-style: normal; }
+      .module-customize-6-sounds-themes .theme-toggle a:first-child {
+        opacity: 1; }
+  .module-customize-6-sounds-themes .preview {
+    text-align: center;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    outline: none;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    background-color: transparent; }
+    .module-customize-6-sounds-themes .preview .fallback-image {
+      margin-top: 24px; }
+    .module-customize-6-sounds-themes .preview canvas {
+      outline: 0; }
+    @media (min-width: 768px) and (max-width: 991px) {
+      .module-customize-6-sounds-themes .preview .sound-theme {
+        display: none; } }
+    @media (max-width: 767px) {
+      .module-customize-6-sounds-themes .preview .sound-theme {
+        display: none; } }
+    .module-customize-6-sounds-themes .preview .sound-theme .sound-title {
+      height: 60px;
+      color: #f1f3f3;
+      font-family: "graphik-light", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+      font-weight: 300;
+      font-style: normal;
+      font-size: 14px;
+      cursor: default; }
+    .module-customize-6-sounds-themes .preview .sounds {
+      position: relative;
+      width: 100%;
+      height: 20px;
+      text-align: center; }
+      .module-customize-6-sounds-themes .preview .sounds .sound {
+        display: inline-block;
+        position: relative;
+        height: 20px;
+        width: 20px;
+        margin: 0 7px;
+        border: 0;
+        padding: 5px;
+        background: transparent;
+        outline: none;
+        font-size: 0;
+        line-height: 0;
+        color: transparent;
+        cursor: pointer; }
+        .module-customize-6-sounds-themes .preview .sounds .sound:before {
+          position: absolute;
+          top: 0;
+          left: 0;
+          content: "";
+          width: 20px;
+          height: 20px;
+          font-family: "gogoro-icons";
+          font-size: 12px;
+          line-height: 20px;
+          text-align: center;
+          color: #c1c1c3;
+          opacity: 1;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale; }
+        .module-customize-6-sounds-themes .preview .sounds .sound:hover, .module-customize-6-sounds-themes .preview .sounds .sound:focus {
+          outline: none; }
+          .module-customize-6-sounds-themes .preview .sounds .sound:hover:before, .module-customize-6-sounds-themes .preview .sounds .sound:focus:before {
+            color: #e1ff32;
+            opacity: 1; }
+        .module-customize-6-sounds-themes .preview .sounds .sound.active:before {
+          color: #e1ff32;
+          opacity: 1;
+          content: ""; }
+  .module-customize-6-sounds-themes .sound-icon {
+    width: 158px;
+    height: 120px;
+    margin: 0 auto 24px;
+    display: block; }

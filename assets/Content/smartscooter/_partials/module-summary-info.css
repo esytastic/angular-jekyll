@@ -1,0 +1,179 @@
+/* ====================================
+   Site colors
+   ==================================== */
+/*
+   Brand colors
+   ====================================
+   White / Light Gray = Fresh and Clean Charcoal / Gray / Dark Gray = Bold and Direct Rich Blue = Performance
+   Blue = Experience
+   Teal = Style
+   Dark Green = Value
+   Green = Eco / Environment
+   Hot Green = Community
+   Red = Warning
+*/
+/* ====================================
+ * Mixins and functions
+ * ==================================== */
+/* Media queries
+ * ==================================== */
+/* Usage: @include breakpoint(sm) {} */
+/* Mixins and functions
+ * ==================================== */
+/* Usage: @include linearGradient() {} */
+/* Usage: @include placeholder() {} */
+/* Usage: @include border-radius(5px) */
+/* Usage: @include opacity(0.8) */
+/* Usage: @include center-block */
+/* Usage: @include text-truncate  */
+/* Extends
+ * ==================================== */
+/* Variables
+ * ==================================== */
+/* Mixins and functions
+ * ==================================== */
+.module-summary-info {
+    position: relative;
+    background: #0069d2;
+    overflow: hidden;
+    padding: 48px 0;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .module-summary-info {
+        padding: 48px 0 60px;
+    }
+}
+
+@media (max-width: 767px) {
+    .module-summary-info {
+        padding: 48px 0 60px;
+    }
+}
+
+.module-summary-info .container {
+    padding: 0;
+}
+
+.module-summary-info .row {
+    height: 100%;
+}
+
+.module-summary-info .row .col-md-4 {
+    height: 100%;
+}
+
+.module-summary-info .row .col-md-4:first-child {
+    border-left: 0;
+}
+
+.module-summary-info .row .col-md-4:last-child {
+    border-right: 0;
+}
+
+.module-summary-info .row .col-md-4 .title {
+    opacity: 0;
+    position: relative;
+    height: 24px;
+    font-family: "graphik-extra-light", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 32px;
+    line-height: 1;
+    text-align: center;
+}
+html[lang=zh-TW] .module-summary-info .row .col-md-4 .title { 
+    font-family: 'xingothic-w3', 'Microsoft JhengHei','STHeiti'; 
+}
+
+@media (max-width: 767px) {
+    .module-summary-info .row .col-md-4 .title {
+        font-size: 24px;
+    }
+}
+
+.module-summary-info .row .col-md-4 .body {
+    position: relative;
+    margin-top: 24px;
+    padding: 0 15px;
+    text-align: center;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .module-summary-info .row .col-md-4 .body {
+        margin-top: 24px;
+        padding: 0 25px;
+    }
+}
+
+@media (max-width: 767px) {
+    .module-summary-info .row .col-md-4 .body {
+        margin-top: 24px;
+        padding: 0 25px;
+    }
+}
+
+.module-summary-info .row .col-md-4 .body .big, .module-summary-info .row .col-md-4 .body .small {
+    display: inline-block;
+}
+
+.module-summary-info .row .col-md-4 .body .big {
+    font-family: "flama-semicondensed-ultralight", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 144px;
+    line-height: 0.8;
+}
+
+@media (max-width: 767px) {
+    .module-summary-info .row .col-md-4 .body .big {
+        font-size: 138px;
+    }
+}
+
+.module-summary-info .row .col-md-4 .body .small {
+    margin-left: 10px;
+    font-family: "graphik-semibold", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 18px;
+    text-align: left;
+}
+html[lang=zh-TW] .module-summary-info .row .col-md-4 .body .small { 
+    font-family: 'xingothic-w8', 'Microsoft JhengHei','STHeiti';
+    font-weight: 500; 
+}
+
+
+.module-summary-info .row .col-md-4 .body .small sup {
+    position: relative;
+    vertical-align: top;
+    font-size: 9px;
+    line-height: 27px;
+}
+
+.module-summary-info .row .col-md-4 .description {
+    font-family: "graphik-light", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 16px;
+    margin-top: 24px;
+    padding: 0 15px;
+    text-align: center;
+}
+html[lang=zh-TW] .module-summary-info .row .col-md-4 .description { 
+    font-family: 'xingothic-w3', 'Microsoft JhengHei','STHeiti'; 
+}
+
+@media (max-width: 767px) {
+    .module-summary-info .row .col-md-4 .description {
+        padding: 0 25px;
+        margin-top: 24px;
+    }
+}
+
+.module-summary-info .slick-dots {
+    position: absolute;
+    bottom: -36px;
+    margin: 0;
+}

@@ -1,0 +1,17 @@
+﻿<div class="gogoro-gallery">
+    <div class="picture-outter max-height">
+        <div class="picture-inner max-height">
+            <div class="picture picture--bottom"
+                 ng-style="{'background-image':'url('+nexDisplayImage+')'}">
+            </div>
+            <div class="picture picture--top"
+                 ng-style="{'background-image':'url('+currentDisplayImage+')'}">
+            </div>
+        </div>
+    </div>
+    <ul class="thumbnail-container">
+        <li ng-repeat="picture in pictures track by $index">
+            <a ng-class="{'active':$index === selectedIndex}" ng-click="showPicture($index);$event.preventDefault();" class="link-thumbnail" href="#"><img ng-src="{{picture[picturesName]}}" /></a>
+        </li>
+    </ul>
+</div>

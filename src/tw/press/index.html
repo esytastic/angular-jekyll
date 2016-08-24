@@ -1,0 +1,56 @@
+---
+meta: |
+    <title>新聞稿-Gogoro 第一且唯一 Smartscooter™ 智慧雙輪</title>
+    <meta name="keywords" content="gogoro,smartscooter,機車,電動機車,智慧雙輪,電池,睿能,睿能創意">
+    <meta name="description" content="我們是 Gogoro，透過網路和科技的力量，打造 Smartscooter™ 智慧雙輪以及 GoStation® 電池交換站，改變能源使用的經驗，將全球大型都會逐步轉型為智慧城市。">
+    <meta name="application-name" content="新聞稿-Gogoro 第一且唯一 Smartscooter™ 智慧雙輪" />
+    <meta name="msapplication-TileColor" content="#61399D" />
+    <meta name="msapplication-TileImage" content="http://www.gogoro.com/favicon.ico" />
+    <meta property="og:title" content="新聞稿-Gogoro 第一且唯一 Smartscooter™ 智慧雙輪" />
+    <meta property="og:type" content='website' />
+    <meta property="og:url" content="http://www.gogoro.com/tw/press" />
+    <meta property="og:description" content="我們是 Gogoro，透過網路和科技的力量，打造 Smartscooter™ 智慧雙輪以及 GoStation® 電池交換站，改變能源使用的經驗，將全球大型都會逐步轉型為智慧城市。" />
+    <meta property="og:image" content="http://images.gogoroapp.com/share/website_thumbnail_1024.jpg" />
+    <meta property="og:site_name" content="Gogoro" />
+style: |
+    <link rel="stylesheet" href="/css/press.css">
+scripts: |
+    <script src="/js/press.js"></script>
+layout: zh-tw/LayoutMaster
+action: index
+---
+
+<div class="pg-press" data-state="Press">
+    <section id="hero-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">
+                    <h1>Press</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {% include zh-tw/PressSmallSizesMenuPartial.html %}
+
+    <section class="main-section" data-state="Press">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-md-offset-0 col-sm-10 col-sm-offset-1 hidden-sm hidden-xs press-sidebar">
+                    {% include zh-tw/PressLargeSizesMenuPartial.html %}
+                </div>
+
+                <div class="col-md-7 col-md-offset-0 col-xs-12 press-main">
+                    {% for post in site.data['zh-tw'].press %}
+                        <article>
+                            <p><strong>{{ post.date }}</strong></p>
+                            <h2>{{ post.title }}</h2>
+                            <p>{{ post.description }}</p>
+                            <p><a href="{{ post.url }}" class="btn btn-text-gray angle-right">進一步閱覽</a></p>
+                        </article>
+                    {% endfor %}
+                </div><!--/.col-md-7 -->
+            </div><!--/.row -->
+        </div><!--/.container -->
+    </section><!--/.main-section -->
+</div>

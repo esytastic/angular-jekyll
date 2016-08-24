@@ -1,0 +1,139 @@
+﻿#career .career__light-and-bright{
+    position:relative;
+    height:600px;
+    background-color:#ffffff;
+
+    overflow:hidden;
+}
+#career .career__light-and-bright .container-fluid{
+    position:relative;
+    height:100%;
+}
+
+#career .career__light-and-bright .container-fluid .image-container{
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    height:100%;
+    width:100%;
+}
+#career .career__light-and-bright .container-fluid .image-container ul{
+    position:relative;
+    list-style:none;
+    height:100%;
+    width:100%;
+    margin:0;
+    padding:0;
+}
+
+#career .career__light-and-bright .container-fluid .image-container ul li{
+    float:left;
+    height:100%;
+    width:100%;
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position:center;
+    cursor:pointer;
+}
+#career .career__light-and-bright .container-fluid .image-container ul li.s1{
+    background: url(//images.gogoroapp.com/career/bgd-careersite-way03.jpg) center;
+}
+#career .career__light-and-bright .container-fluid .image-container ul li.s2{
+    background: url(//images.gogoroapp.com/career/bgd-careersite-way02.jpg) center;
+}
+#career .career__light-and-bright .container-fluid .image-container ul li.s3{
+    background: url(//images.gogoroapp.com/career/bgd-careersite-way04.jpg) center;
+}
+#career .career__light-and-bright .container-fluid .image-container ul li.s4{
+    background: url(//images.gogoroapp.com/career/bgd-careersite-way00.jpg) center;
+}
+#career .career__light-and-bright .container-fluid .image-container ul li.s5{
+    background: url(//images.gogoroapp.com/career/bgd-careersite-way01.jpg) center;
+}
+/*#career .career__light-and-bright .container-fluid .image-container ul li:nth-child(1){
+    background: url(/img/career/light-and-bright-bg-lg.jpg);
+}*/
+
+#career .career__light-and-bright .container-fluid .image-container ul li .text-container{
+    position:relative;
+    top:237px;
+    left:20%;
+    color:#ffffff;
+    width:500px;
+    height:250px;
+}
+
+#career .career__light-and-bright .container-fluid .image-container ul li .text-container h2{
+    position:absolute;
+    top:0;
+    left:0;
+}
+#career .career__light-and-bright .container-fluid .image-container ul li .text-container h2.zh-tw{
+    color:#e5e5e5;
+}
+#career .career__light-and-bright .container-fluid .image-container ul li .text-container p{
+    position:absolute;
+    top:50px;
+    left:0;    
+}
+
+#career .career__light-and-bright .container-fluid .slick-dots{
+    height:40px;
+    bottom:20px;
+}
+
+#career .career__light-and-bright .container-fluid .slick-dots li button:before {
+    opacity:0.6;
+}
+#career .career__light-and-bright .container-fluid .slick-dots li button:hover:before {
+    color: #fff;
+    opacity:1;
+}
+#career .career__light-and-bright .container-fluid .slick-dots li.slick-active button:before {
+    color: #fff;
+    opacity:1;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+@media (max-width: 767px) {
+    #career .career__light-and-bright{
+        /*height:100%;*/
+    }
+    #career .career__light-and-bright .container-fluid{
+       padding:0;
+    }
+
+    #career .career__light-and-bright .container-fluid .image-container ul li.s1{
+    background: url(//images.gogoroapp.com/career/bgd-module-careersite-way03.jpg) center;
+    }
+    #career .career__light-and-bright .container-fluid .image-container ul li.s2{
+        background: url(//images.gogoroapp.com/career/bgd-module-careersite-way02.jpg) center;
+    }
+    #career .career__light-and-bright .container-fluid .image-container ul li.s3{
+        background: url(//images.gogoroapp.com/career/bgd-module-careersite-way04.jpg) center;
+    }
+    #career .career__light-and-bright .container-fluid .image-container ul li.s4{
+        background: url(//images.gogoroapp.com/career/bgd-module-careersite-way00.jpg) center;
+    }
+    #career .career__light-and-bright .container-fluid .image-container ul li.s5{
+        background: url(//images.gogoroapp.com/career/bgd-module-careersite-way01.jpg) center;
+    }
+
+
+    #career .career__light-and-bright .container-fluid .image-container ul li .text-container{
+        top:137px;
+        left:0;
+        width:100%;
+    }
+    #career .career__light-and-bright .container-fluid .image-container ul li .text-container h2,
+    #career .career__light-and-bright .container-fluid .image-container ul li .text-container p
+    {
+        padding-left:15px;
+        padding-right:15px;
+        text-align:left;
+    }
+}

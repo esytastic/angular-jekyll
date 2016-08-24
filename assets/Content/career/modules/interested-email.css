@@ -1,0 +1,36 @@
+﻿#career .career__interested-email{
+    position: relative;
+    height:570px;
+    background-color:#F1F3F3;
+}
+
+#career .career__interested-email .container{
+  height:100%;
+}
+
+#career .career__interested-email .container .statement .statement_container{
+    text-align:center;
+}
+#career .career__interested-email .container .statement .statement_container h2{
+   color:#535357;
+}
+#career .career__interested-email .container .statement .statement_container a{
+   font-family: 'graphik-semibold';
+   color: #00d7ff;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    #career .career__interested-email{
+        height:100%;
+        padding-top:50px;
+        padding-bottom:50px;
+    }
+}
+
+@media (max-width: 767px) {
+    #career .career__interested-email{
+        height:100%;
+        padding-top:50px;
+        padding-bottom:50px;
+    }
+}

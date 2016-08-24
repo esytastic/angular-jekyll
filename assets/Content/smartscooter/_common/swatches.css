@@ -1,0 +1,58 @@
+/* ====================================
+   Site colors
+   ==================================== */
+/*
+   Brand colors
+   ====================================
+   White / Light Gray = Fresh and Clean Charcoal / Gray / Dark Gray = Bold and Direct Rich Blue = Performance
+   Blue = Experience
+   Teal = Style
+   Dark Green = Value
+   Green = Eco / Environment
+   Hot Green = Community
+   Red = Warning
+*/
+.swatch-white {
+  background-color: #fff; }
+
+.swatch-light-gray {
+  background-color: #f1f3f3; }
+
+.swatch-gray {
+  background-color: #b9bcbf; }
+
+.swatch-dark-gray {
+  background-color: #737d82; }
+
+.swatch-light-charcoal {
+  background-color: #c1c1c3; }
+
+.swatch-charcoal {
+  background-color: #323237; }
+
+.swatch-blue {
+  background-color: #00d7ff; }
+
+.swatch-rich-blue {
+  background-color: #0069d2; }
+
+.swatch-dark-blue {
+  background-color: #24586e; }
+
+.swatch-midnight {
+  background-color: #112f3b; }
+
+.swatch-hot-green {
+  background-color: #e1ff32; }
+
+.swatch-green {
+  background-color: #c0df16; }
+
+.swatch-teal {
+  background-color: #28e1a5; }
+
+.swatch-dark-green {
+  background-color: #00b946; }
+
+.swatch-red {
+  background-color: #ff1923; }

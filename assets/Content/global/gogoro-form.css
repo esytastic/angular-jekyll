@@ -1,0 +1,151 @@
+﻿/* Gogoro Select
+* ==================================== */
+/* select
+    <span class="gogoro-select" >
+        <select>
+            <option>Mustard Mustard Mustard</option>
+            <option>Ketchup</option>
+        </select>
+        <span class="icon-arrow-up"></span>
+    </span>
+ * ==================================== */
+.gogoro-select{
+    position: relative;
+    display: inline-block;
+    font-family: 'Microsoft JhengHei','STHeiti';
+    font-weight: 300;
+    font-style: normal;
+    font-size: 16px;
+    font-size: 1.6rem;
+    background-color: #f1f3f3;
+    border-radius: 30px;
+    padding: 6px 15px;
+    color:#323237;
+    border:0;
+    cursor: pointer;
+    margin-top:8px;
+    border: 2px solid #f1f3f3;
+}
+
+.gogoro-select.gogoro-select--white{
+    background-color: #fff;
+}
+
+
+/*html[lang=zh-TW] .gogoro-select {
+    font-family: 'xingothic-w8', 'Microsoft JhengHei','STHeiti';
+    font-weight: 500;
+}*/
+/* \e606 : arrow-down */
+/* \e608 : arrow-up */
+.gogoro-select:before{
+    font-family: 'gogoro-icons';
+    content: "\e606";
+    position: absolute;
+    top:9px;
+    right:20px;
+    display: inline-block;
+    font-size: 17px;
+    color:#323237;
+    font-weight: 700;
+     pointer-events: none;
+}
+
+.gogoro-select.active:before{
+    content: "\e608";
+}
+
+.gogoro-select.disabled:before{
+    color:#b9bcbf;
+}
+.gogoro-select.active.disabled:before{
+    content: "\e606";
+}
+
+.gogoro-select span[class^="icon-arrow"]{
+    position: absolute;
+    top:15px;
+    right:20px;
+    display: inline-block;
+    font-size: 17px;
+    color:#323237;
+    font-weight: 700;
+}
+
+.gogoro-select select{
+
+    cursor: pointer;
+    padding:3px 30px 3px 5px;
+    border:0;
+    background-color: #f1f3f3;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+}
+
+.gogoro-select select:disabled{
+    color: #b9bcbf;
+}
+
+.gogoro-select.gogoro-select--white select{
+    background-color: #fff;
+}
+
+.gogoro-select.gogoro-select--100{
+    display:block;
+}
+.gogoro-select.gogoro-select--100 select{
+    width:100%;
+}
+
+.gogoro-select select::-ms-expand{
+    display: none;
+}
+
+.gogoro-select select:focus{
+    outline: none;
+}
+
+.gogoro-select select option{
+    color: #646368;
+    color: #323237;
+    font-family: 'Microsoft JhengHei','STHeiti' !important;
+}
+.gogoro-select select option:disabled{
+    color: #b9bcbf;
+    -webkit-text-fill-color: rgba(185, 189, 191, 1); 
+    -webkit-opacity: 1; 
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+}
+
+@media (max-width: 767px) {
+    .gogoro-select.gogoro-select--xs-100{
+        display:block;
+    }
+    .gogoro-select.gogoro-select--xs-100 select{
+        width:100%;
+    }
+
+}
+
+
+/* Using bootstrap form validation class
+* ==================================== */
+.has-error .gogoro-select{
+  border-color: #e34232;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+
+
+/* over write awesome-bootstrap.css
+* ==================================== */
+.radio input[type="radio"] {
+    margin-top: 5px;
+}

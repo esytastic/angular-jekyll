@@ -1,0 +1,114 @@
+/* ====================================
+   Site colors
+   ==================================== */
+/*
+   Brand colors
+   ====================================
+   White / Light Gray = Fresh and Clean Charcoal / Gray / Dark Gray = Bold and Direct Rich Blue = Performance
+   Blue = Experience
+   Teal = Style
+   Dark Green = Value
+   Green = Eco / Environment
+   Hot Green = Community
+   Red = Warning
+*/
+/* ====================================
+ * Mixins and functions
+ * ==================================== */
+/* Media queries
+ * ==================================== */
+/* Usage: @include breakpoint(sm) {} */
+/* Mixins and functions
+ * ==================================== */
+/* Usage: @include linearGradient() {} */
+/* Usage: @include placeholder() {} */
+/* Usage: @include border-radius(5px) */
+/* Usage: @include opacity(0.8) */
+/* Usage: @include center-block */
+/* Usage: @include text-truncate  */
+/* Extends
+ * ==================================== */
+/* Variables
+ * ==================================== */
+/* Mixins and functions
+ * ==================================== */
+body.main-header-fixed {
+  padding-top: 52px; }
+
+.module-energy-1-page-intro.standard .title-wrapper, .module-energy-1-page-intro.standard .background-image-standard {
+  display: block; }
+.module-energy-1-page-intro.standard .background-image-fallback {
+  display: none; }
+.module-energy-1-page-intro.fallback .title-wrapper, .module-energy-1-page-intro.fallback .background-image-standard {
+  display: none; }
+.module-energy-1-page-intro.fallback .background-image-fallback {
+  display: block; }
+@media (min-width: 768px) and (max-width: 991px) {
+  .module-energy-1-page-intro .container {
+    padding: 0; } }
+@media (max-width: 767px) {
+  .module-energy-1-page-intro .container {
+    padding: 0; } }
+.module-energy-1-page-intro .title-wrapper svg .kmh {
+  font-family: "graphik-extra-light", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 200;
+  font-style: normal; }
+.module-energy-1-page-intro .title-wrapper svg {
+  left: -25px; }
+  @media (max-width: 767px) {
+    .module-energy-1-page-intro .title-wrapper svg {
+      left: 50%;
+      margin-left: -192px; } }
+.module-energy-1-page-intro .kmh {
+  font-family: "graphik-semibold", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 600;
+  font-style: normal; }
+  .module-energy-1-page-intro .kmh .text {
+    display: block; }
+.module-energy-1-page-intro .sec {
+  font-family: "graphik-light", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
+  font-style: normal; }
+
+#module-energy-1-page-intro .body {
+	margin: 0 10%;
+    width: 80%;
+    bottom: inherit;
+}
+#module-energy-1-page-intro.fallback .body {
+	margin: 0 5%;
+    width: 90%;
+    bottom: inherit;
+    top: 70px;
+}
+
+#module-energy-1-page-intro h2 {
+    font-size: 6.4rem;
+}
+#module-energy-1-page-intro.fallback h2 {
+    font-size: 4rem;
+}
+
+
+.module-energy-1-page-intro {
+	background-image: url(/img/gen/landing/Gen_banner.png);
+	background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.module-energy-1-page-intro.fallback {
+	background-image: url(/img/gen/landing/Gen_banner_fallback.png);
+    height: 550px;
+}
+.module-energy-1-page-intro img.center {
+	width: 390px;
+	margin: 20px;
+}
+.module-energy-1-page-intro.fallback img.center {
+	width: 200px;
+	margin: 20px;
+}
+.module-energy-1-page-intro.standard p {
+    width: 75%;
+    margin: 0 auto;
+}

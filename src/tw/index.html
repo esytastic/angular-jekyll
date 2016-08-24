@@ -1,0 +1,88 @@
+---
+style: |
+    <link rel="stylesheet" href="/css/home/index.css">
+layout: zh-tw/LayoutMaster
+home: true
+---
+
+<div id="jumbotron" ng-controller="JumbotronController">
+	<style>
+        @media (min-width: 1441px) {
+            #jumbotron .jumbotron-container .banner:nth-child(2) {
+                background-position: -10vh;
+                background-size: 80vw auto;
+            }
+
+            #jumbotron .jumbotron-container .banner:nth-child(3) {
+                background-image: url(//images.gogoroapp.com/home/meetgogoro_hero_01s_l.jpg);
+            }
+        }
+
+        @media (min-width: 1200px) and (max-width: 1440px) {
+            #jumbotron .jumbotron-container .banner:nth-child(3) {
+                background-image: url(//images.gogoroapp.com/home/meetgogoro_hero_01s_m.jpg);
+            }
+        }
+    </style>
+
+    <div class="jumbotron-container">
+        <div class="banner open">
+            <div class="container">
+                <div class="toolbar toolbar--center">
+                    <h2>成為下一個智慧城市</h2>
+                    <p>加入 Gogoro® 能源網路共享計畫</p>
+                    <button class="btn btn-solid-rich-blue" ng-click="bannerRedirect('/tw/open')">即刻報名</button>
+                </div>
+            </div>
+        </div>
+        <div class="banner go-charger">
+            <div class="container">
+                <div class="toolbar toolbar--center">
+                    <h2>GoCharger<span class="tm">&trade;</span></h2>
+                    <p>快速、智慧、共享的充電模式</p>
+                    <button class="btn btn-solid-rich-blue" ng-click="bannerRedirect('/tw/gocharger')">瞭解更多</button>
+                </div>
+            </div>
+        </div>
+        <div class="banner">
+            <img src="//images.gogoroapp.com/home/allYou_1018_fallback_land.jpg" class="hidden-xs hidden-sm hidden-lg" />
+            <img src="//images.gogoroapp.com/home/allYou_1018_fallback_port.jpg" class="hidden-md hidden-lg" />
+            <div class="container">
+                <div class="toolbar toolbar--bottom">
+                    <button class="btn btn-outline btn-allyou" ng-click="bannerRedirect('http://www.gogoro.com/tw/smartscooter/faster')">瞭解更多</button>
+                </div>
+            </div>
+        </div>
+    </div><!-- ./ jumbotron-container -->
+
+    <footer id="home-footer">
+        <div class="container">
+            <div class="layout-table">
+                <div class="layout-row">
+                    <div class="layout-cell vmiddle">
+                        <div style="padding-top: 12px;">
+                            <a href="{{$root.gogoro.wwwGogoroUrl}}about">關於我們</a>
+                            <a href="{{$root.gogoro.wwwGogoroUrl}}press">媒體專區</a>
+                            <a href="{{$root.gogoro.wwwGogoroUrl}}career">人才招募</a>
+                            <a href="{{$root.gogoro.wwwGogoroUrl}}support">技術支援</a>
+                            <a target="_blank" href="http://events.gogoro.com/book-a-ride">預約試騎</a>
+                            <a class="text-link" target="_blank" href="http://forum.gogoro.com/sso">車主論壇</a>
+                        </div>
+                    </div>
+                    <div class="layout-cell vmiddle text-right">
+                        <span class="copyright">Copyright © 2014-2016 Gogoro Inc.著作權所有，並保留一切權利。</span>
+                        <span class="general-links"><a href="{{$root.gogoro.wwwGogoroUrl}}terms-of-use">使用條款</a>  <a href="{{$root.gogoro.wwwGogoroUrl}}privacy-policy">隱私權政策</a></span>
+                        <span class="gogoro-select" gogoro-select>
+                            <select ng-model="selectedlanguage"
+                                    ng-change="languageRedirect()"
+                                    ng-options="l.name for l in languages">
+                                <option value="">語言</option>
+                            </select>
+                        </span>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div><!-- #/ jumbotron -->

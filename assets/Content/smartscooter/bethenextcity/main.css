@@ -1,0 +1,147 @@
+img { 
+	width: auto; height: auto;
+}
+
+.module-bethenext-1-intro {
+	background-image: url( "/img/scooter/bethenext/landing-hero-0109.jpg");
+	background-size: cover;
+	background-position: center center;
+}
+
+.module-page-intro .body {
+	margin: 0 0;
+	width: 100%;
+}
+
+.module-bethenext-1-intro img {
+	width: auto;
+	height: auto;
+}
+
+.module-bethenext-1-intro h2 {
+	margin-top: 57px;
+	line-height: 1;
+
+	font-family: "flama-condensed-bold";
+
+	font-size: 80px;
+	color: #ffffff;
+
+	text-transform: uppercase;
+}
+
+.module-bethenext-1-intro p {
+	margin-top: 34px;
+	line-height: 1;
+
+	font-size: 18px;
+	font-family: "graphik-semibold";
+	letter-spacing: 0;
+	color: #ffffff;
+}
+
+.module-bethenext-1-intro a#open-form {
+	margin-top: 98px;
+
+	font-size: 18px;
+	font-family: "graphik-black-italic";
+
+	letter-spacing: 2px;
+}
+
+@media ( max-width: 767px ) {
+	div.body {
+		bottom: initial !important;
+	}
+
+	.module-bethenext-1-intro img { 
+		width: 55px;
+		height: 46px;
+		margin-top: 20px;
+	}
+
+	.module-bethenext-1-intro h2 {
+		font-size: 56px;
+		line-height: 49px;
+		letter-spacing: 1px;
+
+		margin-top: 23px;
+	}
+
+	.module-bethenext-1-intro p {
+		margin-top: 26px;
+
+		font-size: 17px;
+		line-height: 16px;
+		letter-spacing: 1px;
+	}
+
+	.module-bethenext-1-intro a#open-form {
+		font-size: 15px;
+		line-height: 15px;
+		letter-spacing: 1px;
+
+		margin-top: 47px;
+	}
+}
+
+.overlay {
+	background-color: rgba(0,0,0,0.5);
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	z-index: 2000;
+}
+
+.module-bethenext-2-contact {
+	width: 568px;
+
+	margin: 0 auto;
+	margin-top: 140px;
+
+	background-color: #333333;
+
+	color: #ffffff;
+
+	padding-bottom: 84px;
+	overflow: hidden;
+}
+
+.module-bethenext-2-contact a {
+	color: #ffffff;
+}
+
+.module-bethenext-2-contact img {
+	opacity: 0.3;
+	margin-top: -50px;
+}
+
+.module-bethenext-2-contact h2 {
+	text-align: center;
+
+	margin-top: -160px;
+	margin-bottom: 55px;
+}
+
+.module-bethenext-2-contact form {
+	padding-left: 84px;
+	padding-right: 84px;
+}
+
+.module-bethenext-2-contact input {
+	background-color: rgba(255,255,255,0.2);
+	border: none !important;
+	color: #ffffff;
+}
+
+.module-bethenext-2-contact input.pillar {
+	border-radius: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.module-bethenext-2-contact input[type="checkbox"] {
+	margin: 0 8px 8px 0;
+}

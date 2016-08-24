@@ -1,0 +1,39 @@
+{
+  "name": "ggr-web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "clean": "gulp clean",
+    "build": "npm run clean && gulp build --production && jekyll build",
+    "build-dev": "npm run clean && gulp build && jekyll build",
+    "serve": "npm run build-dev && (gulp watch & jekyll serve)",
+    "start": "npm run serve",
+    "deploy": "npm run build && node deploy.js",
+    "staging-deploy": "npm run deploy staging",
+    "production-deploy": "npm run deploy production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:roamandwander/GGRweb.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://github.com/roamandwander/GGRweb",
+  "devDependencies": {
+    "async": "^1.5.2",
+    "aws-sdk": "^2.2.26",
+    "del": "^2.2.0",
+    "glob": "^6.0.3",
+    "gulp": "^3.9.0",
+    "gulp-changed": "^1.3.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-if": "^2.0.0",
+    "gulp-minify-css": "^1.2.2",
+    "gulp-newer": "^1.1.0",
+    "gulp-uglify": "^1.5.1",
+    "merge-stream": "^1.0.0",
+    "mime": "^1.3.4",
+    "yargs": "^3.31.0"
+  }
+}

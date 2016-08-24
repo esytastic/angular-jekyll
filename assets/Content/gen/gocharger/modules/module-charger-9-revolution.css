@@ -1,0 +1,26 @@
+.module-charger-9-revolution {
+	height: 400px;
+	background: #28e1a5;
+	text-align: center;
+	color: #fff;
+}
+.module-charger-9-revolution .statement_container {
+	position: relative;
+}
+.module-charger-9-revolution.fallback .statement_container {
+	position: relative;
+	top: 0px;
+}
+.module-charger-9-revolution.fallback {
+	height: 170px;
+	background: #28e1a5;
+	text-align: center;
+	color: #fff;
+}
+.module-charger-9-revolution.fallback h2 {
+	margin-bottom: 5px;
+}
+
+.module-charger-9-revolution .container {
+	height: 100%;
+}

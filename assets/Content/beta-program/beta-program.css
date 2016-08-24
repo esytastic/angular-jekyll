@@ -1,0 +1,490 @@
+﻿
+.m-signature-pad--body canvas {
+     border:2px solid #F1F3F3;
+}
+
+/*騎士團*/
+.grey {
+    color:#c1c1c3;
+}
+
+
+ @media (min-width: 1120px) {
+ #seven_secs .weekend-ride .beta-program-main p, 
+ #seven_secs .weekend-ride .beta-program-main h3, 
+ #seven_secs .weekend-ride .beta-program-main li ,
+ #seven_secs .weekend-ride .beta-program-main h2{
+    text-align: left;
+
+}
+
+}
+
+
+@media (min-width: 992px) and (max-width: 1199px) {
+     #seven_secs .weekend-ride .beta-program-main p, 
+ #seven_secs .weekend-ride .beta-program-main h3, 
+ #seven_secs .weekend-ride .beta-program-main li ,
+ #seven_secs .weekend-ride .beta-program-main h2{
+    text-align: left;
+
+}
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    #seven_secs  .weekend-ride .beta-program-main p, 
+#seven_secs  .weekend-ride .beta-program-main h3, 
+#seven_secs  .weekend-ride .beta-program-main li ,
+#seven_secs  .weekend-ride .beta-program-main h2{
+    text-align: left;
+
+}
+
+
+}
+
+
+@media (max-width: 767px) {
+  #seven_secs    .weekend-ride .beta-program-main p, 
+ #seven_secs .weekend-ride .beta-program-main h3, 
+#seven_secs  .weekend-ride .beta-program-main li ,
+#seven_secs  .weekend-ride .beta-program-main h2{
+    text-align: left;
+
+}
+
+}
+
+
+
+
+@media (max-width: 1240px) and (min-width: 576px) {
+   .pg-weekend-ride  .beta-program-header {
+        background:none;
+    }
+}
+
+
+
+   @media (min-width: 768px) and (max-width: 991px) {
+     #seven_secs  .beta-program-header {
+    margin-top:0px;
+}
+    }
+
+
+@media (max-width: 767px) {
+     #seven_secs  .beta-program-header {
+    margin-top:0px;
+}
+}
+
+
+
+  .weekend-ride .beta-program-main p, 
+
+ .weekend-ride .beta-program-main li ,
+ .weekend-ride .beta-program-main h2{
+    text-align: left;
+    font-family: 'Graphik-light','xingothic-w3';
+}
+#seven_secs .weekend-ride .actions {
+    text-align:center;
+}
+
+@media (min-width: 992px){
+    #seven_secs .main-section .beta-program-header {
+        background: url(//images.gogoroapp.com/campaign/banner_joyful_0821.jpg) center no-repeat;
+        background-size: 800px initial;
+    }
+}
+
+/*hubspot form*/
+    .pg-intstore h2 {
+        font-family: 'Graphik-light','xingothic-w3';
+    }
+        .hubspot-form .actions {
+        text-align: center;
+    }
+
+
+
+   @media (min-width: 768px) and (max-width: 991px) {
+      .hubspot-form .btn {
+        padding:18px 24px;
+        font-size:1.8rem;
+    }
+    }
+
+
+@media (max-width: 767px) {
+     .hubspot-form .btn {
+        padding:18px 24px;
+        font-size:1.8rem;
+    }
+}
+
+#seven_secs .container .hs_privacy_terms_conditions{
+    height:50px;
+}
+.hubspot-form .hs-form-booleancheckbox {
+    text-align:left;
+}
+.hubspot-form .hs-form-booleancheckbox {
+    list-style-type:none;
+}
+
+.hubspot-form ul.inputs-list {
+    padding:0px;
+    margin:0px;
+}
+
+.hubspot-form .hs-form-booleancheckbox-display input.hs-input {
+    width:initial !important;
+    height:10px;
+}
+
+
+
+
+
+.hubspot-form .hs-form-booleancheckbox-display {
+    
+}
+
+
+
+#hubspot_conditioans {
+    height:200px;
+    overflow:auto;  
+       border: 2px solid #F1F3F3;
+       
+}
+
+ @media (min-width: 768px) and (max-width: 991px) {
+
+
+  }
+
+ 
+#hubspot_conditioans h2,
+#hubspot_conditioans h3,
+#hubspot_conditioans p, 
+#hubspot_conditioans li, 
+#hubspot_conditioans ol, 
+#hubspot_conditioans ul {
+    text-align:left;
+    font-size:1rem;
+    }
+
+/*7秒*/
+@media (min-width: 992px){
+    #seven_secs  #seven {
+        background: url(//images.gogoroapp.com/campaign/7sec-challenge_2.jpg) center no-repeat;
+        background-size: 800px initial;
+    }
+}
+
+#seven_secs .beta-program-header h2 {
+    color:#0074d7;
+}
+
+#seven_secs h2,#seven_secs p{
+     font-family:'Graphik-light','xingothic-w3', 'Microsoft JhengHei','STHeiti';
+}
+
+#seven_secs .hs-form-field {
+    height:105px;
+}
+
+    #seven_secs .hs-form-field label {
+        font-family:'xingothic-w8', 'Microsoft JhengHei','STHeiti';
+        font-weight:500;
+       font-size:1.4rem;
+    }
+
+#seven_secs .actions {
+   max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:20px;
+}
+
+  #seven_secs    input.hs-input {
+            border-radius: 0;
+            background-clip: padding-box;
+            border-color: #c1c1c3;
+            color: #323237;
+            box-shadow: none;
+            height: 40px;
+            border: 2px solid #F1F3F3;
+            width: 100%;
+            font-size:1.5rem;
+            padding-left:10px;
+                     padding-right:10px;Zzzasㄇ
+        }
+
+    #seven_secs input.hs-input:focus {
+         border-color: #323237;
+         outline:none;
+    }
+
+
+#seven_secs .suscription_errorMessage {
+    margin-top:0px;
+    color:#a94442;
+      font-size:1.2rem;
+        list-style-type:none;
+        padding-left:2px;
+}
+
+    #seven_secs .suscription_errorMessage ul {
+      
+      
+    }
+
+ @media (min-width: 768px) and (max-width: 991px) {
+   
+     #seven_secs  h3,
+          #seven_secs  p{
+              text-align:center;
+        }
+
+            #seven_secs .hbspt-form{
+              text-align:left;
+        }
+        
+    }
+
+
+@media (max-width: 767px) {
+    #seven_secs .beta-program-header img {
+        width:100%;
+    }
+
+    #seven_secs .beta-program-header {
+       background:none;
+       height:initial;
+    }
+
+          #seven_secs  h3,
+          #seven_secs  p{
+              text-align:center;
+        }
+
+            #seven_secs .hbspt-form{
+              text-align:left;
+        }
+}
+
+
+#seven_secs .hs-form fieldset {
+    margin-left:auto;
+    margin-right:auto;
+}
+
+/*揪團*/
+
+
+
+#group_test_ride h2,#group_test_ride p{
+     font-family:'Graphik-light','xingothic-w3', 'Microsoft JhengHei','STHeiti';
+    
+}
+
+
+    #group_test_ride .beta-program-header {
+        /*background: url(//images.gogoroapp.com/campaign/_GMC994722_0810.jpg) center no-repeat;*/
+           background: none;
+        background-size:  800px initial;
+        height:initial;
+     
+
+    }
+
+#group_test_ride .ss-base-body {
+    background-color:#fff;
+    background:none;
+}
+
+#group_test_ride .beta-program-header h2 {
+    color:#0074d7;
+}
+
+
+
+    @media (min-width: 768px) and (max-width: 991px) {
+        #group_test_ride .beta-program-header {
+                 background: none;
+            background-size: initial 100%;
+               margin-top:0px;
+        }
+        
+    }
+
+
+@media (max-width: 767px) {
+    #group_test_ride .beta-program-header {
+        background: none;
+          background-size:initial 100%;
+             margin-top:0px;
+    }
+}
+
+
+
+
+.beta-program-header {
+    position: relative;
+    height: 800px;
+    width: 100%;
+    background: url(//images.gogoroapp.com/beta-program/GGR-Banner-0327-09.jpg) center no-repeat;
+    background-size: 2560px 800px;
+    margin-top: 80px;
+}
+
+@media (max-width: 991px) {
+    #beta-program-header {
+        margin-top:0px;
+    }
+}
+
+
+    .beta-program-header .content-wrap {
+        width: 600px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -160px;
+        margin-left: -600px;
+        text-align: center;
+        padding-top: 10px;
+    }
+
+        .beta-program-header .content-wrap h2 {
+            font-size: 84px;
+            line-height: 85px;
+            text-align: left;
+            color: #ffffff;
+        }
+
+@media (min-width: 576px) and (max-width: 1240px) {
+    .beta-program-header {
+        height: 800px;
+        background: url(//images.gogoroapp.com/beta-program/GGR-Banner-0327-10.jpg) center no-repeat;
+        background-size: 1241px 1192px;
+    }
+
+        .beta-program-header .content-wrap {
+            position: absolute;
+            top: 400px;
+            left: 20px;
+            width: 400px;
+            margin-top: 0px;
+            margin-left: 0px;
+            text-align: center;
+            padding-top: 10px;
+        }
+
+            .beta-program-header .content-wrap h2 {
+                font-size: 64px;
+                line-height: 65px;
+                text-align: left;
+                color: #ffffff;
+            }
+}
+
+@media (max-width: 576px) {
+    .beta-program-header {
+        height: 576px;
+        background: url(//images.gogoroapp.com/beta-program/GGR-Banner-0327-11.jpg) center no-repeat;
+        background-size: 590px 576px;
+    }
+
+        .beta-program-header .content-wrap {
+            position: absolute;
+            top: 250px;
+            left: 10px;
+            width: 200px;
+            margin-top: 0px;
+            margin-left: 0px;
+            text-align: center;
+            padding-top: 10px;
+        }
+
+            .beta-program-header .content-wrap h2 {
+                font-size: 28px;
+                line-height: 30px;
+                text-align: left;
+                color: #ffffff;
+            }
+
+    .beta-program-header {
+        height: 400px;
+    }
+}
+
+.beta-program-main {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+html[lang=zh-TW] h2.title {
+    font-family: "xingothic-w3";
+    font-size: 4.0rem;
+}
+
+.content-wrap h2 {
+    line-height: 50px;
+    font-size: 44px;
+    margin-top: 70px;
+}
+
+html[lang=zh-TW] .content-wrap h2 {
+    font-family: "xingothic-w3";
+}
+
+
+
+.beta-program-email {
+    width: 100%;
+    background-color: #f1f3f3;
+    text-align: center;
+    margin-top: -30px;
+}
+
+    .beta-program-email h2 {
+        font-size: 4.0rem;
+        color: #000000;
+        margin-top: 10px;
+    }
+
+.beta-program-main p, h3, li ,h2{
+    text-align: center;
+}
+
+html[lang=zh-tw] .beta-program-email h2 {
+    font-family: "xingothic-w3";
+}
+
+.beta-program-email .beta-program-email-main {
+    margin-top: 30px;
+}
+
+html[lang=en-tw]  .beta-program-email-main {
+    margin-top: 30px;
+    height:570px;
+}
+
+html[lang=en-tw]  .beta-program-email-main h2{
+    margin-top: 150px;
+}
+
+section.main-section {
+    padding: 0;
+}
+
+ul.ul01 li {
+    text-align: left;
+}

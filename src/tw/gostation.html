@@ -1,0 +1,187 @@
+---
+action: gostation
+layout: zh-tw/LayoutMaster
+style: |
+    <link rel="stylesheet" href="/css/career.css">
+    <link rel="stylesheet" href="/css/smartscooter/easier.css">
+    <link rel="stylesheet" href="/css/Gostation.css">
+scripts: |
+    <script src="/js/career.js"></script>
+    <script src="/js/smartscooter/easier.js"></script>
+    <script>
+        var vm_api_url = "https://wapi.gogoro.com/tw/api/vm/list";
+        var address_api_url = "/Scripts/_json/address_option.json";
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places"></script>
+    <script src="/js/Gostation.js"></script>
+meta: |
+    <meta name="keywords" content="gogoro , smartscooter , scooter , energy  , battery">
+    <meta name="description" content="Founded in 2011, Gogoro is putting energy into things that matter. With a mission to deliver consumer innovations that will improve how the world’s most populated cities distribute and utilize energy, the company is enabling the transformation of megacities into smart cities. Gogoro is working toward a better future by putting power in the hands of everyone – to move us all forward, faster.">
+    <meta name="application-name" content="Gogoro - Introducing the world's first and only Smartscooter™" />
+    <meta name="msapplication-TileColor" content="#61399D" />
+    <meta name="msapplication-TileImage" content="http://www.gogoro.com/favicon.ico" />
+    <!-- Facebook meta tags -->
+    <meta property="og:title" content="Gogoro - Introducing the world's first and only Smartscooter™" />
+    <meta property="og:type" content='website' />
+    <meta property="og:url" content="http://www.gogoro.com/" />
+    <meta property="og:description" content="Founded in 2011, Gogoro is putting energy into things that matter. With a mission to deliver consumer innovations that will improve how the world’s most populated cities distribute and utilize energy, the company is enabling the transformation of megacities into smart cities. Gogoro is working toward a better future by putting power in the hands of everyone – to move us all forward, faster." />
+    <meta property="og:image" content="//images.gogoroapp.com/share/website_thumbnail_1024.jpg" />
+    <meta property="og:site_name" content="Gogoro - Introducing the world's first and only Smartscooter™" />
+---
+
+<div id="career" ng-controller="CareerController" class="goStaionMain">
+
+    <div class="module-gostation-1-intro">
+        <div class="fallback hidden-md hidden-lg hidden-sm">
+            <img src="/img/gen/gostation/bgd_module_gostation_fallback.jpg" alt="GoStation">
+            <div class="body">
+            <h2><span class="graphik-extra-light">GoStation</span>&reg;</h2>
+            	<p>操作簡單、輕鬆上手，廣佈於城市中人口密集的區域，<span class="graphik-light">GoStation®</span> 電池交換站點提供24小時全天無限次數的電池交換。</p>
+            </div>
+        </div>
+        <div class="standard hidden-xs">
+            <div class="body">
+            	<h2><span class="graphik-extra-light">GoStation®</span></h2>
+            	<p>操作簡單、輕鬆上手，廣佈於城市中人口密集的區域，<span class="graphik-light">GoStation®</span> 電池交換站點提供24小時全天無限次數的電池交換。</p>
+                <br/>
+                <a id="find-gostation" href="#" class="btn position zh-tw btn-solid-rich-blue">尋找<span class="graphik-black-italic"><span class="graphik-black-italic">GoStation</span></span></a>
+            </div>
+        </div>
+        <div class="module-page-intro hide" style="height: 880px"></div>
+    </div>
+
+    {% include zh-tw/GENTabbar.html %}
+
+    <div class="module-easier-5-swap-and-go module-video" ng-controller="moduleEasier5SwapAndGoController">
+        <img src="//images.gogoroapp.com/gostation/GoStation_fallback_02_0715.jpg" class="fallback">
+        <div class="video">
+            <video width="2560" height="600" muted preload='auto' loop autoplay poster="//images.gogoroapp.com/module-easier-5.jpg">
+                <source src="//movies.gogoroapp.com/gostation/web_gostation_guy_h264_03.mp4" type="video/mp4" />
+                <source src="//movies.gogoroapp.com/gostation/web_gostation_guy_h264_03.webm" type="video/webm" />
+            </video>
+        </div>
+    </div>
+
+    <div id="GoStationTreeCol" class="module-easier-3-summary-info module-summary-info" ng-controller="moduleEasier3SummaryInfoController">
+        <div class="container max-height">
+            <div class="row">
+                <div class="col-md-4 col-sm-12 col-xs-12 slide">
+                    <div class="title">隨時隨地</div>
+                    <div class="body ">
+                        <img class="fact-svg" src="/img/gen/gostation/pinmap.svg" alt="gogoro" />
+                    </div>
+                    <div class="description">
+                    	遍及城市的 <span class="graphik-light">GoStation</span>&reg; 電池交換站點，任何日期、任何時刻，即時給你最強勁的動力後援。
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12 col-xs-12 slide">
+                    <div class="title">換了就走</div>
+                    <div class="body">
+                        <img class="fact-svg" src="/img/gen/gostation/6sec.svg" alt="gogoro" />
+                    </div>
+                    <div class="description">
+                        簡單、輕鬆、立即，短短 6 秒就能獲得新的電池，馬上就能出發！
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12 col-xs-12 slide">
+                    <div class="title">折舊免憂 </div>
+                    <div class="body">
+                        <img class="fact-svg" src="/img/gen/gostation/100per.svg" alt="gogoro" />
+                    </div>
+                    <div class="description">
+                        <span class="graphik-light">Gogoro</span> 隨時檢測，確保每顆電池都處於最佳狀態，無需擔憂電池耗損而影響騎乘效率。
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div id="basic-waypoint" class="career__what-we-do">
+        <div class="container">
+            <div class="content-wrap vertical-center-container">
+                <div class="vertical-center">
+                    <div class="AllYou">
+                        <img src="//images.gogoroapp.com/gostation/infinite.png" alt="All YOU CAN SWAP" />
+                    </div>
+                    <div class="AllYou2">
+                    	<p><h2><span class="graphik-extra-light">ALL YOU CAN SWAP</span></h2></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!--.career__what-we-do-->
+
+
+
+    <div class="module-gostation-5-unlimited goStaitionNolimited ">
+        <div class="container">
+            <div class="row vertical-center-flex">
+                <div class="col-lg-6 col-md-6  col-xs-6 col-lg-offset-1 col-md-offset-1 col-xs-offset-3 ">
+                    <div class="background-image">
+                        <img class="imgix-fluid goStaitionNolimitedImg" data-src="//images.gogoroapp.com/gostation/gogoroWellcomeBack.png">
+                    </div>
+                </div>
+                <div class="text-content col-lg-5 col-lg-offset-0  col-md-4 col-md-offset-0  col-sm-12 col-sm-offset-1 col-xs-12 col-xs-offset-0">
+                    <h2>「換」變無限樂趣</h2>
+                    <p>針對不同需求，提供多元月租服務方案。在不限次數的電池交換中，你可以自在地探索，到達城市裡任何一個角落。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="nearbyGoStations" class="career__what-we-do">
+        <div class="container">
+            <div class="content-wrap vertical-center-container">
+                <div class="vertical-center">
+                    <div class="row">
+                        <div class="col-lg-8 col-md-6 col-md-offset-0 col-sm-10 col-sm-offset-1">
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12 col-md-offset-0 col-sm-10 col-sm-offset-1  gostationTitle">
+                                	<h2><span id="total_station"></span>  座 <span class="graphik-light">GoStation®</span> 電池交換站</h2>
+                                </div>
+                            </div>
+                            <div class="row Operation">
+                                <div class="col-lg-8 col-md-12 col-md-offset-0 col-sm-10 col-sm-offset-1">
+                                    <p>
+                                        <img src="//images.gogoroapp.com/gostation/pin_indicator_0715.png" alt="gogoro" />
+                                         營運中 (<span id="count_station_01"></span>)
+                                        <img src="//images.gogoroapp.com/gostation/pin_indicator_dis_0715.png" alt="gogoro" />
+                                         建置中 (<span id="count_station_02"></span>)
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4  col-md-6 col-md-offset-0 col-sm-10 col-sm-offset-1">
+                            <span class="gogoro-select" gogoro-select>
+                                <select id="map_city">
+                                    <option value="0">請選擇</option>
+                                    <option value="1">基隆市</option>
+                                    <option value="2">臺北市</option>
+                                    <option value="3">新北市</option>
+                                    <option value="4">桃園市</option>
+                                    <option value="5">新竹市</option>
+                                    <option value="6">新竹縣</option>
+                                </select>
+                            </span>
+                            <span class="gogoro-select" gogoro-select>
+                                <select id="map_district">
+                                    <option value="0">請先選擇城市</option>
+                                </select>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!--.career__what-we-do-->
+
+    <div class="career__interested-email" style="width:100%;" >
+        <input id="pac-input" class="controls hidden" type="text" placeholder="Search Box">
+        <div id="map-canvas" style="width:100%; "></div>
+    </div>
+</div><!--#career-->

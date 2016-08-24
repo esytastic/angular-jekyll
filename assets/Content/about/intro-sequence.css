@@ -1,0 +1,347 @@
+﻿/* ====================================
+ * Import dependencies
+ * ==================================== */
+/* ====================================
+ * Mixins and functions
+ * ==================================== */
+/* Media queries
+ * ==================================== */
+/* Usage: @include breakpoint(sm) {} */
+/* Mixins and functions
+ * ==================================== */
+/* Usage: @include linearGradient() {} */
+/* Usage: @include placeholder() {} */
+/* Usage: @include border-radius(5px) */
+/* Usage: @include opacity(0.8) */
+/* Usage: @include center-block */
+/* Usage: @include text-truncate  */
+/* Extends
+ * ==================================== */
+/* ====================================
+   Site colors
+   ==================================== */
+/*
+   Brand colors
+   ====================================
+   White / Light Gray = Fresh and Clean Charcoal / Gray / Dark Gray = Bold and Direct Rich Blue = Performance
+   Blue = Experience
+   Teal = Style
+   Dark Green = Value
+   Green = Eco / Environment
+   Hot Green = Community
+   Red = Warning
+*/
+/*
+   Base colors
+   ==================================== */
+/*
+   Text colors
+   ==================================== */
+/*
+   Button colors
+   ==================================== */
+/*
+   Third party brand colors
+   ==================================== */
+/* ====================================
+ * Mixins and functions
+ * ==================================== */
+/* Media queries
+ * ==================================== */
+/* Usage: @include breakpoint(sm) {} */
+/* Mixins and functions
+ * ==================================== */
+/* Usage: @include linearGradient() {} */
+/* Usage: @include placeholder() {} */
+/* Usage: @include border-radius(5px) */
+/* Usage: @include opacity(0.8) */
+/* Usage: @include center-block */
+/* Usage: @include text-truncate  */
+/* Extends
+ * ==================================== */
+/* Variables
+ * ==================================== */
+/* ====================================
+ * Intro sequence
+ * ==================================== */
+body.intro-active {
+    /*  .navbar-default-gogoro {
+      display: none;
+    }
+    #main-footer {
+      display: none;
+    }*/
+    overflow: hidden;
+}
+
+#intro-sequence {
+    background-color: #fff;
+    height: 100%;
+    width: 100%;
+    display: none;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 10000;
+}
+
+/* Fallback image sequence
+  * ==================================== */
+.intro-sequence-image {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+    .intro-sequence-image.frame-one {
+        z-index: 3;
+        background-image: url(/img/intro-sequence-frame-one-xs.jpg);
+    }
+
+    .intro-sequence-image.frame-two {
+        z-index: 2;
+        background-image: url(/img/intro-sequence-frame-two-xs.jpg);
+    }
+
+    .intro-sequence-image.frame-three {
+        z-index: 1;
+        background-image: url(/img/intro-sequence-frame-three-xs.jpg);
+    }
+
+/* HTML5 video player
+  * ==================================== */
+.video-viewport {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -1;
+}
+
+#intro-sequence-video {
+    display: none;
+}
+
+#frame-one {
+    font-family: "flama-semicondensed-ultralight", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    display: none;
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 500;
+}
+
+    #frame-one .container {
+        height: 100%;
+    }
+
+    #frame-one h1 {
+        display: none;
+        position: relative;
+        left: -15px;
+        color: #fff;
+        font-size: 21.6rem;
+        font-family: "flama-semicondensed-ultralight", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        text-transform: uppercase;
+        text-align: left;
+        letter-spacing: -2px;
+        line-height: 1;
+        white-space: nowrap;
+    }
+
+.lt-ie9 #frame-one h1 {
+    font-size: 216px;
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    #frame-one h1 {
+        font-size: 19rem;
+    }
+
+    .lt-ie9 #frame-one h1 {
+        font-size: 190px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    #frame-one h1 {
+        font-size: 14rem;
+    }
+
+    .lt-ie9 #frame-one h1 {
+        font-size: 140px;
+    }
+}
+
+@media (max-width: 767px) {
+    #frame-one h1 {
+        left: 0;
+        letter-spacing: -1px;
+        font-size: 6rem;
+    }
+
+    .lt-ie9 #frame-one h1 {
+        font-size: 60px;
+    }
+}
+
+#frame-two {
+    display: none;
+    background-color: transparent;
+    z-index: 500;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+    #frame-two .container {
+        height: 100%;
+    }
+
+    #frame-two h1 {
+        height: 85px;
+        color: #fff;
+        font-size: 11rem;
+        font-family: "flama-semicondensed-ultralight", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        text-transform: uppercase;
+        text-align: left;
+        letter-spacing: -2px;
+        line-height: .8;
+        white-space: nowrap;
+    }
+
+.lt-ie9 #frame-two h1 {
+    font-size: 110px;
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    #frame-two h1 {
+        font-size: 8rem;
+    }
+
+    .lt-ie9 #frame-two h1 {
+        font-size: 80px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    #frame-two h1 {
+        font-size: 7rem;
+    }
+
+    .lt-ie9 #frame-two h1 {
+        font-size: 70px;
+    }
+}
+
+@media (max-width: 767px) {
+    #frame-two h1 {
+        font-size: 3.3rem;
+        height: 25px;
+        letter-spacing: -1px;
+    }
+
+    .lt-ie9 #frame-two h1 {
+        font-size: 33px;
+    }
+}
+
+#frame-two h1 span {
+    opacity: 0;
+}
+
+#frame-three {
+    display: none;
+    background-color: transparent;
+    z-index: 500;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    /*  background-image: url(/img/placeholder/image-2.jpg);
+    background-size: cover;*/
+    width: 100%;
+    height: 100%;
+}
+
+    #frame-three .container {
+        height: 100%;
+    }
+
+    #frame-three h1 {
+        margin-top: -50px;
+        height: 105px;
+        color: #fff;
+        font-size: 14.4rem;
+        font-family: "flama-semicondensed-ultralight", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        text-transform: uppercase;
+        text-align: center;
+        letter-spacing: -2px;
+        line-height: 1.5;
+        white-space: nowrap;
+    }
+
+.lt-ie9 #frame-three h1 {
+    font-size: 144px;
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    #frame-three h1 {
+        font-size: 10rem;
+    }
+
+    .lt-ie9 #frame-three h1 {
+        font-size: 100px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    #frame-three h1 {
+        font-size: 9rem;
+    }
+
+    .lt-ie9 #frame-three h1 {
+        font-size: 90px;
+    }
+}
+
+@media (max-width: 767px) {
+    #frame-three h1 {
+        font-size: 4.5rem;
+        letter-spacing: -1px;
+        height: 60px;
+        margin: 0;
+    }
+
+    .lt-ie9 #frame-three h1 {
+        font-size: 45px;
+    }
+}

@@ -1,0 +1,232 @@
+﻿#career .career__4cycles{
+    height:1000px;
+    background-color:#ffffff;
+}
+
+/*#career .container{
+   border-right:1px solid red;
+   border-left:1px solid red;
+}*/
+
+#career .career__4cycles .container-fluid{
+    position:relative;
+}
+#career .career__4cycles .container-fluid .row .box{
+    position:relative;
+    text-align:center; 
+    height:500px;
+}
+
+#career .career__4cycles .container-fluid .row .box .box--cycle-wrap,
+#career .career__4cycles .container-fluid .row .box .box--text-wrap{
+    position:absolute;
+    top:0;
+    bottom:0;
+    right:0; 
+    left:0;
+    width:100%;
+    height:100%; 
+    /*z-index:10;*/
+    cursor:pointer;
+}
+#career .career__4cycles .container-fluid .row .box .box--text-wrap{
+    color:#FFFFFF;
+}
+#career .career__4cycles .container-fluid .row .box .box--text-wrap .box--text-container{
+    position:relative;
+    width:100%;
+    height:100%;
+    opacity:0;
+    /*background-color:#046BD2;*/
+}
+#career .career__4cycles .container-fluid .row .box .box--text-wrap .box--text-container .text-wrap
+{
+    height:200px;
+    width:430px;
+    position:absolute;
+    top:50%;
+    /*right:77.5px;*/
+    right:50%;
+    margin-top:-100px;
+    margin-right:-215px;
+}
+#career .career__4cycles .container-fluid .row .box .box--text-wrap .box--text-container .text-wrap--left
+{
+    left:50%;
+    margin-left:-215px;
+}
+
+#career .career__4cycles .container-fluid .row .box .box--text-wrap .box--text-container h4,
+#career .career__4cycles .container-fluid .row .box .box--text-wrap .box--text-container p
+{
+    /*width:430px;
+    position:absolute;
+    top:150px;
+    right:50px;*/
+}
+
+#career .career__4cycles .container-fluid .row .box .box--text-wrap .box--text-container h4{
+  
+}
+#career .career__4cycles .container-fluid .row .box .box--text-wrap .box--text-container p{
+    top:230px;
+}
+#career .career__4cycles .container-fluid .row .box .box--text-wrap h4{
+    font-size:32px;
+}
+
+/* background color on cycle */
+#career .career__4cycles .container-fluid .row .box .box--cycle-wrap.blue{
+    background-color:#247ED7;
+}
+#career .career__4cycles .container-fluid .row .box .box--cycle-wrap.light-blue{
+    background-color:#18DAFE;
+}
+#career .career__4cycles .container-fluid .row .box .box--cycle-wrap.green{
+    background-color:#5AE6B9;
+}
+#career .career__4cycles .container-fluid .row .box .box--cycle-wrap.yellow{
+    background-color:#CAE342;
+}
+
+/* background color on text for mouseenter */
+#career .career__4cycles .container-fluid .row .box .box--text-wrap .box--text-container.blue{
+    background-color:#247ED7;
+}
+#career .career__4cycles .container-fluid .row .box .box--text-wrap .box--text-container.light-blue{
+    background-color:#18DAFE;
+}
+#career .career__4cycles .container-fluid .row .box .box--text-wrap .box--text-container.green{
+    background-color:#5AE6B9;
+}
+#career .career__4cycles .container-fluid .row .box .box--text-wrap .box--text-container.yellow{
+    background-color:#CAE342;
+}
+
+/**/
+#career .career__4cycles .container-fluid .row .box .box--cycle-wrap a{
+    position:absolute;
+    top:50%;
+    /*right:142.5px;*/
+    right:50%;
+    font-family: 'graphik-semibold';
+    letter-spacing:0px;
+    font-style:normal;
+    width:300px;
+    height:300px;
+    text-transform:none;
+    font-size:32px;
+    padding-top:110px;
+    margin-top:-150px;
+    margin-right:-150px;
+}
+#career .career__4cycles .container-fluid .row .box .box--cycle-wrap a.cycle--left{
+    /*left:142.5px;*/
+    left:50%;
+    margin-left:-150px;
+}
+
+
+#career .career__4cycles .container-fluid .row .box a.one-line{
+    padding-top:130px;
+}
+
+#career .career__4cycles .container-fluid .row .box.box__right a{
+    left:150px;
+}
+
+#career .career__4cycles .container-fluid a.cycle{
+    
+    width:60px;
+    height:60px;
+    border-radius:30px;
+    background-color:#323237;
+    display:block;
+    border:0;
+    position:absolute;
+    right:50%;
+    bottom:-30px;
+    padding-top:16px;
+    margin-right: -30px;
+    z-index:10;
+}
+#career .career__4cycles .container-fluid a.cycle i{
+    color:#ffffff;
+    font-size:28px;
+    padding-left:16px;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    #career .career__4cycles .container-fluid a.cycle i{
+        padding-left:0;
+    }
+
+    #career .career__4cycles{
+        height:100%;
+    }
+    #career .career__4cycles .container-fluid .row .box {
+        height: 380px;
+    }
+
+    #career .career__4cycles .container-fluid .row .box .box--cycle-wrap a {
+        left: 50%;
+        margin-left: -150px;
+    }
+    #career .career__4cycles .container-fluid .row .box .box--cycle-wrap a.cycle--left {
+        left: 50%;
+    }
+
+    #career .career__4cycles .container-fluid .row .box .box--text-wrap .box--text-container .text-wrap {
+        height: 200px;
+        width: 360px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-left:-180px;
+        margin-top: -100px;
+    }
+    #career .career__4cycles .container-fluid .row .box .box--text-wrap .box--text-container{
+        opacity:0;
+    }
+
+       
+    #career .career__4cycles .container-fluid .row .box .box--cycle-wrap a span{
+        margin-top:100px;
+        }
+
+}
+@media (max-width: 767px) {
+    #career .career__4cycles{
+        height:100%;
+    }
+    #career .career__4cycles .container-fluid .row .box {
+        height: 380px;
+    }
+
+    #career .career__4cycles .container-fluid .row .box .box--cycle-wrap a {
+        left: 50%;
+        margin-left: -150px;
+    }
+    #career .career__4cycles .container-fluid .row .box .box--cycle-wrap a.cycle--left {
+        left: 50%;
+    }
+
+    #career .career__4cycles .container-fluid .row .box .box--text-wrap .box--text-container .text-wrap {
+        height: 200px;
+        width: 300px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-left:-150px;
+        margin-top: -100px;
+    }
+
+   
+    #career .career__4cycles .container-fluid .row .box .box--cycle-wrap a span{
+        margin-top:100px;
+        }
+
+    #career .career__4cycles .container-fluid .row .box .box--text-wrap .box--text-container{
+        opacity:0;
+    }
+}

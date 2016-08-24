@@ -1,0 +1,299 @@
+---
+layout: en-us/LayoutMaster
+action: easier
+style: |
+    <link rel="stylesheet" href="/css/smartscooter/easier.css">
+scripts: |
+    <script src="/js/smartscooter/easier.js"></script>
+meta: |
+    <meta name="keywords" content="gogoro , smartscooter , scooter , energy  , battery">
+    <meta name="description" content="Founded in 2011, Gogoro is putting energy into things that matter. With a mission to deliver consumer innovations that will improve how the world’s most populated cities distribute and utilize energy, the company is enabling the transformation of megacities into smart cities. Gogoro is working toward a better future by putting power in the hands of everyone – to move us all forward, faster.">
+    <meta name="application-name" content="Gogoro - Introducing the world's first and only Smartscooter™" />
+    <meta name="msapplication-TileColor" content="#61399D" />
+    <meta name="msapplication-TileImage" content="http://www.gogoro.com/favicon.ico" />
+    <!-- Facebook meta tags -->
+    <meta property="og:title" content="Gogoro - Introducing the world's first and only Smartscooter™" />
+    <meta property="og:type" content='website' />
+    <meta property="og:url" content="http://www.gogoro.com/" />
+    <meta property="og:description" content="Founded in 2011, Gogoro is putting energy into things that matter. With a mission to deliver consumer innovations that will improve how the world’s most populated cities distribute and utilize energy, the company is enabling the transformation of megacities into smart cities. Gogoro is working toward a better future by putting power in the hands of everyone – to move us all forward, faster." />
+    <meta property="og:image" content="//images.gogoroapp.com/share/website_thumbnail_1024.jpg" />
+    <meta property="og:site_name" content="Gogoro - Introducing the world's first and only Smartscooter™" />
+---
+
+<div id="easier" ng-controller="EasierController">
+    <div class="module-easier-1-page-intro module-page-intro" ng-controller="moduleEasier1PageIntroController">
+
+        <div class="grid-container">
+            <div class="route"></div>
+            <div class="grid"></div>
+            <div class="pins"></div>
+        </div>
+        <div class="title-wrapper">
+            <script class="svg" type="gogoro-template">
+                <svg class="title" xmlns="http://www.w3.org/2000/svg" version="1.1" width="1280px" height="800px" viewBox="0 0 1280 800">
+                    <defs>
+                        <linearGradient id="filler" y1="0%" y2="100%" x1="0%" x2="0%">
+                            <stop stop-color="#00b946" offset="0%"></stop>
+                            <stop stop-color="#c0df16" offset="100%"></stop>
+                        </linearGradient>
+                    </defs>
+                    <text text-anchor="middle" x="650" y="46%" font-size="318" fill="url(#filler)">
+                        <tspan>SO </tspan>
+                        <tspan>EASY</tspan>
+                    </text>
+                </svg>
+            </script>
+        </div>
+        <div class="background-image background-image-standard" data-src="//gogoro.imgix.net/gogoro-side_0616.png"></div>
+        <div class="background-image background-image-fallback" data-src="//gogoro.imgix.net/bgd-module-easier-1-fallback_0616.jpg"></div>
+        <div class="container">
+            <div class="body">
+                Battery swaps in a snap. <span class="hidden-xs">Unlimited power at GoStations city-wide. Service at your fingertips. Simple maintenance. It’s all so easy.</span>
+            </div>
+        </div>
+    </div>
+
+
+    {% include en-us/PartialTabbar.html %}
+
+    <div class="module-easier-2-clean-video module-video" ng-controller="moduleEasier2CleanVideoController">
+        <img src="//images.gogoroapp.com/module-easier-2-square.jpg" class="fallback">
+        <div class="video">
+            <video width="2560" height="600" muted preload='auto' loop autoplay poster="//images.gogoroapp.com/module-easier-2-new.jpg">
+                <!--source src="//movies.gogoroapp.com/module-easier-2.mp4" type="video/mp4">
+                    <source src="//movies.gogoroapp.com/module-easier-2.webm" type="video/webm"-->
+            </video>
+        </div>
+    </div>
+
+    <div class="module-easier-3-summary-info module-summary-info" ng-controller="moduleEasier3SummaryInfoController">
+        <div class="container max-height">
+            <div class="row">
+                <div class="col-md-4 col-sm-12 col-xs-12 slide">
+                    <div class="title">Ride On</div>
+                    <div class="body">
+                        <div class="big">1</div>
+                        <div class="small">
+                            Convenient
+                            <br>Network
+                        </div>
+                    </div>
+                    <div class="description">
+                        Travel free citywide. Our dense network of <span class="break-sm break-xs">GoStations is always ready to charge you up.</span>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12 col-xs-12 slide">
+                    <div class="title">More Go</div>
+                    <div class="body">
+                        <div class="big">2</div>
+                        <div class="small">
+                            Powerful
+                            <br>Batteries
+                        </div>
+                    </div>
+                    <div class="description">
+                        Fully charged, the twin batteries provide <span class="break-sm break-xs">enough go-juice for up to 100km of travel.</span>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12 col-xs-12 slide">
+                    <div class="title">Swap &amp; Go</div>
+                    <div class="body">
+                        <div class="big">6</div>
+                        <div class="small">
+                            Second
+                            <br>Swap
+                        </div>
+                    </div>
+                    <div class="description">
+                        Change batteries in a flash. <span class="break-sm break-xs">No mess. No fumes. No fuss.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="module-easier-4-all-you-can-ride" ng-controller="moduleEasier4AllYouCanRideController">
+        <div class="container desktop hidden-xs hidden-sm">
+            <div class="vertical-center-container">
+                <div class="vertical-center">
+                    <div class="row content-overlay">
+                        <div class="col-lg-4 col-lg-offset-1 col-md-4 col-md-offset-0 col-sm-10 col-sm-offset-1 text-center-xs">
+                            <div class="powerloop"></div>
+                            <div class="descriptions">
+                                <div class="description battery">
+                                    <h2>Smarter Power</h2>
+                                    <p>
+                                        Unbelievable power fits right in the palm of your hand. Gogoro® batteries are a smarter and cleaner energy source that make riding a breeze. A single pair can take you up to 100km and changes out in seconds. No wires. No pumps. No emissions. Nothing else comes close.
+                                    </p>
+                                    <p class="battery-protect-word">Riding range varies based on your riding profile. Riding at high speed reduces riding distance.</p>
+                                </div>
+                                <div class="description go-station">
+                                    <h2>Ride on and on</h2>
+                                    <p>GoStations are all over the city so you’re free to roam. Easy to find. Simple to use. Swap out batteries 24 hours a day. Get diagnostics at a glance. Stay powered up and fully informed. You’ll have unlimited energy, stress free, whenever and wherever go. </p>
+                                </div>
+                            </div>
+                            <div class="battery-go-station-toggle hidden-xs">
+                                <a href="#" class="battery">Battery</a>
+                                <a href="#" class="go-station inactive">GoStation&trade;</a>
+                            </div>
+                            <div class="partnership">
+                                <p>Energy Cells by&nbsp;&nbsp;<br /> <img src="//images.gogoroapp.com/logo-panasonic.svg" width="30" height="16" class="logo logo-panasonic"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="imgix-fluid background-go-station" data-src="//gogoro.imgix.net/bgd-module-easier-4-vm.jpg"></div>
+            <div class="imgix-fluid background-battery active" data-src="//gogoro.imgix.net/bgd-module-easier-4-battery.jpg"></div>
+        </div>
+        <div class="mobile visible-xs visible-sm">
+            <img class="imgix-fluid" data-src="//gogoro.imgix.net/bgd-module-easier-4-battery.jpg">
+            <div class="container margin-bottom-base">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-10 col-sm-offset-1">
+                        <div class="powerloop"></div>
+                        <h2>Smarter Power</h2>
+                        <p>Unbelievable power fits right in the palm of your hand. Gogoro® batteries are a smarter and cleaner energy source that make riding a breeze. A single pair can take you further than 100km and changes out in seconds. No wires. No pumps. No emissions. Nothing else comes close.</p>
+                        <div class="partnership">
+                            <p>Energy Cells by&nbsp;&nbsp;<img src="//images.gogoroapp.com/logo-panasonic.svg" width="30" height="16" class="logo logo-panasonic"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img class="imgix-fluid" data-src="//gogoro.imgix.net/bgd-module-easier-4-vm.jpg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-10 col-sm-offset-1">
+                        <div class="powerloop"></div>
+                        <h2>Ride on and on</h2>
+                        <p>GoStations are all over the city so you’re free to roam. Easy to find. Simple to use. Swap out batteries 24 hours a day. Get diagnostics at a glance. Stay powered up and fully informed. You’ll have unlimited energy, stress free, whenever and wherever go. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="module-easier-5-swap-and-go module-video" ng-controller="moduleEasier5SwapAndGoController">
+        <img src="//images.gogoroapp.com/module-easier-5-square.jpg" class="fallback">
+        <div class="video">
+            <video id="module-easier-5-swap-and-go_video" width="2560" height="600" muted preload='auto' poster="//images.gogoroapp.com/module-easier-5.jpg">
+                <!--source src="//movies.gogoroapp.com/module-easier-5.mp4" type="video/mp4">
+                <source src="//movies.gogoroapp.com/module-easier-5.webm" type="video/webm"-->
+            </video>
+        </div>
+    </div>
+
+    <div class="module-easier-6-map module-image-hero" ng-controller="moduleEasier6MapController">
+        <div class="background-image">
+            <img class="imgix-fluid" data-src="//gogoro.imgix.net/bgd-module-easier-6-new.jpg">
+        </div>
+        <div class="container">
+            <div class="vertical-center-container">
+                <div class="row content-overlay vertical-center">
+                    <div class="col-md-5 col-md-offset-1 col-sm-10 col-sm-offset-1">
+                        <h2>Fast, Easy, Everywhere</h2>
+                        <p>Uptown, Downtown. Cross-town. Ride where you want, when you want. We’ve got you covered with fast and simple battery swaps at GoStations all over the city. Day or night, we’ll have power ready for you along the way.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="module-easier-7-service-hero module-image-hero" ng-controller="moduleEasier7ServiceHeroController">
+        <div class="container">
+            <div class="vertical-center-container">
+                <div class="row content-overlay vertical-center">
+                    <div class="col-md-12 text-center">
+                        <h3>Worry<br>Free</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div data-src="//gogoro.imgix.net/bgd-module-easier-7.jpg" class="imgix-fluid background-image"></div>
+    </div>
+
+
+    <div class="module-easier-8-radical-simplicity" ng-controller="moduleEasier9CenterLockController">
+        <div class="background-image">
+            <img class="imgix-fluid" data-src="//gogoro.imgix.net/bgd-module-easier-1-ecu.jpg">
+        </div>
+        <div class="container">
+            <div class="row vertical-center-flex">
+                <div class="col-lg-3 col-lg-offset-1 col-md-4 col-md-offset-1 col-sm-10 col-sm-offset-1">
+                    <h2>Radical Simplicity</h2>
+                    <p>Simply accessing components like the primary battery, ECU, fuses and the horn, sparks wonder. Modular, neat, and well organized, they comprise an architectural marvel in scooter design.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="module-easier-8-center-lock" ng-controller="moduleEasier9CenterLockController">
+        <div class="background-image">
+            <img class="imgix-fluid active" data-src="//gogoro.imgix.net/bgd-module-faster-11-side-active_0623.jpg">
+            <img class="imgix-fluid" data-src="//gogoro.imgix.net/bgd-module-faster-11-side_0623.jpg">
+        </div>
+        <div class="container">
+            <div class="row vertical-center-flex">
+                <div class="col-lg-3 col-lg-offset-8 col-md-4 col-md-offset-8 col-sm-10 col-sm-offset-1">
+                    <h2>One and Done</h2>
+                    <p>We engineered everything to be easier. Even our all-aluminum wheels feature a single center lock hub that makes changing tires a snap. You’ll be back on the go in minutes. It`s just another one of the ways we keep you riding happy.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="module-easier-8-quick-fix">
+        <div class="container">
+            <div class="row vertical-center-flex">
+                <div class="col-md-8 col-md-push-4 col-xs-12">
+                    <div class="background-image">
+                        <img class="imgix-fluid" data-src="//gogoro.imgix.net/bgd-module-easier-8_0616.jpg">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-lg-offset-1 col-lg-pull-8 col-md-4 col-md-offset-0 col-md-pull-8 col-sm-10 col-sm-offset-1 col-xs-12 col-xs-offset-0">
+                    <h2>Quick and Simple Fix</h2>
+                    <p>Easy in, easy out: service and tune ups happen fast. We built your Smartscooter&trade; EV for speed…. even during pit stops. Everything is designed for quick access. Tighten belts, change tires, refill fluids, all in minutes. You’ll be back on the road in no time.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="module-easier-10-12-network-sos-service-staff">
+        <div class="cotainer-fluid">
+            <div class="row">
+                <div class="col-sm-6 col-xs-12 block network">
+                    <div class="content">
+                        <img src="//images.gogoroapp.com/icon-warranty.png" class="background-icon">
+                        <h2>2-Year Warranty</h2>
+                        <p>We stand behind our quality. Our two-year, unlimited mileage warranty begins on the date your Smartscooter’s plate is issued. With extra care and diagnostic services, you have nothing to worry about. Simply enjoy your ride.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-xs-12 block service-staff">
+                    <div class="content">
+                        <img src="//images.gogoroapp.com/icon-service-staff.png" class="background-icon">
+                        <h2>Roadside Assistance</h2>
+                        <p>Our professional crew stands by 24 hours a day, 7 days a week.  We’ll be available whenever, wherever you need us.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="module-easier-13-design-ethos">
+        <div class="background-image">
+            <img class="imgix-fluid hidden-xs hidden-sm" src="//gogoro.imgix.net/bgd-module-easier-13-new.jpg">
+            <img class="imgix-fluid visible-xs visible-sm" src="//gogoro.imgix.net/bgd-module-easier-13-square-new.jpg">
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-md-offset-4 col-sm-10 col-sm-offset-1 text-center content-block">
+                    <strong>Our Design Ethos:</strong>
+                    <h2>You First</h2>
+                    <p>Everything we build begins and ends with you. Take our revolutionary battery. It fits perfectly in your hand and connects in any direction. Just put it in. You can’t make a mistake. Its smartest innovation is how easy it is to use.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

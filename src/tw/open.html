@@ -1,0 +1,228 @@
+---
+action: open
+layout: zh-tw/LayoutMaster
+style: |
+    <link rel="stylesheet" href="/css/smartscooter/easier.css">
+    <link rel="stylesheet" href="/css/gen/open.css">
+scripts: |
+    <script src="/js/smartscooter/easier.js"></script>
+    <script src="/js/gen/open.js"></script>
+---
+
+<div id="gocharger" ng-controller="OpenController">
+
+	<div class="module-open-1-intro module-page-intro" ng-controller="moduleOpen1IntroController">
+	    <div class="container">
+	        <div class="body">
+	        	<h2><span class="graphik-extra-light">Gogoro&reg; OPEN Initiative</span></h2>
+				<p>將你的空間變成社群熱點</p>
+				<a id="join-open" href="#" class=""><img src="/img/gen/open/arrow-down.png" /></a>
+	        </div>
+	    </div>
+	</div>
+
+    {% include zh-tw/GENTabbar.html %}
+
+    <div class="module-open-2-connect">
+		<img class="hide mobile" src="/img/gen/open/connect-banner-mobile.jpg" />
+        <div class="container">
+            <div class="row body">
+                <div class="col-md-6  col-sm-6 col-xs-6 text-content">
+                	<h2>連結在地社群</h2>
+                	<p>分享 <span class="graphik-light">GoCharger™</span> 智慧電池座，將你的空間變成社群熱點。</p>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-6 hidden-mobile">
+
+                </div>
+            </div>
+    	</div>
+    </div>
+
+    <div class="module-open-2b-owner">
+    	<p><span class="graphik-light">Gogoro</span> 能源網路共享計劃，提供有興趣的消費者或企業，自我報名或推薦他人成為 <span class="graphik-light">Gogoro</span> 能源網路發展的一部分。越多的個人或企業報名，你的城市就越有機會成為下一個 <span class="graphik-light">Gogoro</span> 前進的城市！</p>
+    </div>
+
+    <div class="module-open-3-contact" ng-controller="moduleOpen3ContactController">
+    	<div class="select">
+            <div class="row">
+				<div class="option option-1 col-md-6 col-sm-12 col-xs-12" ng-click="select('business')">
+                    <div class="content-container">
+                        <div class="body ">
+                            <img src="/img/gen/open/open-icon-1.svg" alt="gogoro" />
+                        </div>
+                        <div class="title">
+                        	我們公司擁有合適的開放空間，我們想要放置一台 <span class="graphik-light">GoCharger™</span> 智慧電池座。
+                        </div>
+                        <div class="description">
+                        	若為理想空間，<span class="graphik-light">Gogoro</span> 將免費安裝一台 <span class="graphik-light">GoCharger™</span> 智慧電池座。
+                        </div>
+                    </div>
+					<button class="btn position btn-outline">填寫表格</button>
+                    <div class="check" ng-show="selected == 'business'">
+                    	<img src="/img/gen/open/check-on.png" />
+                    </div>
+                </div>
+				<div class="option option-2 col-md-6 col-sm-12 col-xs-12" ng-click="select('consumer')">
+                    <div class="content-container">
+                        <div class="body ">
+                            <img src="/img/gen/open/open-icon-2.svg" alt="gogoro" />
+                        </div>
+                        <div class="title">
+                        	我想要擁有一台<span class="graphik-light">Smartscooter™</span>智慧雙輪以及 <span class="graphik-light">GoCharger™</span> 智慧電池座。
+                        </div>
+                        <div class="description">
+                        	提名我所在的城市，成為下一個 <span class="graphik-light">Gogoro</span> 前進的城市。
+                        </div>
+                    </div>
+                    <button class="btn position btn-outline">推薦城市</button>
+                    <div class="check" ng-show="selected == 'consumer'">
+                    	<img src="/img/gen/open/check-on.png" />
+                    </div>
+                </div>
+	        </div>
+	    </div>
+	    <a id="form-start"></a>
+		<div class="form business" ng-show="selected == 'business'">
+			<div class="container">
+				<img src="/img/gen/open/open-map.svg" class="map" />
+				<div class="row">
+					<div class="col-md-5 col-xs-12">
+						<h2><span class="graphik-extra-light">Tell us more about you</span></h2>
+							<form action="https://formspree.io/wxpklpgm" method="post" accept-charset="utf-8" class="open-form">
+							<div class="form-group">
+								<label for="business-name">公司名稱</label>
+								<input type="text" name="my_business_name" value="" class="form-control" id="business-name" required>
+							</div>
+							<div class="form-group">
+								<label for="business-type">公司種類</label>
+								<select name="type_of_business" class="form-control" id="business-type" required>
+									<option value="餐廳">餐廳</option>
+									<option value="咖啡店">咖啡店</option>
+									<option value="辦公室">辦公室</option>
+									<option value="飯店或旅館">飯店或旅館</option>
+                                    <option value="商店">商店</option>
+                                    <option value="髮廊">髮廊</option>
+                                    <option value="公共空間">公共空間</option>
+                                    <option value="其他">其他</option>
+								</select>
+							</div>
+							<div class="row">
+								<div class="col-xs-6 form-group">
+									<label for="country">所在國家</label>
+									<input type="text" name="country_of_my_business" value="" class="form-control" id="country" required>
+								</div>
+								<div class="col-xs-6 form-group">
+									<label for="city">所在城市</label>
+									<input type="text" name="city_of_my_business" value="" class="form-control" id="city" required>
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="street-address">所在地址</label>
+								<input type="text" name="street_address_of_my_business" value="" class="form-control" id="street-address" required>
+							</div>
+                            <div class="row">
+								<div class="col-xs-12 form-group">
+									<label for="zip-code">郵遞區號</label>
+									<input type="text" name="zip_code_of_my_business" value="" class="form-control" id="zip-code" required>
+								</div>
+							</div>
+							<div class="row margin-top-20">
+								<div class="col-xs-6 form-group">
+									<label for="last-name">聯絡人<br>姓氏</label>
+									<input type="text" name="lastname" value="" class="form-control" id="last-name" required>
+								</div>
+								<div class="col-xs-6 form-group">
+								<label for="first-name"><br>姓名</label>
+									<input type="text" name="firstname" value="" class="form-control" id="first-name" required>
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="contact-email-address" class="">電子郵件地址</label>
+								<input type="email" name="email" value="" placeholder="" class="form-control" id="contact-email-address" required>
+							</div>
+							<div class="form-group">
+								<label for="contact-phoneNumber" class="">聯絡電話</label>
+								<input type="tel" name="phone" value="" placeholder="" class="form-control" id="contact-phoneNumber">
+							</div>
+							<div class="form-group">
+								<label for="contact-message" class="">是否有其他資訊想與我們分享？</label>
+								<textarea required class="form-control" placeholder="營業時間" name="message" rows="5" id="more_about_your_business"></textarea>
+							</div>
+							<div class="form-group">
+								<input type="submit" class="btn btn-solid-rich-blue" id="open-form-submit" value="送出">
+							</div>
+						</form>
+						<div class="modal fade" id="contact-form-sent" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-body">
+										<h3><span class="graphik-light">Message sent!</span></h3>
+										<p><span class="graphik-light">Thanks for contacting Gogoro. We'll be in touch.</span></p>
+										<a href="#" class="btn btn-outline btn-sm margin-top" data-dismiss="modal">Okay</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="form consumer" ng-show="selected == 'consumer'">
+			<div class="container">
+				<img src="/img/gen/open/open-map.svg" class="map" />
+				<div class="row">
+					<div class="col-md-5 col-xs-12">
+						<h2><span class="graphik-extra-light">Tell us more about you</span></h2>
+						<form action="https://formspree.io/wxpklpgm" method="post" accept-charset="utf-8" class="open-form">
+							<div class="row margin-top-20">
+								<div class="col-xs-6 form-group">
+									<label for="first-name">名字</label>
+									<input type="text" name="contactFirstName" value="" class="form-control" id="first-name" required>
+								</div>
+								<div class="col-xs-6 form-group">
+								<label for="lasst-name">姓氏</label>
+									<input type="text" name="contactLastName" value="" class="form-control" id="lasst-name" required>
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="contact-email-address" class="">電子信箱</label>
+								<input type="email" name="contactEmail" value="" placeholder="" class="form-control" id="contact-email-address" required>
+							</div>
+                            <div class="row">
+								<div class="col-xs-6 form-group">
+									<label for="country">所在國家</label>
+									<input type="text" name="country" value="" class="form-control" id="country" required>
+								</div>
+								<div class="col-xs-6 form-group">
+									<label for="city">所在城市</label>
+									<input type="text" name="city" value="" class="form-control" id="city" required>
+								</div>
+							</div>
+                            <div class="form-group">
+								<label for="contact-message" class="">請與我們分享更多關於你所在城市的故事</label>
+								<textarea class="form-control" name="message" rows="5" id="contact-message"></textarea>
+							</div>
+                            <div class="ggr-cbox">
+                              <label for="read-terms"><input required type="checkbox" id="read-terms" name="read-terms">我已詳閱、充分瞭解並同意<a href="/tw/terms-of-use">個人資料蒐集、處理、利用告知事項</a></label>
+                            </div>
+                            <div class="form-group">
+								<input type="submit" class="btn btn-solid-rich-blue" id="open-form-submit" value="送出">
+							</div>
+						</form>
+						<div class="modal fade" id="contact-form-sent" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-body">
+										<h3><span class="graphik-light">Message sent!</span></h3>
+										<p><span class="graphik-light">Thanks for contacting Gogoro. We'll be in touch.</span></p>
+										<a href="#" class="btn btn-outline btn-sm margin-top" data-dismiss="modal">Okay</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </div>
+</div>

@@ -1,0 +1,37 @@
+﻿.pilot-program-header {
+    height: 800px;
+    width: 100%;
+    background: url(//images.gogoroapp.com/career/page-intro-2560_20150306.jpg) center no-repeat;
+    background-size: 1920px 800px;
+}
+
+    .pilot-program-header .content-wrap {
+        width: 900px;
+        height: 200px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -225px;
+        margin-left: -450px;
+        text-align: center;
+        padding-top: 10px;
+    }
+
+h2.en-tw {
+    line-height: 92px;
+    font-size: 60px;
+    letter-spacing: -3px;
+    color:#FFFFFF;
+}
+
+h2.zh-tw {
+    font-family: "xingothic-w8";
+    line-height: 92px;
+    font-size: 84px;
+    letter-spacing: -3px;
+    color:#FFFFFF;
+}
+
+section.main-section {
+    padding: 0;
+}

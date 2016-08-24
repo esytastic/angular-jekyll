@@ -1,0 +1,160 @@
+/* ====================================
+ * Mixins and functions
+ * ==================================== */
+/* Media queries
+ * ==================================== */
+/* Usage: @include breakpoint(sm) {} */
+/* Mixins and functions
+ * ==================================== */
+/* Usage: @include linearGradient() {} */
+/* Usage: @include placeholder() {} */
+/* Usage: @include border-radius(5px) */
+/* Usage: @include opacity(0.8) */
+/* Usage: @include center-block */
+/* Usage: @include text-truncate  */
+/* Extends
+ * ==================================== */
+/* ====================================
+   Site colors
+   ==================================== */
+/*
+   Brand colors
+   ====================================
+   White / Light Gray = Fresh and Clean Charcoal / Gray / Dark Gray = Bold and Direct Rich Blue = Performance
+   Blue = Experience
+   Teal = Style
+   Dark Green = Value
+   Green = Eco / Environment
+   Hot Green = Community
+   Red = Warning
+*/
+/*
+   Base colors
+   ==================================== */
+/*
+   Text colors
+   ==================================== */
+/*
+   Button colors
+   ==================================== */
+/*
+   Third party brand colors
+   ==================================== */
+/* ====================================
+ * Mixins and functions
+ * ==================================== */
+/* Media queries
+ * ==================================== */
+/* Usage: @include breakpoint(sm) {} */
+/* Mixins and functions
+ * ==================================== */
+/* Usage: @include linearGradient() {} */
+/* Usage: @include placeholder() {} */
+/* Usage: @include border-radius(5px) */
+/* Usage: @include opacity(0.8) */
+/* Usage: @include center-block */
+/* Usage: @include text-truncate  */
+/* Extends
+ * ==================================== */
+/* Variables
+ * ==================================== */
+/* ====================================
+ * Gradient Headers
+ * ==================================== */
+#hero-header {
+    display: block;
+    background-color: #0069d2;
+    color: #fff;
+    padding: 96px 0;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin-top:80px;
+}
+
+
+@media (max-width: 991px) {
+    #hero-header {
+        margin-top:0px;
+    }
+}
+
+@media (max-width: 767px) {
+    #hero-header {
+        background: #0069d2;
+        background-image: -webkit-linear-gradient(top left, #0069d2, #00d7ff);
+        background-image: linear-gradient(top left, #0069d2, #00d7ff);
+        padding: 60px 0;
+    }
+
+    
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    #hero-header {
+        background: #0069d2;
+        background-image: -webkit-linear-gradient(top left, #0069d2, #00d7ff);
+        background-image: linear-gradient(top left, #0069d2, #00d7ff);
+        padding: 60px 0;
+    }
+ 
+}
+
+#hero-header.line {
+    height: 2px;
+    padding: 0;
+}
+
+#hero-header h1 {
+    font-family: "flama-semicondensed-ultralight", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 144px;
+    margin: 0;
+    position: relative;
+    left: -6px;
+    z-index: 10;
+    white-space: nowrap;
+}
+
+@media (max-width: 767px) {
+    
+    
+    #hero-header h1 {
+        font-size: 72px;
+        letter-spacing: -2px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+     
+    #hero-header h1 {
+        font-size: 108px;
+        letter-spacing: -2px;
+    }
+}
+
+#hero-header .gradient {
+    background: -webkit-radial-gradient(center, ellipse closest-side, rgba(0, 215, 255, 0.95) 15%, rgba(0, 215, 255, 0) 100%);
+    background: radial-gradient(center, ellipse closest-side, rgba(0, 215, 255, 0.95) 15%, rgba(0, 215, 255, 0) 100%);
+    width: 2000px;
+    height: 2000px;
+    position: absolute;
+    z-index: 0;
+}
+
+
+.navbar-header-spacing {
+    width:100%; height:80px;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .navbar-header-spacing {
+        display:none;
+    }
+}
+@media (max-width: 767px) {
+    .navbar-header-spacing {
+        display: none;
+    }
+}

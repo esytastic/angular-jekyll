@@ -1,0 +1,81 @@
+#ie-upgrade-box{
+    position: relative;
+    width:100%;
+    height: 100%;
+    z-index: 999;
+    background-color:rgba(255,255,255,0.9);
+}
+#ie-upgrade-box .ie-upgrade-box-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -350px;
+    margin-top: -300px;
+    width: 700px;
+    height: 560px;
+    text-align: center;
+    background-color: #FFFFFF;
+}
+#ie-upgrade-box .ie-upgrade-box-content h2{
+    margin-bottom: 15px;
+}
+html.lt-ie9 #ie-upgrade-box .ie-upgrade-box-content h2{
+    font-size: 44px;
+}
+
+#ie-upgrade-box .ie-upgrade-box-content .ie-upgrade-box-body{
+
+    padding: 50px;
+    border: 2px solid #F1F3F3;
+}
+#ie-upgrade-box .ie-upgrade-box-content .ie-upgrade-box-body p{
+    margin-top: 0;
+    text-align: left;
+    color: #323237;
+}
+#ie-upgrade-box .ie-upgrade-box-content .ie-upgrade-box-body ul{
+    list-style: none;
+    margin: 6px 0 24px 0;
+    padding: 0;
+}
+#ie-upgrade-box .ie-upgrade-box-content .ie-upgrade-box-body ul li{
+    display: inline-block;
+    width: 67px;
+    margin-right: 75px;
+}
+#ie-upgrade-box .ie-upgrade-box-content .ie-upgrade-box-body ul li.last{
+    margin-right: 0;
+}
+#ie-upgrade-box .ie-upgrade-box-content .ie-upgrade-box-body ul li a{
+    display: block;
+    text-decoration: none;
+    color:#bdc3c7;
+    font-size: 14px;
+    border: none;
+}
+#ie-upgrade-box .ie-upgrade-box-content .ie-upgrade-box-body ul li a i.browser{
+    display: block;
+    width: 67px;
+    height: 67px;
+}
+/* normal state */
+#ie-upgrade-box .ie-upgrade-box-content .ie-upgrade-box-body ul li a i.browser.browser--chrome{
+    background: url("//images.gogoroapp.com/icons/logo-chrome.png") center no-repeat;
+}
+#ie-upgrade-box .ie-upgrade-box-content .ie-upgrade-box-body ul li a i.browser.browser--chrome:hover{
+    background: url("//images.gogoroapp.com/icons/logo-chrome-press.png") center no-repeat;
+}
+/* normal state */
+#ie-upgrade-box .ie-upgrade-box-content .ie-upgrade-box-body ul li a i.browser.browser--firefox{
+    background: url("//images.gogoroapp.com/icons/logo-firefox.png") center no-repeat;
+}
+#ie-upgrade-box .ie-upgrade-box-content .ie-upgrade-box-body ul li a i.browser.browser--firefox:hover{
+    background: url("//images.gogoroapp.com/icons/logo-firefox-press.png") center no-repeat;
+}
+/* normal state */
+#ie-upgrade-box .ie-upgrade-box-content .ie-upgrade-box-body ul li a i.browser.browser--ie11{
+    background: url("//images.gogoroapp.com/icons/logo-ie.png") center no-repeat;
+}
+#ie-upgrade-box .ie-upgrade-box-content .ie-upgrade-box-body ul li a i.browser.browser--ie11:hover{
+    background: url("//images.gogoroapp.com/icons/logo-ie-press.png") center no-repeat;
+}

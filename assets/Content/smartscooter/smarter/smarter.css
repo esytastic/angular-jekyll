@@ -1,0 +1,84 @@
+.key-less-ctrl {
+  width: 100%;
+  height: 500px;
+  background: url(/img/scooter/smarter/key-less-ctrl.jpg) no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+.key-less-ctrl p {
+  margin-bottom: 0;
+}
+
+html[lang=zh-TW] .key-less-ctrl h2 {
+  font-family: 'graphik-extra-light', 'HelveticaNeue-Light', 'xingothic-w3','Microsoft JhengHei', STHeiti, Arial, sans-serif;
+}
+
+html[lang=zh-TW] .key-less-ctrl p {
+  font-family: 'graphik-light', 'xingothic-w3', 'Microsoft JhengHei', STHeiti, Arial, sans-serif;
+}
+
+@media (min-width: 992px) {
+  .key-less-ctrl h2 {
+    width: 390px;
+  }
+}
+
+@media (max-width: 1250px) {
+  .key-less-ctrl {
+    height: 400px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .key-less-ctrl {
+    height: 300px;
+  }
+}
+
+@media (max-width: 750px) {
+  .key-less-ctrl {
+    height: 200px;
+  }
+}
+
+@media (max-width: 650px) {
+  .key-less-ctrl {
+    height: 150px;
+  }
+}
+
+@media (max-width: 768px) {
+  .key-less-ctrl {
+    width: 100%;
+    height: 950px;
+    background: url(/img/scooter/smarter/mobile-key-less-ctrl.jpg) no-repeat;
+    background-size: 100%;
+    padding-top: calc(100%);
+    color: black;
+  }
+}
+
+@media (max-width: 700px) {
+  .key-less-ctrl {
+    height: 850px;
+  }
+}
+
+@media (max-width: 600px) {
+  .key-less-ctrl {
+    height: 750px;
+  }
+}
+
+@media (max-width: 500px) {
+  .key-less-ctrl {
+    height: 680px;
+  }
+}
+
+@media (max-width: 440px) {
+  .key-less-ctrl {
+    height: 600px;
+  }
+}

@@ -1,0 +1,64 @@
+/* ====================================
+   Site colors
+   ==================================== */
+/*
+   Brand colors
+   ====================================
+   White / Light Gray = Fresh and Clean Charcoal / Gray / Dark Gray = Bold and Direct Rich Blue = Performance
+   Blue = Experience
+   Teal = Style
+   Dark Green = Value
+   Green = Eco / Environment
+   Hot Green = Community
+   Red = Warning
+*/
+/* ====================================
+ * Mixins and functions
+ * ==================================== */
+/* Media queries
+ * ==================================== */
+/* Usage: @include breakpoint(sm) {} */
+/* Mixins and functions
+ * ==================================== */
+/* Usage: @include linearGradient() {} */
+/* Usage: @include placeholder() {} */
+/* Usage: @include border-radius(5px) */
+/* Usage: @include opacity(0.8) */
+/* Usage: @include center-block */
+/* Usage: @include text-truncate  */
+/* Extends
+ * ==================================== */
+/* Variables
+ * ==================================== */
+/* Mixins and functions
+ * ==================================== */
+.module-smarter-3-summary-info {
+  background: #00d7ff !important;
+}
+  @media (min-width: 768px) and (max-width: 991px) {
+    .state-fallback .module-smarter-3-summary-info .container {
+      width: 100%; } }
+  @media (max-width: 767px) {
+    .state-fallback .module-smarter-3-summary-info .container {
+      width: 100%; } }
+  .module-smarter-3-summary-info .col-md-4 {
+    border-left: 1px solid #00d0f5;
+    border-right: 1px solid #00d0f5; }
+    .state-fallback .module-smarter-3-summary-info .col-md-4 {
+      border: none; }
+    .module-smarter-3-summary-info .col-md-4 .title {
+      /*color: #323237;  */
+        color: #ffffff;
+    }
+      .state-fallback .module-smarter-3-summary-info .col-md-4 .title {
+        opacity: 1; }
+    .module-smarter-3-summary-info .col-md-4 .body {
+      color: #0069d2; }
+    .module-smarter-3-summary-info .col-md-4 .description {
+      font-size: 17px !important;
+      color: #ffffff;
+    }
+  .module-smarter-3-summary-info .slick-dots li.slick-active button:before {
+    color: #0069d2; }
+  .module-smarter-3-summary-info .slick-dots li:hover button:before {
+    color: #0069d2; }

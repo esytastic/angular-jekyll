@@ -1,0 +1,15 @@
+﻿/* ====================================
+ * Contact
+ * ==================================== */
+#contact-form-container {
+    min-height: 591px;
+    position: relative;
+}
+
+.pg-contact #hero-header h1 {
+    left: -10px;
+}
+
+.form-group {
+    text-align:left;
+}

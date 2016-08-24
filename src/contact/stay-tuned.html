@@ -1,0 +1,87 @@
+---
+layout: en-us/LayoutMaster
+style: |
+    <link rel="stylesheet" href="/css/contact.css">
+scripts: |
+    <script type="text/javascript">
+        var firstNameMessage = 'Your first name is required and cannot be empty';
+        var lastNameMessage = 'Your first name is required and cannot be empty';
+        var cityMessage = 'City is required and cannot be empty';
+        var countryMessage = 'Your country is required and cannot be empty';
+        var emailMessage = 'Your email is required and cannot be empty';
+        var emailValidMessage = 'Your email address is not a valid';
+    </script>
+    <script src="/js/contact.js"></script>
+---
+
+<div class="pg-contact" data-state="StayTuned">
+    <section id="hero-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">
+                    <h1>Stay Tuned</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="main-section">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7 col-md-offset-3 col-xs-12">
+                    <div id="contact-form-container">
+                        <p>Subscribe now and stay tuned if you are interested in experiencing a ride like no other in near future. We'll reach you when we are ready to roll in your city!</p>
+                        <form name="stay-tuned-form" action="{{ site.urls.stayTuned }}" method="post" accept-charset="utf-8" id="stay-tuned-form">
+
+                            <div class="form-group">
+                                <label for="contact-name-first">First Name</label>
+                                <input type="text" name="FirstName" value="" class="form-control" id="contact-name-first" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="contact-name-last">Last Name</label>
+                                <input type="text" name="LastName" value="" class="form-control" id="contact-name-last" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="contact-city" class="margin-top-20">City</label>
+                                <input type="text" name="City" value="" class="form-control" id="contact-city" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="contact-country" class="margin-top-20">Country</label>
+                                <input type="text" name="Country" value="" class="form-control" id="contact-country" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="contact-email-address" class="margin-top-20">Email Address</label>
+                                <input type="email" name="Email" value="" placeholder="" class="form-control" id="contact-email-address" required>
+                            </div>
+
+                            <div class="form-group">
+                                <input type="submit" class="btn btn-outline margin-top" id="stay-form-submit" value="Send">
+                            </div>
+                        </form>
+
+                        <div class="modal fade" id="contact-form-sent" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                        <h3>Message sent!</h3>
+                                        <p>Thanks for stay tuned with Gogoro. We'll be in touch.</p>
+                                        <a href="#" class="btn btn-outline btn-sm margin-top" data-dismiss="modal">Okay</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <hr>
+
+                </div><!--/.col-md-7 -->
+            </div><!--/.row -->
+        </div><!--/.container -->
+    </section><!--/.main-section -->
+</div>

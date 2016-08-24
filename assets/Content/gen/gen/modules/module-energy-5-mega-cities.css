@@ -1,0 +1,76 @@
+.module-energy-5-mega-cities {
+
+}
+.module-energy-5-mega-cities .container {
+    position: relative;
+    height: 100%;
+}
+.module-energy-5-mega-cities .container .body {
+	position: absolute;
+	width: 455px;
+	bottom: 180px;
+	left: 100px;
+}
+.module-energy-5-mega-cities .container .section-links a {
+	display: inline-block;
+	border: none;
+	padding-right: 10px;
+	font-weight: bold;
+	font-family: "graphik-semibold", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	color: #C5C5C6;
+}
+.module-energy-5-mega-cities .container .section-links a.active {
+	color: #02020E;
+}
+
+.module-energy-5-mega-cities .map {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 1000px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%
+}
+
+.module-energy-5-mega-cities .basic-map {
+	background-image: url(/img/gen/landing/smart-stationing-basic.png);
+}
+
+.module-energy-5-mega-cities .data-map {
+	background-image: url(/img/gen/landing/smart-stationing-data.png);
+}
+
+.module-energy-5-mega-cities .standard {
+	height: 1040px;
+	position: relative;
+}
+
+.module-energy-5-mega-cities .standard, .module-energy-5-mega-cities.fallback .fallback {
+	display: block;
+}
+
+.module-energy-5-mega-cities.fallback .standard, .module-energy-5-mega-cities .fallback {
+	display: none;
+}
+
+.module-energy-5-mega-cities .fallback-basic-map {
+	background-image: url(/img/gen/landing/smart-stationing-basic_fallback.png);
+	background-repeat: no-repeat;
+	background-position: 50% 30%;
+	background-size: cover;
+	height: 595px;
+	padding-top: 380px;
+	padding: 380px 25px 0px;
+}
+
+.module-energy-5-mega-cities .fallback-data-map {
+	background-image: url(/img/gen/landing/smart-stationing-data_fallback.png);
+	background-repeat: no-repeat;
+	background-position: 50% 30%;
+	background-size: cover;
+	height: 595px;
+	padding-top: 380px;
+	padding: 380px 25px 0px;
+}

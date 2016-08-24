@@ -1,0 +1,42 @@
+.module-charger-5-smart {
+	height: 800px;
+	background: #F3F5F4;
+	overflow: hidden;
+}
+.module-charger-5-smart .fallback {
+	display: none;
+}
+.module-charger-5-smart .container {
+	position: relative;
+	height: 100%;
+}
+.module-charger-5-smart .left {
+	position: absolute;
+	width: 40%;
+	max-width: 455px;
+	top: 150px;
+	float: none;
+}
+.module-charger-5-smart .video {
+	position: absolute;
+    left: 50%;
+    height: 800px;
+    width: auto;
+}
+.module-charger-5-smart .video video {
+	height: 800px;
+	margin-left: -25%;
+	width: auto;
+}
+@media (max-width: 767px) {
+	.module-charger-5-smart {
+		height: auto;
+	}
+	.module-charger-5-smart .left {
+		width: 100%;
+		max-width: none;
+		top: 0;
+		padding-bottom: 50px;
+		position: relative;
+	}	
+}

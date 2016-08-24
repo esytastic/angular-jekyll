@@ -1,0 +1,98 @@
+﻿
+
+@media (min-width: 1120px) {
+
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+      .pg-faq section.main-section {
+        overflow:hidden;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  
+}
+
+@media (max-width: 767px) {
+
+}
+
+
+
+
+@media (min-width: 1120px) {
+    
+    .story_header {
+        margin-top: 80px;
+           margin-bottom: 40px;
+    }
+
+.beta-program-header h2 {
+    font-size:3.3rem;
+
+}
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    
+    .story_header {
+        margin-top: 80px;
+             margin-bottom: 40px;
+    }
+    .beta-program-header h2 {
+    font-size:3.3rem;
+
+}
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .pg-story .story_header .container {
+        padding:0px;
+    }
+
+        .beta-program-header h2 {
+        margin-top:40px;
+    }
+}
+
+@media (max-width: 767px) {
+   .pg-story .story_header .container {
+        padding:0px;
+    }
+
+    .beta-program-header h2 {
+        margin-top:40px;
+        padding-left:15px;
+        padding-right:15px;
+    }
+    .beta-program-header p {
+           padding-left:15px;
+        padding-right:15px;
+    }
+}
+
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+    
+}
+
+@media (max-width: 767px) {
+   .btn.btn-circle {
+        line-height:152px;
+        font-size:2.5rem;
+    }
+
+      .beta-program-header h2 {
+        margin-top:40px;
+    }
+}
+
+
+
+.BatteryDamageWord {
+    color:#a4a4a4;
+    font-size:1.4rem;
+}

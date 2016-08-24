@@ -1,0 +1,558 @@
+﻿#gogorolite .one_word_here {
+    position: relative;
+    height: 400px;
+}
+
+html[lang=zh-TW] .one_word_here h2 {
+    font-family: 'flama-condensed-bold','xingothic-w8', 'Microsoft JhengHei','STHeiti';
+    margin-bottom: 0px;
+}
+
+.one_word_here h2 {
+    font-family: 'flama-condensed-bold','xingothic-w8', 'Microsoft JhengHei','STHeiti';
+    margin-bottom: 0px;
+    text-transform: uppercase;
+    line-height: 0.9;
+    font-size: 10rem;
+}
+
+@media (max-width: 767px) {
+    .one_word_here h2 {
+        font-size:38px;
+    }
+}
+
+#gogorolite .one_word_here img {
+    height: initial;
+    width: auto;
+}
+
+#gogorolite .one_word_here .container {
+    height: 100%;
+}
+
+    #gogorolite .one_word_here .container .content-wrap {
+        text-align: center;
+        font-size: 44px;
+        font-family: 'graphik-extra-light';
+    }
+
+@media (min-width: 1120px) {
+    #gogorolite .one_word_here h2 {
+        font-size: 10.0rem;
+    }
+
+    html[lang=zh-TW] #gogorolite .one_word_here h2 {
+        font-size: 7.0rem;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    #gogorolite .one_word_here h2 {
+        font-size: 10.0rem;
+    }
+
+    html[lang=zh-TW] #gogorolite .one_word_here h2 {
+        font-size: 7.0rem;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+}
+
+@media (max-width: 767px) {
+    #gogorolite .one_word_here {
+        position: relative;
+        /*height:250px;*/
+        height: 300px;
+    }
+}
+
+.black_background {
+    background-color: #323237;
+    color: #fff;
+}
+
+.grey_background {
+    background-color: #e1e2e4;
+    color: #fff;
+}
+
+.white_background {
+    background-color: #ffffff;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*cusomize-9-degisn-ethos*/
+/* ====================================
+   Site colors
+   ==================================== */
+/*
+   Brand colors
+   ====================================
+   White / Light Gray = Fresh and Clean Charcoal / Gray / Dark Gray = Bold and Direct Rich Blue = Performance
+   Blue = Experience
+   Teal = Style
+   Dark Green = Value
+   Green = Eco / Environment
+   Hot Green = Community
+   Red = Warning
+*/
+/* ====================================
+ * Mixins and functions
+ * ==================================== */
+/* Media queries
+ * ==================================== */
+/* Usage: @include breakpoint(sm) {} */
+/* Mixins and functions
+ * ==================================== */
+/* Usage: @include linearGradient() {} */
+/* Usage: @include placeholder() {} */
+/* Usage: @include border-radius(5px) */
+/* Usage: @include opacity(0.8) */
+/* Usage: @include center-block */
+/* Usage: @include text-truncate  */
+/* Extends
+ * ==================================== */
+/* Variables
+ * ==================================== */
+/* Mixins and functions
+ * ==================================== */
+.module-customize-9-design-ethos {
+    height: 800px;
+    overflow: hidden;
+    position: relative;
+    color: #323237;
+    background-color: #ffffff;
+    padding-top: 48px;
+    padding-bottom: 96px;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .module-customize-9-design-ethos {
+        padding-top: 0;
+        padding-bottom: 48px;
+        height: auto;
+    }
+}
+
+@media (max-width: 767px) {
+    .module-customize-9-design-ethos {
+        padding-top: 0;
+        padding-bottom: 48px;
+        height: auto;
+    }
+}
+
+.module-customize-9-design-ethos .container strong {
+    display: block;
+    margin-bottom: 6px;
+}
+
+.module-customize-9-design-ethos .container h2 {
+    margin: 0;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .module-customize-9-design-ethos .container h2 {
+        margin-bottom: 12px;
+    }
+}
+
+@media (max-width: 767px) {
+    .module-customize-9-design-ethos .container h2 {
+        margin-bottom: 12px;
+    }
+}
+
+.module-customize-9-design-ethos .container p {
+    margin: 0;
+}
+
+.module-customize-9-design-ethos .video {
+    width: 2560px;
+    height: 800px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -1280px;
+    z-index: 0;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .module-customize-9-design-ethos .video {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    .module-customize-9-design-ethos .video {
+        display: none;
+    }
+}
+
+.module-customize-9-design-ethos .background-image {
+    display: none;
+    position: absolute;
+    top: -50px;
+    left: -64px;
+    margin-left: 0px;
+    display: block;
+    width: 70%;
+    height: auto;
+    /*z-index: 2;*/
+    margin-bottom: 24px;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .module-customize-9-design-ethos .background-image {
+        display: block;
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+        margin-left: 0px;
+    }
+
+        .module-customize-9-design-ethos .background-image .design-ethos-images {
+            /*position: absolute;*/
+            /*top:0;*/
+            /*left: 0;*/
+        }
+}
+
+@media (max-width: 767px) {
+    .module-customize-9-design-ethos .background-image {
+        display: block;
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+    }
+
+        .module-customize-9-design-ethos .background-image .design-ethos-images {
+            /*position: absolute;*/
+            /*top:0;*/
+            /*left: 0;*/
+        }
+}
+
+
+/*common*/
+#gogorolite {
+    overflow: hidden;
+}
+
+    /*字形*/
+    #gogorolite p, #gogorolite h3, #gogorolite h5, #gogorolite .container {
+        font-family: 'Graphik-light','xingothic-w3', 'Microsoft JhengHei','STHeiti';
+    }
+
+    #gogorolite .gogorolite_header h2 {
+        font-family: 'Graphik-extra-light','xingothic-w3', 'Microsoft JhengHei','STHeiti';
+    }
+
+    #gogorolite .word-padding h2 {
+        color: #535357;
+    }
+
+
+
+
+.word-padding {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+
+@media (min-width: 1120px) {
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .container {
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+    }
+
+    .word-padding {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+}
+
+@media (max-width: 767px) {
+    #gogorolite .container {
+        margin: 0px;
+        padding: 0px;
+    }
+
+
+    .word-padding {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+
+
+
+
+
+
+
+
+/*header*/
+
+
+
+@media (min-width: 1120px) {
+    .gogorolite_header {
+        background-image: url("//images.gogoroapp.com/gogorolite/ridesimple_banners_20151001.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+        .gogorolite_header img {
+            width: initial;
+        }
+
+        .gogorolite_header .container {
+            height: 1100px;
+        }
+
+        .gogorolite_header h2 {
+            font-size: 8rem;
+        }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .gogorolite_header img {
+        width: initial;
+    }
+
+    .gogorolite_header {
+        /* background-image: url("//images.gogoroapp.com/gogorolite/fallback_Ridesimple_banners_20151001.jpg"); */
+        background-image: url("http://images.gogoroapp.com/gogorolite/ridesimple_banners_20151001.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+        .gogorolite_header .container {
+            height: 1100px;
+        }
+
+        .gogorolite_header h2 {
+            font-size: 8rem;
+        }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .gogorolite_header h2 {
+        font-size: 6rem;
+    }
+
+
+    .gogorolite_header {
+        background-image: url("//images.gogoroapp.com/gogorolite/fallback_Ridesimple_banner_1001.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+        .gogorolite_header .container {
+            height: 813px;
+        }
+}
+
+@media (max-width: 767px) {
+    .gogorolite_header h2 {
+        font-size: 6rem;
+    }
+
+    .gogorolite_header {
+        background-image: url("//images.gogoroapp.com/gogorolite/fallback_Ridesimple_banner_1001.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+        .gogorolite_header .container {
+            height: 813px;
+        }
+}
+
+
+
+
+/*tiny*/
+.gogorolite-tiny {
+    background-color: #f1f3f3;
+}
+
+
+.tiny-icon {
+    margin-right: 20px;
+    line-height: 1.3;
+    display: inline-block;
+    text-align: left;
+}
+
+@media (min-width: 1120px) {
+    .tiny-image img {
+        width: initial;
+        float: left;
+        margin-top: -100px;
+    }
+
+    .gogorolite-tiny .container {
+        height: 955px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .tiny-image img {
+        width: initial;
+        float: left;
+        margin-top: -100px;
+    }
+
+    .gogorolite-tiny .container {
+        height: 955px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+}
+
+@media (max-width: 767px) {
+}
+
+/*simple*/
+.gogorolite-simple {
+    background-color: #f1f3f3;
+    text-align: center;
+}
+
+
+@media (min-width: 1120px) {
+    .simple-image img {
+        width: 100%;
+        float: left;
+        margin-top: -200px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .simple-image img {
+        width: 100%;
+        float: left;
+        margin-top: -200px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+}
+
+@media (max-width: 767px) {
+}
+
+
+
+/*change*/
+.gogorolite-change {
+    background-color: #f1f3f3;
+    text-align: center;
+}
+
+
+.change-icon {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+    .change-icon img {
+        width: initial;
+    }
+
+@media (min-width: 1120px) {
+    .change-image img {
+        width: initial;
+        margin-top: -50px;
+    }
+
+    .gogorolite-change .container {
+        height: 450px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .change-image img {
+        width: initial;
+        float: left;
+        margin-top: -50px;
+    }
+
+    .gogorolite-change .container {
+        height: 450px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+}
+
+@media (max-width: 767px) {
+}
+
+/*city*/
+.gogorolite-city-image .container {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 50px;
+}
+
+.gogorolite-city .container {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+
+@media (min-width: 1120px) {
+    .gogorolite-city-image {
+        background-image: url("//gogoro.imgix.net/gogorolite/design_appbadge.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+        .gogorolite-city-image .container {
+            height: 707px;
+        }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .gogorolite-city-image {
+        background-image: url("//gogoro.imgix.net/gogorolite/design_appbadge.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+        .gogorolite-city-image .container {
+            height: 707px;
+        }
+}

@@ -1,0 +1,28 @@
+﻿.press-main article {
+    padding-bottom: 24px;
+    margin-bottom: 48px;
+    border-bottom: 2px solid #f1f3f3;
+}
+
+.list-product-image {
+  display: inline-block;
+  width: auto;
+}
+
+.list-product-image li {
+  margin: 1px;
+  float: left;
+  display: inline-block;
+  width: 49%;
+  height: auto;
+  overflow: hidden;
+}
+
+.list-product-image li a {
+  border: 0;
+}
+
+.list-product-image li img {
+  width: 100%;
+  height: auto;
+}

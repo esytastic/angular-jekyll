@@ -1,0 +1,53 @@
+﻿/* ====================================
+ * Contact
+ * ==================================== */
+#contact-form-container {
+    min-height: 591px;
+    position: relative;
+}
+
+.pg-contact #hero-header h1 {
+    left: -10px;
+}
+
+.form-group {
+    text-align:left;
+}
+
+.pg-contact .main-section,
+.pg-contact .main-section li,
+.pg-contact .main-section p,
+.pg-contact .main-section ul
+
+{
+    text-align:left;
+    font-family:Graphik-light,xingothic-w3;
+}
+
+.pg-contact .main-section h3{
+    text-align:left;
+    font-family:Graphik-semibold,xingothic-w8;
+}
+
+/* ====================================
+ * info
+ * ==================================== */
+.pg-contact .container.contact--info{
+    padding-bottom: 96px;
+
+}
+@media (max-width: 767px) {
+    .pg-contact .container.contact--info{
+        padding-bottom: 0;
+
+    }
+}
+.pg-contact .info-section{
+    border-bottom: 2px solid #f1f3f3;
+    margin-bottom:48px;
+}
+.pg-contact .info-section:last-child{
+    margin-bottom:0;
+}
+
+

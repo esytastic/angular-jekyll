@@ -1,0 +1,111 @@
+﻿#career .career__latest-positions{
+    position: relative;
+    background-color:#ffffff;
+}
+#career .career__latest-positions .container .statement{
+    height:400px;
+    border-bottom:2px solid #F1F3F3;
+}
+#career .career__latest-positions .container .statement h2{
+    width:800px;
+    color:#323237;
+    margin:0 auto;
+    text-align:center;
+}
+#career .career__latest-positions .container .positions{
+   height:1230px;
+   text-align:center;
+}
+#career .career__latest-positions .container .positions h4{
+    text-align:center;
+    font-family: 'graphik-semibold';
+    font-size:18px;
+    margin-top:60px;
+    margin-bottom:60px;
+}
+#career .career__latest-positions .container .positions h4.zh-tw{
+    font-family: 'xingothic-w8';
+    color:#535357;
+}
+#career .career__latest-positions .container .positions .row .position{
+   text-align:left;
+   margin-bottom:100px;
+}
+#career .career__latest-positions .container .positions .row .position h3{
+   font-family: 'graphik-light';
+   font-weight:200;
+   font-size:30px;
+   color:#323237;
+   margin-bottom:5px;
+}
+#career .career__latest-positions .container .positions .row .position h3.zh-tw{
+   font-family: 'xingothic-w3';
+}
+#career .career__latest-positions .container .positions .row .position p{
+   margin:0;
+   margin-bottom:10px;
+}
+#career .career__latest-positions .container .positions .row .position p cite{
+   font-family: 'graphik-semibold';
+   font-size:18px;
+}
+#career .career__latest-positions .container .positions .row .position p cite:after{
+    content:'|';
+    font-family: 'graphik-light';
+    color:#323237;
+    margin-left:10px;
+    margin-right:10px;
+}
+#career .career__latest-positions .container .positions .row .position p span.zh-tw{
+ font-family: 'xingothic-w3';
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    #career .career__latest-positions .container .statement{
+        height:100%;
+        margin-top:50px;
+        margin-bottom:50px;
+    }
+    #career .career__latest-positions .container .statement h2{
+        width:100%;
+    }
+    #career .career__latest-positions .container .positions{
+       height:100%;
+       margin-bottom:50px;
+    }
+    #career .career__latest-positions .container .positions .row .position{
+       text-align:center;
+       margin-bottom:50px;
+    }
+    #career .career__latest-positions .container .positions .row .position p cite:after{
+       display:block;
+    }
+    #career .career__latest-positions .container .positions .row .position p cite:after{
+        content:'';
+    }
+}
+@media (max-width: 767px) {
+    #career .career__latest-positions .container .statement{
+        height:100%;
+        margin-top:50px;
+        margin-bottom:50px;
+    }
+    #career .career__latest-positions .container .statement h2{
+        width:100%;
+        padding-bottom: 20px;
+    }
+    #career .career__latest-positions .container .positions{
+       height:100%;
+       margin-bottom:50px;
+    }
+    #career .career__latest-positions .container .positions .row .position{
+       text-align:center;
+       margin-bottom:50px;
+    }
+    #career .career__latest-positions .container .positions .row .position p cite:after{
+       display:block;
+    }
+    #career .career__latest-positions .container .positions .row .position p cite:after{
+        content:'';
+    }
+}

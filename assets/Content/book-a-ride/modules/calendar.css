@@ -1,0 +1,264 @@
+﻿#book-a-ride .request-ride .calendar{
+    margin-top:60px;
+    min-height:80px;
+}
+#book-a-ride .request-ride .calendar .container{
+
+}
+
+#book-a-ride .request-ride .calendar .container header{
+
+}
+#book-a-ride .request-ride .calendar .container header h2{
+    float:left;
+}
+
+#book-a-ride .request-ride .calendar .container header #dropdown--month{
+    float:right;
+}
+
+#book-a-ride .request-ride .calendar .container .dates-wrap{
+
+}
+#book-a-ride .request-ride .calendar .container .dates-wrap .table{
+    display:table;
+    
+    height:170px;
+}
+#book-a-ride .request-ride .calendar .container .dates-wrap .table .table-row{
+    display:table-row;
+}
+#book-a-ride .request-ride .calendar .container .dates-wrap .table .table-row .table-cell{
+    display:table-cell;
+    vertical-align:middle;
+    text-align:center;
+     border:1px solid #D7D7D7;
+}
+#book-a-ride .request-ride .calendar .container .dates-wrap .table .table-row .table-cell.date-container{
+    width:170px;
+    border-right:none;
+}
+#book-a-ride .request-ride .calendar .container .dates-wrap .table .table-row 
+.table-cell.date-container .date-wrap{
+    position:relative;
+    height:100%;
+    width:100%;
+    padding-top:10px;
+    padding-bottom:20px;
+}
+#book-a-ride .request-ride .calendar .container .dates-wrap .table .table-row 
+.table-cell.date-container .date-wrap .week,
+#book-a-ride .request-ride .calendar .container .dates-wrap .table .table-row 
+.table-cell.date-container .date-wrap .month
+{
+    display:block;
+    color:#b9bcbf;
+    font-size:16px;
+    line-height:15px;
+}
+
+#book-a-ride .request-ride .calendar .container .dates-wrap .table .table-row 
+.table-cell.date-container .date-wrap .month
+{
+margin-top:5px
+}
+#book-a-ride .request-ride .calendar .container .dates-wrap .table .table-row 
+.table-cell.date-container .date-wrap .day{
+    font-family: 'flama-semicondensed-ultralight';
+    color:#323237;
+    font-size:88px;
+    line-height:80px;
+}
+
+#book-a-ride .request-ride .calendar .container .dates-wrap .table .table-row .table-cell.date-container .date-wrap .week.selected,
+#book-a-ride .request-ride .calendar .container .dates-wrap .table .table-row .table-cell.date-container .date-wrap .month.selected,
+#book-a-ride .request-ride .calendar .container .dates-wrap .table .table-row .table-cell.date-container .date-wrap .day.selected
+{
+    color:#0069d2;
+}
+
+
+
+#book-a-ride .request-ride .calendar .container .dates-wrap .table .table-row .table-cell.time{
+    
+    overflow:hidden;
+    /*border-right:none;
+    border-left:none;*/
+}
+
+#book-a-ride .request-ride .calendar .container .dates-wrap .table .table-row .table-cell.time .timer-wrap{
+    width:840px;
+    overflow:hidden;
+}
+
+#book-a-ride .request-ride .calendar .container .dates-wrap .table .table-row .table-cell.time ul{
+
+    list-style:none;
+    padding:0;
+    margin:0;
+}
+#book-a-ride .request-ride .calendar .container .dates-wrap .table .table-row .table-cell.time ul li.time-box{
+    display:inline-block;
+    width:100px;
+}
+#book-a-ride .request-ride .calendar .container .dates-wrap .table .table-row .table-cell.time ul li.time-box.event{
+    width:48%;
+}
+#book-a-ride .request-ride .calendar .container .dates-wrap .table .table-row .table-cell.time ul li.time-box.store{
+    width:30%;
+}
+#book-a-ride .request-ride .calendar .container .dates-wrap .table .table-row .table-cell.time ul li a.current-time{
+    border:none;
+    font-size:20px;
+    color:#b9bcbf; /* not avaiable time*/
+}
+#book-a-ride .request-ride .calendar .container .dates-wrap .table .table-row .table-cell.time ul li a.current-time.active{
+    color:#323237; /* avaiable time*/
+}
+#book-a-ride .request-ride .calendar .container .dates-wrap .table .table-row .table-cell.time ul li a.current-time.active:hover{
+    color:#0069d2; /* hover on avaiable time*/
+}
+#book-a-ride .request-ride .calendar .container .dates-wrap .table .table-row .table-cell.time ul li a.current-time.active.selected{
+    color:#0069d2; /* selected time*/
+}
+
+
+#book-a-ride .request-ride .calendar .container .dates-wrap .table .table-row .table-cell.time ul li a span.noon{
+    font-size:14px;
+}
+
+#book-a-ride .request-ride .calendar .container .dates-wrap .table .table-row .table-cell.indicator{
+    width:65px;
+}
+
+#book-a-ride .request-ride .calendar .container .dates-wrap .table .table-row .table-cell.indicator a{
+    display:block;
+    border-bottom:none;
+}
+
+#book-a-ride .request-ride .calendar .container .dates-wrap .table .table-row .table-cell.indicator a i{
+   font-size:25px;
+   font-weight:700;
+   color:#B9BCBF;
+
+-webkit-transition: color 0.5s linear;
+-moz-transition: color 0.5s linear;
+-ms-transition: color 0.5s linear;
+-o-transition: color 0.5s linear;
+transition: color 0.5s linear;
+}
+#book-a-ride .request-ride .calendar .container .dates-wrap .table .table-row .table-cell.indicator a i:hover{
+   color:#323237;
+}
+
+
+#book-a-ride .request-ride .calendar .container .show-more{
+
+}
+#book-a-ride .request-ride .calendar .container .next-step{
+    margin-top:80px;
+}
+
+
+#book-a-ride .request-ride .calendar .container ol.calendar-notes{
+   margin-top:0;
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+
+/* iPad in portrait & landscape */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px)  {
+    #book-a-ride .request-ride .calendar{
+        margin-top:50px;
+    }
+    #book-a-ride .request-ride .calendar .container header h2 {
+        float: none;
+    }
+
+    #dropdown--date {
+      width:100%;
+      padding:10px;
+    }
+
+    .fallback-time-wrap {
+       background-color:#F2F4F3;
+       padding-top:25px;
+       padding-bottom:25px;
+    }
+    
+    .fallback-time-wrap a{
+        display:block;
+        font-size:28px;
+        margin-bottom:40px;
+        border:none;
+        color:#b9bcbf; /* not avaiable time*/
+    }
+    .fallback-time-wrap a.active{
+        color:#323237; /* avaiable time*/
+    }
+    .fallback-time-wrap a.active.selected{
+        color:#0069d2; /* avaiable time*/
+    }
+
+    .contact-form-wrap h3{
+      font-size:38px;
+    } 
+    .contact-form-wrap h3+p{
+      font-size:28px;
+    } 
+    form{
+     padding:25px;
+    } 
+    form label {
+     font-size:18px;
+    } 
+    form .form-group {
+     text-align:left;
+    } 
+}
+
+/* iPad in portrait */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+  
+}
+
+@media (max-width: 767px) {
+    #book-a-ride .request-ride .calendar .container header h2 {
+        float: none;
+    }
+
+    #dropdown--date {
+      width:100%;
+      padding:10px;
+    }
+
+    .fallback-time-wrap {
+       background-color:#F2F4F3;
+       padding-top:25px;
+       padding-bottom:25px;
+    }
+    
+    .fallback-time-wrap a{
+        display:block;
+        font-size:28px;
+        margin-bottom:40px;
+        border:none;
+        color:#b9bcbf; /* not avaiable time*/
+    }
+    .fallback-time-wrap a.active{
+        color:#323237; /* avaiable time*/
+    }
+    .fallback-time-wrap a.active.selected{
+        color:#0069d2; /* avaiable time*/
+    }
+}
+

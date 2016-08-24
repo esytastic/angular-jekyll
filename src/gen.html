@@ -1,0 +1,197 @@
+---
+layout: en-us/LayoutMaster
+action: energy
+style: |
+    <link rel="stylesheet" href="/css/gen/gen.css">
+scripts: |
+    <script src="/js/gen/gen.js"></script>
+    <script>
+        var vm_api_url = "https://wapi.gogoro.com/tw/api/vm/list";
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places"></script>
+---
+
+<div id="energy" ng-controller="GenController">
+
+    <div id="module-energy-1-page-intro" class="module-energy-1-page-intro module-page-intro" ng-controller="moduleEnergy1PageIntroController">
+        <div class="container">
+            <div class="body">
+            	<img src="/img/gen/landing/plus-minus.png" class="center">
+                <h2>Gogoro&reg; Energy Network</h2>
+                <p>Gogoro is accelerating the transformation of megacities into smart cities by leveraging the power of connectivity and technology to reinvent how we manage, distribute and experience energy in a smarter way.</p>
+            </div>
+        </div>
+    </div>
+
+    {% include en-us/GENTabbar.html %}
+
+    <div class="module-energy-2-smart-city" ng-controller="moduleEnergy2SmartCityController">
+        <div class="container mobile-fallback-image"></div>
+
+        <div class="slider">
+
+    	    <div class="slider-content frame-1">
+                <div class="standard">
+                    <div class="body">
+                        <h2>Smart Cities, Energized</h2>
+        	            <p>The world’s megacities are experiencing hype-growth resulting in pollution fallout, transportation gridlock and unforeseen demands on the legacy energy infrastructure.  It is essential for both the private, public and consumer sectors to make new strides towards using cleaner, more efficient and smarter energy.</p>
+                    </div>
+                </div>
+                <div class="fallback">
+                    <div class="slider-image"></div>
+                    <div class="body">
+                        <h2>Smart Cities, Energized</h2>
+        	            <p>The world’s megacities are experiencing hype-growth resulting in pollution fallout, transportation gridlock and unforeseen demands on the legacy energy infrastructure.  It is essential for both the private, public and consumer sectors to make new strides towards using cleaner, more efficient and smarter energy.</p>
+                    </div>
+                </div>
+    	    </div>
+
+            <div class="slider-content frame-2">
+                <div class="standard">
+                    <div class="body">
+                        <h2>A Smarter Energy Network</h2>
+        	            <p>The Gogoro® Energy Network with Gogoro’s swappable batteries make two-wheel electric transportation in cities more practical by eliminating the inconvenience and hassle of charging. The GoStation® battery swapping unit is easy to deploy, and with its low physical footprint, can easily adapt to a wide range of environments, making network scaleability and expansion fast, easy and more flexible.</p>
+                    </div>
+                </div>
+                <div class="fallback">
+                    <div class="slider-image"></div>
+                    <div class="body">
+                        <h2>A Smarter Energy Network</h2>
+        	            <p>The Gogoro® Energy Network with Gogoro’s swappable batteries make two-wheel electric transportation in cities more practical by eliminating the inconvenience and hassle of charging. The GoStation® battery swapping unit is easy to deploy, and with its low physical footprint, can easily adapt to a wide range of environments, making network scaleability and expansion fast, easy and more flexible.</p>
+                    </div>
+                </div>
+    	    </div>
+
+            <div class="slider-content frame-3">
+                <div class="standard">
+                    <div class="body">
+                        <h2>Big Data Analytics and Management</h2>
+            	        <p>The Gogoro® Energy Network compiles consumer energy consumption patterns from big data to predict and forecast swapping demands. This enables Gogoro to dynamically manage each GoStation® site, so recharge timing can avoid peak hours or as electricity demands surge. This results in more efficient energy distribution and reduces the burden on the energy infrastructure.</p>
+                    </div>
+                </div>
+                <div class="fallback">
+                    <div class="slider-image"></div>
+                    <div class="body">
+                        <h2>Big Data Analytics and Management</h2>
+            	        <p>The Gogoro® Energy Network compiles consumer energy consumption patterns from big data to predict and forecast swapping demands. This enables Gogoro to dynamically manage each GoStation® site, so recharge timing can avoid peak hours or as electricity demands surge. This results in more efficient energy distribution and reduces the burden on the energy infrastructure.</p>
+                    </div>
+                </div>
+    	    </div>
+    	</div>
+
+        <div class="slider-dots-container"></div>
+
+    	<!-- <div class="container slider">
+            <div class="slider-dots-container"></div>
+    	    <div class="body slider-content">
+                <div class="frame">
+                    <h2>Smart Cities, Energized</h2>
+        	        <p>The world’s megacities are experiencing hype-growth resulting in pollution fallout, transportation gridlock and unforeseen demands on the legacy energy infrastructure.  It is essential for both the private, public and consumer sectors to make new strides towards using cleaner, more efficient and smarter energy.</p>
+                </div>
+                <div class="frame">
+                    <h2>A Smarter Energy Network</h2>
+        	        <p>The Gogoro® Energy Network with Gogoro’s swappable batteries make two-wheel electric transportation in cities more practical by eliminating the inconvenience and hassle of charging. The GoStation® battery swapping unit is easy to deploy, and with its low physical footprint, can easily adapt to a wide range of environments, making network scaleability and expansion fast, easy and more flexible.</p>
+                </div>
+                <div class="frame">
+                    <h2>Big Data Analytics and Management</h2>
+        	        <p>The Gogoro® Energy Network compiles consumer energy consumption patterns from big data to predict and forecast swapping demands. This enables Gogoro to dynamically manage each GoStation® site, so recharge timing can avoid peak hours or as electricity demands surge. This results in more efficient energy distribution and reduces the burden on the energy infrastructure.</p>
+                </div>
+    	    </div>
+    	</div> -->
+    </div>
+
+    <div class="module-energy-3-smarter-cleaner" ng-controller="moduleEnergy3SmarterCleanerController">
+        <h2 class="vertical-center-simple fallback">Smarter, Cleaner and More Flexible Energy Networks</h2>
+
+        <div class="animating-texts">
+            <div class="vcenter">
+                <p><span data-content="Smarter,">Smarter,</span></p>
+                <p><span data-content="Cleaner">Cleaner</span></p>
+                <p><span data-content="&amp; More Flexible Energy">&amp; More Flexible Energy</span></p>
+            </div>
+        </div>
+        <!--<div class="video">
+            <video width="1500" height="400" muted preload='auto' loop autoplay>
+                <source src="/img/gen/landing/SmarterCleaner.mp4" type="video/mp4" />
+                <source src="/img/gen/landing/SmarterCleaner.webm" type="video/webm" />
+            </video>
+        </div>-->
+    </div>
+
+    <div class="module-energy-5-mega-cities" ng-controller="moduleEnergy5MegaCitiesController">
+        <div class="standard">
+            <div class="map data-map"></div>
+            <div class="map basic-map"></div>
+        	<div class="container">
+        	    <div class="body">
+        	        <h2>Smart Stationing</h2>
+                    <p style="height: 135px" ng-show="selectedView == 'basic'">When deploying to new cities, Gogoro distributes multiple GoStation® systems to ensure initial network coverage that fits the basic riding demands of the city’s residents.</p>
+                    <p style="height: 135px" ng-show="selectedView == 'data'">Every Gogoro rider contributes advanced data for deployment optimization.  By analyzing energy usage and riding behavior patterns, Gogoro is able to develop deployment expansion efforts based on the actual demands of our riders. </p>
+        	        <div class="section-links">
+        	        	<a data-ng-class="{'active' : selectedView == 'basic'}" ng-click="change('basic')" class="active">Basic Deployment</a>
+        	        	<a data-ng-class="{'active' : selectedView == 'data'}" ng-click="change('data')">Data Driven Expansion</a>
+        	        </div>
+        	    </div>
+        	</div>
+        </div>
+        <div class="fallback">
+            <div class="fallback-basic-map">
+                <h2>Basic Deployment</h2>
+                <p>When deploying to new cities, Gogoro distributes multiple GoStation® systems to ensure initial network coverage that fits the basic riding demands of the city’s residents.</p>
+            </div>
+            <div class="fallback-data-map">
+                <h2>Data Driven Expansion</h2>
+                <p>Every Gogoro rider contributes advanced data for deployment optimization.  By analyzing energy usage and riding behavior patterns, Gogoro is able to develop deployment expansion efforts based on the actual demands of our riders.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="module-energy-6-taipei" ng-controller="moduleEnergy6TaipeiController">
+    	<div class="container">
+    	    <div class="body">
+                <div class="taipei-title-container">
+                    <img class="taipei-border" src="/img/gen/landing/taipei-border.svg" alt="TAIPEI">
+        	        <h2>TAIPEI</h2>
+                </div>
+    	        <img src="/img/gen/landing/section-dot.svg" class="dot">
+    	        <h3>GOGORO'S FIRST PILOT CITY</h3>
+    	        <p>In August 2015, Gogoro launched Smartscooter™ two-wheeled EV and Gogoro® Energy Network in Greater Taipei, our first pilot city. During the peak expansion period, the energy network grew at a rate of one GoStation® site per day. The coverage now extended to 3 neighboring cities around Taipei, with more than <b>140 GoStation&reg;</b> sites established.</p>
+    	    </div>
+    	</div>
+    </div>
+
+    <div class="module-energy-7-map" ng-controller="moduleEnergy7MapController">
+    	<input id="pac-input" class="controls hidden" type="text" placeholder="Search Box">
+	    <div id="map-canvas" style="width:100%; height: 100%;"></div>
+    </div>
+
+    <div class="module-energy-9-co2-saving" ng-controller="moduleEnergy9CO2SavingController">
+    	<div class="container">
+            <div class="row body">
+                <div class="col-md-6">
+                    <img src="/img/gen/landing/nox-graph.png">
+                </div>
+                <div class="col-md-6">
+                    <h2>A Better, <br>Cleaner City</h2>
+    	        	<p>Approximately 36% of NOx and PM2.5 air pollutants in Taiwan come from vehicles. The Gogoro® Energy Network provides a smarter and more efficient energy solution that is a much cleaner alternative.</p>
+                </div>
+            </div>
+    	</div>
+    </div>
+
+    <div class="module-energy-10-pilot-city" ng-controller="moduleEnergy10PilotCityController">
+        <div class="container">
+            <div class="statement vertical-center-container" style="border-bottom: 0px solid #000;">
+                <div class="statement_container vertical-center">
+                    <div class="row">
+                        <p></p><h2>Be the next city.</h2><p></p>
+                    </div>
+                    <div class="row">
+                        <a href="/open" class="btn btn-outline--white">LET'S GO</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

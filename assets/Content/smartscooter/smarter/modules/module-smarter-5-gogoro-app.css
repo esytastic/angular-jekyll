@@ -1,0 +1,257 @@
+﻿@charset "UTF-8";
+/* ====================================
+   Site colors
+   ==================================== */
+/*
+   Brand colors
+   ====================================
+   White / Light Gray = Fresh and Clean Charcoal / Gray / Dark Gray = Bold and Direct Rich Blue = Performance
+   Blue = Experience
+   Teal = Style
+   Dark Green = Value
+   Green = Eco / Environment
+   Hot Green = Community
+   Red = Warning
+*/
+/* ====================================
+ * Mixins and functions
+ * ==================================== */
+/* Media queries
+ * ==================================== */
+/* Usage: @include breakpoint(sm) {} */
+/* Mixins and functions
+ * ==================================== */
+/* Usage: @include linearGradient() {} */
+/* Usage: @include placeholder() {} */
+/* Usage: @include border-radius(5px) */
+/* Usage: @include opacity(0.8) */
+/* Usage: @include center-block */
+/* Usage: @include text-truncate  */
+/* Extends
+ * ==================================== */
+/* Variables
+ * ==================================== */
+/* Mixins and functions
+ * ==================================== */
+/* stolen from our carousel */
+/*0.3;*/
+
+.module-smarter-5-gogoro-app .compatibility {
+    color:#8f9091;
+    font-size:1.4rem;
+}
+
+.module-smarter-5-gogoro-app {
+    position: relative;
+}
+
+    .module-smarter-5-gogoro-app section {
+        width: 100%;
+        height: 800px;
+        padding: 0 30px;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        position: relative;
+    }
+
+    .module-smarter-5-gogoro-app .app-img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .module-smarter-5-gogoro-app #gogoro-app section {
+        background-color: #fff;
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+
+
+.module-smarter-5-gogoro-app #gogoro-app section#section-one {
+    background-image: url(//images.gogoroapp.com/smarter/en/gogoro-app-1.png);
+}
+html[lang=zh-TW] .module-smarter-5-gogoro-app #gogoro-app section#section-one { 
+    background-image: url(//images.gogoroapp.com/smarter/tw/gogoro-app-1.png); 
+}
+
+.module-smarter-5-gogoro-app #gogoro-app section#section-two {
+    background-color: #efefef;
+    background-image: url(//images.gogoroapp.com/gogoro-app-20150513.png);
+}
+html[lang=zh-TW] .module-smarter-5-gogoro-app #gogoro-app section#section-two { 
+    background-image: url(//images.gogoroapp.com/smarter/tw/gogoro-app-2.png); 
+}
+
+.module-smarter-5-gogoro-app #gogoro-app section#section-three {
+    background-image: url(//images.gogoroapp.com/gogoro-app-3_0616.png);
+}
+html[lang=zh-TW] .module-smarter-5-gogoro-app #gogoro-app section#section-three { 
+    background-image: url(//images.gogoroapp.com/gogoro-app-3_ch_0616.png); 
+}
+
+.module-smarter-5-gogoro-app #gogoro-app section#section-four {
+    background-color: #efefef;
+    background-image: url(//images.gogoroapp.com/gogoro-app-4_0616.png);
+}
+html[lang=zh-TW] .module-smarter-5-gogoro-app #gogoro-app section#section-four { 
+    background-image: url(//images.gogoroapp.com/gogoro-app-4_ch_0616.png); 
+}
+
+.module-smarter-5-gogoro-app #gogoro-app section#section-five {
+    background-image: url(//images.gogoroapp.com/gogoro-app-5_0616.png);
+}
+html[lang=zh-TW] .module-smarter-5-gogoro-app #gogoro-app section#section-five { 
+    background-image: url(//images.gogoroapp.com/gogoro-app-5_ch_0616.png); 
+}
+
+.module-smarter-5-gogoro-app #gogoro-app section#section-six {
+    background-color: #efefef;
+    background-image: url(//images.gogoroapp.com/smarter/en/gogoro-app-6.png);
+}
+html[lang=zh-TW] .module-smarter-5-gogoro-app #gogoro-app section#section-six { 
+    background-image: url(//images.gogoroapp.com/smarter/tw/gogoro-app-6.png); 
+}
+
+.module-smarter-5-gogoro-app #gogoro-app section#section-seven {
+    background-image: url(//images.gogoroapp.com/smarter/en/gogoro-app-7.png);
+}
+html[lang=zh-TW] .module-smarter-5-gogoro-app #gogoro-app section#section-seven { 
+    background-image: url(//images.gogoroapp.com/smarter/tw/gogoro-app-7.png); 
+}
+
+
+
+
+    .module-smarter-5-gogoro-app #gogoro-app.scroll-start #section-one {
+        background-attachment: scroll;
+    }
+
+    .module-smarter-5-gogoro-app #gogoro-app.scroll-end #section-seven {
+        background-attachment: scroll;
+    }
+
+    .module-smarter-5-gogoro-app #app-pagination {
+        display: none;
+        position: relative;
+        position: fixed;
+        right: 34px;
+        top: 50%;
+        margin-top: -115px;
+    }
+
+        .module-smarter-5-gogoro-app #app-pagination ul {
+            list-style: none;
+            text-align: right;
+        }
+
+        .module-smarter-5-gogoro-app #app-pagination li a {
+            padding: 5px;
+            margin-bottom: 15px;
+            display: block;
+            text-decoration: none;
+            border: none;
+            position: relative;
+            width: 20px;
+            height: 20px;
+        }
+
+            .module-smarter-5-gogoro-app #app-pagination li a span {
+                display: none;
+                position: absolute;
+                top: 1px;
+                right: 25px;
+                font-size: 14px;
+                font-family: "graphik-extra-light", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+                font-weight: 200;
+                font-style: normal;
+                width: 300px;
+                color: #323237;
+            }
+
+            .module-smarter-5-gogoro-app #app-pagination li a:before {
+                content: "";
+                font-family: "gogoro-icons";
+                font-size: 12px;
+                line-height: 1;
+                text-align: center;
+                color: #c1c1c3;
+                opacity: 1;
+                position: absolute;
+                left: 5px;
+                top: 5px;
+            }
+
+            .module-smarter-5-gogoro-app #app-pagination li a:hover span {
+                display: block;
+            }
+
+            .module-smarter-5-gogoro-app #app-pagination li a:hover:before {
+                color: #323237;
+            }
+
+        .module-smarter-5-gogoro-app #app-pagination li.active a:before {
+            color: #323237;
+            opacity: 1;
+            content: "";
+        }
+
+    .module-smarter-5-gogoro-app .module-smarter-5-fallback {
+        display: none;
+    }
+
+.state-fallback .module-smarter-5-gogoro-app .module-smarter-5-fallback {
+    display: block;
+    height: auto;
+    padding: 48px 0;
+    position: relative;
+}
+
+@media (max-width: 767px) {
+    .state-fallback .module-smarter-5-gogoro-app .module-smarter-5-fallback {
+        padding-top: 38px;
+    }
+}
+
+.state-fallback .module-smarter-5-gogoro-app .module-smarter-5-fallback .container {
+    height: 100%;
+}
+
+.state-fallback .module-smarter-5-gogoro-app .module-smarter-5-fallback .background-image {
+    margin-bottom: 48px;
+}
+
+.state-fallback .module-smarter-5-gogoro-app .module-smarter-5-fallback .slide {
+    height: 600px;
+    padding-bottom: 24px;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .state-fallback .module-smarter-5-gogoro-app .module-smarter-5-fallback .slide {
+        height: auto;
+        padding-bottom: 48px;
+    }
+}
+
+@media (max-width: 767px) {
+    .state-fallback .module-smarter-5-gogoro-app .module-smarter-5-fallback .slide {
+        height: auto;
+        padding-bottom: 48px;
+    }
+}
+
+.state-fallback .module-smarter-5-gogoro-app .module-smarter-5-fallback .slide p {
+    margin-bottom: 0;
+}
+
+.state-fallback .module-smarter-5-gogoro-app .module-smarter-5-fallback .slick-dots {
+    z-index: 100;
+    bottom: 24px;
+}

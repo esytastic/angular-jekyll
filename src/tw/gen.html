@@ -1,0 +1,197 @@
+---
+layout: zh-tw/LayoutMaster
+action: energy
+style: |
+    <link rel="stylesheet" href="/css/gen/gen.css">
+scripts: |
+    <script src="/js/gen/gen.js"></script>
+    <script>
+        var vm_api_url = "https://wapi.gogoro.com/tw/api/vm/list";
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places"></script>
+---
+
+<div id="energy" ng-controller="GenController">
+
+    <div id="module-energy-1-page-intro" class="module-energy-1-page-intro module-page-intro" ng-controller="moduleEnergy1PageIntroController">
+        <div class="container">
+            <div class="body">
+            	<img src="/img/gen/landing/plus-minus.png" class="center">
+            	<h2><span class="graphik-extra-light">Gogoro&reg;</span> 能源網路</h2>
+                <p>透過網路和科技的力量，重新創造人們聰明地使用和體驗能源的方式，促使全世界的巨型都市逐步被轉型為智慧城市。</p>
+            </div>
+        </div>
+    </div>
+
+    {% include zh-tw/GENTabbar.html %}
+
+    <div class="module-energy-2-smart-city" ng-controller="moduleEnergy2SmartCityController">
+        <div class="container mobile-fallback-image"></div>
+
+        <div class="slider">
+
+    	    <div class="slider-content frame-1">
+                <div class="standard">
+                    <div class="body">
+                        <h2>進化智慧城市</h2>
+        	            <p>全世界高速成長的巨型都市，正面臨著環境污染、交通壅塞、能源設施老舊等等難題。這是一個臨界時刻，由公私部門以及廣大的消費者，一起邁出步伐，使用更乾淨、更有效率、更聰明的能源系統。</p>
+                    </div>
+                </div>
+                <div class="fallback">
+                    <div class="slider-image"></div>
+                    <div class="body">
+                        <h2>進化智慧城市</h2>
+        	            <p>全世界高速成長的巨型都市，正面臨著環境污染、交通壅塞、能源設施老舊等等難題。這是一個臨界時刻，由公私部門以及廣大的消費者，一起邁出步伐，使用更乾淨、更有效率、更聰明的能源系統。</p>
+                    </div>
+                </div>
+    	    </div>
+
+            <div class="slider-content frame-2">
+                <div class="standard">
+                    <div class="body">
+                        <h2>智慧能源網路</h2>
+                        <p><span class="graphik-light">Gogoro®</span> 能源網路以其便利的電池交換系統，解決電動車在充電上的緩慢與不便，讓電動車的實用性與普遍性倍增。<span class="graphik-light">GoStation®</span> 電池交換站架設快速簡便，對於環境的適應力高，利於靈活且快速地建置與布局。</p>
+                    </div>
+                </div>
+                <div class="fallback">
+                    <div class="slider-image"></div>
+                    <div class="body">
+                        <h2>智慧能源網路</h2>
+                        <p><span class="graphik-light">Gogoro®</span> 能源網路以其便利的電池交換系統，解決電動車在充電上的緩慢與不便，讓電動車的實用性與普遍性倍增。<span class="graphik-light">GoStation®</span> 電池交換站架設快速簡便，對於環境的適應力高，利於靈活且快速地建置與布局。</p>
+                    </div>
+                </div>
+    	    </div>
+
+            <div class="slider-content frame-3">
+                <div class="standard">
+                    <div class="body">
+                        <h2>雲端數據管理</h2>
+                        <p><span class="graphik-light">Gogoro®</span> 能源網路將消費者的能源使用模式，匯集成大數據，以瞭解並預測各地的電池需求。這一套智慧的數據交換系統，讓 <span class="graphik-light">Gogoro</span> 得以動態管理每一個 <span class="graphik-light">GoStation®</span> 電池交換站點，避免在電力需求的尖峰時刻為電池充電，讓能源應用更有效率，減少發電設備電力供給的負擔。</p>
+                    </div>
+                </div>
+                <div class="fallback">
+                    <div class="slider-image"></div>
+                    <div class="body">
+                        <h2>雲端數據管理</h2>
+                        <p><span class="graphik-light">Gogoro®</span> 能源網路將消費者的能源使用模式，匯集成大數據，以瞭解並預測各地的電池需求。這一套智慧的數據交換系統，讓 <span class="graphik-light">Gogoro</span> 得以動態管理每一個 <span class="graphik-light">GoStation®</span> 電池交換站點，避免在電力需求的尖峰時刻為電池充電，讓能源應用更有效率，減少發電設備電力供給的負擔。</p>
+                    </div>
+                </div>
+    	    </div>
+    	</div>
+
+        <div class="slider-dots-container"></div>
+
+    	<!-- <div class="container slider">
+            <div class="slider-dots-container"></div>
+    	    <div class="body slider-content">
+                <div class="frame">
+                    <h2>Smart Cities, Energized</h2>
+        	        <p>The world’s megacities are experiencing hype-growth resulting in pollution fallout, transportation gridlock and unforeseen demands on the legacy energy infrastructure.  It is essential for both the private, public and consumer sectors to make new strides towards using cleaner, more efficient and smarter energy.</p>
+                </div>
+                <div class="frame">
+                    <h2>A Smarter Energy Network</h2>
+        	        <p>The Gogoro® Energy Network with Gogoro’s swappable batteries make two-wheel electric transportation in cities more practical by eliminating the inconvenience and hassle of charging. The GoStation® battery swapping unit is easy to deploy, and with its low physical footprint, can easily adapt to a wide range of environments, making network scaleability and expansion fast, easy and more flexible.</p>
+                </div>
+                <div class="frame">
+                    <h2>雲端數據管理</h2>
+        	        <p>Gogoro® 能源網路將消費者的能源使用模式，匯集成大數據，以瞭解並預測各地的電池需求。這一套智慧的數據交換系統，讓 Gogoro 得以動態管理每一個 GoStation® 電池交換站點，避免在電力需求的尖峰時刻為電池充電，讓能源應用更有效率，減少發電設備電力供給的負擔。</p>
+                </div>
+    	    </div>
+    	</div> -->
+    </div>
+
+    <div class="module-energy-3-smarter-cleaner" ng-controller="moduleEnergy3SmarterCleanerController">
+        <h2 class="vertical-center-simple fallback">更智慧、更乾淨、更自由靈活的能源網路</h2>
+
+        <div class="animating-texts">
+            <div class="vcenter">
+                <p><span data-content="Smarter,">Smarter,</span></p>
+                <p><span data-content="Cleaner">Cleaner</span></p>
+                <p><span data-content="&amp; More Flexible Energy">&amp; More Flexible Energy</span></p>
+            </div>
+        </div>
+        <!--<div class="video">
+            <video width="1500" height="400" muted preload='auto' loop autoplay>
+                <source src="/img/gen/landing/SmarterCleaner.mp4" type="video/mp4" />
+                <source src="/img/gen/landing/SmarterCleaner.webm" type="video/webm" />
+            </video>
+        </div>-->
+    </div>
+
+    <div class="module-energy-5-mega-cities" ng-controller="moduleEnergy5MegaCitiesController">
+        <div class="standard">
+            <div class="map data-map"></div>
+            <div class="map basic-map"></div>
+        	<div class="container">
+        	    <div class="body">
+        	        <h2>智慧的佈建策略</h2>
+        	        <p style="height: 135px" ng-show="selectedView == 'basic'">進駐一個城市時，<span class="graphik-light">Gogoro</span> 會廣泛地佈建站點，按照道路密度、居住人口密度規劃 <span class="graphik-light">GoStation®</span> 電池交換系統的配置。</p>
+        	        <p style="height: 135px" ng-show="selectedView == 'data'">每一位在街上遨遊的 <span class="graphik-light">Gogoro</span> 騎士都是我們資訊的來源。根據車主的大數據分析，實際了解網路的動態需求與分配，<span class="graphik-light">Gogoro</span> 能靈活調整未來 <span class="graphik-light">GoStation®</span> 電池交換站的佈建策略。</p>
+        	        <div class="section-links">
+        	        	<a data-ng-class="{'active' : selectedView == 'basic'}" ng-click="change('basic')" class="active">廣泛設點</a>
+        	        	<a data-ng-class="{'active' : selectedView == 'data'}" ng-click="change('data')">大數據擴張</a>
+        	        </div>
+        	    </div>
+        	</div>
+        </div>
+        <div class="fallback">
+            <div class="fallback-basic-map">
+                <h2>廣泛設點</h2>
+                <p>進駐一個城市時，<span class="graphik-light">Gogoro</span> 會廣泛地佈建站點，按照道路密度、居住人口密度規劃 GoStation® 電池交換系統的配置。</p>
+            </div>
+            <div class="fallback-data-map">
+                <h2>大數據擴張</h2>
+                <p>每一位在街上遨遊的 <span class="graphik-light">Gogoro</span> 騎士都是我們資訊的來源。根據車主的大數據分析，實際了解網路的動態需求與分配，<span class="graphik-light">Gogoro</span> 能靈活調整未來 <span class="graphik-light">GoStation®</span> 電池交換站的佈建策略。</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="module-energy-6-taipei" ng-controller="moduleEnergy6TaipeiController">
+    	<div class="container">
+    	    <div class="body">
+                <div class="taipei-title-container">
+                    <img class="taipei-border" src="/img/gen/landing/taipei-border.svg" alt="TAIPEI">
+        	        <h2>首發台北</h2>
+                </div>
+    	        <img src="/img/gen/landing/section-dot.svg" class="dot">
+    	        <h3><span class="graphik-black-italic">GOGORO'S FIRST PILOT CITY</span></h3>
+    	        <p>2015 年 8 月，我們選擇台灣的首善之都台北作為領航城市，踏出屬於 <span class="graphik-light">Gogoro®</span> 最重要的第一步。在佈建的高峰時期，每一天都有一站新的 <span class="graphik-light">GoStation®</span> 電池交換站出現在城市中。截至目前為止，<span class="graphik-light">GoStation®</span> 電池交換站點已擴增至台北市、新北市、桃園市與新竹市，建置超過<b>140站</b>。</p>
+    	    </div>
+    	</div>
+    </div>
+
+    <div class="module-energy-7-map" ng-controller="moduleEnergy7MapController">
+    	<input id="pac-input" class="controls hidden" type="text" placeholder="Search Box">
+	    <div id="map-canvas" style="width:100%; height: 100%;"></div>
+    </div>
+
+    <div class="module-energy-9-co2-saving" ng-controller="moduleEnergy9CO2SavingController">
+    	<div class="container">
+            <div class="row body">
+                <div class="col-md-6">
+                    <img src="/img/gen/landing/nox-graph.png">
+                </div>
+                <div class="col-md-6">
+                    <h2>更乾淨的都會環境</h2>
+                    <p>在台灣，大約 36% 的 PM2.5 或氮氧化物等空氣污染，來自汽、機車等移動污染源。<span class="graphik-light">Gogoro®</span> 能源網路透過一個更智慧、有效和方便的能源網路，提供城市居民一個更好的選擇。</p>
+                </div>
+            </div>
+    	</div>
+    </div>
+
+    <div class="module-energy-10-pilot-city" ng-controller="moduleEnergy10PilotCityController">
+        <div class="container">
+            <div class="statement vertical-center-container" style="border-bottom: 0px solid #000;">
+                <div class="statement_container vertical-center">
+                    <div class="row">
+                    <p></p><h2>用智慧能源改變我的城市</h2><p></p>
+                    </div>
+                    <div class="row">
+                    	<a href="/tw/open" class="btn btn-outline--white"><span class="graphik-black-italic">LET'S GO</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

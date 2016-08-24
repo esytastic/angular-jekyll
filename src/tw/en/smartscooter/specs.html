@@ -1,0 +1,1027 @@
+---
+layout: en-tw/LayoutMaster
+action: smarter
+style: |
+    <link rel="stylesheet" href="/css/specs.css">
+    <style type="text/css">
+        html[lang=zh-TW] body {
+            font-family: 'graphik-light','xingothic-w3', 'Microsoft JhengHei','STHeiti';
+        }
+
+        a {
+            text-decoration: none;
+            border: 0px;
+        }
+
+        #scooter_name {
+            background-color: #fbfbfb;
+        }
+
+        ＃scooter_image {
+            display: inline-block;
+        }
+
+            ＃scooter_image div {
+                display: inline-block;
+            }
+
+        .scooter-name {
+            text-align: center;
+            font-size: 26pt;
+            margin-bottom: 60px;
+            margin-top: 80px;
+        }
+
+        .scooter-name-img {
+            width: 100%;
+            max-width: 228px;
+            margin: auto;
+            margin-bottom: 60px;
+            margin-top: 80px;
+        }
+
+        .scooter-img {
+            width: 100%;
+            max-width: 228px;
+            margin: auto;
+            margin-top: 40px;
+            margin-bottom: 60px;
+        }
+
+        .scooter-icon {
+            width: 100%;
+            text-align: center;
+            display: inline-block;
+        }
+
+            .scooter-icon ul {
+                list-style-type: none;
+                margin: auto;
+                padding: 0;
+            }
+
+                .scooter-icon ul.width-large {
+                    width: 80%;
+                }
+
+                .scooter-icon ul.width-small {
+                    width: 50%;
+                }
+
+                .scooter-icon ul li.width-33 {
+                    text-align: center;
+                    float: left;
+                    width: 33%;
+                    padding: 10px;
+                }
+
+                .scooter-icon ul li.width-50 {
+                    text-align: center;
+                    float: left;
+                    width: 50%;
+                    padding: 10px;
+                }
+
+                .scooter-icon ul.ul-01 li img {
+                    width: 52px;
+                    height: 52px;
+                }
+
+                .scooter-icon ul li img {
+                    width: 52px;
+                    height: 52px;
+                }
+
+        .scooter-icon-choose {
+            margin: auto;
+            position: relative;
+            width: 52px;
+            height: 52px;
+        }
+
+        .choose-imgage {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 52px;
+            height: 52px;
+            content: '';
+            background-size: 52px 52px;
+            background: url(//images.gogoroapp.com/store/icons/color_chip_selected_large.png) center no-repeat;
+            display: none;
+        }
+
+        .color-text {
+            font-size: small;
+            margin-top: 5px;
+            opacity: 0.0;
+        }
+
+        @media (max-width: 992px) {
+            .scooter-name {
+                font-size: 16pt;
+                margin-bottom: 30px;
+                margin-top: 40px;
+            }
+
+             .scooter-img {
+                margin-top:20px;
+                margin-bottom:30px;
+            }
+            .scooter-name-img {
+                width: 100%;
+                max-width: 228px;
+                margin: auto;
+                margin-top: 40px;
+                margin-bottom: 30px;
+            }
+
+            .scooter-icon ul.width-large {
+                width: 100%;
+            }
+
+            .scooter-icon ul.width-small {
+                width: 100%;
+            }
+
+            .scooter-icon ul li.width-33 {
+                text-align: center;
+                float: left;
+                width: 50%;
+                padding: 0px;
+            }
+
+            .scooter-icon ul li.width-50 {
+                text-align: center;
+                float: left;
+                width: 50%;
+                padding: 0px;
+            }
+
+            .scooter-icon-choose {
+                width: 26px;
+                height: 26px;
+            }
+
+            .scooter-icon ul.ul-01 li img {
+                width: 26px;
+                height: 26px;
+            }
+
+            .scooter-icon ul li img {
+                width: 26px;
+                height: 26px;
+            }
+
+            .choose-imgage {
+                width: 26px;
+                height: 26px;
+                background-size: 26px;
+            }
+        }
+
+        .row-title-font-01 {
+            margin-left: 10px;
+            font-size: 24pt;
+            line-height: 50px;
+            font-weight: 700;
+            font-family: 'graphik-semibold','xingothic-w3', 'Microsoft JhengHei','STHeiti';
+        }
+
+        .row-title-font-02 {
+            display: block;
+            font-weight: 700;
+            font-family: 'graphik-semibold','xingothic-w8','Microsoft JhengHei','STHeiti';
+        }
+
+        .row-font-01 {
+            margin-left: 20px;
+            margin-right: 20px;
+            text-align: left;
+        }
+
+        .border-01 {
+            border-bottom: 1px #CCC solid;
+        }
+
+        .border-02 {
+            border-right: 1px #CCC solid;
+        }
+
+        .row, .col-lg-4, .col-md-4, .col-sm-4, .col-xs-4 {
+            padding: 0px;
+        }
+
+        .row-label {
+            display: block;
+            margin-bottom: 15px;
+            font-weight: normal;
+        }
+
+        .row-margin-01 {
+            text-align: left;
+            margin-bottom: 15px;
+        }
+
+        .row-margin-02 {
+            /*margin-left:10px;*/
+        }
+
+        @media (max-width: 992px) {
+            .row-font-01 {
+                margin-left: 10px;
+                margin-right: 10px;
+                font-size: 13px;
+            }
+
+            .row-margin-02 {
+                /*margin-left:3px;
+                margin-right:5px;*/
+            }
+        }
+
+        .separator {
+            width: 100%;
+            height: 40px;
+        }
+
+        .mark-img {
+            width: 100%;
+            max-width: 176px;
+            margin: auto;
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+
+            .mark-img img {
+                margin-top: -5px;
+                border: 0px;
+            }
+
+        .other-font {
+            text-align: left;
+        }
+
+        @media (max-width: 992px) {
+            .mark-img {
+                width: 80%;
+            }
+
+            .other-font {
+                font-size: 14px;
+            }
+        }
+
+        .aling-center {
+            text-align: center;
+        }
+
+        .row-margin-top-30 {
+            margin-top: 30px;
+        }
+    </style>
+scripts: |
+    <script>
+        $(function () {
+            reset_height();
+            reset_scooter_name();
+            reset_mark_image();
+        });
+
+        $(window).resize(function () {
+            reset_height();
+            reset_scooter_name();
+            reset_mark_image();
+        });
+
+        reset_mark_image = function () {
+            var mark_image_width = $("#mark_image_01").width();
+            var mark_image_height = $("#mark_image_01").height();
+            $("#mark_image_02").width(mark_image_width);
+            $("#mark_image_02").height(mark_image_height);
+            $("#mark_image_03").width(mark_image_width);
+            $("#mark_image_03").height(mark_image_height);
+        };
+
+        reset_height = function () {
+            $(".coll-obj").each(function () {
+                var height = $(this).parent().height();
+                $(this).height(height);
+            });
+
+            $(".coll-scooter-image").each(function () {
+                var height = $(this).height();
+                $(this).parent().height(height);
+            });
+
+            var icon_height = $('#coll_color_icon_01').height();
+            $('#coll_color_icon_02').height(icon_height);
+            $('#coll_color_icon_03').height(icon_height);
+        };
+
+        reset_scooter_name = function () {
+            var div_width = $('.container').width() + 30;
+            console.log(div_width);
+            $('div#scooter_name').css('width', div_width + 'px');
+            console.log($('div#scooter_name').width());
+        };
+
+        $('.scooter-icon ul li a').click(function () {
+            var element_name = $(this).attr('data-element');
+            var element = '#' + element_name;
+            var image = $(this).attr('data-image');
+            $(element).attr('src', image);
+
+            $("." + element_name).css('display', 'none');
+            $("." + element_name + '_color_text').css('opacity', '0.0');
+            $(this).prev().css('display', 'block');
+            $(this).parent().next().css('opacity', '1.0');
+        });
+
+        $("div.gogoro_plus:eq(0)").css('display', 'block');
+        $("div.gogoro:eq(0)").css('display', 'block');
+        $("div.gogoro_lite:eq(0)").css('display', 'block');
+
+        $("div.gogoro_plus_color_text:eq(0)").css('opacity', '1.0');
+        $("div.gogoro_color_text:eq(0)").css('opacity', '1.0');
+        $("div.gogoro_lite_color_text:eq(0)").css('opacity', '1.0');
+
+        var div_width = $('.container').width();
+        $('div#scooter_name').css('z-index', '99').css('position', 'absolute').css('width', div_width + 'px');
+
+        if ($(window).width() > 992) {
+            $('div#scooter_image').css('margin-top', '176px');
+        } else {
+            $('div#scooter_image').css('margin-top', '106px');
+        }
+
+
+
+        $(window).on("scroll mousewheel touchmove", function () {
+            var is_scroll = is_collision($('div#scooter_name'), $('div#main_container'));
+            //console.log(is_scroll);
+            if (is_scroll) {
+                var scroll_top = $(window).scrollTop();
+                var is_move_height = ($(window).width() > 992) ? 140 : 80;
+
+                if (scroll_top > is_move_height) {
+                    $('div#scooter_name').css('position', 'fixed').css('top', '0');
+                    $('div#scooter_name > div').css('height', '80px');
+                    $('div.scooter-name-img').css('margin-bottom', '0px').css('margin-top', '25px');
+                } else {
+                    var new_top = scroll_top;
+                    $('div#scooter_name').css('position', 'absolute');
+
+                    if ($(window).width() > 992) {
+                        $('div#scooter_name > div').css('height', '175px');
+                        $('div#scooter_name').css('top', '100px');
+                        $('div.scooter-name-img').css('margin-bottom', '60px').css('margin-top', '80px');
+                    } else {
+                        $('div#scooter_name > div').css('height', '105px');
+                        $('div#scooter_name').css('top', '60px');
+                        $('div.scooter-name-img').css('margin-bottom', '30px').css('margin-top', '40px');
+                    }
+                }
+            }
+            else
+            {
+                $('div#scooter_name').css('position', 'absolute');
+            }
+        });
+
+        function is_collision($div1, $div2) {
+            var y1 = $(window).scrollTop();
+            var h1 = $div1.outerHeight(true);
+            var h2 = $div2.outerHeight(true);
+            if ((y1 + h1) > h2) {
+                return false;
+            } else {
+                return true;
+            }
+        }
+    </script>
+meta: |
+    <meta name="keywords" content="gogoro,smartscooter,機車,電動機車,智慧雙輪,電池,睿能,睿能創意">
+    <meta name="description" content="我們是 Gogoro，透過網路和科技的力量，打造 Smartscooter™ 智慧雙輪以及 GoStation® 電池交換站，改變能源使用的經驗，將全球大型都會逐步轉型為智慧城市。">
+    <meta name="application-name" content="規格表-Gogoro 第一且唯一 Smartscooter™ 智慧雙輪" />
+    <meta name="msapplication-TileColor" content="#61399D" />
+    <meta name="msapplication-TileImage" content="http://www.gogoro.com/favicon.ico" />
+    <meta property="og:title" content="規格表-Gogoro 第一且唯一 Smartscooter™ 智慧雙輪" />
+    <meta property="og:type" content='website' />
+    <meta property="og:url" content="http://www.gogoro.com/tw/smartscooter/specs" />
+    <meta property="og:description" content="我們是 Gogoro，透過網路和科技的力量，打造 Smartscooter™ 智慧雙輪以及 GoStation® 電池交換站，改變能源使用的經驗，將全球大型都會逐步轉型為智慧城市。" />
+    <meta property="og:image" content="http://images.gogoroapp.com/share/website_thumbnail_1024.jpg" />
+    <meta property="og:site_name" content="Gogoro" />
+---
+
+<div class="pg-specs" data-state="Specs">
+    <section class="smart-scooter-specs main-section background-color-light-gray">
+        <div id="main_container" class="container">
+            <div id="scooter_name" class="row border-01">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 coll-obj"><div class="scooter-name-img"><img id="gogoro_plus_name" src="//images.gogoroapp.com/store/upload/scooter/scooter-model-gogoro-plus.png" /></div></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 coll-obj"><div class="scooter-name-img"><img id="gogoro_name" src="//images.gogoroapp.com/store/upload/scooter/scooter-model-gogoro.png" /></div></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 coll-obj"><div class="scooter-name-img"><img id="gogoro_lite_name" src="//images.gogoroapp.com/store/upload/scooter/scooter-model-gogoro-lite.png" /></div></div>
+            </div>
+            <div id="scooter_image" class="row border-01">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 coll-scooter-image aling-center"><div class="scooter-img"><img id="gogoro_plus" src="//images.gogoroapp.com/specs/spec_plus_yellow.png" /></div></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 coll-scooter-image aling-center"><div class="scooter-img"><img id="gogoro" src="//images.gogoroapp.com/specs/spec_gogoro_white.png" /></div></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 coll-scooter-image aling-center"><div class="scooter-img"><img id="gogoro_lite" src="//images.gogoroapp.com/specs/spec_lite_grey.png" /></div></div>
+            </div>
+            <div class="row row-margin-top-30">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 aling-center">
+                    <div id="coll_color_icon_01" class="scooter-icon border-02">
+                        <ul class="width-large">
+                            <li class="width-33">
+                                <div class="scooter-icon-choose">
+                                    <div class="choose-imgage gogoro_plus"></div>
+                                    <a href="javascript:void(0)" data-element="gogoro_plus" data-image="//images.gogoroapp.com/specs/spec_plus_yellow.png"><img src="//images.gogoroapp.com/store/upload/scooter/scooter_color_chip_yellow.png"></a>
+                                </div>
+                                <div class="color-text gogoro_plus_color_text">Yellow</div>
+                            </li>
+                            <li class="width-33">
+                                <div class="scooter-icon-choose">
+                                    <div class="choose-imgage gogoro_plus"></div>
+                                    <a href="javascript:void(0)" data-element="gogoro_plus" data-image="//images.gogoroapp.com/specs/spec_plus_blue.png"><img src="//images.gogoroapp.com/store/upload/scooter/scooter_color_chip_blue.png"></a>
+                                </div>
+                                <div class="color-text gogoro_plus_color_text">Blue</div>
+                            </li>
+                            <li class="width-33">
+                                <div class="scooter-icon-choose">
+                                    <div class="choose-imgage gogoro_plus"></div>
+                                    <a href="javascript:void(0)" data-element="gogoro_plus" data-image="//images.gogoroapp.com/specs/spec_plus_orange.png"><img src="//images.gogoroapp.com/store/upload/scooter/scooter_color_chip_orange.png"></a>
+                                </div>
+                                <div class="color-text gogoro_plus_color_text">Orange</div>
+                            </li>
+                            <li class="width-33">
+                                <div class="scooter-icon-choose">
+                                    <div class="choose-imgage gogoro_plus"></div>
+                                    <a href="javascript:void(0)" data-element="gogoro_plus" data-image="//images.gogoroapp.com/specs/spec_plus_silver.png"><img src="//images.gogoroapp.com/store/upload/scooter/scooter_color_chip_silver.png"></a>
+                                </div>
+                                <div class="color-text gogoro_plus_color_text">Silver</div>
+                            </li>
+                            <li class="width-33">
+                                <div class="scooter-icon-choose">
+                                    <div class="choose-imgage gogoro_plus"></div>
+                                    <a href="javascript:void(0)" data-element="gogoro_plus" data-image="//images.gogoroapp.com/specs/spec_plus_grey.png"><img src="//images.gogoroapp.com/store/upload/scooter/scooter_color_chip_midnight.png"></a>
+                                </div>
+                                <div class="color-text gogoro_plus_color_text">Grey</div>
+                            </li>
+                            <li class="width-33">
+                                <div class="scooter-icon-choose">
+                                    <div class="choose-imgage gogoro_plus"></div>
+                                    <a href="javascript:void(0)" data-element="gogoro_plus" data-image="//images.gogoroapp.com/specs/spec_plus_white.png"><img src="//images.gogoroapp.com/store/upload/scooter/scooter_color_chip_white.png"></a>
+                                </div>
+                                <div class="color-text gogoro_plus_color_text">White</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 aling-center">
+                    <div id="coll_color_icon_02" class="scooter-icon border-02">
+                        <ul class="width-small">
+                            <li class="width-50">
+                                <div class="scooter-icon-choose">
+                                    <div class="choose-imgage gogoro"></div>
+                                    <a href="javascript:void(0)" data-element="gogoro" data-image="//images.gogoroapp.com/specs/spec_gogoro_white.png"><img src="//images.gogoroapp.com/store/upload/scooter/scooter_color_chip_white.png"></a>
+                                </div>
+                                <div class="color-text gogoro_color_text">White</div>
+                            </li>
+                            <li class="width-50">
+                                <div class="scooter-icon-choose">
+                                    <div class="choose-imgage gogoro"></div>
+                                    <a href="javascript:void(0)" data-element="gogoro" data-image="//images.gogoroapp.com/specs/spec_gogoro_grey.png"><img src="//images.gogoroapp.com/store/upload/scooter/scooter_color_chip_midnight.png"></a>
+                                </div>
+                                <div class="color-text gogoro_color_text">Grey</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 aling-center">
+                    <div id="coll_color_icon_03" class="scooter-icon">
+                        <ul class="width-small">
+                            <li class="width-50">
+                                <div class="scooter-icon-choose">
+                                    <div class="choose-imgage gogoro_lite"></div>
+                                    <a href="javascript:void(0)" data-element="gogoro_lite" data-image="//images.gogoroapp.com/specs/spec_lite_grey.png"><img src="//images.gogoroapp.com/store/upload/scooter/scooter_color_chip_midnight.png"></a>
+                                </div>
+                                <div class="color-text gogoro_lite_color_text">Grey</div>
+                            </li>
+                            <li class="width-50">
+                                <div class="scooter-icon-choose">
+                                    <div class="choose-imgage gogoro_lite"></div>
+                                    <a href="javascript:void(0)" data-element="gogoro_lite" data-image="//images.gogoroapp.com/specs/spec_lite_white.png"><img src="//images.gogoroapp.com/store/upload/scooter/scooter_color_chip_white.png"></a>
+                                </div>
+                                <div class="color-text gogoro_lite_color_text">White</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="separator"></div>
+
+            <div class="row row-margin-01 border-01"><span class="row-title-font-01">Appearance</span></div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01"><span class="row-title-font-02">Color options</span>White, Silver, Grey, Blue, Orange, Yellow</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj" ><label class="row-label row-font-01 row-margin-02"><span class="row-title-font-02">Color options</span>White, Grey</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 coll-obj"><label class="row-label row-font-01 row-margin-02"><span class="row-title-font-02">Color options</span>White, Grey</label></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01"><span class="row-title-font-02">Chassis color</span>Titanium Grey</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01 row-margin-02"><span class="row-title-font-02">Chassis color</span>Silver</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 coll-obj"><label class="row-label row-font-01 row-margin-02"><span class="row-title-font-02">Chassis color</span>White, Grey</label></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01"><span class="row-title-font-02">Brake Caliper Color</span>Titanium Grey (Anodized Coating)</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01 row-margin-02"><span class="row-title-font-02">Brake Caliper Color</span>Titanium Grey (Anodized Coating)</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 coll-obj"><label class="row-label row-font-01 row-margin-02"><span class="row-title-font-02">Brake Caliper Color</span>Silver</label></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01"><span class="row-title-font-02">Wheel Rim Color</span>Silver Grey (Anodizing Coating)</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01 row-margin-02"><span class="row-title-font-02">Wheel Rim Color</span>Silver Grey (Anodizing Coating)</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 coll-obj"><label class="row-label row-font-01 row-margin-02"><span class="row-title-font-02">Wheel Rim Color</span>Silver Grey</label></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01"><span class="row-title-font-02">Handle Bar Switch</span>LED Backlight</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01 row-margin-02"><span class="row-title-font-02">Handle Bar Switch</span>LED Backlight</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 coll-obj"><label class="row-label row-font-01 row-margin-02"><span class="row-title-font-02">Handle Bar Switch</span>Black</label></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01"><span class="row-title-font-02">Dashboard</span>Personalized Backlight Spectrum Edgeless Dashboard</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01 row-margin-02"><span class="row-title-font-02">Dashboard</span>Personalized Backlight Spectrum Edgeless Dashboard</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 coll-obj"><label class="row-label row-font-01 row-margin-02"><span class="row-title-font-02">Dashboard</span>White Backlight</label></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01"><span class="row-title-font-02">Step Bar / Kickstand</span>Silver (Anodized)</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01 row-margin-02"><span class="row-title-font-02">Step Bar / Kickstand</span>Silver (Anodized)</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 coll-obj"><label class="row-label row-font-01 row-margin-02"><span class="row-title-font-02">Step Bar / Kickstand</span>Silver</label></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01">Changeable Faceplate</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01 row-margin-02">Changeable Faceplate</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 coll-obj"><label class="row-label row-font-01 row-margin-02">Changeable Faceplate</label></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01">Auto Soft-Close Integrated Hook</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01 row-margin-02">Auto Soft-Close Integrated Hook</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 coll-obj"><label class="row-label row-font-01 row-margin-02">Auto Soft-Close Integrated Hook</label></div>
+            </div>
+
+            <div class="separator"></div>
+
+            <div class="row row-margin-01 border-01"><span class="row-title-font-01">Upgrade Accessories</span></div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01">Guide Wheel</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01 row-margin-02">Guide Wheel</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 coll-obj"><label class="row-label row-font-01 row-margin-02">—</label></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01">Smoke Visor</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01 row-margin-02">—</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 coll-obj"><label class="row-label row-font-01 row-margin-02">—</label></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01">Turn Assist Light</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01 row-margin-02">—</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 coll-obj"><label class="row-label row-font-01 row-margin-02">—</label></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01">Brake Light +</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01 row-margin-02">—</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 coll-obj"><label class="row-label row-font-01 row-margin-02">—</label></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01">Brake Fluid Reservoir Viewing Light</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01 row-margin-02">—</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 coll-obj"><label class="row-label row-font-01 row-margin-02">—</label></div>
+            </div>
+
+            <div class="separator"></div>
+
+            <div class="row row-margin-01 border-01"><span class="row-title-font-01">Personalization</span></div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01">Low Speed Sound Alert</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01 row-margin-02">Low Speed Sound Alert</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 coll-obj"><label class="row-label row-font-01 row-margin-02">Low Speed Sound Alert</label></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01">Over Speed Sound Alert</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01 row-margin-02">Over Speed Sound Alert</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 coll-obj"><label class="row-label row-font-01 row-margin-02">Over Speed Sound Alert</label></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01">Regenerative Breaking</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01 row-margin-02">Regenerative Breaking</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 coll-obj"><label class="row-label row-font-01 row-margin-02">Regenerative Breaking</label></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01">Headlight Off Delay</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01 row-margin-02">Headlight Off Delay</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 coll-obj"><label class="row-label row-font-01 row-margin-02">Headlight Off Delay</label></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01">129,600 Personalizable Colors with Gradient Mix</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01 row-margin-02">129,600 Personalizable Colors with Gradient Mix</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 coll-obj"><label class="row-label row-font-01 row-margin-02">—</label></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01">Personalized Sound and Light Themes</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01 row-margin-02">Personalized Sound and Light Themes</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 coll-obj"><label class="row-label row-font-01 row-margin-02">—</label></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01">Changeable Breathing Light Pattern</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01 row-margin-02">Changeable Breathing Light Pattern</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 coll-obj"><label class="row-label row-font-01 row-margin-02">—</label></div>
+            </div>
+
+            <div class="separator"></div>
+
+            <div class="row row-margin-01 border-01"><span class="row-title-font-01">Drivetrain</span></div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 aling-center"><div class="mark-img"><img src="//images.gogoroapp.com/specs/spec_gogoro_motor.png" /></div></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 aling-center"><div class="mark-img"><img src="//images.gogoroapp.com/specs/spec_gogoro_motor.png" /></div></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 aling-center"><div class="mark-img"><img src="//images.gogoroapp.com/specs/spec_lite_motor.png" /></div></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01">Ride-by-wire Electric Throttle with Saferide™ Redundancy</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01 row-margin-02">Ride-by-wire Electric Throttle with Saferide™ Redundancy</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 coll-obj"><label class="row-label row-font-01 row-margin-02">Ride-by-wire Electric Throttle with Saferide™ Redundancy</label></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01">Normal Mode / Smart Mode / Super Boost Mode</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01 row-margin-02">Normal Mode / Smart Mode / Super Boost Mode</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 coll-obj"><label class="row-label row-font-01 row-margin-02">Normal Mode / Smart Mode / Super Boost Mode</label></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01">Orientation-Agnostic Connector</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01 row-margin-02">Orientation-Agnostic Connector</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 coll-obj"><label class="row-label row-font-01 row-margin-02">Orientation-Agnostic Connector</label></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01">G1 Motor - Liquid Cooled Permanent Magnet Synchronous Motor</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01 row-margin-02">G1 Motor - Liquid Cooled Permanent Magnet Synchronous Motor</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 coll-obj"><label class="row-label row-font-01 row-margin-02">G1 Motor - Liquid Cooled Permanent Magnet Synchronous Motor</label></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01">Liquid Cooled MOSFET Controller</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01 row-margin-02">Liquid Cooled MOSFET Controller</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 coll-obj"><label class="row-label row-font-01 row-margin-02">Liquid Cooled MOSFET Controller</label></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01">Liquid Cooled System with Monocoque Chassis Integrated Air Channel</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01 row-margin-02">Liquid Cooled System with Monocoque Chassis Integrated Air Channel</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 coll-obj"><label class="row-label row-font-01 row-margin-02">Liquid Cooled System with Monocoque Chassis Integrated Air Channel</label></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01">Gates Poly Chain® GT® Carbon™ Belt with Stretch-free Tensile Cords</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01 row-margin-02">Gates Poly Chain® GT® Carbon™ Belt with Stretch-free Tensile Cords</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 coll-obj"><label class="row-label row-font-01 row-margin-02">Gates Poly Chain® GT® Carbon™ Belt with Stretch-free Tensile Cords</label></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01">Integrated Single Speed Planetary Gears</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01 row-margin-02">Integrated Single Speed Planetary Gears</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 coll-obj"><label class="row-label row-font-01 row-margin-02">Integrated Single Speed Planetary Gears</label></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01">"Max. Power Output: 6,400 W @ 3,250 rpm"</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01 row-margin-02">Max. Power Output: 6,400 W @ 3,250 rpm</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 coll-obj"><label class="row-label row-font-01 row-margin-02">Max. Power Output: 6,400 W @ 3,250 rpm</label></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01">Ride-by-wire Reverse Throttle</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01 row-margin-02">Ride-by-wire Reverse Throttle</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 coll-obj"><label class="row-label row-font-01 row-margin-02">—</label></div>
+            </div>
+
+            <div class="separator"></div>
+
+            <div class="row row-margin-01 border-01"><span class="row-title-font-01">Performance</span></div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01"><span class="row-title-font-02">Max. Speed*</span>95 km/h</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01 row-margin-02"><span class="row-title-font-02">Max. Speed*</span>95 km/h</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 coll-obj"><label class="row-label row-font-01 row-margin-02"><span class="row-title-font-02">Max. Speed*</span>95 km/h</label></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01"><span class="row-title-font-02">Max. Left Lean Angle</span>45°</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01 row-margin-02"><span class="row-title-font-02">Max. Left Lean Angle</span>45°</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 coll-obj"><label class="row-label row-font-01 row-margin-02"><span class="row-title-font-02">Max. Left Lean Angle</span>45°</label></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01"><span class="row-title-font-02">Max. Right Lean Angle</span>48.5°</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01 row-margin-02"><span class="row-title-font-02">Max. Right Lean Angle</span>48.5°</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 coll-obj"><label class="row-label row-font-01 row-margin-02"><span class="row-title-font-02">Max. Right Lean Angle</span>48.5°</label></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01"><span class="row-title-font-02">Hill Climb Ability**</span>30% (17°): 30 km/h<br />20% (11°): 40 km/h<br />10% (6°): 60 km/h</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01 row-margin-02"><span class="row-title-font-02">Hill Climb Ability**</span>30% (17°): 30 km/h<br />20% (11°): 40 km/h<br />10% (6°): 60 km/h</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 coll-obj"><label class="row-label row-font-01 row-margin-02"><span class="row-title-font-02">Hill Climb Ability**</span>30% (17°): 30 km/h<br />20% (11°): 40 km/h<br />10% (6°): 60 km/h</label></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01"><span class="row-title-font-02">Max. Riding Range Per Battery Swap (@ 40 km/h)***</span>100 km</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01 row-margin-02"><span class="row-title-font-02">Max. Riding Range Per Battery Swap (@ 40 km/h)***</span>100 km</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 coll-obj"><label class="row-label row-font-01 row-margin-02"><span class="row-title-font-02">Max. Riding Range Per Battery Swap (@ 40 km/h)***</span>100 km</label></div>
+            </div>
+
+            <div class="separator"></div>
+
+            <div class="row row-margin-01 border-01"><span class="row-title-font-01">Electronic System</span></div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01">Multiple Gravity and Shock Sensors</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01 row-margin-02">Multiple Gravity and Shock Sensors</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 coll-obj"><label class="row-label row-font-01 row-margin-02">Multiple Gravity and Shock Sensors</label></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01">Ambient Light Sensor </label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01 row-margin-02">Ambient Light Sensor </label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 coll-obj"><label class="row-label row-font-01 row-margin-02">Ambient Light Sensor </label></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01">Multiple Thermo Sensors</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01 row-margin-02">Multiple Thermo Sensors</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 coll-obj"><label class="row-label row-font-01 row-margin-02">Multiple Thermo Sensors</label></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01">iQ System™ QuickLink</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01 row-margin-02">iQ System™ QuickLink</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 coll-obj"><label class="row-label row-font-01 row-margin-02">iQ System™ QuickLink</label></div>
+            </div>
+
+            <div class="separator"></div>
+
+            <div class="row row-margin-01 border-01"><span class="row-title-font-01">Frame</span></div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01">AeroFrame™ Aluminum Monocoque Chassis</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01 row-margin-02">AeroFrame™ Aluminum Monocoque Chassis</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 coll-obj"><label class="row-label row-font-01 row-margin-02">AeroFrame™ Aluminum Monocoque Chassis</label></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01">Aluminum Inverted Single Shock Single Arm Front Suspension</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01 row-margin-02">Aluminum Inverted Single Shock Single Arm Front Suspension</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 coll-obj"><label class="row-label row-font-01 row-margin-02">Aluminum Inverted Single Shock Single Arm Front Suspension</label></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01">Aluminum Multi-Link Rear Suspension</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01 row-margin-02">Aluminum Multi-Link Rear Suspension</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 coll-obj"><label class="row-label row-font-01 row-margin-02">Aluminum Multi-Link Rear Suspension</label></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01">Performance Shock + with Adjustable Preload and Damper on Rear Absorber</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01 row-margin-02">Adjustable Preload on Rear Absorber</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 coll-obj"><label class="row-label row-font-01 row-margin-02">Adjustable Preload on Rear Absorber</label></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01">Front and Rear Hydraulic Disc Brake</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01 row-margin-02">Front and Rear Hydraulic Disc Brake</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 coll-obj"><label class="row-label row-font-01 row-margin-02">Front and Rear Hydraulic Disc Brake</label></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01">Fixed Dual Piston (Ø 38 mm) Front Brake Caliper</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01 row-margin-02">Fixed Dual Piston (Ø 38 mm) Front Brake Caliper</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 coll-obj"><label class="row-label row-font-01 row-margin-02">Fixed Dual Piston (Ø 38 mm) Front Brake Caliper</label></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01">Single Piston (Ø 32 mm) Rear Caliper</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01 row-margin-02">Single Piston (Ø 32 mm) Rear Caliper</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 coll-obj"><label class="row-label row-font-01 row-margin-02">Single Piston (Ø 32 mm) Rear Caliper</label></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01">Ø 205 mm Drilled Slot Hybrid Front Brake Disc</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01 row-margin-02">Ø 205 mm Drilled Slot Hybrid Front Brake Disc</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 coll-obj"><label class="row-label row-font-01 row-margin-02">Ø 205 mm Drilled Slot Hybrid Front Brake Disc</label></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01">Aluminum Wheel Rim Set</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01 row-margin-02">Aluminum Wheel Rim Set</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 coll-obj"><label class="row-label row-font-01 row-margin-02">Aluminum Wheel Rim Set</label></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01">Center Lock Nut Wheel Rim Locking System</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01 row-margin-02">Center Lock Nut Wheel Rim Locking System</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 coll-obj"><label class="row-label row-font-01 row-margin-02">Center Lock Nut Wheel Rim Locking System</label></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01">Front Wheel - 100/60-R12 (45L)</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01 row-margin-02">Front Wheel - 100/60-R12 (45L)</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 coll-obj"><label class="row-label row-font-01 row-margin-02">Front Wheel - 100/60-R12 (45L)</label></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01">Rear Wheel - 110/60-R12 (49L)</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01 row-margin-02">Rear Wheel - 110/60-R12 (49L)</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 coll-obj"><label class="row-label row-font-01 row-margin-02">Rear Wheel - 110/60-R12 (49L)</label></div>
+            </div>
+
+            <div class="separator"></div>
+
+            <div class="row row-margin-01 border-01"><span class="row-title-font-01">User Interface</span></div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01">iQ System™ Smart Key with Auto Lock</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01 row-margin-02">iQ System™ Smart Key with Auto Lock</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 coll-obj"><label class="row-label row-font-01 row-margin-02">iQ System™ Smart Key with Auto Lock</label></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01">NFC + BTLE 4.0 with 256 bit Encryption Security</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01 row-margin-02">NFC + BTLE 4.0 with 256 bit Encryption Security</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 coll-obj"><label class="row-label row-font-01 row-margin-02">NFC + BTLE 4.0 with 256 bit Encryption Security</label></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01">All Electronic Micro Switches</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01 row-margin-02">All Electronic Micro Switches</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 coll-obj"><label class="row-label row-font-01 row-margin-02">All Electronic Micro Switches</label></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01">Wireless and Switch Controlled Trunk Release</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01 row-margin-02">Wireless and Switch Controlled Trunk Release</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 coll-obj"><label class="row-label row-font-01 row-margin-02">Wireless and Switch Controlled Trunk Release</label></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01">iOS and Android Smartphone App</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01 row-margin-02">iOS and Android Smartphone App</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 coll-obj"><label class="row-label row-font-01 row-margin-02">iOS and Android Smartphone App</label></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01">Trunk Light and USB Charge Port</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01 row-margin-02">Trunk Light and USB Charge Port</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 coll-obj"><label class="row-label row-font-01 row-margin-02">—</label></div>
+            </div>
+
+            <div class="separator"></div>
+
+            <div class="row row-margin-01 border-01"><span class="row-title-font-01">Safety</span></div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01">SmartBrite™ Programmable Vehicle LED Headlight</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01 row-margin-02">SmartBrite™ Programmable Vehicle LED Headlight</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 coll-obj"><label class="row-label row-font-01 row-margin-02">SmartBrite™ Programmable Vehicle LED Headlight</label></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01">LED Halo Position Light</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01 row-margin-02">LED Halo Position Light</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 coll-obj"><label class="row-label row-font-01 row-margin-02">LED Halo Position Light</label></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01">LED Front Turn Signal</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01 row-margin-02">LED Front Turn Signal</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 coll-obj"><label class="row-label row-font-01 row-margin-02">LED Front Turn Signal</label></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01">LED Horizon Taillight</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01 row-margin-02">LED Horizon Taillight</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 coll-obj"><label class="row-label row-font-01 row-margin-02">LED Horizon Taillight</label></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01">Rear and Front Flashers Hazard Light</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01 row-margin-02">Rear and Front Flashers Hazard Light</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 coll-obj"><label class="row-label row-font-01 row-margin-02">Rear and Front Flashers Hazard Light</label></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01">360° Lighting System Visibility</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01 row-margin-02">360° Lighting System Visibility</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 coll-obj"><label class="row-label row-font-01 row-margin-02">360° Lighting System Visibility</label></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01">IPX6 Waterproof, Above 30 cm</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01 row-margin-02">IPX6 Waterproof, Above 30 cm</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 coll-obj"><label class="row-label row-font-01 row-margin-02">IPX6 Waterproof, Above 30 cm</label></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01">IPX7 Waterproof, Below 30 cm</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01 row-margin-02">IPX7 Waterproof, Below 30 cm</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 coll-obj"><label class="row-label row-font-01 row-margin-02">IPX7 Waterproof, Below 30 cm</label></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01">Chromium Coated Anti-Glare Anti-Vertigo Adjustable Mirrors</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01 row-margin-02">Chromium Coated Anti-Glare Anti-Vertigo Adjustable Mirrors</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 coll-obj"><label class="row-label row-font-01 row-margin-02">Chromium Coated Anti-Glare Anti-Vertigo Adjustable Mirrors</label></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01">Warning and Alert Error Codes (Self-Report via GoStation® and App)</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01 row-margin-02">Warning and Alert Error Codes (Self-Report via GoStation® and App)</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 coll-obj"><label class="row-label row-font-01 row-margin-02">Warning and Alert Error Codes (Self-Report via GoStation® and App)</label></div>
+            </div>
+
+            <div class="separator"></div>
+
+            <div class="row row-margin-01 border-01"><span class="row-title-font-01">iQ System™ Smart Function</span></div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01">Performance Profiling</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01 row-margin-02">Performance Profiling</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 coll-obj"><label class="row-label row-font-01 row-margin-02">Performance Profiling</label></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01">Headlight Auto Dim</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01 row-margin-02">Headlight Auto Dim</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 coll-obj"><label class="row-label row-font-01 row-margin-02">Headlight Auto Dim</label></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01">Auto Adaptive Dashboard Luminance</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01 row-margin-02">Auto Adaptive Dashboard Luminance</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 coll-obj"><label class="row-label row-font-01 row-margin-02">Auto Adaptive Dashboard Luminance</label></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01">Auto Off Activate via Kickstand Position Sensor</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01 row-margin-02">Auto Off Activate via Kickstand Position Sensor</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 coll-obj"><label class="row-label row-font-01 row-margin-02">Auto Off Activate via Kickstand Position Sensor</label></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01">Low Energy Speed Limited Mode</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01 row-margin-02">Low Energy Speed Limited Mode</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 coll-obj"><label class="row-label row-font-01 row-margin-02">Low Energy Speed Limited Mode</label></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01">Last Parking Location Auto Mark via App</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01 row-margin-02">Last Parking Location Auto Mark via App</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 coll-obj"><label class="row-label row-font-01 row-margin-02">Last Parking Location Auto Mark via App</label></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01">Auto On/Off Turn Signal</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01 row-margin-02">Auto On/Off Turn Signal</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 coll-obj"><label class="row-label row-font-01 row-margin-02">—</label></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01">Auto Reset Turn Signal</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01 row-margin-02">Auto Reset Turn Signal</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 coll-obj"><label class="row-label row-font-01 row-margin-02">—</label></div>
+            </div>
+
+            <div class="separator"></div>
+
+            <div class="row row-margin-01 border-01"><span class="row-title-font-01">Design Innovations</span></div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01">Pit-Up™ Chassis for Easy Service</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01 row-margin-02">Pit-Up™ Chassis for Easy Service</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 coll-obj"><label class="row-label row-font-01 row-margin-02">Pit-Up™ Chassis for Easy Service</label></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01">Glue Bonded Aluminum Monocoque Chassis</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01 row-margin-02">Glue Bonded Aluminum Monocoque Chassis</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 coll-obj"><label class="row-label row-font-01 row-margin-02">Glue Bonded Aluminum Monocoque Chassis</label></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01">Screwless Exterior</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01 row-margin-02">Screwless Exterior</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 coll-obj"><label class="row-label row-font-01 row-margin-02">Screwless Exterior</label></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01">Seamless Streamlined Body Design</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01 row-margin-02">Seamless Streamlined Body Design</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 coll-obj"><label class="row-label row-font-01 row-margin-02">Seamless Streamlined Body Design</label></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01">Single Sided Suspensions</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01 row-margin-02">Single Sided Suspensions</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 coll-obj"><label class="row-label row-font-01 row-margin-02">Single Sided Suspensions</label></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01">Acoustic Resonance Chassis</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01 row-margin-02">Acoustic Resonance Chassis</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 coll-obj"><label class="row-label row-font-01 row-margin-02">Acoustic Resonance Chassis</label></div>
+            </div>
+
+            <div class="separator"></div>
+
+            <div class="row row-margin-01 border-01"><span class="row-title-font-01">Dimension</span></div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01"><span class="row-title-font-02">Length x Width x Height</span>1,730 mm x 690 mm x 1,215 mm</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01 row-margin-02"><span class="row-title-font-02">Length x Width x Height</span>1,730 mm x 690 mm x 1,215 mm</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 coll-obj"><label class="row-label row-font-01 row-margin-02"><span class="row-title-font-02">Length x Width x Height</span>1,730 mm x 690 mm x 1,215 mm</label></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01"><span class="row-title-font-02">Wheel Base</span>1,230 mm</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01 row-margin-02"><span class="row-title-font-02">Wheel Base</span>1,230 mm</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 coll-obj"><label class="row-label row-font-01 row-margin-02"><span class="row-title-font-02">Wheel Base</span>1,230 mm</label></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01"><span class="row-title-font-02">Seat Height</span>745 mm</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01 row-margin-02"><span class="row-title-font-02">Seat Height</span>745 mm</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 coll-obj"><label class="row-label row-font-01 row-margin-02"><span class="row-title-font-02">Seat Height</span>745 mm</label></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01"><span class="row-title-font-02">Gross Weight with 2 Batteries</span>112 kg</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01 row-margin-02"><span class="row-title-font-02">Gross Weight with 2 Batteries</span>112 kg</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 coll-obj"><label class="row-label row-font-01 row-margin-02"><span class="row-title-font-02">Gross Weight with 2 Batteries</span>112 kg</label></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01"><span class="row-title-font-02">Gross Weight</span>94 kg</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01 row-margin-02"><span class="row-title-font-02">Gross Weight</span>94 kg</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 coll-obj"><label class="row-label row-font-01 row-margin-02"><span class="row-title-font-02">Gross Weight</span>94 kg</label></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01"><span class="row-title-font-02">Trunk Size</span>24.5 L</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border-02 coll-obj"><label class="row-label row-font-01 row-margin-02"><span class="row-title-font-02">Trunk Size</span>24.5 L</label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 coll-obj"><label class="row-label row-font-01 row-margin-02"><span class="row-title-font-02">Trunk Size</span>24.5 L</label></div>
+            </div>
+
+            <div class="separator"></div>
+            <div class="row border-01"></div>
+            <div class="separator"></div>
+
+            <div class="other-font">
+                Gogoro staff used a common GPS speedometer to test the following items for collecting the data of speed, time and mileage under the test condition that fine and windless weather, the whole weight (including 1 professional rider and 2 Gogoro® Batteries) of Smartscooter™ totaling 175 kg or less, the tire pressure set to Gogoro factory setting and 2 Gogoro® Batteries fully charged.<br />
+                * Max. Speed: Super Boost mode on, Sport Activation subscribed, ride took place on a zero degree slope asphalt road.<br />
+                ** Hill Climb Ability: Super Boost mode on, Sport Activation subscribed, ride took place on 10% (6 degree), 20% (11 degree) and 30% (17 degree) slope asphalt roads respectively.<br />
+                ***Max. Riding Range Per Battery Swap: ride took place on a zero degree slope asphalt road, at 40 km/h continuously, until the electricity fully ran out and power cut out.
+            </div>
+
+            <div class="separator"></div>
+        </div>
+    </section><!--/.main-section -->
+</div>

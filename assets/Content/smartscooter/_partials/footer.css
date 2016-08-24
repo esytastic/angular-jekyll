@@ -1,0 +1,225 @@
+/* ====================================
+   Site colors
+   ==================================== */
+/*
+   Brand colors
+   ====================================
+   White / Light Gray = Fresh and Clean Charcoal / Gray / Dark Gray = Bold and Direct Rich Blue = Performance
+   Blue = Experience
+   Teal = Style
+   Dark Green = Value
+   Green = Eco / Environment
+   Hot Green = Community
+   Red = Warning
+*/
+/* ====================================
+ * Mixins and functions
+ * ==================================== */
+/* Media queries
+ * ==================================== */
+/* Usage: @include breakpoint(sm) {} */
+/* Mixins and functions
+ * ==================================== */
+/* Usage: @include linearGradient() {} */
+/* Usage: @include placeholder() {} */
+/* Usage: @include border-radius(5px) */
+/* Usage: @include opacity(0.8) */
+/* Usage: @include center-block */
+/* Usage: @include text-truncate  */
+/* Extends
+ * ==================================== */
+/* Variables
+ * ==================================== */
+/* Mixins and functions
+ * ==================================== */
+
+#main-footer {
+    position: relative;
+    display: block;
+    background-color: #323237;
+    color: #b9bcbf;
+    font-size: 12px;
+    text-align: center;
+    padding: 80px 0;
+}
+
+@media (max-width: 767px) {
+    #main-footer {
+        padding-top: 48px;
+        padding-bottom: 96px;
+    }
+}
+
+#main-footer p.p-spec {
+    margin-bottom: 65px;
+}
+
+#main-footer p.p-spec a.spec-link {
+    font-size: 16px;
+    margin-bottom: 65px;
+}
+
+#main-footer p {
+    font-size: 12px;
+    font-size: 1.2rem;
+    margin: 0 0 12px;
+    font-family: "graphik-light", 'xingothic-w3', 'Microsoft JhengHei','STHeiti';
+}
+
+#main-footer p a {
+    color: #b9bcbf;
+    font-size: 12px;
+    border-color: #b9bcbf;
+}
+
+#main-footer p a:hover {
+    color: #00d7ff;
+    border-color: #00d7ff;
+}
+
+#main-footer .language-selector {
+    padding-left: 12px;
+}
+
+#main-footer .language-selector a {
+    color: #b9bcbf;
+    font-size: 12px;
+    border-color: transparent;
+    text-decoration: none;
+}
+
+#main-footer .language-selector a:hover {
+    color: #00d7ff;
+    border-color: transparent;
+}
+
+#main-footer .gogoro-logo {
+    width: 60px;
+    height: 14px;
+    position: relative;
+    right: -2px;
+}
+
+#main-footer .navbar-footer {
+    padding-top: 100px;
+    margin: 0;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    #main-footer .navbar-footer {
+        padding-top: 48px;
+        padding-bottom: 48px;
+    }
+
+    #main-footer .navbar-footer li:first-of-type {
+        margin-bottom: 24px;
+    }
+}
+
+@media (max-width: 767px) {
+    #main-footer .navbar-footer {
+        padding-top: 48px;
+        padding-bottom: 48px;
+    }
+
+    #main-footer .navbar-footer li:first-of-type {
+        margin-bottom: 24px;
+    }
+}
+
+#main-footer .navbar-footer .btn {
+    margin: 0 10px;
+    min-width: 194px;
+}
+
+#main-footer .border-right {
+    border-right: 1px solid #b9bcbf;
+    padding: 3px 12px 3px 0;
+}
+
+#main-footer .container.padding-bottom-100 {
+    padding-bottom: 20px;
+}
+
+#main-footer .margin-bottom-100 {
+    margin-bottom: 80px;
+}
+
+#main-footer .disclaimer {
+    font-size: 10.5px;
+    width: 740px;
+    margin: 0 auto;
+    margin-bottom: 80px;
+    font-size: small;
+    color: #8f9091;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    #main-footer .disclaimer {
+        width: 100%;
+        margin-bottom: 48px;
+    }
+
+    #main-footer .margin-bottom-100 {
+        margin-bottom: 48px;
+    }
+}
+
+@media (max-width: 767px) {
+    #main-footer .disclaimer {
+        width: 100%;
+        margin-bottom: 48px;
+    }
+
+    #main-footer .margin-bottom-100 {
+        margin-bottom: 48px;
+    }
+}
+
+
+
+/*email description*/
+
+.email_suscription {
+    margin-bottom: 20px;
+}
+
+    .email_suscription .btn {
+        margin-top: 10px;
+    }
+
+input.hs-input {
+    border-radius: 0;
+    background-clip: padding-box;
+    border-color: #c1c1c3;
+    color: #323237;
+    box-shadow: none;
+    height: 40px;
+    border: 2px solid #F1F3F3;
+    width: 300px;
+    font-size: 1.5rem;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.errorMessage {
+    color: #fff;
+}
+
+.suscription_form {
+}
+
+.suscription_errorMessage {
+    display: none;
+}
+
+@media (max-width: 767px) {
+    input.hs-input {
+        width: 100%;
+    }
+}
+
+
+.email_suscription li, .errorMessage li, suscription_errorMessage li {
+    list-style-type: none;
+}

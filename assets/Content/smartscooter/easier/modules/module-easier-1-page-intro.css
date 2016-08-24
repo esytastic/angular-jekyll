@@ -1,0 +1,71 @@
+/* ====================================
+   Site colors
+   ==================================== */
+/*
+   Brand colors
+   ====================================
+   White / Light Gray = Fresh and Clean Charcoal / Gray / Dark Gray = Bold and Direct Rich Blue = Performance
+   Blue = Experience
+   Teal = Style
+   Dark Green = Value
+   Green = Eco / Environment
+   Hot Green = Community
+   Red = Warning
+*/
+/* ====================================
+ * Mixins and functions
+ * ==================================== */
+/* Media queries
+ * ==================================== */
+/* Usage: @include breakpoint(sm) {} */
+/* Mixins and functions
+ * ==================================== */
+/* Usage: @include linearGradient() {} */
+/* Usage: @include placeholder() {} */
+/* Usage: @include border-radius(5px) */
+/* Usage: @include opacity(0.8) */
+/* Usage: @include center-block */
+/* Usage: @include text-truncate  */
+/* Extends
+ * ==================================== */
+/* Variables
+ * ==================================== */
+/* Mixins and functions
+ * ==================================== */
+
+.module-easier-1-page-intro {
+    background: #f8f8f8;
+    background-image: none;
+}
+.module-easier-1-page-intro.standard .title-wrapper, .module-easier-1-page-intro.standard .grid-container, .module-easier-1-page-intro.standard .background-image-standard {
+    display: block;
+}
+.module-easier-1-page-intro.standard .background-image-fallback {
+    display: none;
+}
+.module-easier-1-page-intro.fallback .title-wrapper, .module-easier-1-page-intro.fallback .grid-container, .module-easier-1-page-intro.fallback .background-image-standard {
+    display: none;
+}
+.module-easier-1-page-intro.fallback .container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.module-easier-1-page-intro .route {
+    background: transparent url(//images.gogoroapp.com/bgd-module-easier-1-route.jpg) no-repeat;
+}
+.module-easier-1-page-intro .grid {
+    background: transparent url(//images.gogoroapp.com/bgd-module-easier-1-grid.jpg) no-repeat;
+}
+.module-easier-1-page-intro .pins {
+    top: -50px;
+    background: transparent url(//images.gogoroapp.com/bgd-module-easier-1-pins.png) no-repeat;
+}
+.module-easier-1-page-intro .grid, .module-easier-1-page-intro .route, .module-easier-1-page-intro .pins {
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    background-position: center bottom;
+}

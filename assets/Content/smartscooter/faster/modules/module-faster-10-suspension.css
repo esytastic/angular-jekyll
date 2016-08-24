@@ -1,0 +1,222 @@
+/* ====================================
+   Site colors
+   ==================================== */
+/*
+   Brand colors
+   ====================================
+   White / Light Gray = Fresh and Clean Charcoal / Gray / Dark Gray = Bold and Direct Rich Blue = Performance
+   Blue = Experience
+   Teal = Style
+   Dark Green = Value
+   Green = Eco / Environment
+   Hot Green = Community
+   Red = Warning
+*/
+/* ====================================
+ * Mixins and functions
+ * ==================================== */
+/* Media queries
+ * ==================================== */
+/* Usage: @include breakpoint(sm) {} */
+/* Mixins and functions
+ * ==================================== */
+/* Usage: @include linearGradient() {} */
+/* Usage: @include placeholder() {} */
+/* Usage: @include border-radius(5px) */
+/* Usage: @include opacity(0.8) */
+/* Usage: @include center-block */
+/* Usage: @include text-truncate  */
+/* Extends
+ * ==================================== */
+/* Variables
+ * ==================================== */
+/* Mixins and functions
+ * ==================================== */
+.module-faster-10-suspension {
+  margin-top: -28px;
+  z-index: 500;
+  height: 856px;
+  width: 100%;
+  position: relative;
+  overflow: hidden; }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .module-faster-10-suspension {
+      height: auto;
+      margin: 0;
+    }
+  }
+  @media (max-width: 767px) {
+    .module-faster-10-suspension {
+      height: auto;
+      margin: 0;
+    }
+  }
+  .module-faster-10-suspension .timeline {
+    text-align: center;
+    height: 856px;
+    width: 100%;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+    cursor: pointer; }
+  .module-faster-10-suspension .timeline-control {
+    width: 1280px;
+    height: 856px;
+    position: absolute;
+    top: 28px;
+    left: 0;
+    z-index: 1; }
+  .module-faster-10-suspension .item {
+    width: 1280px;
+    height: 828px;
+    position: absolute;
+    top: 0;
+    z-index: 0;
+    -webkit-transition: left 200ms ease;
+            transition: left 200ms ease; }
+
+.module-faster-10-suspension .item .scooter {
+    width: 1088px;
+    height: 828px;
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    background-size: 1088px 828px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -544px;
+}
+.module-faster-10-suspension .item .item-one-image {
+  background: url('//gogoro.imgix.net/bgd-module-faster-10-scooter_0616.jpg?w=1088') no-repeat;
+}
+.module-faster-10-suspension .item .item-six-image {
+    background: url('//gogoro.imgix.net/module-faster-10-scooter-xray.jpg?w=1088') no-repeat;
+}
+
+
+.module-faster-10-suspension .item .scooter-top {
+    width: 1088px;
+    height: 28px;
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    background-size: 1088px 28px;
+    position: absolute;
+    top: -28px;
+    left: 50%;
+    margin-left: -544px;
+}
+
+  .module-faster-10-suspension .item-one {
+    left: 80px; }
+  .module-faster-10-suspension .item-two {
+    left: 1300px; }
+  .module-faster-10-suspension .item-three {
+    left: 2560px; }
+  .module-faster-10-suspension .item-four {
+    left: -3700px; }
+  .module-faster-10-suspension .item-five {
+    left: -2481px; }
+  .module-faster-10-suspension .item-six {
+      padding-top: 10px;
+    left: -1300px;
+  }
+.module-faster-10-suspension .item-six .item-six-video-wrap{
+   /*position: relative;*/
+    width: 1088px;
+    height:800px;
+    margin: 0 auto;
+}
+.module-faster-10-suspension .item-six .item-six-video-wrap video{
+    /*position: absolute;*/
+    /*bottom: 0;*/
+}
+  .module-faster-10-suspension .content-wrapper {
+    width: 320px;
+    position: absolute;
+    top: 93px;
+    z-index: 0;
+    margin-left: -160px;
+    display: none; }
+  .module-faster-10-suspension .content-1 {
+    left: 1280px;
+    display: block; }
+  .module-faster-10-suspension .content-1.cloned {
+    left: -2500px; }
+  .module-faster-10-suspension .content-2 {
+    left: 40px; }
+  .module-faster-10-suspension .content-3 {
+    left: -1250px;
+    width: 304px;
+    margin-left: -152px; }
+  .module-faster-10-suspension .timeline-background {
+    background-color: #fff;
+    position: absolute;
+    top: 28px;
+    left: 0;
+    width: 100%;
+    height: 828px;
+    z-index: 0; }
+  .module-faster-10-suspension .timeline-next {
+    font-size: 15px;
+    font-size: 1.5rem;
+    background-color: #f1f3f3;
+    padding: 18px 20px 16px 24px;
+    text-transform: uppercase; }
+    .module-faster-10-suspension .timeline-next:hover {
+      color: #fff;
+      background-color: #0069d2; }
+    .module-faster-10-suspension .timeline-next i {
+      font-size: 13px;
+      font-size: 1.3rem; }
+  .module-faster-10-suspension .timeline-indicator {
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
+    z-index: 100;
+    color: #c1c1c3;
+    margin: 0; }
+    .module-faster-10-suspension .timeline-indicator li {
+      padding-left: 9px;
+      padding-right: 9px; }
+      .module-faster-10-suspension .timeline-indicator li i {
+        font-size: 12px;
+        line-height: 20px;
+        height: 20px;
+        width: 20px; }
+        .module-faster-10-suspension .timeline-indicator li i.icon-bullet-active {
+          color: #323237; }
+
+  .module-faster-10-suspension .fallback {
+    display: none;
+    margin-top: -40px;
+    padding-bottom: 48px;
+    text-align: center; }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .state-fallback .module-faster-10-suspension .fallback {
+    display: block;
+  }
+}
+@media (max-width: 767px) {
+  .state-fallback .module-faster-10-suspension .fallback {
+    display: block;
+  }
+}
+.module-faster-10-suspension .fallback .container {
+  margin-top: 10px;
+  margin-bottom: 48px;
+}
+.module-faster-10-suspension .fallback img {
+  width: 100%;
+  height: auto;
+}
+.module-faster-10-suspension .fallback .container-one {
+  margin-top: -20px;
+  margin-bottom: -50px;
+}
+.module-faster-10-suspension .fallback .container-two {
+  margin-bottom: 0;
+}
+.module-faster-10-suspension .fallback .container-three {
+  margin-bottom: 0;
+}

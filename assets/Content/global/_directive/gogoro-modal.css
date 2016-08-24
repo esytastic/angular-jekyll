@@ -1,0 +1,126 @@
+﻿.gogoro-modal {
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(236, 240, 241, 0.8);
+    overflow-y:scroll;
+    opacity:0;
+}
+
+.gogoro-modal.fade{
+     opacity:0;
+    -webkit-transition: opacity 5s linear;
+    -moz-transition: opacity 5s linear;
+    -o-transition: opacity 5s linear;
+    transition: opacity 5s linear;
+}
+.gogoro-modal.fade.in{
+    opacity:.5;
+}
+
+.gogoro-modal-overlay {
+
+}
+
+.gogoro-modal-dialog {
+    /* A centered div above the overlay with a box shadow. */
+    z-index: 10000;
+    position: absolute;
+    width: 50%; /* Default */
+    /* Center the dialog */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    background-color: rgba(255,255,255,0.1);
+    color: #000000;
+}
+
+.gogoro-modal-close {
+    position: absolute;
+    top: -5px;
+    right: -50px;
+    padding: 5px;
+    cursor: pointer;
+    font-size: 140%;
+    display: inline-block;
+    font-weight: bold;
+    z-index:1000;
+}
+
+.gogoro-modal-close.inside{
+    top: 15px;
+    right: 15px;
+}
+
+.gogoro-modal-close .icon-close:hover {
+    /*font-weight:bold;*/
+}
+
+.gogoro-modal .gogoro-dialog-content{
+    height:100%;
+    position:relative;
+}
+.inside-close-hide .gogoro-modal-close{
+   display:none;
+}
+.gogoro-modal .gogoro-dialog-content .gogoro-self-close{
+    position:absolute;
+    top:0;
+    right:-35px;
+    z-index: 999;
+    font-size: 140%;
+    cursor:pointer;
+}
+/* xs */
+@media (max-width: 991px) {
+
+    .gogoro-modal .gogoro-dialog-content .gogoro-self-close{
+        top:5px;
+        right:10px;
+        /*font-size: 100%;*/
+        font-size: 24px;
+    }
+    
+}
+/* Style for content
+* ==================================== */
+
+
+
+.gogoro-modal .infowindow{
+    position:relative;
+    background-color:#ffffff;
+    padding:50px;
+    color:#323237;
+}
+
+.gogoro-modal .infowindow img{
+    width:auto;
+}
+
+.gogoro-modal .infowindow h2{
+    color:#323237;
+    font-family: "graphik-extra-light";
+}
+
+html[lang=zh-TW] .gogoro-modal .infowindow h2 {
+    font-family: 'xingothic-w3', 'Microsoft JhengHei','STHeiti';
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .gogoro-modal .infowindow h2{
+        font-size:34px;
+    }
+}
+
+/* xs & sm */
+@media (max-width: 991px) {
+    .gogoro-modal .infowindow{
+        padding:36px 25px;
+    }
+}

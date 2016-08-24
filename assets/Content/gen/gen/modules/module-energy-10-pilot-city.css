@@ -1,0 +1,26 @@
+.module-energy-10-pilot-city {
+	height: 400px;
+	background: #2C67CB;
+	text-align: center;
+	color: #fff;
+}
+.module-energy-10-pilot-city .statement_container {
+	position: relative;
+}
+.module-energy-10-pilot-city.fallback .statement_container {
+	position: relative;
+	top: 0px;
+}
+.module-energy-10-pilot-city.fallback {
+	height: 170px;
+	background: #2C67CB;
+	text-align: center;
+	color: #fff;
+}
+.module-energy-10-pilot-city.fallback h2 {
+	margin-bottom: 5px;
+}
+
+.module-energy-10-pilot-city .container {
+	height: 100%;
+}

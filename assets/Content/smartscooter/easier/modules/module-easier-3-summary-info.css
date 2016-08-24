@@ -1,0 +1,59 @@
+/* ====================================
+   Site colors
+   ==================================== */
+/*
+   Brand colors
+   ====================================
+   White / Light Gray = Fresh and Clean Charcoal / Gray / Dark Gray = Bold and Direct Rich Blue = Performance
+   Blue = Experience
+   Teal = Style
+   Dark Green = Value
+   Green = Eco / Environment
+   Hot Green = Community
+   Red = Warning
+*/
+/* ====================================
+ * Mixins and functions
+ * ==================================== */
+/* Media queries
+ * ==================================== */
+/* Usage: @include breakpoint(sm) {} */
+/* Mixins and functions
+ * ==================================== */
+/* Usage: @include linearGradient() {} */
+/* Usage: @include placeholder() {} */
+/* Usage: @include border-radius(5px) */
+/* Usage: @include opacity(0.8) */
+/* Usage: @include center-block */
+/* Usage: @include text-truncate  */
+/* Extends
+ * ==================================== */
+/* Variables
+ * ==================================== */
+/* Mixins and functions
+ * ==================================== */
+.module-easier-3-summary-info {
+  background: #24b84c; }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .state-fallback .module-easier-3-summary-info .container {
+      width: 100%; } }
+  @media (max-width: 767px) {
+    .state-fallback .module-easier-3-summary-info .container {
+      width: 100%; } }
+  .module-easier-3-summary-info .col-md-4 {
+    border-left: 1px solid #00b043;
+    border-right: 1px solid #00b043; }
+    .state-fallback .module-easier-3-summary-info .col-md-4 {
+      border: none; }
+    .module-easier-3-summary-info .col-md-4 .title {
+      color: #fff; }
+      .state-fallback .module-easier-3-summary-info .col-md-4 .title {
+        opacity: 1; }
+    .module-easier-3-summary-info .col-md-4 .body {
+      color: #e1ff32; }
+    .module-easier-3-summary-info .col-md-4 .description {
+      color: #fff; }
+  .module-easier-3-summary-info .slick-dots li.slick-active button:before {
+    color: #e1ff32; }
+  .module-easier-3-summary-info .slick-dots li:hover button:before {
+    color: #e1ff32; }

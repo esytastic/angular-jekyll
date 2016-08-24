@@ -1,0 +1,27 @@
+﻿
+@media (min-width: 1120px) {
+       .pg-tagboard .tagboard_contain {
+        width:100%;
+        margin:0px;
+    }
+
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+ .pg-tagboard .tagboard_contain {
+        /*width:768px;*/
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+   .pg-tagboard .tagboard_contain {
+       /* width:768px;*/
+    }
+
+}
+
+@media (max-width: 767px) {
+
+}
+

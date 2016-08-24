@@ -1,0 +1,11 @@
+/public
+/src/css
+/src/js
+/src/fonts
+/node_modules
+/src/Scripts
+src/Resources
+npm-debug.log*
+.DS_Store
+deploy.sh
+*.sublime-*

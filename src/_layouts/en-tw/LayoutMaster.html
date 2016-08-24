@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<!--[if lt IE 8]><html class="no-js lt-ie8 lt-ie9 lt-ie10"><![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9 lt-ie10"><![endif]-->
+<!--[if IE 9]><html class="no-js lt-ie10"><![endif]-->
+<!--[if gt IE 9]><!-->
+<html class="no-js" lang="en-tw">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    {{ page.meta }}
+    <title>Gogoro - Introducing the world's first and only Smartscooter™</title>
+
+    {{ '<link rel="stylesheet" href="/css/smartscooter/vendor.css">
+    <link rel="stylesheet" href="/css/smartscooter/partials.css">
+    <link rel="stylesheet" href="/css/smartscooter.css">
+    <link rel="stylesheet" href="/css/smartscooter/common.css">
+    <link rel="stylesheet" href="/css/globals.css">' | cachebust }}
+
+    {{ page.style | cachebust }}
+
+    <!-- modernizr:js -->
+    <script src="/Scripts/vendor/modernizr/modernizr.min.js"></script>
+    <!-- endinject -->
+    <!--[if lt IE 9]>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv-printshiv.min.js"></script>
+      <script src="/js/respond.js"></script>
+    <![endif]-->
+    <!-- justfont:js -->
+
+    <!-- end:justfont:js -->
+    <script type="text/javascript">
+        var gogoro = gogoro || {};
+        gogoro.Locale = gogoro.Locale || {};
+        gogoro.Locale.lang = 'en-tw';
+    </script>
+</head>
+
+<body style="opacity:0"  ng-app="gogoro" ng-controller="AppController" class="intro-takeover">
+
+    <!--[if lt IE 11]>
+      {% include en-tw/PartialIEUpgradeBox.html %}
+    <![endif]-->
+    <div id="sprite-loading-wrap" style="display:none;opacity:0">
+        <div class="sprite-loading-content">
+            <div id="sprite-image" class="sprite-image"></div>
+        </div>
+    </div>
+    {% include en-us/PartialNavbarMain.html %}
+
+    <div id="site-container" data-page-id="pg-home">
+
+        <main-header></main-header>
+
+        <div id="site-content" class="content">
+            {{ content }}
+        </div><!--.site-content-->
+
+        <mobile-footer-quick-links></mobile-footer-quick-links>
+
+        <div id="footer-sitemap">
+            <div class="container">
+                <div class="row">
+                    <div class="links-wrap  col-xs-6 col-sm-6">
+                        <a href='/tw/en/about'>About Us</a>
+                    </div>
+                    <div class="links-wrap  col-xs-6 col-sm-6">
+                        <a href='/tw/en/press'>Press</a>
+                    </div>
+                    <div class="links-wrap  col-xs-6 col-sm-6">
+                        <a href='/tw/en/career/'>Career</a>
+                    </div>
+                    <div class="links-wrap  col-xs-6 col-sm-6">
+                        <a href='/tw/en/support'>Support</a>
+                    </div>
+                    <div class="links-wrap  col-xs-6 col-sm-6">
+                        <a href="http://events.gogoro.com/en/book-a-ride">Book a ride</a>
+                    </div>
+                    <div class="links-wrap  col-xs-6 col-sm-6">
+                        <a target="_blank" href="http://forum.gogoro.com/sso">Forum</a>
+                    </div>
+                    <div class="links-wrap links-wrap--dropdown last col-xs-12 col-sm-12">
+                        <div id="dropdown--i18n" class="wrapper-dropdown dropdown--lrsm">
+                            <div class="dropdown-header">
+                                <span class="choice"><span class="xingothic-w8">語言</span></span>
+                                <i class="icon-arrow-down"></i>
+                            </div>
+                            <ul class="dropdown">
+                                <li><a href="/tw"><span class="xingothic-w8">台灣 (繁中)</span></a></li>
+                                <li><a href="/smartscooter/faster">Global</a></li>
+                                <li><a href="/tw/en">Taiwan (EN)</a></li>
+                            </ul>
+                        </div><!-- wrapper-dropdown -->
+
+                    </div>
+
+                </div>
+            </div>
+        </div><!--#footer-sitemap-->
+
+        <base-footer></base-footer>
+
+    </div>
+
+    {% if page.home %}
+        {{ '<script src="/js/homepage/all.js"></script>' | cachebust }}
+    {% else %}
+        {{ '<script src="/js/globals.js"></script>
+        <script src="/js/smartscooter/vendor.js"></script>
+        <script src="/js/smartscooter/partials.js"></script>
+        <script src="/js/smartscooter.js"></script>
+        <script src="/js/smartscooter/common.js"></script>' | cachebust }}
+    {% endif %}
+
+    {{ page.scripts | cachebust }}
+
+    <script>
+        /*Start of Async HubSpot Analytics Code*/
+        (function (d, s, i, r) {
+            if (d.getElementById(i)) { return; }
+            var n = d.createElement(s), e = d.getElementsByTagName(s)[0];
+            n.id = i; n.src = '//js.hs-analytics.net/analytics/' + (Math.ceil(new Date() / r) * r) + '/704818.js';
+            e.parentNode.insertBefore(n, e);
+        })(document, "script", "hs-analytics", 300000);
+
+        /*End of Async HubSpot Analytics Code*/
+
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+        ga('create', 'UA-56246096-4', 'gogoro.com');
+        ga('require', 'displayfeatures');
+        ga('send', 'pageview');
+    </script>
+
+    <script>
+        /* <![CDATA[ */
+        var google_conversion_id = 938669975;
+        var google_conversion_language = "en";
+        var google_conversion_format = "3";
+        var google_conversion_color = "ffffff";
+        var google_conversion_label = "5YMSCN2al2MQl­_LvwM";
+        var google_remarketing_only = false;
+        /* ]]> */
+    </script>
+    <script src="//www.googleadservices.com/pagead/conversion.js"></script>
+    <noscript>
+        <div style="display:inline;">
+            <img height="1" width="1" style="border­style:none;" alt="" src="//www.googleadservices.com/pagead/conversion/938669975/?label=5YMSCN2al2MQl­_LvwM&guid=ON&script=0">
+        </div>
+    </noscript>
+
+    <script>
+        (function(w,d,t,r,u){var f,n,i;w[u]=w[u]||[],f=function(){var o={ti:"5103355"};o.q=w[u],w[u]=new UET(o),w[u].push("pageLoad")},n=d.createElement(t),n.src=r,n.async=1,n.onload=n.onreadystatechange=function(){var s=this.readyState;s&&s!=="loaded"&&s!=="complete"||(f(),n.onload=n.onreadystatechange=null)},i=d.getElementsByTagName(t)[0],i.parentNode.insertBefore(n,i)})(window,document,"script","//bat.bing.com/bat.js","uetq");
+    </script>
+    <noscript>
+        <img src="//bat.bing.com/action/0?ti=5103355&Ver=2" height="0" width="0" style="display:none; visibility: hidden;">
+    </noscript>
+</body>
+
+</html>

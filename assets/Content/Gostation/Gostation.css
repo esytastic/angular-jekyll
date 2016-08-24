@@ -1,0 +1,1213 @@
+
+/*IE版面修正*/
+
+/* Clear Fix */
+.clearfix:after { content:"."; display:block; height:0; clear:both; visibility:hidden; }
+.clearfix { display:inline-block; }
+/* Hide from IE Mac */
+.clearfix {display:block;}
+/* End hide from IE Mac */
+/* end of clearfix */
+
+
+
+
+/*New Homepage*/
+
+/*#career .gostation_header {
+background-color:#fff;
+}
+
+
+@media (min-width: 1120px) {
+.gostation_header {
+background-image: url('//images.gogoroapp.com/gostation/bgd-module-gostation_0715.jpg');
+
+background-position:center;
+}
+
+}
+
+
+@media (min-width: 992px) and (max-width: 1199px) {
+.gostation_header {
+background-image: url('//images.gogoroapp.com/gostation/bgd-module-gostation_0715.jpg');
+
+background-position:center;
+}
+
+
+#career .module-easier-8-quick-fix {
+height:800px;
+}
+
+}*/
+
+
+.goStationSvg{
+
+    padding-bottom:70px;
+
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .goStationSvg{
+
+        padding:20px 70px 50px 70px;
+
+    }
+
+    .module-gostation-1-intro .standard {
+      background-position: -1170px center !important;
+    }
+
+
+    /*#career .gostation_header .container {
+    margin-left:0px;
+    margin-right:0px;
+}
+
+.gostation_header_word {
+padding-left:108px;
+padding-right:108px;
+}
+.gostation_header_pic {
+padding-left:0px;
+padding-right:0px;
+}*/
+
+}
+
+
+@media (max-width: 767px) {
+    .goStationSvg{
+
+        padding:0px 70px 50px 70px;
+
+    }
+
+
+    #career .gostation_header .container {
+        /*padding-left:0px;
+        padding-right:0px;*/
+    }
+
+    .gostation_header_word {
+        padding-left:25px;
+        padding-right:25px;
+    }
+
+}
+
+
+
+
+#career .gostation_header h2 {
+    font-family: graphik-extra-light;
+}
+
+@media (min-width: 1120px) {
+    #career .gostation_header h2 {
+
+        font-size:6rem;
+    }
+}
+
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    #career .gostation_header h2 {
+
+        font-size:6rem;
+    }
+    .module-gostation-1-intro .standard {
+      background-position: -950px center !important;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+    #career .gostation_header h2 {
+
+        font-size:6rem;
+    }
+
+
+}
+
+
+@media (max-width: 767px) {
+    #career .gostation_header h2 {
+        font-size:4rem;
+    }
+
+}
+
+
+.controls{
+    display:none;
+}
+
+
+.Operation {
+    color:#fff;
+    font-size:1.5rem;
+}
+#career #nearbyGoStations p {
+    font-size:1.6rem;
+}
+@media (min-width: 1120px) {
+
+    #nearbyGoStations .vertical-center{
+        top:40px;
+
+    }
+    .Operation {
+        text-align:left;
+    }
+    #career #nearbyGoStations .container h2 {
+        margin-top:40px;
+    }
+
+    .gostationTitle {
+        margin-top:64px;
+    }
+
+    .Operation p {
+        margin-top:12px;
+    }
+
+    .gogoro-select {
+        margin-bottom:18px;
+    }
+}
+
+
+
+
+
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    #nearbyGoStations .vertical-center{
+
+
+    }
+    .Operation {
+        text-align:left;
+    }
+
+    #career #nearbyGoStations .container h2 {
+        text-align:left;
+    }
+
+    .gogoro-select {
+        margin-top:80px;
+    }
+    .gostationTitle {
+        margin-top:75px;
+    }
+}
+
+
+
+
+
+@media (min-width: 1120px) {
+    #career   #GoStationTreeCol2 {
+        padding:0px;
+    }
+
+}
+
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    #career #GoStationTreeCol2 {
+        padding:0px;
+
+    }
+}
+
+
+
+/*選地圖日期拿掉調paddin(原本100px)*/
+@media (min-width: 768px) and (max-width: 991px) {
+    #career #GoStationTreeCol2 {
+        /*padding-bottom:100px;*/
+        padding-bottom:0;
+    }
+
+
+}
+
+/*選地圖日期拿掉調paddin(原本100px)*/
+@media (max-width: 767px) {
+    #career     #GoStationTreeCol2 {
+        padding-bottom:0;
+    }
+    #career #GoStationTreeCol2 .description{
+        margin-bottom:50px;
+    }
+    #career #GoStationTreeCol2 .description h3{
+        margin-bottom:0;
+    }
+}
+
+
+
+
+
+
+/* Swap fast
+@media (min-width: 1120px) {
+
+.module-easier-8-quick-fix .Swap_fast {
+font-size:8rem;
+}
+
+
+}
+
+
+@media (min-width: 992px) and (max-width: 1199px) {
+.module-easier-8-quick-fix .Swap_fast {
+font-size:8rem;
+}
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+.module-easier-8-quick-fix .Swap_fast {
+font-size:6rem;
+}
+
+}
+
+@media (max-width: 767px) {
+.module-easier-8-quick-fix .Swap_fast {
+font-size:5rem;
+}
+
+
+}*/
+
+
+
+.goStaionMain .module-easier-3-summary-info {
+    background: #3c3c42;
+}
+
+.goStaionMain .module-easier-3-summary-info .col-md-4 {
+    border-color:#6b6b6b;
+}
+
+/*Header*/
+@media (min-width: 1120px) {
+    .goStaionMain img.goStaionHeader {
+        width:881px;
+        height:640px;
+    }
+
+}
+
+
+
+
+
+
+
+/*加入能源網路*/
+#career .career__latest-positions {
+    text-align: center;
+    background-color: #F1F3F3;
+}
+
+
+#career .career__latest-positions .statement {
+    border-bottom: 0px solid #F1F3F3;
+}
+
+.goStaionMain .module-summary-info {
+    padding: 50px 0px;
+}
+
+#career p ,#GoStationTreeCol .description{
+    font-family: 'Graphik-light','xingothic-w3', 'Microsoft JhengHei','STHeiti';
+}
+
+
+
+.choiceStaionBar a ,  #career h3{
+    font-family: 'Graphik-semibold','xingothic-w8', 'Microsoft JhengHei','STHeiti';
+    cursor:pointer;
+}
+
+html[lang=zh-TW] #career h2 {
+    font-family: 'Graphik-light','xingothic-w3', 'Microsoft JhengHei','STHeiti';
+
+}
+
+
+#career h2 {
+    font-family: 'Graphik-extra-light','xingothic-w3', 'Microsoft JhengHei','STHeiti';
+
+}
+
+#career a {
+
+
+}
+
+
+
+
+@media (min-width: 1120px) {
+    #career #GoStationTreeCol .container {
+        width:1170px;
+    }
+}
+
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    #career #GoStationTreeCol .container{
+
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+@media (max-width: 767px) {
+
+
+
+}
+
+
+
+/*樂趣 不設限*/
+@media (min-width: 1120px) {
+    .goStaionMain img.goStaitionNolimitedImg {
+        width:523px;
+        height:528px;
+    }
+
+    .goStaionMain .goStaitionNolimited {
+        height:inherit;
+
+    }
+
+    #career  .module-easier-8-quick-fix .container{
+        padding-bottom:44px;
+    }
+}
+
+
+
+
+
+
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .goStaionMain img.goStaitionNolimitedImg {
+        width:423px;
+        height:auto;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+@media (max-width: 767px) {
+
+
+}
+
+
+
+/*Search nearby GoStations*/
+
+@media (min-width: 1120px) {
+    #basic-waypoint .GoStaion_AllYou{
+        position: absolute;
+        left: 50%;
+        margin-left: -115px; top: 50%;
+        margin-top: -55px;
+    }
+
+    #basic-waypoint .GoStaion_AllYou2{
+        position: absolute;
+        left: 50%;
+        margin-left: -202px;
+        opacity: 0; top: 50%;
+        margin-top: -30px;
+        font-family:Graphik-ligjt;
+    }
+}
+
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    #basic-waypoint .GoStaion_AllYou{
+        position: absolute;
+        left: 50%;
+        margin-left: -115px; top: 50%;
+        margin-top: -55px;
+    }
+
+    #basic-waypoint .GoStaion_AllYou2{
+        position: absolute;
+        left: 50%;
+        margin-left: -202px;
+        opacity: 0; top: 50%;
+        margin-top: -30px;
+        font-family:Graphik-ligjt;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    #basic-waypoint .GoStaion_AllYou{
+        opacity: 1 !important;
+    }
+
+    #basic-waypoint .GoStaion_AllYou2{
+
+        opacity: 1 !important;
+
+    }
+}
+
+@media (max-width: 767px) {
+    #basic-waypoint .GoStaion_AllYou{
+
+        opacity: 1 !important;
+    }
+
+    #basic-waypoint .GoStaion_AllYou2{
+
+        opacity: 1 !important;
+
+    }
+
+
+}
+
+
+
+
+
+
+/*加入能源網路*/
+
+#latest-positions statement vertical-center-container {
+    border-bottom:0px solid #000;
+}
+
+
+#career #latest-positions {
+    background-color:#00d7ff;
+}
+
+
+.tabHide {
+    display:none;
+}
+
+
+
+@media (min-width: 1120px) {
+
+}
+
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+
+
+}
+
+@media (max-width: 767px) {
+
+
+}
+
+
+
+
+
+
+
+/*ChoiceMap*/
+.StationTabMain {
+    position:relative;
+}
+
+
+.choiceStaionBar {
+    width:100%;
+    text-align:center;
+    padding:35px 0px 35px 0px ;
+    border-bottom-width:0px;
+}
+
+.choiceStaionBar .row{
+    margin-left: 0;
+    margin-right:0;
+}
+
+.choiceStaionBar a {
+    border-bottom-width:0px;
+}
+
+
+@media (min-width: 1120px) {
+    .StationTabMain {
+        height:800px;
+        background-color:#fff;
+    }
+
+    .StationTab1 {
+        height:800px;
+        width:100%;
+        background-image:url(//images.gogoroapp.com/gostation/GoS_coverageP1.png);
+        background-position:center;
+    }
+
+    .StationTab2 {
+        height:800px;
+        width:100%;
+        background-image:url(//images.gogoroapp.com/gostation/GoS_coverageP2.png);
+        background-position:center;
+    }
+
+    .StationTab3 {
+        height:800px;
+        width:100%;
+        background-image:url(//images.gogoroapp.com/gostation/GoS_coverageP3.jpg);
+        background-position:center;
+    }
+
+
+
+
+    .choiceStaionBar {
+        background-color:rgba(255,255,255,0.85);
+        position:absolute;
+        bottom:0px;
+    }
+}
+
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .StationTabMain {
+        height:800px;
+
+    }
+
+    .StationTab1 {
+        height:800px;
+        width:100%;
+        background-image:url(//images.gogoroapp.com/faq/GoS_coverageP1.png);
+        background-position:center;
+    }
+
+    .StationTab2 {
+        height:800px;
+        width:100%;
+        background-image:url(//images.gogoroapp.com/faq/GoS_coverageP2.png);
+        background-position:center;
+    }
+
+    .StationTab3 {
+        height:800px;
+        width:100%;
+        background-image:url(//images.gogoroapp.com/faq/GoS_coverageP3.png);
+        background-position:center;
+    }
+
+
+    .choiceStaionBar {
+        background-color:rgba(255,255,255,0.85);
+        position:absolute;
+        bottom:0px;
+    }
+
+
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    #career .module-easier-3-summary-info .slick-dots li.slick-active button:before,
+    #career .module-easier-3-summary-info .slick-dots li:hover button:before
+    {
+        color:#323237;
+    }
+
+
+    .StationTabSmall {
+        height:auto;
+        width:100%;
+
+        position:relative;
+    }
+
+
+    .choiceStaionBar {
+        background-color:rgba(255,255,255,1);
+        position:relative;
+
+    }
+}
+
+@media (max-width: 767px) {
+    #career .module-easier-3-summary-info .slick-dots li:hover button:before,
+    #career .module-easier-3-summary-info .slick-dots li.slick-active button:before
+    {
+        color:#323237;
+    }
+
+
+
+
+    .choiceStaionBar {
+        background-color:rgba(255,255,255,1);
+        position:relative;
+
+    }
+
+
+}
+
+#GoStationTreeCol2 img {
+    cursor:pointer;
+}
+
+
+
+/*Google map*/
+/*搜尋框*/
+
+
+
+
+
+
+@media (min-width: 1120px) {
+    #career  #career__interested-email #map-canvas {
+        height:600px;
+        padding:0px;
+        width:100%;
+    }
+}
+
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    #career  #career__interested-email #map-canvas {
+        height:450px;
+        padding:0px;
+        width:100%;
+    }
+    #career #career__interested-email {
+        padding:0px;
+    }
+}
+
+
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+    #career  #career__interested-email #map-canvas {
+        height:375px;
+        padding:0px;
+        width:100%;
+    }
+    #career #career__interested-email {
+        padding:0px;
+    }
+}
+
+@media (max-width: 767px) {
+
+    #career  #career__interested-email #map-canvas {
+        height:337px;
+        padding:0px;
+        width:100%;
+    }
+
+    #career #career__interested-email {
+        padding:0px;
+    }
+
+}
+
+
+
+
+/*尋找最近的Gostation*/
+#career #nearbyGoStations {
+    background-color: #0069d2;
+    width:100%;
+    padding:50px 0px 50px 0px;
+}
+
+#career #nearbyGoStations .container h2 {
+    color:#fff;
+}
+
+
+
+.goStaion__googleMap{
+    height:200px;
+}
+
+@media (min-width: 1120px) {
+    #career #nearbyGoStations {
+        height:180px;
+    }
+
+    #career #nearbyGoStations .col-lg-8 {
+        height:68px;
+    }
+
+    #career #nearbyGoStations .container h2 {
+        margin-bottom:0px;
+        position: absolute;
+        bottom: 3px;
+        font-size:4rem;
+    }
+
+}
+
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    #career #nearbyGoStations {
+        height:180px;
+    }
+
+    #career #nearbyGoStations .container h2 {
+        font-size:3.3rem;
+    }
+    #career #nearbyGoStations .container h2 {
+        margin-bottom:0px;
+    }
+}
+
+
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+    #career #nearbyGoStations {
+        height:250px;
+    }
+    #career #nearbyGoStations .container h2 {
+        font-size:3.2rem;
+    }
+}
+
+@media (max-width: 767px) {
+    #career #nearbyGoStations {
+        height:325px;
+    }
+
+    #career #nearbyGoStations .container h2 {
+        font-size:2.5rem;
+    }
+
+
+}
+
+
+
+
+.StationTabMain .CircleTabImage img{
+    position:absolute;
+    top:50px;
+    right:0px;
+    width:330px;
+    height:330px;
+}
+
+
+
+
+
+
+
+
+/*MAP*/
+
+@media (min-width: 1120px) {
+    #site-content  #career .career__interested-email {
+    	height: 600px;
+    }
+	#map-canvas {
+        height:600px
+    }
+
+}
+
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+
+    #site-content  #career .career__interested-email {
+    	height: 600px;
+    }
+    #map-canvas {
+        height:600px
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    #career__interested-email {
+    	height: 500px;
+    }
+    #map-canvas {
+        height:350px;
+    }
+
+    #career .career__interested-email {
+        padding-top:0px;
+    }
+}
+
+@media (max-width: 767px) {
+    #career__interested-email {
+    	height: 350px;
+    }
+    #map-canvas {
+        height:262px;
+    }
+    #career .career__interested-email {
+        padding-top:0px;
+        padding-bottom:0px;
+    }
+
+}
+
+
+
+#GoStationTreeCol2 .description {
+    margin-top:50px;
+    font-size:2.5rem;
+}
+
+
+
+/*加入能源*/
+@media (min-width: 1120px) {
+    #career  #latest-positions .statement .statement_container {
+
+    }
+}
+
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    #career  #latest-positions .statement .statement_container {
+        padding-top:100px;
+
+    }
+}
+
+@media (max-width: 767px) {
+    #career  #latest-positions .statement .statement_container {
+        /*padding-top:200px;*/
+        padding-top:0;
+
+    }
+
+}
+
+
+/*搜尋框*/
+
+.controls {
+    margin-top: 16px;
+    border: 1px solid transparent;
+    border-radius: 2px 0 0 2px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    height: 32px;
+    outline: none;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+
+#pac-input {
+    position:absolute;
+    left:100px;
+    z-index:900;
+
+
+    background-color: #fff;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 300;
+    margin-left: 12px;
+    padding: 0 11px 0 13px;
+    text-overflow: ellipsis;
+    width: 400px;
+}
+
+#pac-input:focus {
+    border-color: #4d90fe;
+}
+
+.pac-container {
+    font-family: Roboto;
+}
+
+#type-selector {
+    color: #fff;
+    background-color: #4d90fe;
+    padding: 5px 11px 0px 11px;
+}
+
+#type-selector label {
+    font-family: Roboto;
+    font-size: 13px;
+    font-weight: 300;
+}
+
+
+/*popup start*/
+
+/*
+////////////
+//Team Page Popup
+////////////
+*/
+
+section.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+section.modalWindow {
+    display: none;
+    position: fixed;
+    top: 0;
+    margin-left: auto;
+    margin-right: auto;
+
+    z-index: 1001 !important;
+    min-height: 200px;
+    background: #FFF;
+    cursor: default;
+    border: 0px solid #c2c2c2;
+}
+
+section.modal.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100%;
+    background: rgba(236,240,241,0.9);
+    z-index: 997;
+    cursor: pointer;
+}
+
+
+
+
+
+
+#career .modalWindow {
+    background: rgba(236,240,241,0.7);
+}
+
+
+/*close btn*/
+
+.closeBtn {
+    font-size: 2.8em;
+    right: 0px;
+    top: 40px;
+    position: absolute;
+    cursor: pointer;
+
+}
+@media (min-width: 1120px) {
+    .closeBtn {
+        font-size: 1.5em;
+        left:50%;
+        margin-left:506px;
+        top: 40px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    .closeBtn {
+        font-size: 1.5em;
+        left:50%;
+        margin-left:436px;
+        top: 40px;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    .closeBtn {
+        font-size: 1.5em;
+        right: 30px;
+        top: 40px;
+    }
+
+}
+
+@media (max-width: 767px) {
+    .closeBtn {
+        font-size: 1.5em;
+        right: 26px;
+        top: 40px;
+    }
+}
+
+
+
+/*pop up 浮動*/
+
+
+
+.bodyAddClass {
+    width:100%;
+}
+
+
+@media (min-width: 1120px) {
+    .bodyAddClass {
+        overflow:hidden;
+    }
+
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .bodyAddClass {
+        overflow:hidden;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+}
+
+@media (max-width: 767px) {
+}
+
+
+
+
+#career  .modalWindow {
+
+    -webkit-overflow-scrolling: touch;
+    overflow:scroll;
+    overflow-x:hidden;
+    width:100%;
+    margin:0px 0px 0px 0px ;
+    background:rgba(236,240,241,0.0);
+    padding:30px 15px 30px 15px;
+}
+
+
+
+
+section.modalWindow section.modalWrapper {
+    margin: auto;
+    padding: 60px 20px 60px 20px ;
+    text-align: left;
+    line-height: 20px !important;
+    border:0px solid #b9bcbf;
+    /*border:1px solid #808080;*/
+}
+
+.modalWrapper {
+    margin: 0px;
+}
+
+
+
+
+/*popup寬度*/
+@media (min-width: 1120px) {
+    section.modalWindow section.modalWrapper {
+        width: 970px;
+    }
+
+}
+
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    section.modalWindow section.modalWrapper {
+        width: 970px;
+
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    section.modalWindow section.modalWrapper {
+
+
+
+    }
+}
+
+@media (max-width: 767px) {
+    section.modalWindow section.modalWrapper {
+
+
+
+    }
+
+}
+
+.fact-svg {
+    height: 130px!important;
+    padding: 10px 0;
+}
+
+
+.module-charger-9-revolution {
+	height: 400px;
+	background: #08c8ec;
+	text-align: center;
+	color: #fff;
+}
+.module-charger-9-revolution .statement_container {
+	position: relative;
+}
+.module-charger-9-revolution.fallback .statement_container {
+	position: relative;
+	top: 0px;
+}
+.module-charger-9-revolution.fallback {
+	height: 170px;
+	background: #08c8ec;
+	text-align: center;
+	color: #fff;
+}
+.module-charger-9-revolution.fallback h2 {
+	margin-bottom: 5px;
+}
+
+.module-charger-9-revolution .container {
+	height: 100%;
+}

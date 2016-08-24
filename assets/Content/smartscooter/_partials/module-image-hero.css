@@ -1,0 +1,85 @@
+/* ====================================
+   Site colors
+   ==================================== */
+/*
+   Brand colors
+   ====================================
+   White / Light Gray = Fresh and Clean Charcoal / Gray / Dark Gray = Bold and Direct Rich Blue = Performance
+   Blue = Experience
+   Teal = Style
+   Dark Green = Value
+   Green = Eco / Environment
+   Hot Green = Community
+   Red = Warning
+*/
+/* ====================================
+ * Mixins and functions
+ * ==================================== */
+/* Media queries
+ * ==================================== */
+/* Usage: @include breakpoint(sm) {} */
+/* Mixins and functions
+ * ==================================== */
+/* Usage: @include linearGradient() {} */
+/* Usage: @include placeholder() {} */
+/* Usage: @include border-radius(5px) */
+/* Usage: @include opacity(0.8) */
+/* Usage: @include center-block */
+/* Usage: @include text-truncate  */
+/* Extends
+ * ==================================== */
+/* Variables
+ * ==================================== */
+/* Mixins and functions
+ * ==================================== */
+.module-image-hero .content-overlay {
+    position: relative;
+    z-index: 5;
+}
+
+.module-image-hero h3 {
+    font-family: "flama-condensed-bold", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 140px;
+    line-height: 0.80;
+    text-transform: uppercase;
+}
+
+html[lang=zh-TW] .module-image-hero h3 { 
+    line-height: 140px;
+}
+
+html[lang=zh-TW] .module-image-hero h3 span.tw { 
+     display:block;
+     font-size: 130px;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .module-image-hero h3 {
+        width: 100%;
+        font-size: 120px;
+        font-size: 12rem;
+        text-align: center;
+    }
+}
+
+@media (max-width: 767px) {
+    .module-image-hero h3 {
+        width: 100%;
+        font-size: 38px;
+        text-align: center;
+    }
+    html[lang=zh-TW] .module-image-hero h3 { 
+        line-height: 35px;
+    }
+    html[lang=zh-TW] .module-image-hero h3 span.tw { 
+        font-size: 38px;
+    }
+}
+
+@media (max-width: 767px) {
+    .module-image-hero {
+        height: 320px !important;
+    }
+}

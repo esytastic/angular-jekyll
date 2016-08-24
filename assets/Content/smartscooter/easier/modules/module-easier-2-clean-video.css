@@ -1,0 +1,65 @@
+/* ====================================
+   Site colors
+   ==================================== */
+/*
+   Brand colors
+   ====================================
+   White / Light Gray = Fresh and Clean Charcoal / Gray / Dark Gray = Bold and Direct Rich Blue = Performance
+   Blue = Experience
+   Teal = Style
+   Dark Green = Value
+   Green = Eco / Environment
+   Hot Green = Community
+   Red = Warning
+*/
+/* ====================================
+ * Mixins and functions
+ * ==================================== */
+/* Media queries
+ * ==================================== */
+/* Usage: @include breakpoint(sm) {} */
+/* Mixins and functions
+ * ==================================== */
+/* Usage: @include linearGradient() {} */
+/* Usage: @include placeholder() {} */
+/* Usage: @include border-radius(5px) */
+/* Usage: @include opacity(0.8) */
+/* Usage: @include center-block */
+/* Usage: @include text-truncate  */
+/* Extends
+ * ==================================== */
+/* Variables
+ * ==================================== */
+/* Mixins and functions
+ * ==================================== */
+
+.module-easier-2-clean-video {
+    background: #000;
+}
+.state-fallback .module-easier-2-clean-video {
+    background-image: url(//images.gogoroapp.com/module-easier-2-new.jpg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+}
+.module-easier-2-clean-video .fallback {
+    display: none;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .module-easier-2-clean-video {
+        background-image: none;
+        height: auto;
+    }
+    .module-easier-2-clean-video .fallback {
+        display: block;
+    }
+}
+@media (max-width: 767px) {
+    .module-easier-2-clean-video {
+        background-image: none;
+        height: auto;
+    }
+    .module-easier-2-clean-video .fallback {
+        display: block;
+    }
+}

@@ -1,0 +1,279 @@
+﻿#book-a-ride .request-ride .map {
+    margin-top:100px;
+    height:500px;
+}
+
+#book-a-ride .request-ride .map header{
+    display:table;
+    width:100%;
+    margin-bottom:20px;
+}
+#book-a-ride .request-ride .map header > ul{
+    list-style:none;
+    margin:0;
+    padding:0;
+    display:table-row;
+}
+#book-a-ride .request-ride .map header > ul > li{
+    display:table-cell;
+    vertical-align:middle;
+}
+#book-a-ride .request-ride .map header > ul > li.last{
+    text-align:right;
+}
+#book-a-ride .request-ride .map header > ul > li.last #dropdown--location{
+    float:right;
+}
+
+#book-a-ride .request-ride .map header > ul > li h2{
+    margin-bottom:0;
+}
+
+#book-a-ride .request-ride .map .content{
+    height:420px;
+    display:table;
+    width:100%;
+    border:1px solid #D9D9D9;
+}
+#book-a-ride .request-ride .map .content .table-row{
+    display:table-row;
+}
+#book-a-ride .request-ride .map .content .table-row .table-cell{
+    display:table-cell;
+  
+}
+#book-a-ride .request-ride .map .content .table-row .table-cell.first{
+    width:70%;
+    border-right:1px solid #D9D9D9;
+}
+#book-a-ride .request-ride .map .content .table-row .table-cell.last{
+   position:relative;
+   width:30%;
+   vertical-align:top;
+}
+#book-a-ride .request-ride .map .content .table-row .list-wrap{
+    height:420px;
+    overflow:hidden;
+    background-color:#F1F3F3;
+}
+#book-a-ride .request-ride .map .content .table-row .table-cell.last .list{
+    display:table;
+    width:100%;
+    height:auto;
+}
+#book-a-ride .request-ride .map .content .table-row .table-cell.last .list .table-row{
+    display:table-row;
+    
+}
+#book-a-ride .request-ride .map .content .table-row .table-cell.last .list .table-row .table-cell{
+    display:table-cell;
+    width:100%;
+    background-color:#F1F3F3;
+}
+
+/*#book-a-ride .request-ride .map .content .table-row .table-cell.last .list .table-row .table-cell.first{
+    width:60px;
+    text-align:center;
+    vertical-align:middle;
+}
+#book-a-ride .request-ride .map .content .table-row .table-cell.last .list .table-row .table-cell.last{
+    width:282px;
+    vertical-align:middle;
+}*/
+
+#book-a-ride .request-ride .map .content .table-row .table-cell.last .list .table-row .table-cell .list_link{
+    border:none;
+    display:block;
+    height:100%;
+    height:80px;
+}
+#book-a-ride .request-ride .map .content .table-row .table-cell.last .list .table-row .table-cell .list_link:hover
+{
+    color:#323237;
+    background-color:#ffffff;
+}
+#book-a-ride .request-ride .map .content .table-row .table-cell.last .list .table-row .table-cell .list_link.active
+{
+    background-color:#ffffff;
+}
+#book-a-ride .request-ride .map .content .table-row .table-cell.last .list .table-row .table-cell .list_link .name{
+    display:block;
+    font-family: 'graphik-semibold';
+    font-size:18px;
+}
+html[lang=zh-TW] #book-a-ride .request-ride .map .content .table-row .table-cell.last .list .table-row .table-cell .list_link .name {
+    font-family: 'xingothic-w8', 'Microsoft JhengHei','STHeiti';
+    font-weight:500;
+}
+
+
+#book-a-ride .request-ride .map .content .table-row .table-cell.last .list .table-row .table-cell .list_link .address{
+    display:block;
+    font-size:14px;
+    line-height:18px;
+    padding-right:10px;
+}
+#book-a-ride .request-ride .map .content .table-row .table-cell.last .list .table-row .table-cell .list_link .link-table{
+    display:table;
+    height:100%;
+    width:100%;
+}
+#book-a-ride .request-ride .map .content .table-row .table-cell.last .list .table-row .table-cell .list_link .link-table .link-row{
+    display:table-row;
+}
+#book-a-ride .request-ride .map .content .table-row .table-cell.last .list .table-row .table-cell .list_link .link-table .link-row .link-cell{
+    display:table-cell;
+    vertical-align:middle;
+}
+#book-a-ride .request-ride .map .content .table-row .table-cell.last .list .table-row .table-cell .list_link .link-table .link-row .link-cell.link-cell--img{
+    width:60px;
+    text-align:center;
+}
+
+#book-a-ride .request-ride .map .content .table-row .table-cell.last .list .table-row .table-cell .list_link .link-table .link-row .link-cell.link-cell--img .mapicon{
+    width:100%;
+    height:31px;
+    background-size:25px 31px;
+}
+
+/* set icon by type */
+#book-a-ride .request-ride .map .content .table-row .table-cell.last .list .table-row .table-cell .list_link .link-table .link-row .link-cell.link-cell--img .mapicon.mapicon--store{
+    background:url(//images.gogoroapp.com/icons/map/map_pin_off.png) center no-repeat;
+}
+#book-a-ride .request-ride .map .content .table-row .table-cell.last .list .table-row .table-cell .list_link .link-table .link-row .link-cell.link-cell--img .mapicon.mapicon--event{
+    background:url(//images.gogoroapp.com/icons/map/map_event_pin_off.png) center no-repeat;
+}
+
+/* set active icon */
+#book-a-ride .request-ride .map .content .table-row .table-cell.last .list .table-row .table-cell .list_link .link-table .link-row .link-cell.link-cell--img .mapicon.mapicon--store.active{
+    background:url(//images.gogoroapp.com/icons/map/map_pin_on.png) center no-repeat;
+}
+#book-a-ride .request-ride .map .content .table-row .table-cell.last .list .table-row .table-cell .list_link .link-table .link-row .link-cell.link-cell--img .mapicon.mapicon--event.active{
+    background:url(//images.gogoroapp.com/icons/map/map_event_pin_on.png) center no-repeat;
+}
+
+/* list_link:hover */
+#book-a-ride .request-ride .map .content .table-row .table-cell.last .list .table-row .table-cell .list_link:hover .link-table .link-row .link-cell.link-cell--img .mapicon.mapicon--store{
+    background:url(//images.gogoroapp.com/icons/map/map_pin_on.png) center no-repeat;
+}
+#book-a-ride .request-ride .map .content .table-row .table-cell.last .list .table-row .table-cell .list_link:hover .link-table .link-row .link-cell.link-cell--img .mapicon.mapicon--event{
+    background:url(//images.gogoroapp.com/icons/map/map_event_pin_on.png) center no-repeat;
+}
+
+#book-a-ride .request-ride .map .content .table-row .table-cell.last .list-btns{
+    position:absolute;
+    display:table;
+    left:0;
+    bottom:0;
+    width:100%;
+    height:70px;
+}
+#book-a-ride .request-ride .map .content .table-row .table-cell.last .list-btns .list-btns-row{
+    display:table-row;
+}
+#book-a-ride .request-ride .map .content .table-row .table-cell.last .list-btns .list-btns-row .list-btn{
+   display:table-cell;
+   width:50%;
+   text-align:center;
+   vertical-align:middle;
+   border:1px solid #D9D9D9;
+   border-bottom:none;
+   cursor:pointer;
+   background-color:#ffffff;
+}
+#book-a-ride .request-ride .map .content .table-row .table-cell.last .list-btns .list-btns-row .list-btn i{
+     font-size:25px;
+     font-weight:700;
+     color:#B9BCBF;
+
+    -webkit-transition: color 0.5s linear;
+    -moz-transition: color 0.5s linear;
+    -ms-transition: color 0.5s linear;
+    -o-transition: color 0.5s linear;
+    transition: color 0.5s linear;
+
+}
+#book-a-ride .request-ride .map .content .table-row .table-cell.last .list-btns .list-btns-row .list-btn--left{
+
+}
+#book-a-ride .request-ride .map .content .table-row .table-cell.last .list-btns .list-btns-row .list-btn--right{
+    border-left:none;
+    border-right:none;
+}
+
+#book-a-ride .request-ride .map .content .table-row .table-cell #map-canvas{
+    width:100%;
+   height:420px;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+     #book-a-ride .request-ride .map {
+        height:100%;
+        max-height:500px;
+        margin-top:50px;
+    }
+    
+     #book-a-ride .request-ride .map .content{
+        max-height:420px;
+        height:100%;
+    }
+     
+    #book-a-ride .request-ride .map .content .table-row .list-wrap{
+        max-height:420px;
+        height:100%;
+    }
+
+    #book-a-ride .request-ride .map .content .table-row .table-cell.last .list .table-row .table-cell .list_link .link-table .link-row .link-cell {
+      text-align: left;
+    }
+}
+
+
+/* iPad in portrait */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+    
+     #book-a-ride .request-ride .map {
+        height:100%;
+        max-height:500px;
+        margin-top:50px;
+    }
+    
+     #book-a-ride .request-ride .map .content{
+        max-height:420px;
+        height:100%;
+    }
+     
+    #book-a-ride .request-ride .map .content .table-row .list-wrap{
+        max-height:420px;
+        height:100%;
+    }
+
+    #book-a-ride .request-ride .map .content .table-row .table-cell.last .list .table-row .table-cell .list_link .link-table .link-row .link-cell {
+      text-align: left;
+    }
+}
+
+@media (max-width: 767px) {
+     #book-a-ride .request-ride .map {
+        height:100%;
+        max-height:500px;
+        margin-top:50px;
+    }
+    
+     #book-a-ride .request-ride .map .content{
+        max-height:420px;
+        height:100%;
+    }
+     
+    #book-a-ride .request-ride .map .content .table-row .list-wrap{
+        max-height:420px;
+        height:100%;
+    }
+
+    #book-a-ride .request-ride .map .content .table-row .table-cell.last .list .table-row .table-cell .list_link .link-table .link-row .link-cell {
+      text-align: left;
+    }
+}

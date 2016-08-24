@@ -1,0 +1,51 @@
+﻿.font01 {
+    /*font-family: Microsoft JhengHei;*/
+    font-style: normal;
+}
+
+.control-checkbox {
+    height: 20px;
+}
+
+.control-checkbox-div {
+    margin-top: 12px;
+}
+
+    .control-checkbox-div input {
+        float: right;
+    }
+
+.control-radio-main {
+    margin: auto;
+}
+
+.control-radio-div {
+    display: block;
+    float: right;
+    width: 25px;
+    margin-top: 7px;
+}
+
+.checkbox {
+    display: inline;
+}
+
+@media (max-width: 767px) {
+    .control-checkbox-div {
+        margin-top: 17px;
+    }
+
+    .control-radio-div {
+        margin-top: 0px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .control-checkbox-div {
+        margin-top: 12px;
+    }
+
+    .control-radio-div {
+        margin-top: 7px;
+    }
+}

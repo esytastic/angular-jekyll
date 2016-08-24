@@ -1,0 +1,157 @@
+/* ====================================
+   Site colors
+   ==================================== */
+/*
+   Brand colors
+   ====================================
+   White / Light Gray = Fresh and Clean Charcoal / Gray / Dark Gray = Bold and Direct Rich Blue = Performance
+   Blue = Experience
+   Teal = Style
+   Dark Green = Value
+   Green = Eco / Environment
+   Hot Green = Community
+   Red = Warning
+*/
+/* ====================================
+ * Mixins and functions
+ * ==================================== */
+/* Media queries
+ * ==================================== */
+/* Usage: @include breakpoint(sm) {} */
+/* Mixins and functions
+ * ==================================== */
+/* Usage: @include linearGradient() {} */
+/* Usage: @include placeholder() {} */
+/* Usage: @include border-radius(5px) */
+/* Usage: @include opacity(0.8) */
+/* Usage: @include center-block */
+/* Usage: @include text-truncate  */
+/* Extends
+ * ==================================== */
+/* Variables
+ * ==================================== */
+/* Mixins and functions
+ * ==================================== */
+
+.module-smarter-9-12-iq-system {
+    position: relative;
+    background: #fff;
+    width: 100%;
+    height: 1156px;
+    position: relative;
+    overflow: hidden;
+    height: auto !important;
+}
+
+    .module-smarter-9-12-iq-system h2 {
+        font-size:40px;
+    }
+
+.module-smarter-9-12-iq-system:before {
+    content: "";
+    float: left;
+}
+.module-smarter-9-12-iq-system:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.module-smarter-9-12-iq-system .container {
+    position: relative;
+    height: 100%;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .module-smarter-9-12-iq-system .cotainer-fluid {
+        display: table;
+    }
+}
+.module-smarter-9-12-iq-system .row {
+    height: 100%;
+    margin: 0;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .module-smarter-9-12-iq-system .row {
+        display: table-row;
+        height: 100%;
+    }
+}
+.module-smarter-9-12-iq-system .row:first-child {
+    top: 0;
+}
+.module-smarter-9-12-iq-system .row .block {
+    float: left;
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+    color: #323237;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .module-smarter-9-12-iq-system .row .block {
+        float: none;
+        display: table-cell;
+        height: 100%;
+        padding-top: 48px;
+        padding-bottom: 48px;
+    }
+}
+@media (max-width: 767px) {
+    .module-smarter-9-12-iq-system .row .block {
+        height: auto;
+        padding-top: 48px;
+        padding-bottom: 48px;
+    }
+}
+.module-smarter-9-12-iq-system .row .block.iq-system {
+    background-color: #00d7ff;
+}
+.module-smarter-9-12-iq-system .row .block.iq-quicklink {
+    background-color: #00c3e6;
+}
+.module-smarter-9-12-iq-system .row .block.smartlock {
+    background-color: #28e1a5;
+}
+.module-smarter-9-12-iq-system .row .block.iq-smartkey {
+    background-color: #79e0f2;
+}
+.module-smarter-9-12-iq-system .row .block .background-icon {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 24px;
+}
+.module-smarter-9-12-iq-system .row .block .content {
+    width: 490px;
+    margin: 0 auto;
+    min-height:382px;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+    .module-smarter-9-12-iq-system .row .block .content {
+        width: 100%;
+        padding: 0 10%;
+    }
+
+    .module-smarter-9-12-iq-system .row .block {
+        height:636px;   
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .module-smarter-9-12-iq-system .row .block .content {
+        width: 100%;
+        padding: 0 10%;
+    }
+}
+@media (max-width: 767px) {
+    .module-smarter-9-12-iq-system .row .block .content {
+        width: 100%;
+        padding: 0 10%;
+    }
+    .module-smarter-9-12-iq-system h2 {
+        line-height:45px;
+    }
+    .module-smarter-9-12-iq-system h2 span{
+       display:block;
+    }
+}
+.module-smarter-9-12-iq-system .row .block p {
+    margin-bottom: 0;
+}

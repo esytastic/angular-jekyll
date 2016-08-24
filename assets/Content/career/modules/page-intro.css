@@ -1,0 +1,172 @@
+﻿#career .career__page-intro{
+    position:relative;
+    min-height:600px;
+    height:800px;
+    overflow:hidden;
+}
+#career .career__page-intro .imagewall{
+  position:fixed;
+  height:100%;
+  width:100%;
+  background: url(//images.gogoroapp.com/career/page-intro-2560_20150306.jpg) center no-repeat;
+  background-size:2560px 800px;
+}
+
+#career .career__page-intro .container{
+    position:relative;
+   height:800px;
+}
+
+/*#career .career__page-intro .container.fallback{
+   display:none;
+}*/
+
+
+#career .career__page-intro .container .content-wrap{
+   width:900px;
+   height:450px;
+   position:absolute;
+   top:50%;
+   left:50%;
+   margin-top:-225px;
+   margin-left:-450px;
+   text-align:center;
+   padding-top:10px; 
+}
+#career .career__page-intro .container .content-wrap.zh-tw{
+   height:450px;
+   margin-top:-225px;
+}
+
+#career .career__page-intro .container .content-wrap{
+  
+}
+#career .career__page-intro .container .content-wrap h2{
+    font-family: "flama-condensed-bold", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-size:100px;
+    line-height:80px;
+    color:#fff;
+    text-transform:uppercase;
+}
+#career .career__page-intro .container .content-wrap h2.zh-tw{
+    font-family: "xingothic-w8";
+    line-height:92px;
+    font-size:84px;
+    letter-spacing:-3px;
+}
+
+
+#career .career__page-intro .container .content-wrap p{
+    color:#fefefe;
+}
+#career .career__page-intro .container .content-wrap a.btn{
+    margin-top:40px;
+}
+#career .career__page-intro video#bgvid {
+    position: fixed; 
+    right: 0; 
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    width: auto; height: auto; 
+    z-index: -100;
+    background: url(//images.gogoroapp.com/career/career__page-intro-bg-lg.jpg) no-repeat;
+    background-size: cover;
+}
+
+.state-fallback #career .career__page-intro .imagewall{
+      position:relative;
+}
+
+
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+    #career .career__page-intro{
+        background: url(//images.gogoroapp.com/career/career__page-intro-bg-xs.jpg) center no-repeat;
+        background-size: cover;
+    }
+
+    /*#career .career__page-intro .container.fallback{
+       display:block;
+    }
+    
+    #career .career__page-intro .container.standard{
+       display:none;
+    }*/
+
+    #career .career__page-intro .container{
+        position:absolute;
+        top:0px;
+        left:0px;
+    }
+
+    #career .career__page-intro .imagewall{
+      position:relative;
+    }
+    #career .career__page-intro .container .content-wrap{
+        width:700px;
+        margin-left: -350px;
+    }
+}
+
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+    #career .career__page-intro .container{
+        position:absolute;
+        top:0px;
+        left:0px;
+        width:100%;
+       height:100%;
+    }
+}
+
+
+@media (max-width: 767px) {
+    #career .career__page-intro{
+        background: url(//images.gogoroapp.com/career/career__page-intro-bg-xs.jpg) center no-repeat;
+        background-size: cover;
+        height:500px;
+    }
+    
+    /*#career .career__page-intro .container.fallback{
+       display:block;
+    }
+    
+    #career .career__page-intro .container.standard{
+       display:none;
+    }*/
+
+    #career .career__page-intro .imagewall{
+      position:relative;
+    }
+    #career .career__page-intro .container{
+        position:absolute;
+        top:0px;
+        left:0px;
+        width:100%;
+       height:100%;
+    }
+
+    #career .career__page-intro .container .content-wrap{
+       margin-top:-200px;
+       padding-top:0px;
+       top:50%;
+
+    }
+
+    #career .career__page-intro .container .content-wrap h2{
+        font-size:42px;
+        line-height:40px
+    }
+    
+    #career .career__page-intro .container .content-wrap h2.zh-tw{
+        font-size:44px;
+        line-height:60px
+    }
+
+    #career .career__page-intro .container .content-wrap a.btn{
+        margin-top:50px;
+    }
+}

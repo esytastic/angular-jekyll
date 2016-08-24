@@ -1,0 +1,217 @@
+/* ====================================
+   Site colors
+   ==================================== */
+/*
+   Brand colors
+   ====================================
+   White / Light Gray = Fresh and Clean Charcoal / Gray / Dark Gray = Bold and Direct Rich Blue = Performance
+   Blue = Experience
+   Teal = Style
+   Dark Green = Value
+   Green = Eco / Environment
+   Hot Green = Community
+   Red = Warning
+*/
+/* ====================================
+ * Mixins and functions
+ * ==================================== */
+/* Media queries
+ * ==================================== */
+/* Usage: @include breakpoint(sm) {} */
+/* Mixins and functions
+ * ==================================== */
+/* Usage: @include linearGradient() {} */
+/* Usage: @include placeholder() {} */
+/* Usage: @include border-radius(5px) */
+/* Usage: @include opacity(0.8) */
+/* Usage: @include center-block */
+/* Usage: @include text-truncate  */
+/* Extends
+ * ==================================== */
+/* Variables
+ * ==================================== */
+/* Mixins and functions
+ * ==================================== */
+.module-faster-15-waterproof {
+    width: 100%;
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+    position: relative;
+    overflow: hidden;
+}
+
+.module-faster-15-waterproof:before {
+    content: "";
+    float: left;
+}
+
+.module-faster-15-waterproof:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.module-faster-15-waterproof .container {
+    position: relative;
+    height: 100%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .module-faster-15-waterproof {
+        padding-bottom: 48px;
+        height: auto;
+    }
+}
+
+@media (max-width: 767px) {
+    .module-faster-15-waterproof {
+        padding-bottom: 48px;
+        height: auto;
+    }
+}
+
+.module-faster-15-waterproof .fallback-image {
+    display: none;
+}
+
+.module-faster-15-waterproof.fallback .fallback-image {
+    display: block;
+    width: 2560px;
+    height: 600px;
+    margin-left: -1280px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .module-faster-15-waterproof.fallback .fallback-image {
+        position: relative;
+    }
+}
+
+@media (max-width: 767px) {
+    .module-faster-15-waterproof.fallback .fallback-image {
+        width: 1365px;
+        height: 320px;
+        margin-left: -637px;
+        position: relative;
+    }
+}
+
+.module-faster-15-waterproof .container {
+    margin-top: 100px;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .module-faster-15-waterproof .container {
+        margin-top: 24px;
+    }
+}
+
+@media (max-width: 767px) {
+    .module-faster-15-waterproof .container {
+        margin-top: 24px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .module-faster-15-waterproof h2 {
+        margin-bottom: 12px;
+    }
+}
+
+@media (max-width: 767px) {
+    .module-faster-15-waterproof h2 {
+        margin-bottom: 12px;
+    }
+}
+
+.module-faster-15-waterproof p {
+    margin: 0;
+}
+
+.module-faster-15-waterproof .video {
+    width: 2560px;
+    height: 600px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -1280px;
+    z-index: 0;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .module-faster-15-waterproof .video {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    .module-faster-15-waterproof .video {
+        display: none;
+    }
+}
+
+.module-faster-15-waterproof .fallback {
+    position: relative;
+    height: 600px;
+    width: 2560px;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    margin-left: -1280px;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .module-faster-15-waterproof .fallback {
+        position: static;
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .module-faster-15-waterproof .fallback {
+        position: static;
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+    }
+}
+
+.module-faster-15-waterproof .water-level {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    top: 15px;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .module-faster-15-waterproof .water-level {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    .module-faster-15-waterproof .water-level {
+        display: none;
+    }
+}
+
+.state-fallback .module-faster-15-waterproof .water-level {
+    display: none;
+}
+
+.state-fallback .module-faster-15-waterproof .video {
+    display: none;
+}
+
+.module-faster-15-waterproof .sample-note{
+    display:block;
+    font-size: 12px;
+    color: #C1C1C3;
+    margin-top: 14px;
+}

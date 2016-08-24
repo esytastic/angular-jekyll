@@ -1,0 +1,51 @@
+﻿<nav class="header-tooltip-container">
+
+    <!-- content name = smartscooter  -->
+    <ul ng-show="contentName=='smartscooter'">
+        <li>
+            <a ng-click="redirect($root.gogoro.wwwGogoroUrl+'smartscooter/faster');$event.stopPropagation()"
+               href="#">Gogoro Plus / Gogoro</a>
+        </li>
+        <li>
+            <a ng-click="redirect($root.gogoro.wwwGogoroUrl+'gogorolite');$event.stopPropagation()"
+               href="#">Gogoro Lite</a>
+        </li>
+        <li>
+            <a ng-click="redirect($root.gogoro.wwwGogoroUrl+'smartscooter/specs');$event.stopPropagation()"
+               href="#">{{lang=='zh-tw'?'規格比較表':'Comparison'}}</a>
+        </li>
+    </ul>
+
+    <!-- content name = edit  -->
+    <ul ng-show="contentName=='edit'">
+        <li>
+            <a ng-click="redirect($root.gogoro.myGogoroUrl+'account/edit');$event.stopPropagation()"
+               href="#">編輯會員資料</a>
+        </li>
+        <li>
+            <a ng-click="redirect($root.gogoro.myGogoroUrl+'account/logout');$event.stopPropagation()"
+               href="#">登出</a>
+        </li>
+    </ul>
+
+    <!-- content name = gen  -->
+    <ul ng-show="contentName=='gen'">
+        <li>
+            <a ng-click="redirect($root.gogoro.wwwGogoroUrl+'gen');$event.stopPropagation()"
+               href="#">Gogoro® Energy Network</a>
+        </li>
+        <li>
+            <a ng-click="redirect($root.gogoro.wwwGogoroUrl+'gostation');$event.stopPropagation()"
+               href="#">GoStation®</a>
+        </li>
+        <li>
+            <a ng-click="redirect($root.gogoro.wwwGogoroUrl+'gocharger');$event.stopPropagation()"
+               href="#">GoCharger™</a>
+        </li>
+        <li>
+            <a ng-click="redirect($root.gogoro.wwwGogoroUrl+'open');$event.stopPropagation()"
+               href="#">OPEN Initiative</a>
+        </li>
+    </ul>
+
+</nav>

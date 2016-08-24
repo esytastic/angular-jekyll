@@ -1,0 +1,153 @@
+.module-energy-2-smart-city {
+	position: relative;
+}
+
+.module-energy-2-smart-city .slider-content {
+	height: 840px;
+	background-repeat: no-repeat;
+    background-position: center;
+}
+
+.module-energy-2-smart-city .frame-1 {
+	background-image: url(/img/gen/landing/smartcities_bg1.jpg);
+}
+
+.module-energy-2-smart-city .frame-2 {
+	background-image: url(/img/gen/landing/smartcities_bg2.png);
+}
+
+.module-energy-2-smart-city .frame-2 .body {
+	text-align: left;
+    padding: 20% 0 0 59%;
+    width: 98%;
+    margin: 0;
+    color: #fff;
+}
+
+.module-energy-2-smart-city .frame-3 {
+	background-image: url(/img/gen/landing/smartcities_bg3.png);
+}
+
+.module-energy-2-smart-city .frame-3 h2 {
+	margin: auto;
+	width: 100%;
+	padding-bottom: 10px;
+}
+
+.module-energy-2-smart-city .frame-3 p {
+	width: 500px;
+}
+
+.module-energy-2-smart-city .frame-3 .body {
+	padding: 200px 150px 0;
+}
+
+/*.module-energy-2-smart-city .container.slider {
+	height: 100%;
+	position: relative;
+	background-color: transparent;
+}
+.module-energy-2-smart-city.fallback .container.slider {
+	height: 420px;
+	background-color: #f8f8f8;
+}
+.module-energy-2-smart-city {
+	width: 100%;
+	height: 840px;
+	background-image: url(/img/gen/landing/smartcities_bg1.jpg);
+	background-repeat: no-repeat;
+    background-position: center;
+}
+.module-energy-2-smart-city.fallback {
+	width: 100%;
+	height: 720px;
+	background-color: #f8f8f8;
+	background-image: none;
+}
+
+.module-energy-2-smart-city .mobile-fallback-image {
+	display: none;
+}
+
+.module-energy-2-smart-city.fallback .mobile-fallback-image {
+	display: block;
+	background-image: url(/img/gen/landing/smartcities_bg1_fallback.jpg);
+	background-position: bottom;
+	height: 320px;
+}*/
+
+.module-energy-2-smart-city .body {
+	text-align: center;
+	padding: 250px 150px 0;
+    width: 80%;
+	margin: auto;
+}
+
+.module-energy-2-smart-city p {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.slider-dots-container {
+	width: 80%;
+	height: 100px;
+	position: absolute;
+	bottom: 10px;
+	margin: 0 10% 0;
+	left: 0px
+}
+
+.module-energy-2-smart-city .slick-dots {
+	bottom: 10px;
+}
+
+
+/* Show/hide */
+
+.module-energy-2-smart-city.fallback .slider-content {
+	min-height: 760px;
+}
+
+.module-energy-2-smart-city.standard .fallback, .module-energy-2-smart-city.fallback .standard {
+	display: none;
+}
+
+.module-energy-2-smart-city.standard .standard, .module-energy-2-smart-city.fallback .fallback {
+	display: block;
+}
+
+/* fallbacks */
+
+.module-energy-2-smart-city.fallback .body {
+	padding: 40px 30px;
+	margin: 0;
+	width: 100%;
+	text-align: center;
+	color: #323237;
+}
+
+.module-energy-2-smart-city.fallback p {
+	width: 100%;
+}
+
+.module-energy-2-smart-city.fallback .slider-content {
+	background: none;
+}
+
+.module-energy-2-smart-city .slider-image {
+	height: 380px;
+	background-position: bottom;
+	background-size: cover;
+}
+
+.module-energy-2-smart-city .frame-1 .slider-image {
+	background-image: url(/img/gen/landing/smartcities_bg1_fallback.jpg);
+}
+
+.module-energy-2-smart-city .frame-2 .slider-image {
+	background-image: url(/img/gen/landing/smartcities_bg2_fallback.jpg);
+}
+
+.module-energy-2-smart-city .frame-3 .slider-image {
+	background-image: url(/img/gen/landing/smartcities_bg3_fallback.jpg);
+}

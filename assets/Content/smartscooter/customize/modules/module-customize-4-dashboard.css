@@ -1,0 +1,316 @@
+/* ====================================
+   Site colors
+   ==================================== */
+/*
+   Brand colors
+   ====================================
+   White / Light Gray = Fresh and Clean Charcoal / Gray / Dark Gray = Bold and Direct Rich Blue = Performance
+   Blue = Experience
+   Teal = Style
+   Dark Green = Value
+   Green = Eco / Environment
+   Hot Green = Community
+   Red = Warning
+*/
+/* ====================================
+ * Mixins and functions
+ * ==================================== */
+/* Media queries
+ * ==================================== */
+/* Usage: @include breakpoint(sm) {} */
+/* Mixins and functions
+ * ==================================== */
+/* Usage: @include linearGradient() {} */
+/* Usage: @include placeholder() {} */
+/* Usage: @include border-radius(5px) */
+/* Usage: @include opacity(0.8) */
+/* Usage: @include center-block */
+/* Usage: @include text-truncate  */
+/* Extends
+ * ==================================== */
+/* Variables
+ * ==================================== */
+/* Mixins and functions
+ * ==================================== */
+
+.module-customize-4-dashboard {
+    position: relative;
+    background: #fff;
+    width: 100%;
+    height: 750px;
+    position: relative;
+    overflow: hidden;
+}
+.module-customize-4-dashboard.standard .scooter, .module-customize-4-dashboard.standard .controls {
+    display: block;
+}
+.module-customize-4-dashboard.standard .image-fallback, .module-customize-4-dashboard.standard .content-fallback {
+    display: none;
+}
+.module-customize-4-dashboard.fallback {
+    height: auto;
+}
+.module-customize-4-dashboard.fallback .scooter, .module-customize-4-dashboard.fallback .controls {
+    display: none;
+}
+.module-customize-4-dashboard.fallback .content-fallback {
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+.module-customize-4-dashboard.fallback .content-fallback p {
+    margin: 0;
+}
+.module-customize-4-dashboard.fallback .image-fallback {
+    display: block;
+}
+.module-customize-4-dashboard.fallback .image-fallback h2 {
+    position: absolute;
+    top: 15%;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    color: #fff;
+    text-align: center;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .module-customize-4-dashboard.fallback .image-fallback {
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+    .module-customize-4-dashboard.fallback .image-fallback h2 {
+        position: absolute;
+        top: 15%;
+        left: 0;
+        width: 100%;
+        z-index: 10;
+        color: #fff;
+    }
+    .module-customize-4-dashboard.fallback .image-fallback img {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        z-index: 0;
+    }
+}
+@media (max-width: 767px) {
+    .module-customize-4-dashboard.fallback .image-fallback {
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+    .module-customize-4-dashboard.fallback .image-fallback h2 {
+        font-size: 32px;
+        font-size: 3.2rem;
+        position: absolute;
+        top: 5%;
+        left: 0;
+        width: 100%;
+        z-index: 10;
+        color: #fff;
+    }
+    .module-customize-4-dashboard.fallback .image-fallback img {
+        width: 100%;
+        height: auto;
+        position: relative;
+        z-index: 0;
+    }
+}
+.module-customize-4-dashboard.fallback .image-fallback h2 {
+    margin-top: 24px;
+}
+.module-customize-4-dashboard:before {
+    content: "";
+    float: left;
+}
+.module-customize-4-dashboard:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.module-customize-4-dashboard .container {
+    position: relative;
+    height: 100%;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .module-customize-4-dashboard {
+        height: auto;
+    }
+}
+@media (max-width: 767px) {
+    .module-customize-4-dashboard {
+        height: auto;
+    }
+}
+.module-customize-4-dashboard .scooter {
+    position: absolute;
+    width: 100%;
+    /*height: 71.42857%;*/
+    height: 75%;
+}
+.module-customize-4-dashboard .scooter .background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.module-customize-4-dashboard .scooter .background > div {
+    position: absolute;
+    background: #fff;
+    /* default for old browsers */
+    
+    width: 100%;
+    height: 100%;
+}
+.module-customize-4-dashboard .scooter .background .solid {
+    display: none;
+}
+.module-customize-4-dashboard .scooter .dashboard {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-position: center top;
+    background-size: 1435px;
+    background-repeat: no-repeat;
+}
+.module-customize-4-dashboard .scooter .title {
+    position: absolute;
+    top: 14.28571%;
+    width: 100%;
+    padding: 0;
+    text-align: center;
+    font-family: "graphik-extra-light", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 44px;
+    line-height: 48px;
+    color: #fff;
+}
+.module-customize-4-dashboard .controls {
+    position: absolute;
+    bottom: 0;
+    /*height: 28.57143%;*/
+    height: 25%;
+    margin: 0;
+    padding: 0 5%;
+    background-color: #fff;
+}
+.module-customize-4-dashboard .controls .row {
+    display: table;
+    height: 100%;
+}
+.module-customize-4-dashboard .controls .row > div {
+    display: table-cell;
+    float: none;
+    padding: 0;
+    vertical-align: middle;
+    font-family: "graphik-light", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 14px;
+    color: #323237;
+}
+html[lang=zh-TW] .module-customize-4-dashboard .controls .row > div { 
+    font-family: 'xingothic-w3', 'Microsoft JhengHei','STHeiti'; 
+}
+
+.module-customize-4-dashboard .controls .row .description {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.module-customize-4-dashboard .controls .row .toggle {
+    padding-top: 65px;
+    padding-left: 10px;
+    vertical-align: top;
+}
+.module-customize-4-dashboard .controls .row .toggle .gradient-solid-toggle {
+    margin-top: 10px;
+}
+.module-customize-4-dashboard .controls .row .toggle .gradient-solid-toggle a {
+    border: 0;
+    font-family: "graphik-semibold", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #323237;
+}
+.module-customize-4-dashboard .controls .row .toggle .gradient-solid-toggle a.gradient {
+    margin-right: 5px;
+}
+.module-customize-4-dashboard .controls .row .toggle .gradient-solid-toggle a.solid {
+    opacity: 0.3;
+    margin-right: 5px;
+}
+.module-customize-4-dashboard .controls .row .toggle .gradient-solid-toggle a.loop {
+    opacity: 0.3;
+    /*Gavin*/
+}
+.module-customize-4-dashboard .controls .row .share {
+    padding-top: 65px;
+    padding-left: 10px;
+    vertical-align: top;
+}
+.module-customize-4-dashboard .controls .row .share .sns {
+    margin-top: 10px;
+}
+.module-customize-4-dashboard .controls .row .share .sns a {
+    display: inline-block;
+    width: 29px;
+    height: 29px;
+    margin-top: 5px;
+    border: 0;
+}
+.module-customize-4-dashboard .controls .row .share .sns a.facebook {
+    background: transparent url(//images.gogoroapp.com/icon-facebook.png) no-repeat;
+}
+.module-customize-4-dashboard .controls .row .share .sns a.twitter {
+    margin-left: 5px;
+    background: transparent url(//images.gogoroapp.com/icon-twitter.png) no-repeat;
+}
+.module-customize-4-dashboard .controls .row .color-wheels {
+    padding: 0;
+    text-align: center;
+}
+.module-customize-4-dashboard .controls .row .color-wheels .wheels .wheel {
+    position: relative;
+    top: 16px;
+    display: inline-block;
+    width: 130px;
+    height: 130px;
+}
+.module-customize-4-dashboard .controls .row .color-wheels .wheels .wheel canvas, .module-customize-4-dashboard .controls .row .color-wheels .wheels .wheel .dial {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    outline: none;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+.module-customize-4-dashboard .controls .row .color-wheels .wheels .wheel canvas {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.module-customize-4-dashboard .controls .row .color-wheels .wheels .wheel .dial {
+    position: absolute;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+.module-customize-4-dashboard .controls .row .color-wheels .wheels .wheel .dial .border {
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: 34px;
+    height: 34px;
+    border: 4px solid white;
+    border-radius: 50%;
+}
+
+.module-customize-4-dashboard .controls .row .color-wheels .wheels .wheel:nth-child(1) {
+  margin-left: 24px;
+}

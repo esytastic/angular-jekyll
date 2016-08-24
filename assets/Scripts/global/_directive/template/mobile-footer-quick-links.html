@@ -1,0 +1,29 @@
+﻿<div id="footer-quick-links" class="hidden-lg hidden-md hidden-sm">
+    <div class="container quick-links">
+
+        <!-- Global -->
+        <ul ng-show="lang==='en'">
+            <li><a href="{{$root.gogoro.wwwGogoroUrl}}smartscooter/faster">Gogoro</a></li>
+            <li><a href="{{$root.gogoro.wwwGogoroUrl}}gogorolite">Gogoro Lite</a></li>
+            <li><a href="{{$root.gogoro.wwwGogoroUrl}}smartscooter/specs">Comparison</a></li>
+            <li><a href="{{$root.gogoro.wwwGogoroUrl}}gostation">GoStation®</a></li>
+            <li><a href="{{$root.gogoro.wwwGogoroUrl}}FAQ">FAQ</a></li>
+        </ul>
+
+        <!-- Taiwan 中英文 -->
+        <ul ng-show="lang==='zh-tw' || lang==='en-tw'">
+            <li><a href="{{$root.gogoro.wwwGogoroUrl}}smartscooter/faster">Gogoro</a></li>
+            <li><a href="{{$root.gogoro.wwwGogoroUrl}}gogorolite">Gogoro Lite</a></li>
+            <li><a href="{{$root.gogoro.wwwGogoroUrl}}smartscooter/specs">{{lang=='zh-tw'?'規格比較表':'Comparison'}}</a></li>
+            <li><a href="{{$root.gogoro.wwwGogoroUrl}}gostation">GoStation®</a></li>
+            <li><a href="http://story.gogoro.com" target="_blank">Story</a></li>
+            <li><a href="http://store.gogoro.com/tw">{{lang=='zh-tw'?'網路商店':'Buy'}}</a></li>
+            <li><a href="{{$root.gogoro.wwwGogoroUrl}}faq?hash=Faq_DownPayment">FAQ</a></li>
+            <li><a href="{{$root.gogoro.wwwGogoroUrl}}shops">{{lang=='zh-tw'?'門市據點':'Find Us'}}</a></li>
+            <li>
+                <a ng-show="$root.loginUser.isUserLogin === false" href="{{$root.gogoro.myGogoroUrl}}account/login" referrer-url="" class="ng-isolate-scope"><span class="margin-zero">{{lang=='zh-tw'?'登入':'Login'}}</span></a>
+                <a ng-show="$root.loginUser.isUserLogin === true" href="{{$root.gogoro.myGogoroUrl}}account/logout" class="ng-hide"><span class="margin-zero">{{lang=='zh-tw'?'登出':'Logout'}}</span></a>
+            </li>
+        </ul>
+    </div>
+</div>

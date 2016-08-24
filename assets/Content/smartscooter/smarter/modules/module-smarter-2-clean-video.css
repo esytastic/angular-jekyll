@@ -1,0 +1,351 @@
+/* ====================================
+   Site colors
+   ==================================== */
+/*
+   Brand colors
+   ====================================
+   White / Light Gray = Fresh and Clean Charcoal / Gray / Dark Gray = Bold and Direct Rich Blue = Performance
+   Blue = Experience
+   Teal = Style
+   Dark Green = Value
+   Green = Eco / Environment
+   Hot Green = Community
+   Red = Warning
+*/
+/* ====================================
+ * Mixins and functions
+ * ==================================== */
+/* Media queries
+ * ==================================== */
+/* Usage: @include breakpoint(sm) {} */
+/* Mixins and functions
+ * ==================================== */
+/* Usage: @include linearGradient() {} */
+/* Usage: @include placeholder() {} */
+/* Usage: @include border-radius(5px) */
+/* Usage: @include opacity(0.8) */
+/* Usage: @include center-block */
+/* Usage: @include text-truncate  */
+/* Extends
+ * ==================================== */
+/* Variables
+ * ==================================== */
+/* Mixins and functions
+ * ==================================== */
+
+.module-smarter-2-clean-video {
+    position: relative;
+    background: #000;
+    text-align: center;
+    height: 500px;
+}
+.module-smarter-2-clean-video {
+    background-image: url(/img/scooter/smarter/banner-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.module-smarter-2-clean-video .fallback {
+    display: none;
+}
+.module-smarter-2-clean-video .btn-translucent {
+    display: none;
+    position: absolute;
+    width: 270px;
+    bottom:15%;
+    left: 50%;
+    margin-left: -135px;
+}
+.module-smarter-2-clean-video .video_hero {
+	height: 100%;
+}
+.module-smarter-2-clean-video .video_hero_custom {
+	height: 100%;
+}
+.module-smarter-2-clean-video .container {
+	height: 100%;
+}
+.module-smarter-2-clean-video .container h2 {
+	text-align: left;
+}
+.module-smarter-2-clean-video .container .heroPlayBtn {
+	position: absolute;
+	margin: -90px 0 0 330px;
+	width: 180px;
+	height: 180px;
+	border: 2px solid #FFF;
+	border-radius: 90px;
+	bottom: auto;
+	top: 50%;
+}
+
+.module-smarter-2-clean-video .video_hero .container h2 {
+    line-height: 42px;
+    letter-spacing: inherit;
+}
+
+.module-faster-0-site-intro .video_hero {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 800;
+    background: #090909;
+    top: 0;
+}
+.module-faster-0-site-intro .video_hero_custom {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 800;
+    background: #090909;
+    top: 0;
+}
+#landingPage {
+    position: absolute;
+    z-index: 820;
+    background: white;
+    width: 100%;
+    height: 100%;
+}
+.video_hero .container {
+
+
+
+}
+.video_hero .container.transparent {
+    z-index: 800;
+}
+.video_hero a {
+    margin: auto;
+    color: white;
+    font-style: italic;
+}
+.video_hero_custom .container.transparent {
+    z-index: 800;
+}
+.video_hero_custom a {
+    margin: auto;
+    color: white;
+    font-style: italic;
+}
+.heroPlayBtn {
+    width: 180px;
+    height: 180px;
+    border: 2px solid white;
+    border-radius: 90px;
+}
+.playBtnContainer {
+    margin-top: 10px;
+    width: 100%;
+    height: 52px;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+}
+.playBtnLayer {
+    width: 164px;
+    position: absolute;
+}
+.playBtnLayer div {
+    float: left;
+    height: 52px;
+    line-height: 52px;
+    font-size: 52px;
+    font-weight: bold;
+}
+.heroPlayBtn .playBtnLayer {
+    letter-spacing: 2px;
+    left: 30px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+.heroPlayBtn:hover .playBtnLayer {
+    left: -48px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    color: white;
+}
+@media(max-width:767px) {
+    .video_hero .vertical-center-flex {
+        display: flex !important;
+    }
+    .video_hero_custom .vertical-center-flex {
+        display: flex !important;
+    }
+}
+.playBtnLayer div:first-child {
+    width: 112px;
+    opacity: 1;
+    height: 48px;
+    padding-top: 4px;
+    line-height: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: "graphik-black-italic", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+.heroPlayBtn:hover .playBtnLayer div:first-child {
+    opacity: 0;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+.playBtnLayer div:last-child {
+    width: 52px;
+    opacity: 0;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+.heroPlayBtn:hover .playBtnLayer div:last-child {
+    opacity: 1;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+.video_hero iframe {
+    width: 100%;
+    height: inherit;
+    position: absolute;
+    z-index: 800;
+    left: 0;
+}
+.video_hero h2 {
+    padding: 13px 0;
+    color: white !important;
+    font-size: 45px;
+    line-height: 42px;
+    font-weight: bold;
+    text-align: left;
+    font-family: 'flama-condensed-bold', sans-serif;
+}
+.video_hero_custom iframe {
+    width: 100%;
+    height: inherit;
+    position: absolute;
+    z-index: 800;
+    left: 0;
+}
+.video_hero_custom h2 {
+    padding: 13px 0;
+    color: white !important;
+    font-size: 45px;
+    line-height: 42px;
+    font-weight: bold;
+    text-align: left;
+    font-family: 'flama-condensed-bold', sans-serif;
+}
+
+@media (min-width: 320px) and (max-height: 568px) {
+    .video_hero h2 {
+        top: 438px;
+        margin-top: 0 !important;
+        margin-left: -160px !important;
+        width: 100% !important;
+        height: 32px !important;
+        line-height: 32px !important;
+        text-align: center;
+    }
+    .video_hero h2 br {
+        display: none !important;
+    }
+    .video_hero_custom h2 {
+        top: 438px;
+        margin-top: 0 !important;
+        margin-left: -160px !important;
+        width: 100% !important;
+        height: 32px !important;
+        line-height: 32px !important;
+        text-align: center;
+    }
+    .video_hero_custom h2 br {
+        display: none !important;
+    }
+}
+@media (min-width: 320px) and (max-height: 480px) {
+    .video_hero h2 {
+        top: 350px;
+        margin-top: 0 !important;
+        margin-left: -160px !important;
+        width: 100% !important;
+        height: 32px !important;
+        line-height: 32px !important;
+        text-align: center;
+    }
+    .video_hero h2 br {
+        display: none;
+    }
+    .video_hero_custom h2 {
+        top: 350px;
+        margin-top: 0 !important;
+        margin-left: -160px !important;
+        width: 100% !important;
+        height: 32px !important;
+        line-height: 32px !important;
+        text-align: center;
+    }
+    .video_hero_custom h2 br {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .module-smarter-2-clean-video {
+        background-image: none;
+        height: auto;
+    }
+    .module-smarter-2-clean-video img.fallback {
+        display: block;
+    }
+    .module-smarter-2-clean-video img.standard {
+        display: none;
+    }
+    .module-smarter-2-clean-video .btn-translucent {
+        display: block;
+    }
+    .module-smarter-2-clean-video .video_hero{
+        display: none;
+    }
+    .module-smarter-2-clean-video .video_hero_custom {
+        display: none;
+    }
+}
+@media (max-width: 767px) {
+    .module-smarter-2-clean-video {
+        background-image: none;
+        height: auto;
+    }
+    .module-smarter-2-clean-video img.fallback {
+        display: block;
+    }
+    .module-smarter-2-clean-video img.standard {
+        display: none;
+    }
+    .module-smarter-2-clean-video .btn-translucent {
+        display: block;
+    }
+    .module-smarter-2-clean-video .video_hero {
+        display: none;
+    }
+    .module-smarter-2-clean-video .video_hero_custom {
+        display: none;
+    }
+}
+
+.module-smarter-2-clean-video .video_hero_custom h2 {
+    color: white !important;
+    font-size: 45px;
+    line-height: 42px!important;
+    font-weight: bold!important;
+    text-align: left;
+    font-family: 'flama-condensed-bold', sans-serif!important;
+    margin-top: 0px!important;
+}

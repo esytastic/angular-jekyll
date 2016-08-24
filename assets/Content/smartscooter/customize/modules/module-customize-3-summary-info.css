@@ -1,0 +1,74 @@
+/* ====================================
+   Site colors
+   ==================================== */
+/*
+   Brand colors
+   ====================================
+   White / Light Gray = Fresh and Clean Charcoal / Gray / Dark Gray = Bold and Direct Rich Blue = Performance
+   Blue = Experience
+   Teal = Style
+   Dark Green = Value
+   Green = Eco / Environment
+   Hot Green = Community
+   Red = Warning
+*/
+/* ====================================
+ * Mixins and functions
+ * ==================================== */
+/* Media queries
+ * ==================================== */
+/* Usage: @include breakpoint(sm) {} */
+/* Mixins and functions
+ * ==================================== */
+/* Usage: @include linearGradient() {} */
+/* Usage: @include placeholder() {} */
+/* Usage: @include border-radius(5px) */
+/* Usage: @include opacity(0.8) */
+/* Usage: @include center-block */
+/* Usage: @include text-truncate  */
+/* Extends
+ * ==================================== */
+/* Variables
+ * ==================================== */
+/* Mixins and functions
+ * ==================================== */
+.module-customize-3-summary-info {
+  position: relative;
+  background: #c0df16;
+  padding-top: 48px;
+  padding-bottom: 48px; }
+  .module-customize-3-summary-info .text {
+    width: 100%; }
+    .module-customize-3-summary-info .text .stat {
+      font-family: "flama-semicondensed-ultralight", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+      font-weight: 700;
+      font-style: normal;
+      color: #fff;
+      font-size: 210px;
+      letter-spacing: -10px;
+      line-height: 1;
+      width: 100%; }
+      @media (min-width: 768px) and (max-width: 991px) {
+        .module-customize-3-summary-info .text .stat {
+          text-align: center;
+          font-size: 80px;
+          letter-spacing: -5px; } }
+      @media (max-width: 767px) {
+        .module-customize-3-summary-info .text .stat {
+          text-align: center;
+          font-size: 80px;
+          letter-spacing: -5px; } }
+    .module-customize-3-summary-info .text .title {
+      width: 100%;
+      font-family: "graphik-extra-light", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+      font-weight: 200;
+      font-style: normal;
+      font-size: 32px;
+      line-height: 36px;
+      color: #323237; }
+      @media (min-width: 768px) and (max-width: 991px) {
+        .module-customize-3-summary-info .text .title {
+          margin-bottom: 24px; } }
+      @media (max-width: 767px) {
+        .module-customize-3-summary-info .text .title {
+          margin-bottom: 24px; } }

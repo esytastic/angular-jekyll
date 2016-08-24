@@ -1,0 +1,152 @@
+#site-container {
+    height: 100%;
+    min-height: 600px;
+}
+
+/* footer */
+footer#home-footer a{
+    display:inline-block;
+    font-family: 'Graphik-light','xingothic-w3','Microsoft JhengHei','STHeiti';
+    font-size:12px;
+    border-bottom:0;
+    margin-right:10px;
+    /*color:#535357;*/
+}
+
+footer#home-footer span.general-links{
+    margin:0 10px 0 10px;
+}
+
+footer#home-footer a.text-link{
+    margin-right:20px;
+}
+
+footer#home-footer a.icon-link{
+    position:relative;
+    margin-left:3px;
+    margin-right:10px;
+    width:18px;
+    height:18px;
+}
+
+footer#home-footer{
+    position:absolute;
+    left:0;
+    bottom:0px;
+    font-size:12px;
+    width:100%;
+    height:42px;
+    padding:0 45px 0 45px;
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    footer#home-footer{
+        left:0;
+        bottom:10px;
+        height:64px;
+        padding:0 15px 0 15px;
+    }
+    footer#home-footer .layout-table{
+        display:block;
+    }
+    footer#home-footer .layout-table .layout-row .layout-cell{
+        display:block;
+        text-align:left;
+    }
+}
+
+/* gicon */
+footer#home-footer a .gicon{
+    position:absolute;
+    bottom:-6px;
+    right:0;
+    display:inline-block;
+    width:24px;
+    height:24px;
+    background-size: 24px;
+    background-position:bottom;
+}
+
+/* select langulage
+* ==================================== */
+footer#home-footer .gogoro-select {
+    font-size: 12px;
+    padding: 3px 7px;
+    margin-top:0;
+}
+footer#home-footer .gogoro-select:before {
+    top: 5px;
+}
+
+footer#home-footer .gogoro-select select option {
+ font-family: 'graphik-semibold','xingothic-w8','Microsoft JhengHei','STHeiti';
+}
+
+
+/* Slider */
+.banner .tm {
+	font-size: 60%;
+	position: relative;
+	top: -20px;
+}
+.banner.go-charger {
+	background-image: url(/img/landing/gocharger-banner.jpg);
+	background-repeat: no-repeat;
+	background-size: 110vw auto;
+	background-position: center !important;
+}
+.banner.open {
+	background-image: url(/img/landing/Landing_Hero_Banner_0106.jpg);
+    background-repeat: no-repeat;
+    /*color: #fff !important;*/
+    /*text-shadow: 0 0 26px rgba(0, 0, 0, 0.56);*/
+    background-size: cover!important;
+}
+@media (max-width: 767px) {
+	.banner.open {
+        background-image: url(/img/landing/Landing_Hero_Banner_Mobile_0106.jpg);
+        background-position: bottom!important;
+	}
+}
+.banner.open .toolbar--center {
+
+}
+#jumbotron .jumbotron-container .banner .container .toolbar.toolbar--center {
+    left: 0;
+    width: 100%;
+    margin-left: 0;
+  bottom: 57%;
+}
+#jumbotron .jumbotron-container .banner .container .toolbar.toolbar--center h2 {
+	font-family: "graphik-extra-light", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-size: 7rem;
+	margin-bottom: 0;
+}
+#jumbotron .jumbotron-container .banner .container .toolbar.toolbar--center p {
+	font-family: "graphik-light", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	margin: 5px 0 35px 0;
+}
+@media (max-width: 1441px) {
+	.banner.open {
+		background-size: 1440px auto;
+	}
+}
+@media (max-width: 767px) {
+	.banner.go-charger {
+		/*background-size: 1000px auto;*/
+		background-position: center 105px !important;
+	}
+}
+@media (max-width: 550px) {
+	.banner.go-charger {
+		/*background-size: 730px auto;*/
+		background-position: center 64px !important;
+	}
+	.banner.open {
+		background-position: bottom!important;
+		background-size: 1700px auto;
+	}
+    #jumbotron .jumbotron-container .banner .container .toolbar.toolbar--center h2 {
+    	font-size: 6rem;
+    }
+}

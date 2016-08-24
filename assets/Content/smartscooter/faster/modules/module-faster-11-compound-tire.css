@@ -1,0 +1,198 @@
+/* ====================================
+   Site colors
+   ==================================== */
+/*
+   Brand colors
+   ====================================
+   White / Light Gray = Fresh and Clean Charcoal / Gray / Dark Gray = Bold and Direct Rich Blue = Performance
+   Blue = Experience
+   Teal = Style
+   Dark Green = Value
+   Green = Eco / Environment
+   Hot Green = Community
+   Red = Warning
+*/
+/* ====================================
+ * Mixins and functions
+ * ==================================== */
+/* Media queries
+ * ==================================== */
+/* Usage: @include breakpoint(sm) {} */
+/* Mixins and functions
+ * ==================================== */
+/* Usage: @include linearGradient() {} */
+/* Usage: @include placeholder() {} */
+/* Usage: @include border-radius(5px) */
+/* Usage: @include opacity(0.8) */
+/* Usage: @include center-block */
+/* Usage: @include text-truncate  */
+/* Extends
+ * ==================================== */
+/* Variables
+ * ==================================== */
+/* Mixins and functions
+ * ==================================== */
+
+.module-faster-11-compound-tire {
+    position: relative;
+    background: #e3e3e3;
+    width: 100%;
+    height: 800px;
+    position: relative;
+    overflow: hidden;
+}
+.module-faster-11-compound-tire:before {
+    content: "";
+    float: left;
+}
+.module-faster-11-compound-tire:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.module-faster-11-compound-tire .container {
+    position: relative;
+    height: 100%;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .module-faster-11-compound-tire {
+        height: auto;
+        padding-bottom: 48px;
+    }
+}
+@media (max-width: 767px) {
+    .module-faster-11-compound-tire {
+        height: auto;
+        padding-bottom: 48px;
+    }
+}
+.module-faster-11-compound-tire .background-image {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -640px;
+    z-index: 0;
+    width: 1280px;
+    height: 800px;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .module-faster-11-compound-tire .background-image {
+        position: static;
+        width: 140%;
+        height: auto;
+        margin-left: -27%;
+        margin-bottom: -24px;
+    }
+}
+@media (max-width: 767px) {
+    .module-faster-11-compound-tire .background-image {
+        position: static;
+        width: 140%;
+        height: auto;
+        margin-left: -27%;
+        margin-bottom: 0;
+    }
+}
+.module-faster-11-compound-tire .background-image img {
+    width: 1280px;
+    height: 800px;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+.mobile .module-faster-11-compound-tire .background-image img {
+    display: none;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .module-faster-11-compound-tire .background-image img {
+        position: static;
+        width: 100%;
+        height: auto;
+        display: none;
+    }
+}
+@media (max-width: 767px) {
+    .module-faster-11-compound-tire .background-image img {
+        position: static;
+        width: 100%;
+        height: auto;
+        display: none;
+    }
+}
+.module-faster-11-compound-tire .background-image img.active {
+    z-index: 1;
+    display: none;
+}
+.mobile .module-faster-11-compound-tire .background-image img.active {
+    display: block;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .module-faster-11-compound-tire .background-image img.active {
+        display: block;
+    }
+}
+@media (max-width: 767px) {
+    .module-faster-11-compound-tire .background-image img.active {
+        display: block;
+    }
+}
+.module-faster-11-compound-tire .maxxis {
+    display: block;
+    margin-top: 40px;
+    font-size: 12px;
+}
+.module-faster-11-compound-tire .maxxis .logo {
+    display: block;
+    margin-top: 8px;
+    width: 128px;
+    height: 20px;
+    background: transparent url(//images.gogoroapp.com/logo-maxxis-bw.png) no-repeat;
+}
+.module-faster-11-compound-tire .descriptions {
+    position: relative;
+    top: -100px;
+    left: -15px;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+    .module-faster-11-compound-tire .descriptions {
+        left: 35px;
+    }
+}
+.module-faster-11-compound-tire .descriptions p {
+    margin: 0;
+}
+.module-faster-11-compound-tire .descriptions .line {
+    position: absolute;
+    z-index: 100;
+    display: none;
+}
+.module-faster-11-compound-tire .descriptions .center {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-bottom: 48px;
+}
+.module-faster-11-compound-tire .descriptions .center .line {
+    background-color: #00d7ff;
+    left: -206px;
+    top: 40px;
+    height: 2px;
+    width: 196px;
+}
+.module-faster-11-compound-tire .descriptions .edge {
+    display: none;
+    position: absolute;
+    top: 130px;
+    left: 0;
+    margin-bottom: 48px;
+}
+.module-faster-11-compound-tire .descriptions .edge .line {
+    background-color: #0069d2;
+    left: -160px;
+    top: 40px;
+    height: 2px;
+    width: 150px;
+}
