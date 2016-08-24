@@ -1,4 +1,4 @@
-# Gogoro web static site
+# Gogo web static site
 
 This site has been converted from an [ASP.NET MVC](http://www.asp.net/mvc) app to a fully static site powered by [Jekyll](http://jekyllrb.com/).
 
