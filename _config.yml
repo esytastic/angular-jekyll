@@ -3,7 +3,7 @@ email: matt@roamandwander.com
 description: > # this means to ignore newlines until "baseurl:"
   A static conversion of www.gogoro.com from an ASP.NET MVC app
 baseurl: ""
-url: "http://gogoro.com" # the base hostname & protocol for your site
+url: "https://esytastic.github.io" # the base hostname & protocol for your site
 include:
     - _directive
     - _service
